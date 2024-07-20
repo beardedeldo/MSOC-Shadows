@@ -21,6 +21,14 @@ SCR_AIWorld SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
     }
    }
   }
+  SCR_AISettingsComponent "{512CCCD0856CB4B9}" {
+   m_fWeaponFiredReactionDistance 300
+   m_fPerceptionSafe 0.8
+   m_fPerceptionVigilant 2.6
+   m_fAimAccuracyErrorModifier 1
+   m_bForceStayInVehicle 1
+   m_eForceFlashlightState ON
+  }
  }
  coords 7114.537 75.004 6402
  {
@@ -88,6 +96,13 @@ RadioManagerEntity RadioManager : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.
 }
 SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
  components {
+  SCR_CampaignBuildingManagerComponent "{61E94452E29EA578}" {
+   m_sFreeRoamBuildingClientTrigger "{5E191CEAF4B95816}Prefabs/MP/FreeRoamBuildingClientTrigger.et"
+   m_BudgetType CAMPAIGN
+   m_iCompositionRefundPercentage 100
+   m_bSameFactionDisassembleOnly 1
+   m_sPrefabsToBuildResource "{D2527D9AA5B4A33E}Configs/Editor/PlaceableEntities/Compositions/Compositions_FreeRoamBuilding.conf"
+  }
   SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
    m_fDOTScale 0.3
    m_fTourniquettedLegMovementSlowdown 0.5

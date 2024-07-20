@@ -1,0 +1,22 @@
+GameProject {
+ ID "ShadowSF_modern"
+ GUID "61E50CB5E84D66C1"
+ TITLE "ShadowSF_modern"
+ Dependencies {
+  "58D0FB3206B6F859" "595F2BF2F44836FB"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}

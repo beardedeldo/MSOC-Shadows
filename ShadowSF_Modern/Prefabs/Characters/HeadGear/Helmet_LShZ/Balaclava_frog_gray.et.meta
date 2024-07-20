@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{9D8D6972A75396B2}Prefabs/Characters/HeadGear/Helmet_LShZ/Balaclava_frog_gray.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

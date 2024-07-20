@@ -1,0 +1,474 @@
+GenericEntity OP_silent_depth : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ coords 9397.229 0 5265.847
+ {
+  $grp SCR_AIGroup : "{06F0C9675883F18A}Prefabs/Groups/OPFOR/KLMK/Group_USSR_ReconTeam.et" {
+   {
+    coords -1026.748 250.669 -768.036
+   }
+   {
+    coords 23.364 113.747 -694.603
+   }
+  }
+  Vehicle BTR70_Base3 : "{1C5FE7B7FF49BB8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Base.et" {
+   coords -78.421 12.683 -258.353
+   angleY -125.674
+  }
+  SCR_ChimeraCharacter : "{2366B9D00B40D3C7}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_3.et" {
+   coords -66.732 3.617 -189.771
+  }
+  $grp SCR_ChimeraCharacter : "{2C490E2846A1E884}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Scout.et" {
+   {
+    coords -430.662 48.247 124.545
+    angleY 159.572
+   }
+   {
+    coords -420.233 48.249 124.318
+    angleY 176.968
+   }
+   {
+    coords -1059.634 246.505 -506.647
+    angleY 145.658
+   }
+  }
+  $grp SCR_AIGroup : "{30ED11AA4F0D41E5}Prefabs/Groups/OPFOR/Group_USSR_FireGroup.et" {
+   {
+    coords -705.38 146.74 -524.328
+   }
+   {
+    coords -489.008 91.092 -405.207
+   }
+  }
+  SCR_AIGroup : "{359353A0A5A52216}Prefabs/Groups/Campaign/Group_USSR_Defenders.et" {
+   coords 234.306 22.303 -11.502
+  }
+  SCR_ChimeraCharacter : "{472F2B06FF9BF37D}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_4.et" {
+   coords -34.077 1.553 -168.773
+  }
+  $grp SCR_AIGroup : "{657590C1EC9E27D3}Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et" {
+   {
+    coords -249.081 31.804 -293.102
+   }
+   {
+    coords -423.139 39.768 107.086
+   }
+   {
+    coords -426.131 45.855 -0.585
+   }
+   {
+    coords 258.671 11.225 -139.717
+   }
+   {
+    coords 258.593 9.16 -176.547
+   }
+   {
+    coords -224.378 3.977 74.325
+   }
+   {
+    coords -251.518 4.188 70.813
+   }
+  }
+  $grp SCR_AIGroup : "{8E29E7581DE832CC}Prefabs/Groups/OPFOR/KLMK/Group_USSR_MedicalSection_KLMK.et" {
+   {
+    coords -1057.494 242.327 -509.25
+   }
+   {
+    coords -864.763 276.522 -894.484
+   }
+  }
+  $grp SCR_ChimeraCharacter : "{976AC400219898FA}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Sharpshooter.et" {
+   {
+    coords -425.851 48.248 123.625
+    angleY -173.955
+   }
+   {
+    coords 226.2 36.234 -0.687
+   }
+  }
+  SCR_ChimeraCharacter : "{A2B367FFF37E6416}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_5.et" {
+   coords -30.259 1.143 -160.875
+  }
+  $grp SCR_ChimeraCharacter : "{A62FA97C4EC64F14}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_HeliPilot.et" {
+   {
+    coords -53.153 1.167 98.642
+   }
+   {
+    coords -171.593 2.251 95.477
+   }
+  }
+  SCR_ChimeraCharacter : "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et" {
+   coords -427.058 51.82 127.201
+   angleY 155.674
+  }
+  $grp SCR_ChimeraCharacter : "{B056E800F6286831}Prefabs/Characters/Factions/OPFOR/USSR_Army/KLMK/Character_USSR_Sharpshooter_KLMK.et" {
+   {
+    coords -423.028 51.82 126.809
+    angleY 161.661
+   }
+   {
+    coords -1052.746 250.078 -506.506
+    angleY 165.02
+   }
+   {
+    coords 221.889 36.234 -0.048
+   }
+  }
+  SCR_ChimeraCharacter : "{B2A71FE01BA567D6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Officer.et" {
+   coords -1036.133 238.2 -504.727
+   angleY 153.129
+  }
+  SCR_ChimeraCharacter : "{C6FAF52907A544AC}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_1.et" {
+   coords -70.979 3.562 -178.846
+  }
+  $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+   BLUEFOR_above_base {
+    coords -1562.965 254.531 -1226.104
+    {
+     SCR_DestructibleBuildingEntity : "{106D2014F5789362}Prefabs/Structures/Military/Houses/ControlTowerMilitary_E_01/ControlTowerMilitary_E_01_camo_v2.et" {
+      coords 509.469 -17.051 721.16
+     }
+     GenericEntity : "{ED95BC9B8DADCD8D}Prefabs/Compositions/Misc/SubCompositions/Storage/Location/Storage_Barracks_02_USSR.et" {
+      coords 12.405 0.015 -1.659
+      angleY 55.269
+     }
+     GenericEntity : "{FC311E9C95FBCBCF}PrefabsEditable/Auto/Compositions/Misc/SubCompositions/E_Tent_Barracks_US_01.et" {
+      coords 8.254 0 -8.692
+      angleY -34.342
+     }
+    }
+   }
+   OPFOR_area2_near_Perelle {
+    coords -886.903 276.039 -894.445
+    {
+     $grp GenericEntity : "{124DC29CA359557C}Prefabs/Props/Military/CargoContainers/CargoContainer_01_10ft_USSR_ammo.et" {
+      {
+       coords 10.322 2.117 -18.752
+      }
+      {
+       coords 25.35 2.71 -16.579
+      }
+     }
+     GenericEntity : "{68ED84218EA1BDC3}Prefabs/Compositions/Slotted/SlotFlatSmall/Antenna_S_USSR_01.et" {
+      coords 17.536 2.508 -25.663
+     }
+     GenericEntity : "{7492BAA88AFCEDCE}Prefabs/Compositions/Slotted/SlotFlatSmall/Bunker_S_USSR_01.et" {
+      coords -18.721 -1.499 -12.051
+      angleY -81.583
+     }
+     SCR_AIGroup : "{B69270E9F222F356}Prefabs/Groups/OPFOR/KLMK/Group_USSR_PlatoonHQ_KLMK.et" {
+      coords 17.687 2.846 -13.947
+     }
+    }
+   }
+   OPFOR_area_near_Perelle {
+    coords -1048.953 237.431 -521.363
+    {
+     GenericEntity : "{7492BAA88AFCEDCE}Prefabs/Compositions/Slotted/SlotFlatSmall/Bunker_S_USSR_01.et" {
+      coords 24.521 0.75 43.813
+      angleY -173.821
+     }
+     $grp GenericEntity : "{83A10E8547281E58}Prefabs/Compositions/Slotted/SlotRoadSmall/Barricade_S_USSR_01.et" {
+      {
+       coords 4.77 0.309 6.251
+      }
+      {
+       coords 13.846 0.468 4.132
+      }
+     }
+     SCR_AIGroup : "{B69270E9F222F356}Prefabs/Groups/OPFOR/KLMK/Group_USSR_PlatoonHQ_KLMK.et" {
+      coords 24.799 0.759 27.723
+     }
+     Vehicle BTR1 : "{C012BB3488BEA0C2}Prefabs/Vehicles/Wheeled/BTR70/BTR70.et" {
+      coords 14.247 0.605 22.271
+      angleY 168.385
+     }
+    }
+   }
+   OPFOR_near_beach1_Perelle {
+    coords -206.143 2.017 119.686
+    {
+     SCR_DestructibleBuildingEntity : "{106D2014F5789362}Prefabs/Structures/Military/Houses/ControlTowerMilitary_E_01/ControlTowerMilitary_E_01_camo_v2.et" {
+      coords -218.877 37.206 8.588
+     }
+     $grp Vehicle : "{1C5FE7B7FF49BB8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Base.et" {
+      BTR70_Base1 {
+       coords -45.015 0.108 -1.358
+      }
+      BTR70_Base2 {
+       coords -34.344 0.108 -2.394
+      }
+     }
+     Vehicle Mi8MT_armed_base1 : "{20C37D5090E4E0E6}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_armed_base.et" {
+      coords 19.34 0.959 -37.577
+     }
+     $grp SCR_DestructibleBuildingEntity : "{35A406D39D6E0ADA}Prefabs/Structures/Military/Houses/Barracks_01/Barracks_01_military_camo_v1.et" {
+      {
+       coords -18.334 1.841 -46.975
+      }
+      {
+       coords -45.139 2.052 -46.131
+      }
+     }
+     GenericEntity : "{3E8C8C9FADEBDE1A}Prefabs/Compositions/Misc/SubCompositions/Storage/Slotted/Storage_Supplies_Containers_USSR_03.et" {
+      coords 108.01 0.076 -26.568
+     }
+     GenericEntity : "{68ED84218EA1BDC3}Prefabs/Compositions/Slotted/SlotFlatSmall/Antenna_S_USSR_01.et" {
+      coords 141.937 -0.608 -31.623
+     }
+     StaticModelEntity : "{B00E14C07DEE788A}Prefabs/Compositions/Misc/SubCompositions/Utility/Helipad_Lights_USSR_01.et" {
+      coords 19.493 0.571 -38.5
+     }
+     SCR_AIGroup : "{B69270E9F222F356}Prefabs/Groups/OPFOR/KLMK/Group_USSR_PlatoonHQ_KLMK.et" {
+      coords -9.602 0.108 -6.459
+     }
+     GenericEntity : "{B6F0B7461EDFD186}Prefabs/Compositions/Misc/FreeRoamBuilding/FloodlightGenerator_S_USSR_01.et" {
+      coords 24.709 -0.242 -54.958
+      angleY -21.281
+     }
+     $grp GenericEntity : "{EECE34969CD3405F}Prefabs/Compositions/Misc/SubCompositions/PalletFuel_Camo_USSR_01.et" {
+      {
+       coords 128.234 -1.572 -11.674
+       angleY 0
+       {
+        GenericEntity {
+         ID "570481CA3272A693"
+         coords 0 0 0
+        }
+       }
+      }
+      {
+       coords 124.468 -1.868 -2.931
+       angleY 0
+       {
+        GenericEntity {
+         ID "570481CA3272A693"
+         coords 0 0 0
+        }
+       }
+      }
+      {
+       coords 131.616 -1.62 -8.831
+       angleY 0
+       {
+        GenericEntity {
+         ID "570481CA3272A693"
+         coords 0 0 0
+        }
+       }
+      }
+      {
+       coords 123.421 -1.611 -9.287
+       angleY 0
+       {
+        GenericEntity {
+         ID "570481CA3272A693"
+         coords 0 0 0
+        }
+       }
+      }
+      {
+       coords 133.326 -1.528 -4.35
+       angleY 0
+       {
+        GenericEntity {
+         ID "570481CA3272A693"
+         coords 0 0 0
+        }
+       }
+      }
+     }
+     GenericEntity : "{F68F3B7247F6E810}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_USSR_01.et" {
+      coords 26.794 -0.643 -0.316
+      angleY -86.462
+     }
+    }
+   }
+   OPFOR_near_beach2_Perelle {
+    coords 299.564 15.55 -48.573
+    {
+     SCR_DestructibleBuildingEntity : "{106D2014F5789362}Prefabs/Structures/Military/Houses/ControlTowerMilitary_E_01/ControlTowerMilitary_E_01_camo_v2.et" {
+      coords -74.542 8.087 49.309
+     }
+     $grp SCR_DestructibleBuildingEntity : "{35A406D39D6E0ADA}Prefabs/Structures/Military/Houses/Barracks_01/Barracks_01_military_camo_v1.et" {
+      {
+       coords -38.952 -6.509 -127.878
+       angleY 88.326
+      }
+      {
+       coords -40.26 -4.444 -91.42
+       angleY 88.326
+      }
+     }
+     SCR_AIGroup : "{B69270E9F222F356}Prefabs/Groups/OPFOR/KLMK/Group_USSR_PlatoonHQ_KLMK.et" {
+      coords -16.45 -8.37 -107.425
+     }
+     GenericEntity : "{F68F3B7247F6E810}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_USSR_01.et" {
+      coords 23.191 1.325 83.191
+      angleY -86.462
+     }
+    }
+   }
+   OPFOR_submarine {
+    coords 0 0 0
+    {
+     SCR_AIGroup : "{06D32ED260762934}Prefabs/Groups/OPFOR/AmbientPatrols/Group_USSR_MachineGunTeam_NotSpawned.et" {
+      coords 155.653 12.646 14.765
+     }
+     GenericEntity : "{114DE81321786CD9}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_01_PKM.et" {
+      coords 83.929 7.704 -54.991
+      angleY 174.584
+     }
+     SCR_AIGroup : "{17F51B6521F7194A}Prefabs/Groups/OPFOR/KLMK/Group_USSR_AmmoTeam_KLMK.et" {
+      coords 101.238 4.717 -47.984
+     }
+     $grp Vehicle : "{1C5FE7B7FF49BB8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Base.et" {
+      BTR70_Base4 {
+       coords -39.504 1.619 22.916
+       angleY 113.071
+      }
+      BTR70_Base5 {
+       coords -38.739 1.438 13.969
+       angleY 114.309
+      }
+     }
+     Vehicle Mi8MT_armed_base2 : "{20C37D5090E4E0E6}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_armed_base.et" {
+      coords -43.935 1.879 85.265
+     }
+     StaticModelEntity : "{2337DFDD05C26996}Prefabs/MP/Campaign/RequestTable_USSR_Barracks.et" {
+      coords 99.308 1.134 -10.573
+      angleY -166.791
+     }
+     GenericEntity : "{2ACE3A315F531CFD}Prefabs/Compositions/Slotted/SlotFlatMedium/FieldHospital_M_USSR_01.et" {
+      coords -249.326 1.925 157.765
+     }
+     $grp GenericEntity : "{3E8C8C9FADEBDE1A}Prefabs/Compositions/Misc/SubCompositions/Storage/Slotted/Storage_Supplies_Containers_USSR_03.et" {
+      {
+       coords -52.99 1.814 -40.719
+      }
+      {
+       coords -48.602 1.726 -22.852
+      }
+      {
+       coords -40.865 1.326 -5.176
+      }
+     }
+     GenericEntity : "{42821C4C92A8F6F7}Prefabs/Compositions/Misc/SubCompositions/Fortifications/Sandbag_Corner_Left_USSR_01.et" {
+      coords 151.276 11.07 -21.018
+      angleY -165.514
+     }
+     GenericEntity : "{5126FF34E2B56707}Prefabs/Compositions/Misc/SubCompositions/Storage/Slotted/Storage_Supplies_USSR_11.et" {
+      coords 101.645 1.161 -11.854
+      angleY -76.35
+     }
+     GenericEntity : "{525C793E1943EA05}Prefabs/Compositions/Slotted/SlotFlatLarge/Helipad_L_USSR_01.et" {
+      coords -42.117 1.491 85.177
+     }
+     $grp SCR_AIGroup : "{56DC5F9D2D6119F2}Prefabs/Groups/OPFOR/KLMK/Group_USSR_MachineGunTeam_KLMK.et" {
+      {
+       coords 84.979 7.571 -53.986
+      }
+      {
+       coords -53.749 2.071 6.087
+      }
+     }
+     $grp GameEntity : "{616F4E93658E5A3A}Prefabs/Props/Military/Generators/GeneratorFloodlight_USSR_01.et" {
+      {
+       coords -70.706 1.998 -76.216
+       angleY 61.694
+      }
+      {
+       coords 145.474 11.205 -1.235
+       angleY -172.398
+      }
+     }
+     SCR_AIGroup : "{657590C1EC9E27D3}Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et" {
+      coords -63.946 4.425 -205.171
+     }
+     GameEntity : "{6597847D2AC253F5}Prefabs/Props/Military/Generators/GeneratorMilitary_USSR_01/GeneratorMilitary_USSR_01.et" {
+      coords -75.884 2.021 -71.382
+     }
+     $grp GenericEntity : "{80EF8C87D126A3A4}Prefabs/Compositions/Misc/SubCompositions/PalletMRE_USSR_02.et" {
+      {
+       coords 91.334 1.169 -12.857
+       angleY 15.963
+      }
+      {
+       coords 88.678 1.158 -12.146
+       angleY 21.046
+      }
+     }
+     GenericEntity : "{8C73F42FBAB6D9D7}Prefabs/Compositions/Misc/SubCompositions/Sandbag_MG_USSR_02.et" {
+      coords 154.229 12.637 11.677
+      angleY 86.794
+      {
+       GenericEntity {
+        ID "5D449390650196E8"
+        coords -0.284 -0.226 1.334
+        angleX 2.43
+        angleY -90
+       }
+       Turret {
+        ID "59A297CB53D15C0E"
+        coords -0.239 0.382 1.035
+        angleY 103.654
+       }
+      }
+     }
+     StaticModelEntity : "{9A6B7E1F874E5C0F}Prefabs/Compositions/Misc/SubCompositions/Sandbag_Bunker_Cluttered_USSR_01.et" {
+      coords 150.334 12.367 11.696
+      angleY -174.295
+     }
+     GenericEntity : "{B6F0B7461EDFD186}Prefabs/Compositions/Misc/FreeRoamBuilding/FloodlightGenerator_S_USSR_01.et" {
+      coords -874.984 278.159 -908.174
+      angleY -19.121
+     }
+     GenericEntity : "{EECE34969CD3405F}Prefabs/Compositions/Misc/SubCompositions/PalletFuel_Camo_USSR_01.et" {
+      coords 93.755 1.151 -13.554
+      angleY 17.764
+     }
+     GenericEntity : "{F39BC00F1D5823C4}Prefabs/Compositions/Misc/SubCompositions/Sandbag_end_high_Cluttered_USSR_01.et" {
+      coords 144.866 10.733 -19.667
+      angleY 0
+      {
+       GenericEntity {
+        ID "5704E20146BE3219"
+        coords 0.882 0.973 0.966
+       }
+      }
+     }
+    }
+   }
+  }
+  $grp SCR_ChimeraCharacter : "{C8FABF6F093DA775}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_HeliCrew.et" {
+   {
+    coords -56.079 1.125 98.204
+   }
+   {
+    coords -174.822 2.217 96.191
+   }
+  }
+  SCR_ChimeraCharacter : "{E8EF64F8B943A507}Prefabs/Characters/Factions/OPFOR/USSR_Army/KLMK/Character_USSR_AAT_KLMK.et" {
+   coords -1030.926 238.062 -503.283
+   angleY 169.281
+  }
+  $grp SCR_ChimeraCharacter : "{E9AEEF2D9E41321B}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AMG.et" {
+   {
+    coords 227.429 26.963 4.688
+    angleY -128.614
+   }
+   {
+    coords 220.133 28.483 -3.687
+    angleY 90.568
+   }
+   {
+    coords -1024.63 238.322 -481.106
+    angleY 148.828
+   }
+   {
+    coords 221.293 28.483 0.049
+   }
+  }
+  SCR_ChimeraCharacter : "{F89D79B340033E32}Prefabs/Characters/Factions/OPFOR/USSR_Army/KLMK/Character_USSR_AMG_KLMK.et" {
+   coords -908.471 274.875 -906.191
+  }
+ }
+}

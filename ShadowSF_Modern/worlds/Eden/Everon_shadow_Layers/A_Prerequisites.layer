@@ -21,14 +21,6 @@ SCR_AIWorld SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
     }
    }
   }
-  SCR_AISettingsComponent "{512CCCD0856CB4B9}" {
-   m_fWeaponFiredReactionDistance 300
-   m_fPerceptionSafe 0.8
-   m_fPerceptionVigilant 2.6
-   m_fAimAccuracyErrorModifier 1
-   m_bForceStayInVehicle 1
-   m_eForceFlashlightState ON
-  }
  }
  coords 7114.537 75.004 6402
  {
@@ -52,7 +44,9 @@ SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Manage
  Factions {
   SCR_Faction "{56DEAC40D2DBC8B1}" {
    UIInfo SCR_FactionUIInfo "{528C961236B7DCD3}" {
+    Name "Shadow Division"
     Description "Shadow Division "
+    m_sNameUpper "SHADOW DIVISION"
    }
    m_bIsPlayable 1
    m_aPredefinedGroups {
@@ -142,15 +136,15 @@ MusicManager : "{359452CCDBDD03F5}Prefabs/Sounds/Music/MusicManager_Base.et" {
 SCR_LoadoutManager LoadoutManager_Base_Shadow : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {
  coords 7114.508 73.842 6406.972
  m_aPlayerLoadouts {
-  SCR_FactionPlayerLoadout "{61DB347B6FEA2904}" {
-   m_sLoadoutName "Shadow 0311 RFLM"
-   m_sLoadoutResource "{9E0B5441B270B059}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_AAR_shadow.et"
+  SCR_PlayerArsenalLoadout "{61E978987C425D38}" {
+   m_sLoadoutName "Saved Loadout"
+   m_sLoadoutResource "{3967948B72443B25}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_BaseLoadout_shadow.et"
    m_sLoadoutImage "{30EBD196B483766A}images/Character_RHS_USAF_USMC_AAR_3_shadow.edds"
    m_sAffiliatedFaction "US"
   }
-  SCR_FactionPlayerLoadout "{61DB7582AC23E3E3}" {
-   m_sLoadoutName "Shadow 0311 GL "
-   m_sLoadoutResource "{6B5214972C952A21}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_GL_shadow.et"
+  SCR_FactionPlayerLoadout "{61DB347B6FEA2904}" {
+   m_sLoadoutName "Shadow 0311 RFLM"
+   m_sLoadoutResource "{9E0B5441B270B059}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_AAR_shadow.et"
    m_sLoadoutImage "{30EBD196B483766A}images/Character_RHS_USAF_USMC_AAR_3_shadow.edds"
    m_sAffiliatedFaction "US"
   }
@@ -174,7 +168,7 @@ SCR_LoadoutManager LoadoutManager_Base_Shadow : "{AA4E7419A1FF65B0}Prefabs/MP/Ma
   }
   SCR_FactionPlayerLoadout "{61E35AC08A573569}" {
    m_sLoadoutName "Shadow 0365 SL "
-   m_sLoadoutResource "{0B0F9BA9E9A6E118}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_SL_shadow.et"
+   m_sLoadoutResource "{6B5214972C952A21}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_GL_shadow.et"
    m_sLoadoutImage "{30EBD196B483766A}images/Character_RHS_USAF_USMC_AAR_3_shadow.edds"
    m_sAffiliatedFaction "US"
   }

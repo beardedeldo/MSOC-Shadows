@@ -1,19 +1,57 @@
 SCR_FactionManager : "{A242612865F2A48E}Prefabs/MP/Managers/Factions/FactionManager_Base.et" {
  ID "56B2B4776E6E4499"
- Factions {
-  SCR_Faction "{56DEAC40D2DBC8B1}" : "{5EB46557DF2AA24F}Configs/Factions/US.conf" {
-   m_bIsPlayable 0
-   m_sFactionBackground "{F8AC305446D5D480}UI/Textures/DeployMenu/Loadout-BG/Loadout_US_BG.imageset"
+  Factions {
+  SCR_Faction "{56DEAC40D2DBC8B1}" {
+   UIInfo SCR_FactionUIInfo "{528C961236B7DCD3}" {
+    Name "Shadow Division"
+    Description "Shadow Division "
+    m_sNameUpper "SHADOW DIVISION"
+   }
+   m_bIsPlayable 1
+   m_aPredefinedGroups {
+    SCR_GroupPreset "{61E6FE0119B59627}" {
+     m_sGroupName "Shadow Command"
+     m_iGroupSize 6
+     m_iRadioFrequency 50000
+    }
+    SCR_GroupPreset "{61E6FE01263082E8}" {
+     m_sGroupName "Reaper One "
+     m_iGroupSize 12
+     m_iRadioFrequency 44500
+    }
+    SCR_GroupPreset "{61E6FE012679C30C}" {
+     m_sGroupName "Reaper Two "
+     m_iGroupSize 12
+     m_iRadioFrequency 42500
+    }
+    SCR_GroupPreset "{61E6FE0126EDA7C2}" {
+     m_sGroupName "Eagles "
+     m_iGroupSize 6
+     m_iRadioFrequency 49000
+    }
+    SCR_GroupPreset "{61E6FE00E3C659AD}" {
+     m_sGroupName "Archangels"
+     m_iGroupSize 4
+     m_iRadioFrequency 39500
+    }
+    SCR_GroupPreset "{61E6FE03BE8D6982}" {
+     m_sGroupName "Shadows T1 "
+     m_iGroupSize 8
+     m_iRadioFrequency 49500
+    }
+   }
+   m_iFactionRadioFrequency 51000
   }
-  SCR_Faction "{56DEAC40D3C2E623}" : "{09727032415AC39B}Configs/Factions/USSR.conf" {
-   m_bIsPlayable 0
-   m_sFactionBackground "{21533F2089005056}UI/Textures/DeployMenu/Loadout-BG/Loadout_BG_USSR.imageset"
-  }
-  SCR_Faction "{56DEAC40D132400B}" : "{8053DB656DD18B14}Configs/Factions/FIA.conf" {
-   m_bIsPlayable 0
-   m_sFactionBackground "{81BF3B1DCC106577}UI/Textures/DeployMenu/Loadout-BG/Loadout_BG_FIA.imageset"
-  }
-  SCR_Faction "{607AA5C7A94496DA}" : "{3FA20B01D950D31F}Configs/Factions/CIV.conf" {
+  SCR_Faction "{56DEAC40D3C2E623}" {
+   m_aPredefinedGroups {
+    SCR_GroupPreset "{61EA43E42AA6852B}" {
+     m_sGroupName "Training Instructors"
+     m_iGroupSize 6
+     m_iRadioFrequency 53000
+    }
+   }
+   m_bCreateOnlyPredefinedGroups 1
   }
  }
 }
+

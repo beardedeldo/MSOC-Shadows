@@ -1,0 +1,11 @@
+GenericEntity {
+ ID "61EB2CFB43CCBCF7"
+ components {
+  SCR_ScenarioFrameworkArea "{61EB2CFB43CCBCCE}" {
+   m_eActivationType ON_INIT
+  }
+  Hierarchy "{61EB2CFB43CCBCC1}" {
+  }
+ }
+ coords 1356.473 38.019 2885.369
+}

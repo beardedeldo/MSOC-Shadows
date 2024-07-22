@@ -1,7 +1,7 @@
-# Shadow Division Developer Team - Arma Reforger Tools
+# Marine Special Operations (MSOC) Company - Shadows Developer Team - Arma Reforger Tools
 
 ## Set up and Contributing 
-- Shadow Division Developer that have received the right permissions to this repository, download this repository locally to begin work. 
+- MSOC Shadows Developer that have received the right permissions to this repository, download this repository locally to begin work. 
 - We welcome contributions! If you have training materials, scenarios, or other resources to share, please fork the repository and submit a pull request. [Fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo). If you want to join us on our journey to Arma 4: [https://discord.gg/shadowdivision](https://discord.gg/shadowdivision). 
 
 ## License and Change Log 

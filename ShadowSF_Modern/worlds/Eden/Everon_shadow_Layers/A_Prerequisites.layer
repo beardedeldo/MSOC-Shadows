@@ -121,9 +121,37 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
    m_fTourniquetStrengthMultiplier 0.75
   }
   SCR_GameModeSFManager "{5A96783ABCA252AE}" {
+   m_aTaskTypesAvailable {
+    SCR_ScenarioFrameworkTaskType "{61EE00D162C2B821}" {
+     m_eTypeOfTask DELIVER
+    }
+    SCR_ScenarioFrameworkTaskType "{61EE00D31F1A61EE}" {
+     m_eTypeOfTask DESTROY
+    }
+    SCR_ScenarioFrameworkTaskType "{61EE00D31F564C73}" {
+     m_eTypeOfTask DEFEND
+    }
+    SCR_ScenarioFrameworkTaskType "{61EE00D31AFC4ED7}" {
+     m_eTypeOfTask KILL
+    }
+    SCR_ScenarioFrameworkTaskType "{61EE00D32E13D212}" {
+     m_eTypeOfTask CLEAR_AREA
+    }
+    SCR_ScenarioFrameworkTaskType "{61EE00D32AADA5BC}" {
+     m_eTypeOfTask LAST
+    }
+    SCR_ScenarioFrameworkTaskType "{61EE00D32AEDCC76}" {
+     m_eTypeOfTask EXTRACTION
+    }
+    SCR_ScenarioFrameworkTaskType "{61EE00D325EE5308}" {
+     m_eTypeOfTask DEFAULT
+    }
+   }
    m_aCoreAreas {
     "SH_MOB"
    }
+   m_bDynamicDespawn 1
+   m_iUpdateRate 1
   }
   SCR_NametagConfigComponent "{571AA9E54FC9210D}" {
    m_sConfigPath "{09F7AAA14A642683}Configs/NameTags/NametagFriendlies.conf"

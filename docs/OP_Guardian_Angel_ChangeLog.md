@@ -15,7 +15,10 @@
     - [x] Under Task Type availble add all 8 availble tasks (e.g., deliver, destroy, defend, etc) # These get only activated with ON_TASK_INIT selected by a LayerTask
   - [x] Changed Dynamic Despanw tick rate to 1
      
-  - [ ] Fix the US spawn FOB by creating an Area > Layer > spawn slot that will initiate the task 
+  - [ ] Set up a clear area task for quarry (see set up in scenario)
+  - [ ]  Set up a clear area task for military base
+  - [ ]  Set up a clear area task for Durras 
+ 
 
 - [ ] Set up a SF Tasks for Guardian Angel Operation 
   - [ ] Set up 3 areas: quarry, military site nearby, and small town (Durras) 

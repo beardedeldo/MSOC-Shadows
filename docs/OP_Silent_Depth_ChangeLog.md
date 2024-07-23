@@ -3,6 +3,7 @@
 
 <details>
   <summary><strong>Change Logs</strong></summary>
+  
 > Author: Beard 07/07/24 :man_beard: 
 
 >> Edited: Beard 07/19/24 :man_beard:  

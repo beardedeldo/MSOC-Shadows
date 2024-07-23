@@ -8,7 +8,7 @@
 ----
 >#### To Do ####
 
-- [ ] Consider adding the MusicManager 
+
       
 - [ ] Create a modern warfare template with the following dependencies: 
   - [ ] Add Phoenix Equipment, Common, Zelik Character, + Night Vision -- primarily for backpack radios 
@@ -35,6 +35,7 @@
 
 
 >#### Completed Activity ✓ ####
+- [x] Added MusicManager 
 - [x] Expanded military base 
 - [x] Added preset groups and freqs 
 - [x] Added Waters training area 

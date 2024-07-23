@@ -1,29 +1,29 @@
-SCR_DestructibleBuildingEntity : "{035F6996BD4808CE}Prefabs/Structures/Military/Houses/Barracks_E_02/SH_CQC_level_07_qual.et" {
- coords 8677.042 0.715 3452.728
- angleY 87.613
-}
-GenericEntity OP_GuardianAngel : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+GenericEntity OP_GA_compositions : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
  coords 8832.646 192.425 3960.82
  {
   GenericEntity EnemyQuarry : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
    coords 7.388 6.996 -66.125
    {
-    SCR_DestructibleBuildingEntity : "{A5E49CC9C7C6E1E3}Prefabs/Structures/Infrastructure/Power/DieselPowerPlant_01/DieselPowerPlant_01_Base.et" {
-     coords -51.028 -2.827 1.948
+    $grp StaticModelEntity : "{80DF3BD810D032AF}Prefabs/Structures/Industrial/Towers/LightTower_01/LightTower_01.et" {
+     {
+      coords -43.115 -1.14 25.729
+     }
+     {
+      coords -9.763 6.057 99.561
+     }
+     {
+      coords 78.369 14.771 11.495
+     }
+     {
+      coords -119.974 -1.225 89.35
+     }
     }
-    $grp StaticModelEntity : "{FF49961FE23808E4}Prefabs/Structures/Industrial/Towers/LightTower_01/LightTower_01.et" {
-     {
-      coords -51.148 -2.375 14.91
-     }
-     {
-      coords 80.57 13.451 25.904
-     }
-     {
-      coords -59.556 2.171 103.76
-     }
-     {
-      coords 42.057 13.411 100.09
-     }
+    GenericEntity : "{94021BCA593A8CFF}Prefabs/Structures/BuildingParts/Entry/ConcreteStairs_02_Wide.et" {
+     coords -45.084 -1.787 -12.28
+     angleY -91.276
+    }
+    SCR_DestructibleBuildingEntity : "{A5E49CC9C7C6E1E3}Prefabs/Structures/Infrastructure/Power/DieselPowerPlant_01/DieselPowerPlant_01_Base.et" {
+     coords -50.007 -2.344 0.523
     }
    }
   }

@@ -212,7 +212,7 @@ SCR_LoadoutManager LoadoutManager_Base_Shadow : "{AA4E7419A1FF65B0}Prefabs/MP/Ma
  m_aPlayerLoadouts {
   SCR_PlayerArsenalLoadout "{61E978987C425D38}" {
    m_sLoadoutName "Saved Loadout"
-   m_sLoadoutResource "{3967948B72443B25}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_BaseLoadout_shadow.et"
+   m_sLoadoutResource "{3967948B72443B25}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_BaseLoadout.et"
    m_sLoadoutImage "{30EBD196B483766A}images/Character_RHS_USAF_USMC_AAR_3_shadow.edds"
    m_sAffiliatedFaction "US"
   }
@@ -222,40 +222,27 @@ SCR_LoadoutManager LoadoutManager_Base_Shadow : "{AA4E7419A1FF65B0}Prefabs/MP/Ma
    m_sLoadoutImage "{30EBD196B483766A}images/Character_RHS_USAF_USMC_AAR_3_shadow.edds"
    m_sAffiliatedFaction "US"
   }
-  SCR_FactionPlayerLoadout "{61DB758025FAF56A}" {
+  SCR_FactionPlayerLoadout "{61F00BEC1E400C01}" {
    m_sLoadoutName "Shadow 0311 SAW"
-   m_sLoadoutResource "{70F8C68A5ACB7AB5}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_MG_shadow.et"
-   m_sLoadoutImage "{30EBD196B483766A}images/Character_RHS_USAF_USMC_AAR_3_shadow.edds"
+   m_sLoadoutResource "{4E35609ED02B0710}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_MG_shadow.et"
+   m_sLoadoutImage "{68D8A366C8DC9794}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_MG.edds"
    m_sAffiliatedFaction "US"
   }
-  SCR_FactionPlayerLoadout "{61DD22F341C3F1AC}" {
-   m_sLoadoutName "Shadow 8404 Medic"
-   m_sLoadoutResource "{0C1639553F575AD3}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_Medic_shadow.et"
-   m_sLoadoutImage "{30EBD196B483766A}images/Character_RHS_USAF_USMC_AAR_3_shadow.edds"
+  SCR_FactionPlayerLoadout "{61F00BEC3A843208}" {
+   m_sLoadoutName "Shadow 8404 Medic "
+   m_sLoadoutResource "{926FA2DCC810863B}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_Medic_shadow.et"
+   m_sLoadoutImage "{72267DC2CE2D381A}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_US_USMC/Character_RHS_USAF_USMC_Medic.edds"
    m_sAffiliatedFaction "US"
   }
-  SCR_FactionPlayerLoadout "{61E35ACF1230D860}" {
-   m_sLoadoutName "Shadow 0621 TSO "
-   m_sLoadoutResource "{9A38B3DFD014403C}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_RTO_shadow.et"
-   m_sLoadoutImage "{30EBD196B483766A}images/Character_RHS_USAF_USMC_AAR_3_shadow.edds"
-   m_sAffiliatedFaction "US"
-  }
-  SCR_FactionPlayerLoadout "{61E35AC08A573569}" {
+  SCR_FactionPlayerLoadout "{61F00BECEA8A4012}" {
    m_sLoadoutName "Shadow 0365 SL "
-   m_sLoadoutResource "{6B5214972C952A21}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_GL_shadow.et"
-   m_sLoadoutImage "{30EBD196B483766A}images/Character_RHS_USAF_USMC_AAR_3_shadow.edds"
+   m_sLoadoutResource "{EF9DFF4282A290D4}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_SL_shadow.et"
+   m_sLoadoutImage "{5830D06A31609667}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_SL.edds"
    m_sAffiliatedFaction "US"
   }
-  SCR_FactionPlayerLoadout "{61E35AC0F2FCD4BA}" {
-   m_sLoadoutName "Shadow 0317 Sniper"
-   m_sLoadoutResource "{19678B9267B3574A}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_Sniper_shadow.et"
-   m_sLoadoutImage "{30EBD196B483766A}images/Character_RHS_USAF_USMC_AAR_3_shadow.edds"
-   m_sAffiliatedFaction "US"
-  }
-  SCR_FactionPlayerLoadout "{61E35AC0C1380AD5}" {
-   m_sLoadoutName "Shadow 0861 FSO"
-   m_sLoadoutResource "{BF7824B53330C399}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_Scout_RTO_shadow.et"
-   m_sLoadoutImage "{30EBD196B483766A}images/Character_RHS_USAF_USMC_AAR_3_shadow.edds"
+  SCR_FactionPlayerLoadout "{61F00BEDF34AE41F}" {
+   m_sLoadoutResource "{42A502E3BB727CEB}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_HeliPilot.et"
+   m_sLoadoutImage "{F293529C376FB00C}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_HeliPilot.edds"
    m_sAffiliatedFaction "US"
   }
  }

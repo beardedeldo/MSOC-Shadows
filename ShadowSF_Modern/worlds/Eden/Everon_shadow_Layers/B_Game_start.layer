@@ -169,20 +169,12 @@ GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
      GenericEntity : "{AD59EDEAA26CE792}Prefabs/Props/Military/Compositions/USSR/ArsenalBox_USSR.et" {
       components {
        SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+        m_eSupportedArsenalItemTypes 1033214
         m_eArsenalSaveType NO_RESTRICTIONS
        }
       }
       coords 53.373 9.578 452.657
       angleY 86.643
-     }
-     GenericEntity : "{FB95D1B918E908A9}Prefabs/Systems/Arsenal/ArsenalBoxes/USSR/ArsenalBox_RHS.et" {
-      components {
-       SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
-        m_eArsenalSaveType NO_RESTRICTIONS
-       }
-      }
-      coords 51.333 9.578 454.947
-      angleY 94.155
      }
     }
    }
@@ -226,6 +218,7 @@ GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
      GenericEntity : "{3970981B94D3F882}Prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_USMC.et" {
       components {
        SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+        m_eSupportedArsenalItemTypes 1016830
         m_eArsenalSaveType NO_RESTRICTIONS
        }
       }
@@ -235,6 +228,7 @@ GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
      GenericEntity : "{45C675ED3CFBBEC5}Prefabs/Props/Military/Compositions/US/ArsenalBox_US.et" {
       components {
        SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+        m_eSupportedArsenalItemTypes 1016830
         m_eArsenalSaveType NO_RESTRICTIONS
        }
       }

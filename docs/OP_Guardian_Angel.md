@@ -7,34 +7,7 @@
 >> Edited: Beard 07/22/24 :man_beard:  
 ----
 ### Patrols Set Up Process
-   - Under a OPFOR_patrols area create the following hiearchy: 
-     - Dismounted_patrol (Area)
-       - OPFOR_AI_groups (Layer)
-        - patrol1 (Layer)
-         - SlotAI (SlotAI):
-        - Patrol_waypoints (Layer)
-         - SlotWaypoint1
-         - SlotWaypoint2 .. 
-
-### Patrols Set Up Process
-   - Under a OPFOR_patrols area create the following hiearchy: 
-     - Dismounted_patrol (Area)
-       - OPFOR_AI_groups (Layer)
-        - patrol1 (Layer)
-         - SlotAI (SlotAI):
-        - Patrol_waypoints (Layer)
-         - SlotWaypoint1
-         - SlotWaypoint2 .. 
-
-  Under SlotAI: 
-   - Asset = object to spawn, choose a enemy squad 
-   - Waypoints = SCR_ScenarioFramworkWaypointSet 
-     - Layer Name + 
-       - Patrol_waypoints (Layer)  
-       [x] Spawn AI on WP Pos 
-       WP to Spawn = AIWaypoint_Cycle.et 
-    - Common: change group formation to column or line.  
-> Test with one squad then duplicate and place as needed. 
+  - See https://www.youtube.com/watch?v=SwtTNCbOIVk
 
 ### FinishTaskToCreateTaskLayer Process 
    - Under a Tasks area  

@@ -105,137 +105,83 @@ GenericEntity OP_Guardian_Angel : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/C
            AIGroup {
             coords -21.915 1.202 -13.862
             {
-             $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-              Patrol_waypoints {
-               coords 21.915 -1.202 13.862
-               {
-                $grp GenericEntity : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
-                 SlotWaypoint1 {
-                  components {
-                   SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
-                    m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
-                   }
-                  }
-                  coords 14.114 1.842 -69.74
-                 }
-                 SlotWaypoint3 {
-                  components {
-                   SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
-                    m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
-                   }
-                  }
-                  coords 48.284 16.276 35.73
-                 }
-                 SlotWaypoint4 {
-                  components {
-                   SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
-                    m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
-                   }
-                  }
-                  coords -93.24 2.17 32.996
-                 }
-                }
-               }
-              }
-              Patrol1 {
-               coords 0 0 0
-               {
-                GenericEntity SlotAI6 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             GenericEntity CQC1 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+              coords -7.342 0.04 -44.771
+              {
+               $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+                SlotAI4 {
                  components {
                   SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-                   m_sObjectToSpawn "{4C44B4D8F2820F25}Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_SentryTeam.et"
-                   m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{61EE00C888BBD419}" {
-                    m_aLayerName {
-                     "Patrol_waypoints"
-                    }
-                   }
+                   m_sObjectToSpawn "{B2A71FE01BA567D6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Officer.et"
                    m_bSpawnAIOnWPPos 1
-                   m_sWPToSpawn "{35BD6541CBB8AC08}Prefabs/AI/Waypoints/AIWaypoint_Cycle.et"
-                   m_eAIGroupFormation Line
+                   m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
                   }
                  }
-                 coords 42.368 2.206 -50.385
+                 coords 5.146 4.007 -0.51
                 }
-               }
-              }
-              CQC1 {
-               coords -7.342 0.04 -44.771
-               {
-                $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-                 SlotAI4 {
-                  components {
-                   SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-                    m_sObjectToSpawn "{B2A71FE01BA567D6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Officer.et"
-                    m_bSpawnAIOnWPPos 1
-                    m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-                   }
+                SlotAI10 {
+                 components {
+                  SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                   m_sObjectToSpawn "{657590C1EC9E27D3}Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et"
+                   m_bSpawnAIOnWPPos 1
+                   m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
                   }
-                  coords 5.146 4.007 -0.51
                  }
-                 SlotAI10 {
-                  components {
-                   SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-                    m_sObjectToSpawn "{657590C1EC9E27D3}Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et"
-                    m_bSpawnAIOnWPPos 1
-                    m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-                   }
+                 coords -5.199 0.465 -2.387
+                }
+                SlotAI12 {
+                 components {
+                  SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                   m_sObjectToSpawn "{8CA70597606992EC}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Medic.et"
+                   m_bSpawnAIOnWPPos 1
+                   m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
                   }
-                  coords -5.199 0.465 -2.387
                  }
-                 SlotAI12 {
-                  components {
-                   SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-                    m_sObjectToSpawn "{8CA70597606992EC}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Medic.et"
-                    m_bSpawnAIOnWPPos 1
-                    m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-                   }
+                 coords 6.682 3.799 -4.982
+                 angleY -52.128
+                }
+                SlotAI9 {
+                 components {
+                  SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                   m_sObjectToSpawn "{657590C1EC9E27D3}Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et"
+                   m_bSpawnAIOnWPPos 1
+                   m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
                   }
-                  coords 6.682 3.799 -4.982
-                  angleY -52.128
                  }
-                 SlotAI9 {
-                  components {
-                   SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-                    m_sObjectToSpawn "{657590C1EC9E27D3}Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et"
-                    m_bSpawnAIOnWPPos 1
-                    m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-                   }
+                 coords 6.872 7.599 -4.812
+                }
+                SlotAI11 {
+                 components {
+                  SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                   m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
+                   m_bSpawnAIOnWPPos 1
+                   m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
                   }
-                  coords 6.872 7.599 -4.812
                  }
-                 SlotAI11 {
-                  components {
-                   SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-                    m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
-                    m_bSpawnAIOnWPPos 1
-                    m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
-                   }
+                 coords 5.716 14.575 11.226
+                 angleY -52.128
+                }
+                SlotAI13 {
+                 components {
+                  SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                   m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
+                   m_bSpawnAIOnWPPos 1
+                   m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
                   }
-                  coords 5.716 14.575 11.226
-                  angleY -52.128
                  }
-                 SlotAI13 {
-                  components {
-                   SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-                    m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
-                    m_bSpawnAIOnWPPos 1
-                    m_sWPToSpawn "{531EC45063C1F57B}Prefabs/AI/Waypoints/AIWaypoint_Wait.et"
-                   }
+                 coords 9.724 12.445 0.461
+                 angleY 147.575
+                }
+                SlotAI14 {
+                 components {
+                  SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+                   m_sObjectToSpawn "{8CA70597606992EC}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Medic.et"
+                   m_bSpawnAIOnWPPos 1
+                   m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
                   }
-                  coords 9.724 12.445 0.461
-                  angleY 147.575
                  }
-                 SlotAI14 {
-                  components {
-                   SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-                    m_sObjectToSpawn "{8CA70597606992EC}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Medic.et"
-                    m_bSpawnAIOnWPPos 1
-                    m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-                   }
-                  }
-                  coords 8.897 9.499 12.69
-                  angleY -52.128
-                 }
+                 coords 8.897 9.499 12.69
+                 angleY -52.128
                 }
                }
               }

@@ -1,0 +1,93 @@
+GenericEntity Dismounted_patrol : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ components {
+  SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+   m_bDynamicDespawn 1
+   m_iDynamicDespawnRange 500
+   m_bShowDebugShapesInWorkbench 1
+  }
+ }
+ coords 8768.272 171.19 3431.214
+ {
+  $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+   Patrol_waypoints {
+    coords 55.262 25.215 522.723
+    {
+     $grp GenericEntity : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+      SlotWaypoint1 {
+       components {
+        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+         m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+        }
+       }
+       coords 103.729 -37.507 -674.683
+      }
+      SlotWaypoint3 {
+       components {
+        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+         m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+        }
+       }
+       coords 48.284 16.276 35.73
+      }
+      SlotWaypoint4 {
+       components {
+        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+         m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+        }
+       }
+       coords -414.456 -37.279 -280.683
+      }
+      SlotWaypoint5 {
+       components {
+        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+         m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+        }
+       }
+       coords 221.942 -71.302 -1176.781
+      }
+      SlotWaypoint6 {
+       components {
+        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+         m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+        }
+       }
+       coords -446.325 -50.342 -573.87
+      }
+     }
+    }
+   }
+   patrol1 {
+    coords -31.478 16.628 329.225
+    {
+     GenericEntity SlotAI6 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+      components {
+       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+        m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{61F20408937F1506}" {
+         m_aLayerName {
+          "SlotWaypoint2"
+         }
+        }
+        m_sWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+        m_eAIGroupFormation Column
+       }
+      }
+      coords 0 0 0
+     }
+     GenericEntity SlotWaypoint2 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+      components {
+       SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+        m_Waypoint SCR_ScenarioFrameworkWaypointCycle "{61F20409535A7C2A}" {
+         m_aLayersWithWaypointsToCycle {
+          "Patrol_waypoints"
+         }
+         m_bUseRandomOrder 1
+        }
+       }
+      }
+      coords 0 0 0
+     }
+    }
+   }
+  }
+ }
+}

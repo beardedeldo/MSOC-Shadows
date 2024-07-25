@@ -205,6 +205,11 @@ GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
        angleX 0.696
        angleY 31.297
       }
+      {
+       coords -70.461 1.906 9.554
+       angleX 0.696
+       angleY 31.297
+      }
      }
      Vehicle UH1H_armed1 : "{DDDD9B51F1234DF3}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed.et" {
       coords -11.902 0.919 -24.426

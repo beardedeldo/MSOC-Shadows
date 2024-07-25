@@ -7,14 +7,14 @@ GenericEntity Dismounted_patrol : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/C
    m_bShowDebugShapesInWorkbench 1
   }
  }
- coords 8831.444 171.19 3142.514
+ coords 8831.444 132.616 3142.514
  {
   GenericEntity OPFOR_AI_groups : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-   coords 0 0 0
+   coords 0 0.001 0
    {
     $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
      Patrol_waypoints {
-      coords 55.262 25.215 522.723
+      coords 55.262 97.519 522.723
       {
        $grp GenericEntity : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
         SlotWaypoint1 {
@@ -23,7 +23,7 @@ GenericEntity Dismounted_patrol : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/C
            m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
           }
          }
-         coords 111.24 -67.592 -784.995
+         coords 111.24 -120.599 -784.995
         }
         SlotWaypoint3 {
          components {
@@ -33,7 +33,7 @@ GenericEntity Dismounted_patrol : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/C
            }
           }
          }
-         coords -86.869 7.837 -14.487
+         coords -86.869 -25.896 -14.487
         }
         SlotWaypoint4 {
          components {
@@ -41,7 +41,7 @@ GenericEntity Dismounted_patrol : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/C
            m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
           }
          }
-         coords -290.853 -77.701 -507.178
+         coords -290.852 -111.43 -507.178
         }
         SlotWaypoint5 {
          components {
@@ -49,7 +49,7 @@ GenericEntity Dismounted_patrol : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/C
            m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
           }
          }
-         coords -442.575 -38.417 27.565
+         coords -442.575 -72.151 27.565
         }
         SlotWaypoint6 {
          components {
@@ -57,13 +57,13 @@ GenericEntity Dismounted_patrol : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/C
            m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
           }
          }
-         coords 29.221 16.405 274.632
+         coords 29.221 -17.323 274.632
         }
        }
       }
      }
      patrol1 {
-      coords -17.586 -34.423 145.708
+      coords -17.586 4.149 145.708
       {
        GenericEntity SlotAI6 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
         components {
@@ -79,12 +79,12 @@ GenericEntity Dismounted_patrol : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/C
           m_eAIGroupFormation Column
          }
         }
-        coords 0 0 0
+        coords 0 0.001 0
        }
       }
      }
      patrol2 {
-      coords -498.666 -16.583 301.732
+      coords -498.666 21.989 301.732
       {
        GenericEntity SlotAI15 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
         components {
@@ -100,12 +100,12 @@ GenericEntity Dismounted_patrol : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/C
           m_eAIGroupFormation Column
          }
         }
-        coords 0 0 0
+        coords 0 0.001 0
        }
       }
      }
      patrol3 {
-      coords -164.129 -51.531 -426.478
+      coords -164.129 -12.958 -426.478
       {
        GenericEntity SlotAI16 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
         components {

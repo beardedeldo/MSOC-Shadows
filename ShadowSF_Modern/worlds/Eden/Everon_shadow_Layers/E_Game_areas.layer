@@ -1,30 +1,72 @@
-GenericEntity OP_GA_compositions : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
- coords 8832.646 192.425 3960.82
- {
-  GenericEntity EnemyQuarry : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
-   coords 7.388 6.996 -66.125
-   {
-    $grp StaticModelEntity : "{80DF3BD810D032AF}Prefabs/Structures/Industrial/Towers/LightTower_01/LightTower_01.et" {
-     {
-      coords -43.115 -1.14 25.729
-     }
-     {
-      coords -9.763 6.057 99.561
-     }
-     {
-      coords 78.369 14.771 11.495
-     }
-     {
-      coords -119.974 -1.225 89.35
-     }
+$grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ Quarry_comps {
+  coords 8840.034 199.421 3894.695
+  {
+   $grp StaticModelEntity : "{80DF3BD810D032AF}Prefabs/Structures/Industrial/Towers/LightTower_01/LightTower_01.et" {
+    {
+     coords -43.115 -1.14 25.729
     }
-    GenericEntity : "{94021BCA593A8CFF}Prefabs/Structures/BuildingParts/Entry/ConcreteStairs_02_Wide.et" {
-     coords -45.084 -1.787 -12.28
-     angleY -91.276
+    {
+     coords -9.763 6.057 99.561
     }
-    SCR_DestructibleBuildingEntity : "{A5E49CC9C7C6E1E3}Prefabs/Structures/Infrastructure/Power/DieselPowerPlant_01/DieselPowerPlant_01_Base.et" {
-     coords -50.007 -2.344 0.523
+    {
+     coords 78.369 14.771 11.495
     }
+    {
+     coords -119.974 -1.225 89.35
+    }
+   }
+   GenericEntity : "{94021BCA593A8CFF}Prefabs/Structures/BuildingParts/Entry/ConcreteStairs_02_Wide.et" {
+    coords -43.361 -1.787 -12.242
+    angleY -91.276
+   }
+   SCR_DestructibleBuildingEntity : "{A5E49CC9C7C6E1E3}Prefabs/Structures/Infrastructure/Power/DieselPowerPlant_01/DieselPowerPlant_01_Base.et" {
+    coords -48.069 -2.344 0.523
+   }
+  }
+ }
+ Military_comps {
+  coords 8654.048 150.992 3448.905
+  {
+   $grp Vehicle : "{1C5FE7B7FF49BB8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Base.et" {
+    BTR70_Base1 {
+     coords -11.147 -1.365 -4.765
+    }
+    BTR70_Base2 {
+     coords -109.151 -7.248 69.407
+     angleY -83.078
+    }
+   }
+   SCR_DestructibleBuildingEntity : "{4D62E2F38A755750}Prefabs/Structures/Military/Houses/Barracks_01/Barracks_01_military_camo.et" {
+    coords 16.44 2.919 7.137
+   }
+   GenericEntity : "{5CABF5DF909B06F9}PrefabsEditable/Auto/Compositions/Misc/SubCompositions/E_Tent_Medical_USSR_01.et" {
+    coords 4.619 0.347 -24.728
+   }
+   GenericEntity : "{651E545B53BBD034}Prefabs/Structures/Military/Flags/FlagPole_02/FlagPole_02_V1_USSR.et" {
+    coords 9.494 6.203 20.175
+   }
+   $grp GenericEntity : "{6E9DCCF936BF17B9}PrefabsEditable/Auto/Compositions/Slotted/SlotFlatSmall/E_MachineGunNest_S_US_02.et" {
+    {
+     coords -12.347 -1.457 26.056
+     angleY -41.981
+    }
+    {
+     coords -30.822 -4.4 3.914
+     angleY -37.763
+    }
+   }
+   StaticModelEntity : "{80DF3BD810D032AF}Prefabs/Structures/Industrial/Towers/LightTower_01/LightTower_01.et" {
+    coords 27.277 2.098 -17.636
+   }
+   GenericEntity : "{A41F1EC4E72108AA}PrefabsEditable/Auto/Props/Wrecks/E_BTR70_wreck.et" {
+    coords -64.423 -9.226 -8.007
+   }
+   GenericEntity : "{AB4BC78B06694995}PrefabsEditable/Auto/Compositions/Misc/SubCompositions/E_Tent_Barracks_USSR_03.et" {
+    coords -2.436 -0.568 -35.131
+   }
+   GenericEntity : "{BDBB74BC15EAC056}Prefabs/Props/Military/Antennas/Antenna_USSR_02/Antenna_USSR_02.et" {
+    coords 15.215 6.85 1.725
    }
   }
  }

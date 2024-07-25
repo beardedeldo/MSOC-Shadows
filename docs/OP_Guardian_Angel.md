@@ -7,10 +7,9 @@
 >> Edited: Beard 07/22/24 :man_beard:  
 ----
 >#### To Do ####
-- [x] Initial set up checks
-  - [x] GameModeSFManager component add following tasks:
-    - [x] Under Task Type availble add all 8 availble tasks (e.g., deliver, destroy, defend, etc) # These get only activated with ON_TASK_INIT selected by a LayerTask
-  - [x] Changed Dynamic Despanw tick rate to 1
+
+ - [ ] Set up a dismounted patrol area and set at 1,100 with dynamic despawn 
+   - [ ] Set up 4 USSR Spatnes rifle squads to patrol area 
 
   - [ ] Set up a clear area task for quarry (see set up in scenario)
   - [ ]  Set up a clear area task for military base
@@ -32,8 +31,11 @@
 
 
 >#### Completed Activity ✓ ####
+- [x] Initial set up checks
+  - [x] GameModeSFManager component add following tasks:
+    - [x] Under Task Type availble add all 8 availble tasks (e.g., deliver, destroy, defend, etc) # These get only activated with ON_TASK_INIT selected by a LayerTask
+  - [x] Changed Dynamic Despanw tick rate to 1
 
-- [x] Add RHS License information to this README
 
 ------
 </details>

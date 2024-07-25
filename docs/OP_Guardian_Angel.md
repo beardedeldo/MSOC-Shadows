@@ -6,10 +6,80 @@
 > Author: Beard 07/07/24 :man_beard: 
 >> Edited: Beard 07/22/24 :man_beard:  
 ----
+### Patrols Set Up Process
+   - Under a OPFOR_patrols area create the following hiearchy: 
+     - Dismounted_patrol (Area)
+       - OPFOR_AI_groups (Layer)
+        - patrol1 (Layer)
+         - SlotAI (SlotAI):
+        - Patrol_waypoints (Layer)
+         - SlotWaypoint1
+         - SlotWaypoint2 .. 
+
+### Patrols Set Up Process
+   - Under a OPFOR_patrols area create the following hiearchy: 
+     - Dismounted_patrol (Area)
+       - OPFOR_AI_groups (Layer)
+        - patrol1 (Layer)
+         - SlotAI (SlotAI):
+        - Patrol_waypoints (Layer)
+         - SlotWaypoint1
+         - SlotWaypoint2 .. 
+
+  Under SlotAI: 
+   - Asset = object to spawn, choose a enemy squad 
+   - Waypoints = SCR_ScenarioFramworkWaypointSet 
+     - Layer Name + 
+       - Patrol_waypoints (Layer)  
+       [x] Spawn AI on WP Pos 
+       WP to Spawn = AIWaypoint_Cycle.et 
+    - Common: change group formation to column or line.  
+> Test with one squad then duplicate and place as needed. 
+
+### FinishTaskToCreateTaskLayer Process 
+   - Under a Tasks area  
+     - A_BriefingMoveTask (Area)
+       - LayerTaskMove1 (LayerTaskMove)
+        - SlotMoveTo1 (SlotMoveTo)
+        - LogicCounter1 (LogicCounter)
+      - A_Quarry (Area) 
+       - LayerTaskClearArea2 (LayerTaskClearArea)
+        - SlotClearArea1 (SlotClearArea) # Make sure to add US faction; otherwise it won't appear on map 
+      - X_AIGroups (Layer)
+        - X_CQC (Layer)
+         - SlotAI ..
+        - X_DF_squads1
+         - SlotAI .. 
+
+    Under SlotClearArea2: 
+     - Adjust area size to encompass area of enemies 
+     - Under Plugins **Activated By This Faction** add **US** 
+
+    Under LogicCounter1: 
+     - Input Action = SCR_SFActionInputOnTaskEventIncreaseCounter 
+      - Task Layer Name: **LayerTaskMove1** 
+      - Event Name: FINISHED 
+    - OnActivate: 
+     - Spawn Objects
+     - Name of Objects To Spawn On Activation 
+      + then, **LayerTaskClearArea2** # Point it to the next Area Task Layer here! 
+      Activation Type: ON_TRIGGER_ACTVATION 
+        
+
+  Under SlotAI: 
+   - Asset = object to spawn, choose a enemy squad 
+   - Waypoints = SCR_ScenarioFramworkWaypointSet 
+     - Layer Name + 
+       - Patrol_waypoints (Layer)  
+       [x] Spawn AI on WP Pos 
+       WP to Spawn = AIWaypoint_Cycle.et 
+    - Common: change group formation to column or line.  
+
 >#### To Do ####
 
- - [ ] Set up a dismounted patrol area and set at 1,100 with dynamic despawn 
-   - [ ] Set up 4 USSR Spatnes rifle squads to patrol area 
+ - [x] Set up a dismounted patrol area and set at 1,100 with dynamic despawn 
+   - [x] Set up 3 USSR Spatnes rifle squads to patrol area 
+ 
 
   - [ ] Set up a clear area task for quarry (see set up in scenario)
   - [ ]  Set up a clear area task for military base

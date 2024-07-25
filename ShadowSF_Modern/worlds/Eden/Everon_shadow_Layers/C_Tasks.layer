@@ -227,7 +227,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_bDynamicDespawn 1
-    m_iDynamicDespawnRange 550
+    m_iDynamicDespawnRange 600
     m_bShowDebugShapesInWorkbench 1
    }
   }
@@ -387,10 +387,9 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_sObjectToSpawn "{A2F75E45C66B1C0A}Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et"
             m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{61EE00C888BBD419}" {
             }
-            m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
            }
           }
-          coords -8.643 -2.367 37.651
+          coords -12.035 -2.791 38.227
          }
          SlotAI28 {
           components {
@@ -402,6 +401,16 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            }
           }
           coords 40.574 -2.603 -9.095
+         }
+         SlotAI30 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{A2F75E45C66B1C0A}Prefabs/Groups/OPFOR/Group_USSR_MachineGunTeam.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{61EE00C888BBD419}" {
+            }
+           }
+          }
+          coords -29.503 -5.178 23.726
          }
         }
        }

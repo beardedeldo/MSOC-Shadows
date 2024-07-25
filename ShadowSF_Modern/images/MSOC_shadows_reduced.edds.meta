@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{30EBD196B483766A}images/Capture.edds"
+ Name "{D499E5C80998F2CF}images/MSOC_shadows_reduced.edds"
  Configurations {
   PNGResourceClass PC : "{DC555BD399D92412}Configs/System/ResourceTypes/PC/TextureUnspecified.conf" {
   }

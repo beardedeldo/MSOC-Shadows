@@ -26,8 +26,8 @@ SCR_AIWorld SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
    m_fPerceptionSafe 0.8
    m_fPerceptionVigilant 2.6
    m_fAimAccuracyErrorModifier 0.75
-   m_eForceFlashlightState ON
    m_fAttackReactionDelayModifier 0.1
+   m_eForceFlashlightState ON
   }
  }
  coords 7114.537 75.004 6402
@@ -52,8 +52,8 @@ SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Manage
  Factions {
   SCR_Faction "{56DEAC40D2DBC8B1}" {
    UIInfo SCR_FactionUIInfo "{528C961236B7DCD3}" {
-    Name "Shadow Division"
-    Description "Shadow Division "
+    Name "MSOC Shadows "
+    Description "Marine Special Operations Company - Shadows"
     m_sNameUpper "SHADOW DIVISION"
    }
    m_bIsPlayable 1
@@ -241,6 +241,7 @@ SCR_LoadoutManager LoadoutManager_Base_Shadow : "{AA4E7419A1FF65B0}Prefabs/MP/Ma
    m_sAffiliatedFaction "US"
   }
   SCR_FactionPlayerLoadout "{61F00BEDF34AE41F}" {
+   m_sLoadoutName "Shadow Pilot "
    m_sLoadoutResource "{42A502E3BB727CEB}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_HeliPilot.et"
    m_sLoadoutImage "{F293529C376FB00C}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_HeliPilot.edds"
    m_sAffiliatedFaction "US"

@@ -138,6 +138,10 @@ GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
        }
       }
      }
+     StaticModelEntity : "{80DF3BD810D032AF}Prefabs/Structures/Industrial/Towers/LightTower_01/LightTower_01.et" {
+      coords 70.336 19.719 128.738
+      angleY 86.827
+     }
      GenericEntity : "{8B4B8BF44162B24E}Prefabs/Compositions/Slotted/SlotFlatSmall/Antenna_S_US_01.et" {
       coords 64.09 17.87 104.764
       angleX -1.77
@@ -191,6 +195,10 @@ GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
        angleY -149
       }
      }
+     StaticModelEntity : "{80DF3BD810D032AF}Prefabs/Structures/Industrial/Towers/LightTower_01/LightTower_01.et" {
+      coords -20.306 8.743 58.137
+      angleY 172.042
+     }
      $grp GenericEntity : "{A13F6A7F82DF031B}Prefabs/Compositions/Slotted/SlotFlatLarge/Helipad_L_US_01.et" {
       {
        coords 20.4 0.045 -23.081
@@ -206,9 +214,10 @@ GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
        angleY 31.297
       }
       {
-       coords -70.461 1.906 9.554
-       angleX 0.696
-       angleY 31.297
+       coords -55.293 0.829 27.483
+       angleX 0.629
+       angleY 56.626
+       angleZ 0.298
       }
      }
      Vehicle UH1H_armed1 : "{DDDD9B51F1234DF3}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed.et" {

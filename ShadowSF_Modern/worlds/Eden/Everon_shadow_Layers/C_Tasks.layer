@@ -1,3 +1,17 @@
+GenericEntity X_AIGroupExfil : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+ coords 8333.229 232.987 2409.908
+ {
+  GenericEntity SlotAI34 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+   components {
+    SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+     m_sObjectToSpawn "{657590C1EC9E27D3}Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et"
+     m_eAIGroupFormation Column
+    }
+   }
+   coords -9.697 -0.222 -4.964
+  }
+ }
+}
 $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
  A_Quarry {
   components {
@@ -8,28 +22,12 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   }
   coords 8801.618 197.607 3940.075
   {
-   GenericEntity VICS : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-    coords -17.304 0.29 -13.916
-    {
-     Vehicle Ural4320_tanker_camo1 : "{13139B95B13DDA35}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_tanker_camo1.et" {
-      coords -9.628 -0.165 0.594
-      angleY 82.372
-     }
-     Vehicle UAZ469_uncovered1 : "{16A674FE31B0921C}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469_uncovered.et" {
-      coords -1.09 -0.686 -15.695
-     }
-     Vehicle Ural4320_FIA_transport_covered_closed1 : "{6C9E196676394DE2}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_FIA_transport_covered_closed.et" {
-      coords 21.423 -2.03 25.24
-      angleY -156.14
-     }
-    }
-   }
    GenericEntity LayerTaskClearArea2 : "{CDC0845AD90BA073}Prefabs/ScenarioFramework/Components/LayerTaskClearArea.et" {
     components {
      SCR_ScenarioFrameworkLayerTaskClearArea "{5A6513F46D132331}" {
       m_sFactionKey "US"
       m_eActivationType ON_TRIGGER_ACTIVATION
-      m_sTaskTitle "A. Save FIA Prisoners & Eliminate All Enemies"
+      m_sTaskTitle "Save FIA Prisoners & Eliminate All Enemies"
       m_sTaskDescription "Operation Guardian Angel, 2100EST07272024"\
       ""\
       "Objective Alpha: Quarry "\
@@ -56,6 +54,51 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     coords 57.421 6.548 3.849
     {
      $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+      VICS {
+       coords -74.725 -6.258 -17.765
+       {
+        $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         Slot6 {
+          components {
+           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionToggleLights "{61F4EE83CE474667}" {
+              m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{61F4EE83DD19EC87}" {
+               m_sLayerName "Slot6"
+              }
+              m_eLightType Hazard
+             }
+            }
+            m_sObjectToSpawn "{26AF1879FBDA37EB}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469_uncovered_CIV_base.et"
+           }
+          }
+          coords -1.19 -0.979 -17.833
+         }
+         Slot7 {
+          components {
+           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionToggleEngine "{61F4EE83E87E684B}" {
+              m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{61F4EE83F45097E1}" {
+               m_sLayerName "Slot7"
+              }
+             }
+             SCR_ScenarioFrameworkActionToggleLights "{61F4EE83F9E726B7}" {
+              m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{61F4EE8382D308F5}" {
+               m_sLayerName "Slot7"
+              }
+             }
+            }
+            m_sObjectToSpawn "{13139B95B13DDA35}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_tanker_camo1.et"
+           }
+          }
+          coords 11.649 0.158 11.193
+          angleX 3.409
+          angleY -144.01
+         }
+        }
+       }
+      }
       X_AIGroups {
        coords -21.915 1.202 -13.862
        {
@@ -174,9 +217,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            }
           }
          }
-         X_INDFOR {
-          coords 0 0 0
-         }
          X_CIV {
           coords 0 0 0
          }
@@ -226,9 +266,9 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  B_MilitarySite {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_eActivationType ON_TRIGGER_ACTIVATION
     m_bDynamicDespawn 1
     m_iDynamicDespawnRange 600
-    m_bShowDebugShapesInWorkbench 1
    }
   }
   coords 8666.416 151.536 3415.892
@@ -237,7 +277,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     components {
      SCR_ScenarioFrameworkLayerTaskClearArea "{5A6513F46D132331}" {
       m_sFactionKey "US"
-      m_sTaskTitle "B. Secure Military Site - FRAGO"
+      m_eActivationType ON_TRIGGER_ACTIVATION
+      m_sTaskTitle "FRAGO - Secure Military Site "
       m_sTaskDescription "Operation Guardian Angel, 2100EST07272024"\
       ""\
       "Objective Bravo: Military Site (087 036)"\
@@ -254,7 +295,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       ""\
       "3. Execution:"\
       ""\
-      "- Concept: Set up an ambush to prevent reinformcments to Objective Alpha (Quarry). Once Quarry is secured, clear military site of enemy presence. "\
+      "- Concept: Once Quarry is secured, clear nearby military site of enemy presence and prepare for counter-offensive. "\
       "- Maneuver: Foot engagements."\
       ""\
       "EOM. "
@@ -273,6 +314,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            m_aPlugins {
             SCR_ScenarioFrameworkPluginTrigger "{5A633AF5368D26A3}" {
              m_fAreaRadius 165
+             m_sActivatedByThisFaction "US"
             }
            }
           }
@@ -416,6 +458,23 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        }
       }
      }
+     SCR_ScenarioFrameworkLogicCounter LogicCounter4 : "{6C1792C71DCAFD55}Prefabs/ScenarioFramework/Components/LogicCounter.et" {
+      coords 281.082 45.543 7.561
+      m_aInputs {
+       SCR_ScenarioFrameworkLogicInput "{61F2F0C8867CD635}" {
+        m_InputAction SCR_ScenarioFrameworkActionInputOnTaskEventIncreaseCounter "{61F2F0C883B154B0}" {
+         m_sTaskLayerName "LayerTaskClearArea3"
+        }
+       }
+      }
+      m_aActions {
+       SCR_ScenarioFrameworkActionSpawnObjects "{61F2F0C8A77C213B}" {
+        m_aNameOfObjectsToSpawnOnActivation {
+         "LayerTaskClearArea4"
+        }
+       }
+      }
+     }
     }
    }
   }
@@ -423,51 +482,54 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  C_Durras {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
-    m_bShowDebugShapesDuringRuntime 1
-    m_iDynamicDespawnRange 220
+    m_eActivationType ON_TRIGGER_ACTIVATION
+    m_bDynamicDespawn 1
+    m_iDynamicDespawnRange 450
     m_bShowDebugShapesInWorkbench 1
    }
   }
   coords 8860.681 96.27 2750.048
   {
-   GenericEntity Layer6 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-    coords 21.817 -1.65 -8.093
+   GenericEntity LayerTaskClearArea4 : "{CDC0845AD90BA073}Prefabs/ScenarioFramework/Components/LayerTaskClearArea.et" {
+    components {
+     SCR_ScenarioFrameworkLayerTaskClearArea "{5A6513F46D132331}" {
+      m_eActivationType ON_TRIGGER_ACTIVATION
+      m_sTaskTitle "FRAGO - Liberate Durras"
+      m_sTaskDescription "Operation Guardian Angel, 2200EST07272024"\
+      ""\
+      "Objective Charlie: Liberate Durras. "\
+      ""\
+      "1. Situation:"\
+      ""\
+      "- Weather: Clear. Night Operation. "\
+      "- Enemy: Revolutionary forces with possible armor support have occupied nearby town of Durras. Infantry, light/heavy armor, IDF. Heavy presence. "\
+      "- Friendly: MSOC Shadows Reaper One and Two Squads. Eagles on standby for CAS and exfil. "\
+      ""\
+      "2. Mission:"\
+      ""\
+      "- Reapers to liberate Durras. Avoid civilian casulties at all cost. Look for any valuable intel. "\
+      ""\
+      "3. Execution:"\
+      ""\
+      "- Concept: Once Alpha and Bravo objectives are complete, move swiftly to liberate Durras from all enemy presence. "\
+      ""\
+      "- Maneuver: Foot engagements."\
+      ""\
+      "EOM. "
+      m_bPlaceMarkerOnSubjectSlot 1
+     }
+    }
+    coords 21.915 -1.202 13.862
     {
-     GenericEntity LayerTaskClearArea4 : "{CDC0845AD90BA073}Prefabs/ScenarioFramework/Components/LayerTaskClearArea.et" {
-      components {
-       SCR_ScenarioFrameworkLayerTaskClearArea "{5A6513F46D132331}" {
-        m_sTaskTitle "C. Liberate Durras"
-        m_sTaskDescription "Operation Guardian Angel, 2200EST07272024"\
-        ""\
-        "Objective Charlie: Liberate Durras. "\
-        ""\
-        "1. Situation:"\
-        ""\
-        "- Weather: Clear. Night Operation. "\
-        "- Enemy: Revolutionary forces with possible armor support have occupied nearby town of Durras. Infantry, light/heavy armor, IDF. Heavy presence. "\
-        "- Friendly: MSOC Shadows Reaper One and Two Squads. Eagles on standby for CAS and exfil. "\
-        ""\
-        "2. Mission:"\
-        ""\
-        "- Reapers to liberate Durras. Avoid civilian casulties at all cost. Look for any valuable intel. "\
-        ""\
-        "3. Execution:"\
-        ""\
-        "- Concept: Once Alpha and Bravo objectives are complete, move swiftly to liberate Durras from all enemy presence. "\
-        ""\
-        "- Maneuver: Foot engagements."\
-        ""\
-        "EOM. "
-        m_bPlaceMarkerOnSubjectSlot 1
-       }
+     $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+      Clear_Durras {
+       coords 0 0 0
       }
-      coords 0.098 0.448 21.955
-      {
-       GenericEntity Layer5 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-        coords 0 0 0
-        {
-         GenericEntity SlotAI3 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+      X_AIGroups3 {
+       coords 43.474 2.188 -29.824
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         SlotAI3 {
           components {
            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
             m_sObjectToSpawn "{4D3BBEC1A955626A}Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_Squad.et"
@@ -475,14 +537,160 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             }
            }
           }
-          coords -43.763 5.318 14.239
+          coords 3.62 0.608 -9.25
+         }
+         SlotAI35 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{F44FBD67BAAF6DE1}Prefabs/Characters/Factions/CIV/ConstructionWorker/Character_CIV_ConstructionWorker_5.et"
+           }
+          }
+          coords -99.429 -1.936 48.731
+         }
+         SlotAI40 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{2CE7D4A6C32673BD}Prefabs/Characters/Factions/CIV/ConstructionWorker/Character_CIV_ConstructionWorker_3.et"
+           }
+          }
+          coords -131.245 0.321 50.752
+         }
+         SlotAI41 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{035F8F1CEF3B187F}Prefabs/Characters/Factions/CIV/GenericCivilians/Character_CIV_CottonShirt_4.et"
+           }
+          }
+          coords -142.923 -1.475 36.271
+         }
+         SlotAI42 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{3A2FBAD5B929AC4B}Prefabs/Characters/Factions/CIV/GenericCivilians/Character_CIV_Turtleneck_3.et"
+           }
+          }
+          coords -132.792 -2.006 13.826
+         }
+         SlotAI43 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{DF7F8D5C05CC1AF6}Prefabs/Characters/Factions/CIV/GenericCivilians/Character_CIV_CottonShirt_2.et"
+           }
+          }
+          coords -93.203 -2.348 -2.039
+         }
+         SlotAI44 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{C943F3CC53D187B6}Prefabs/Characters/Factions/CIV/GenericCivilians/Character_CIV_Turtleneck_1.et"
+           }
+          }
+          coords -103.692 -2.156 -19.244
          }
         }
        }
-       GenericEntity SlotClearArea3 : "{E53456990A756229}Prefabs/ScenarioFramework/Components/SlotClearArea.et" {
-        coords 0 0 0
+      }
+      X_Vics {
+       coords -104.826 0.485 -6.506
+       {
+        $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         Slot2 {
+          components {
+           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+            m_sObjectToSpawn "{4C79EB5FADB89B7A}Prefabs/Vehicles/Wheeled/S1203/S1203_transport_yellow.et"
+           }
+          }
+          coords 6.891 -0.157 -10.369
+          angleY 98.078
+         }
+         Slot5 {
+          components {
+           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+            m_sObjectToSpawn "{D7663936ABF75FB0}Prefabs/Vehicles/Wheeled/S1203/S1203_transport_base.et"
+           }
+          }
+          coords 1.449 0.228 7.373
+          angleY 38.644
+         }
+        }
        }
       }
+      X_CQC_Durras {
+       coords -94.354 5.778 20.191
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         SlotAI36 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{B2A71FE01BA567D6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Officer.et"
+            m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+           }
+          }
+          coords 1.674 3.302 3.238
+          angleY -87.986
+         }
+         SlotAI37 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{8CA70597606992EC}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Medic.et"
+            m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+           }
+          }
+          coords -6.968 -3.3 -2.407
+          angleY 48.776
+         }
+         SlotAI38 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{0B8AC0C3C447F90E}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_LMG.et"
+            m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+           }
+          }
+          coords -6.023 0 3.051
+          angleY 42.176
+         }
+         SlotAI39 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{B2A71FE01BA567D6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Officer.et"
+            m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+           }
+          }
+          coords -5.776 0 -2.909
+         }
+        }
+       }
+      }
+     }
+     SCR_ScenarioFrameworkLogicCounter LogicCounter5 : "{6C1792C71DCAFD55}Prefabs/ScenarioFramework/Components/LogicCounter.et" {
+      coords 13.151 10.688 139.437
+      m_aInputs {
+       SCR_ScenarioFrameworkLogicInput "{61F2F0C8867CD635}" {
+        m_InputAction SCR_ScenarioFrameworkActionInputOnTaskEventIncreaseCounter "{61F2F0C883B154B0}" {
+         m_sTaskLayerName "LayerTaskClearArea4"
+        }
+       }
+      }
+      m_aActions {
+       SCR_ScenarioFrameworkActionSpawnObjects "{61F2F0C8A77C213B}" {
+        m_aNameOfObjectsToSpawnOnActivation {
+         "LayerTaskMove2"
+        }
+       }
+      }
+     }
+     GenericEntity SlotClearArea3 : "{E53456990A756229}Prefabs/ScenarioFramework/Components/SlotClearArea.et" {
+      components {
+       SCR_ScenarioFrameworkSlotClearArea "{5A633AF525D5B972}" {
+        m_aPlugins {
+         SCR_ScenarioFrameworkPluginTrigger "{5A633AF5368D26A3}" {
+          m_fAreaRadius 141
+          m_sActivatedByThisFaction "US"
+         }
+        }
+       }
+      }
+      coords -45.694 8.908 -20.796
      }
     }
    }
@@ -528,6 +736,44 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       m_aNameOfObjectsToSpawnOnActivation {
        "LayerTaskClearArea2"
       }
+     }
+    }
+   }
+  }
+ }
+ D_Exfil {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_eActivationType ON_TRIGGER_ACTIVATION
+   }
+  }
+  coords 8227.509 223.103 2171.841
+  {
+   GenericEntity LayerTaskMove2 : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+    components {
+     SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
+      m_eActivationType ON_TRIGGER_ACTIVATION
+      m_sTaskTitle "Move to this location and call Exfil. "
+      m_sTaskDescription "Congratulations you've successfully completed Operation Guardian Angel. Tme to return to base. Nice work Shadows!"
+     }
+    }
+    coords 0 -18.327 0
+    {
+     GenericEntity SlotMoveTo2 : "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+      components {
+       SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
+        m_aPlugins {
+         SCR_ScenarioFrameworkPluginTrigger "{5A6C6D099D49E4BA}" {
+          m_sActivatedByThisFaction "US"
+          m_fMinimumPlayersNeededPercentage 0.75
+          m_fActivationCountdownTimer 60
+          m_bEnableAudio 1
+          m_sCountdownAudio "SOUND_RESPAWNMENU"
+         }
+        }
+       }
+      }
+      coords 0 19.648 0
      }
     }
    }

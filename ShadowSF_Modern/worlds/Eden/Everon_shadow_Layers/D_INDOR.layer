@@ -1,0 +1,64 @@
+GenericEntity Prison_area : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ components {
+  SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+   m_bDynamicDespawn 1
+   m_iDynamicDespawnRange 150
+   m_bShowDebugShapesInWorkbench 1
+  }
+ }
+ coords 8804.023 198.497 3944.491
+ {
+  GenericEntity X_INDFOR : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+   coords 33.1 -2.092 -14.429
+   {
+    $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+     SlotAI45 {
+      components {
+       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+        m_sObjectToSpawn "{99F600AD4C6BA6A4}Prefabs/Characters/Factions/CIV/Character_CIV_base.et"
+       }
+      }
+      coords -35.681 0.882 14.957
+     }
+     SlotAI47 {
+      components {
+       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+        m_sObjectToSpawn "{99F600AD4C6BA6A4}Prefabs/Characters/Factions/CIV/Character_CIV_base.et"
+       }
+      }
+      coords -36.844 0.858 15.803
+      angleY 62.285
+     }
+     SlotAI48 {
+      components {
+       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+        m_sObjectToSpawn "{854C04F0EA2129CC}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Unarmed.et"
+       }
+      }
+      coords -35.557 0.735 16.076
+      angleY 120.822
+     }
+     SlotAI49 {
+      components {
+       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+        m_sObjectToSpawn "{854C04F0EA2129CC}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Unarmed.et"
+       }
+      }
+      coords -35.479 1.001 13.903
+      angleY -116.113
+     }
+     SlotAI50 {
+      components {
+       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+        m_sFactionKey "USSR"
+        m_sObjectToSpawn "{854C04F0EA2129CC}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_Unarmed.et"
+       }
+      }
+      coords -37.382 1.012 13.69
+      angleY -116.113
+     }
+    }
+   }
+  }
+ }
+}

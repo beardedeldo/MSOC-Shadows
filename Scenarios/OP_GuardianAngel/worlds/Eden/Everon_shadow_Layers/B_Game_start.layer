@@ -1,0 +1,265 @@
+GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ coords 2846.562 0.8 1730.931
+ {
+  $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+   SH_MOB_smoke_pit {
+    coords -2846.562 -0.8 -1730.931
+    {
+     GenericEntity : "{207B5E830AB77CB8}Prefabs/Compositions/Misc/SubCompositions/Decorations/CardboardBox_MRE_US_01.et" {
+      coords 2922.367 19.808 1785.778
+     }
+     $grp StaticModelEntity : "{55973C5B0950D4AB}Prefabs/Props/Military/Furniture/ChairMilitary_US_01.et" {
+      {
+       coords 2922.915 19.748 1785.054
+       angleY -51.855
+      }
+      {
+       coords 2922.004 19.731 1784.263
+       angleY -76.191
+      }
+      {
+       coords 2922.918 19.611 1781.675
+       angleY 46.284
+      }
+      {
+       coords 2924.692 19.639 1781.019
+       angleY 0
+      }
+      {
+       coords 2924.917 19.874 1786.092
+       angleY 0
+      }
+      {
+       coords 2926.432 19.796 1782.807
+       angleY -50.153
+      }
+     }
+     $grp GenericEntity : "{590D0CC992E8AC25}Prefabs/Compositions/Misc/SubCompositions/Decorations/Crate_Bottles_01.et" {
+      {
+       coords 2921.693 19.642 1783.588
+      }
+      {
+       coords 2921.21 19.697 1783.854
+       angleY -53.924
+      }
+     }
+     GenericEntity : "{C98FCC6CA6C56069}Prefabs/Items/Medicine/AspirinBottle.et" {
+      coords 2922.132 20.387 1785.544
+     }
+     GameEntity : "{D9842C11742C00CF}Prefabs/Props/Civilian/Fireplace_01.et" {
+      coords 2924.445 19.764 1783.649
+     }
+     GenericEntity : "{F76340CCD79DCC5A}Prefabs/Props/Civilian/RadioSmall_01_red.et" {
+      coords 2924.704 20.139 1780.987
+      angleY -21.32
+     }
+    }
+   }
+   SH_MOB_props {
+    coords 0 0 0
+    {
+     GenericEntity : "{060E70051177F302}Prefabs/Compositions/Misc/SubCompositions/Tents/Tent_Barracks_US_02.et" {
+      coords 33.681 18.672 115.214
+      angleY 90.528
+     }
+     GenericEntity SH_MOB_props_briefing_tent_0 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+      coords 96.822 16.983 100.833
+      {
+       StaticModelEntity : "{55973C5B0950D4AB}Prefabs/Props/Military/Furniture/ChairMilitary_US_01.et" {
+        coords -2.043 0.045 -1.007
+        angleY 0
+       }
+       StaticModelEntity : "{7B2D1744E9F2A3B3}Prefabs/Compositions/Misc/SubCompositions/Furniture/Table_Ashtray_US_01.et" {
+        coords -1.181 0.006 -1.208
+        angleY -37.179
+        {
+         GenericEntity {
+          ID "5CB0D996697DE52C"
+          coords -0.076 0.9 -0.037
+         }
+         GenericEntity : "{05B993EAF472E376}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_10.et" {
+          coords 0.479 0.9 0.237
+          angleY -178.63
+         }
+         GenericEntity : "{1EE7CF82BC148328}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_03.et" {
+          coords 0.303 0.9 -0.107
+          angleY -179.336
+         }
+         GenericEntity : "{23D3EABAC9780A1F}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_04.et" {
+          coords 0.238 0.9 0.245
+          angleY -178.607
+         }
+         GenericEntity : "{69EDA70A48B66C58}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_13.et" {
+          coords -0.342 0.9 -0.092
+          angleY -176.582
+         }
+         GenericEntity : "{8C71EBF34453FB33}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_12.et" {
+          coords -0.477 0.9 -0.09
+          angleY -178.24
+         }
+         GenericEntity : "{972FB79B0C359B6E}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_01.et" {
+          coords 0.41 0.9 -0.11
+          angleY -179.086
+         }
+         GenericEntity : "{AA1B92A37959125A}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_06.et" {
+          coords 0.189 0.9 -0.107
+          angleY 179.328
+         }
+         GenericEntity : "{E025DF13F897741D}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_11.et" {
+          coords 0.357 0.9 0.24
+          angleY -178.182
+         }
+         GenericEntity : "{FB7B837BB0F11443}Prefabs/Props/Civilian/Photos/CombatOps_Polaroid_02.et" {
+          coords 0.527 0.9 -0.111
+          angleY -179.463
+         }
+        }
+       }
+       GenericEntity : "{89230C660A90788F}Prefabs/Structures/Military/CamoNets/US/CamoNet_Large_Top_US.et" {
+        coords -3.251 0.656 2.88
+        angleY -76.972
+       }
+       $grp SCR_DestructibleEntity : "{C8A5C92E74ABB5EA}Prefabs/Props/Civilian/PicnicTable/PicnicTable_01.et" {
+        {
+         coords -0.198 0.032 6.373
+         angleY 10.977
+        }
+        {
+         coords -3.337 0.147 7.201
+         angleY 15.19
+        }
+        {
+         coords -6.694 -0.104 -0.448
+         angleY 15.19
+        }
+       }
+      }
+     }
+     StaticModelEntity : "{80DF3BD810D032AF}Prefabs/Structures/Industrial/Towers/LightTower_01/LightTower_01.et" {
+      coords 70.336 19.719 128.738
+      angleY 86.827
+     }
+     GenericEntity : "{8B4B8BF44162B24E}Prefabs/Compositions/Slotted/SlotFlatSmall/Antenna_S_US_01.et" {
+      coords 64.09 17.87 104.764
+      angleX -1.77
+      angleZ 1.318
+     }
+     StaticModelEntity : "{95A4CF49FC9C0481}Prefabs/Compositions/Misc/SubCompositions/Tent_Barrack_Cluttered_US_01.et" {
+      coords 72.964 19.092 83.244
+      angleY -179.898
+     }
+     GenericEntity : "{DC82213D62A2F621}Prefabs/Compositions/Misc/SubCompositions/Tents/Tent_Supply_Large_USSR_01.et" {
+      coords 81.203 18.123 93.294
+      angleX -2.048
+      angleY -73.097
+      angleZ 1.52
+      {
+       GenericEntity {
+        ID "5DB6D4045311E2CD"
+        coords 0.096 0 0
+       }
+      }
+     }
+     GenericEntity : "{F09296B9255F6704}Prefabs/Compositions/Misc/SubCompositions/Tents/Tent_CommandPost_US_01.et" {
+      coords 49.875 18.245 93.666
+      angleY 70.661
+     }
+     StaticModelEntity : "{F1C5F8E2EF1105F9}Prefabs/Compositions/Misc/SubCompositions/Tent_HQ_Camo_Cluttered_US_01.et" {
+      coords 47.828 18.451 101.251
+      angleY -105.703
+     }
+    }
+   }
+   SH_MOB_aviation {
+    coords 0 0 0
+    {
+     StaticModelEntity : "{80DF3BD810D032AF}Prefabs/Structures/Industrial/Towers/LightTower_01/LightTower_01.et" {
+      coords -20.306 8.743 58.137
+      angleY 172.042
+     }
+     $grp GenericEntity : "{A13F6A7F82DF031B}Prefabs/Compositions/Slotted/SlotFlatLarge/Helipad_L_US_01.et" {
+      {
+       coords 20.4 0.045 -23.081
+       angleY 31.297
+      }
+      {
+       coords -26.271 0.754 4.047
+       angleY 31.297
+      }
+      {
+       coords -9.674 0.52 -23.189
+       angleX 0.696
+       angleY 31.297
+      }
+      {
+       coords -55.293 0.829 27.483
+       angleX 0.629
+       angleY 56.626
+       angleZ 0.298
+      }
+     }
+     $grp Vehicle : "{D03C0F6044DB5208}Prefabs/Vehicles/Helicopters/UH1H/UH1H_base.et" {
+      UH1H_base1 {
+       coords 18.288 0.491 -24.596
+       angleY -151.49
+      }
+      UH1H_base2 {
+       coords -58.394 1.314 28.685
+       angleY -125.91
+      }
+     }
+     $grp Vehicle : "{DDDD9B51F1234DF3}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed.et" {
+      UH1H_armed1 {
+       coords -27.665 1.208 4.107
+       angleX 0.401
+       angleY -150.764
+      }
+      UH1H_armed2 {
+       coords -11.332 0.926 -23.418
+       angleY -149.767
+      }
+     }
+    }
+   }
+   SH_MOB_arsenal_us {
+    coords 82.829 18.025 92.468
+    {
+     GenericEntity : "{3970981B94D3F882}Prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_USMC.et" {
+      components {
+       SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+        m_eSupportedArsenalItemTypes 381950
+        m_eArsenalSaveType NO_RESTRICTIONS
+       }
+      }
+      coords -1.531 -0.25 2.545
+      angleY 13.984
+     }
+     GenericEntity : "{45C675ED3CFBBEC5}Prefabs/Props/Military/Compositions/US/ArsenalBox_US.et" {
+      components {
+       SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+        m_eSupportedArsenalItemTypes 1016830
+        m_eArsenalSaveType NO_RESTRICTIONS
+       }
+      }
+      coords -3.884 -0.326 3.047
+      angleX -0.762
+      angleY -8.083
+      angleZ -1.941
+     }
+    }
+   }
+   SH_MOB_spawn_main {
+    coords 62.888 17.311 95.058
+    angleY 33.487
+    {
+     SCR_SpawnPoint US_spawn_main : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et" {
+      coords 13.715 1.861 -3.282
+      m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+       Name "Shadow Division MOB"
+      }
+     }
+    }
+   }
+  }
+ }
+}

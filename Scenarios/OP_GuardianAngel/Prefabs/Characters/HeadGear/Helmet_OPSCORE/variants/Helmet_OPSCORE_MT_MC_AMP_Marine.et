@@ -1,0 +1,14 @@
+GameEntity : "{D928AB10EAB641BC}Prefabs/Characters/HeadGear/Helmet_OPSCORE/Helmet_OPSCORE_MT_MC_AMP.et" {
+ ID "50D485E1435D6C72"
+ components {
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   Slots {
+    RHS_LoadoutSlotInfo TopVelcro {
+     Prefab "{5F7EF7FEBC39B874}Prefabs/Items/Equipment/Nightvision/HelstarStrobe/Helstar.et"
+    }
+   }
+  }
+ }
+ coords 0 0 0
+ angleY -38.5
+}

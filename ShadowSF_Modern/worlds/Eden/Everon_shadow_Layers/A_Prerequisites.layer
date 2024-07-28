@@ -92,6 +92,7 @@ SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Manage
    m_iFactionRadioFrequency 51000
   }
   SCR_Faction "{56DEAC40D3C2E623}" {
+   m_bIsPlayable 1
    m_aPredefinedGroups {
     SCR_GroupPreset "{61EA43E42AA6852B}" {
      m_sGroupName "Training Instructors"
@@ -245,6 +246,12 @@ SCR_LoadoutManager LoadoutManager_Base_Shadow : "{AA4E7419A1FF65B0}Prefabs/MP/Ma
    m_sLoadoutResource "{42A502E3BB727CEB}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_HeliPilot.et"
    m_sLoadoutImage "{F293529C376FB00C}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_HeliPilot.edds"
    m_sAffiliatedFaction "US"
+  }
+  SCR_FactionPlayerLoadout "{61F74338DCE854DE}" {
+   m_sLoadoutName "PMC Marksman"
+   m_sLoadoutResource "{D5640BB562716235}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/VV/RG/Blk/Character_RHS_RF_SOBR_Marksman.et"
+   m_sLoadoutImage "{FC58EAAEACDF0597}UI/Textures/EditorPreviews/Characters/Factions/OPFOR/RHS_AFRF/VV/RG/Blk/Character_RHS_RF_SOBR_Marksman.edds"
+   m_sAffiliatedFaction "USSR"
   }
  }
 }

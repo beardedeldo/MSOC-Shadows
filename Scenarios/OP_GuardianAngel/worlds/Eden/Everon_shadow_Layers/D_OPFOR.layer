@@ -1,0 +1,12 @@
+GenericEntity Area1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ coords 9118.75 73.637 2244.604
+ {
+  Vehicle Mi8MT_armed1 : "{7BD282AF716ED639}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_armed.et" {
+   coords 21.363 2.653 40.465
+   angleY -108.536
+  }
+  GenericEntity : "{847605BB95F1F066}PrefabsEditable/Auto/Compositions/Slotted/SlotFlatSmall/E_Headquarters_S_USSR_01.et" {
+   coords -1.223 0.595 9.701
+  }
+ }
+}

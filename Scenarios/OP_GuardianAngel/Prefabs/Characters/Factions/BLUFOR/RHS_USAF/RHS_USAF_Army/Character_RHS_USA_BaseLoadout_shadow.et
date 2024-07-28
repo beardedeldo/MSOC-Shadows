@@ -1,0 +1,18 @@
+SCR_ChimeraCharacter : "{FDAEA6C9F2673B02}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/Character_RHS_USAF_Base.et" {
+ ID "520EC961A090B1EE"
+ components {
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{F114A84F2B23ABC1}Prefabs/Characters/HeadGear/Helmet_OPSCORE/variants/Helmet_OPSCORE_MT_MC_AMP_Marine.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{59671155DDBAD871}Prefabs/Characters/Uniforms/Crye_Shirt/Jacket_Crye_Combat_Shirt_M81.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{4F860E576E2D4E28}Prefabs/Characters/Uniforms/Crye_Pants/crye_pants_m81.et"
+    }
+   }
+  }
+ }
+}

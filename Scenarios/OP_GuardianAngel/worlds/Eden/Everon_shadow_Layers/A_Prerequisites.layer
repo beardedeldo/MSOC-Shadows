@@ -1,0 +1,353 @@
+SCR_AIWorld SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{61E35ACE2863598D}" {
+     NavmeshFile "{AD5F99CD7C59D5E0}worlds/GameMaster/Navmeshes/GM_Eden.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5584F30EEFEE1223}" {
+   NavmeshSettings ChimeraNavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{60CA9BE5536BF701}" {
+     NavmeshFile "{C35ECF3276824654}worlds/GameMaster/Navmeshes/GM_Eden_vehicles.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5C8C9B750D124A63}" {
+   NavmeshSettings NavmeshWorld "{5C8C9B750B60C6E2}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{5C90BD0EC793647D}" {
+     NavmeshFile "{5E19E60F26327356}worlds/MP/Navmeshes/LowResEden.nmn"
+    }
+   }
+  }
+  SCR_AISettingsComponent "{512CCCD0856CB4B9}" {
+   m_fWeaponFiredReactionDistance 300
+   m_fPerceptionSafe 0.8
+   m_fPerceptionVigilant 2.6
+   m_fAimAccuracyErrorModifier 0.75
+   m_fAttackReactionDelayModifier 0.1
+   m_eForceFlashlightState ON
+  }
+ }
+ coords 7114.537 75.004 6402
+ {
+  CommentEntity {
+   coords 0 1 0
+   m_Comment "SCR_AIWorld: "\
+   "Configure navigation mesh"
+   m_Color 0 0 0
+   m_FaceCamera 1
+   m_TextBackground 1
+   m_BackgroundColor 1 0.6 0
+   m_BackgroundTransparency 0
+  }
+ }
+}
+PerceptionManager PerceptionManager : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ coords 7114.537 73.832 6407
+}
+SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Managers/Factions/FactionManager_Editor.et" {
+ coords 7480.393 164.5 4331.315
+ Factions {
+  SCR_Faction "{56DEAC40D2DBC8B1}" {
+   UIInfo SCR_FactionUIInfo "{528C961236B7DCD3}" {
+    Name "MSOC Shadows "
+    Description "Marine Special Operations Company - Shadows"
+    m_sNameUpper "SHADOW DIVISION"
+   }
+   m_bIsPlayable 1
+   m_aPredefinedGroups {
+    SCR_GroupPreset "{61E6FE0119B59627}" {
+     m_sGroupName "Shadow Command"
+     m_iGroupSize 6
+     m_iRadioFrequency 50000
+    }
+    SCR_GroupPreset "{61E6FE01263082E8}" {
+     m_sGroupName "Reaper One "
+     m_iGroupSize 12
+     m_iRadioFrequency 44500
+    }
+    SCR_GroupPreset "{61E6FE012679C30C}" {
+     m_sGroupName "Reaper Two "
+     m_iGroupSize 12
+     m_iRadioFrequency 42500
+    }
+    SCR_GroupPreset "{61E6FE0126EDA7C2}" {
+     m_sGroupName "Eagles "
+     m_iGroupSize 6
+     m_iRadioFrequency 49000
+    }
+    SCR_GroupPreset "{61E6FE00E3C659AD}" {
+     m_sGroupName "Archangels"
+     m_iGroupSize 4
+     m_iRadioFrequency 39500
+    }
+    SCR_GroupPreset "{61E6FE03BE8D6982}" {
+     m_sGroupName "Shadows T1 "
+     m_iGroupSize 8
+     m_iRadioFrequency 49500
+    }
+   }
+   m_iFactionRadioFrequency 51000
+  }
+  SCR_Faction "{56DEAC40D3C2E623}" {
+   m_aPredefinedGroups {
+    SCR_GroupPreset "{61EA43E42AA6852B}" {
+     m_sGroupName "Training Instructors"
+     m_iGroupSize 6
+     m_iRadioFrequency 53000
+    }
+   }
+   m_bCreateOnlyPredefinedGroups 1
+  }
+ }
+}
+RadioManagerEntity RadioManager : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
+ coords 7114.537 74.066 6406
+}
+SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
+ components {
+  RHS_RadialMenuItemsComponent "{5DCEFDBDF94DEFA0}" {
+   m_MenuController RHS_RadialMenuController "{5DCEFDBDF7FAC37A}" {
+    m_RMControls SCR_RadialMenuControllerInputs "{5DCEFDBDF2E715A3}" {
+     m_sControllerContext "RadialMenuContext"
+     m_sOpenAction "RHS_CharacterOpenRadial"
+     m_bCloseOnReleaseOpen 0
+     m_bPerformOnClose 0
+     m_bCloseOnPerform 1
+     m_bPreventEmptyMenuOpen 1
+    }
+   }
+  }
+  SCR_CampaignBuildingManagerComponent "{61E94452E29EA578}" {
+   m_sFreeRoamBuildingClientTrigger "{5E191CEAF4B95816}Prefabs/MP/FreeRoamBuildingClientTrigger.et"
+   m_BudgetType CAMPAIGN
+   m_iCompositionRefundPercentage 100
+   m_bSameFactionDisassembleOnly 1
+   m_sPrefabsToBuildResource "{D2527D9AA5B4A33E}Configs/Editor/PlaceableEntities/Compositions/Compositions_FreeRoamBuilding.conf"
+  }
+  SCR_DataCollectorComponent "{5ADE83EE64329989}" {
+   m_aModules {
+    SCR_DataCollectorBasicActionsModule "{5AE097A82ED69A98}" {
+    }
+    SCR_DataCollectorDriverModule "{5AE097BB69284302}" {
+    }
+    SCR_DataCollectorShootingModule "{5AE097BB6217A2F8}" {
+    }
+    SCR_DataCollectorHealingItemsModule "{5CECE314484120F4}" {
+     m_aConsumableTypes {
+      ConsumableTypeStats "{5CECE316446057A9}" {
+       m_eConsumableType BANDAGE
+       m_eDataStatsSelf BANDAGE_SELF
+       m_eDataStatsFriend BANDAGE_FRIENDLIES
+      }
+      ConsumableTypeStats "{5CECE31644CBD9C5}" {
+       m_eConsumableType TOURNIQUET
+       m_eDataStatsSelf TOURNIQUET_SELF
+       m_eDataStatsFriend TOURNIQUET_FRIENDLIES
+      }
+      ConsumableTypeStats "{5CECE316453FD0FC}" {
+       m_eConsumableType SALINE
+       m_eDataStatsSelf SALINE_SELF
+       m_eDataStatsFriend SALINE_FRIENDLIES
+      }
+      ConsumableTypeStats "{5CECE316451EC89B}" {
+       m_eConsumableType MORPHINE
+       m_eDataStatsSelf MORPHINE_SELF
+       m_eDataStatsFriend MORPHINE_FRIENDLIES
+      }
+     }
+    }
+    SCR_DataCollectorCrimesModule "{5D9C706AD14AF695}" {
+     m_aLightBanPunishments +{
+     }
+     m_aHeavyBanPunishments +{
+     }
+    }
+    SCR_DataCollectorAchievementsModule "{5DE86E4CB99B3FFB}" {
+    }
+   }
+  }
+  SCR_EntityCatalogManagerComponent "{5C9AD18D91F9E87E}" {
+   m_aEntityCatalogs {
+    SCR_EntityCatalogMultiList "{5C9AD18D9D38E99E}" : "{EAD206A79A774696}Configs/EntityCatalog/FactionLess/Characters_EntityCatalog_Factionless.conf" {
+    }
+    SCR_EntityCatalogMultiList "{5C9AD18D9B68853E}" : "{77243A71AF0E5A75}Configs/EntityCatalog/FactionLess/Vehicles_EntityCatalog_Factionless.conf" {
+    }
+    SCR_EntityCatalogMultiList "{61C8EED3993E46B7}" : "{2E8FFD9558E26113}Configs/EntityCatalog/FactionLess/Groups_EntityCatalog_Factionless.conf" {
+    }
+    SCR_EntityCatalogMultiList "{61C8EED39E8B0DC3}" : "{0CC054C7DEDC766E}Configs/EntityCatalog/FactionLess/WeaponTripod_EntityCatalog_Factionless.conf" {
+    }
+    SCR_EntityCatalogMultiList "{5C9AD18D98F9181C}" : "{BB12292052E2F5B8}Configs/EntityCatalog/FactionLess/InventoryItems_EntityCatalog_Factionless.conf" {
+    }
+    SCR_EntityCatalog "{5C9EDDD29E61EF44}" : "{B80293331FB7BFCF}Configs/EntityCatalog/FactionLess/SupplyContainerItems_EntityCatalog_Factionless.conf" {
+    }
+   }
+  }
+  SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
+   m_fDOTScale 0.3
+   m_fTourniquettedLegMovementSlowdown 0.5
+   m_fTourniquetStrengthMultiplier 0.75
+  }
+  SCR_GameModeSFManager "{5A96783ABCA252AE}" {
+   m_aTaskTypesAvailable {
+    SCR_ScenarioFrameworkTaskType "{61EE00D162C2B821}" {
+     m_eTypeOfTask DELIVER
+    }
+    SCR_ScenarioFrameworkTaskType "{61EE00D31F1A61EE}" {
+     m_eTypeOfTask DESTROY
+    }
+    SCR_ScenarioFrameworkTaskType "{61EE00D31F564C73}" {
+     m_eTypeOfTask DEFEND
+    }
+    SCR_ScenarioFrameworkTaskType "{61EE00D31AFC4ED7}" {
+     m_eTypeOfTask KILL
+    }
+    SCR_ScenarioFrameworkTaskType "{61EE00D32E13D212}" {
+     m_eTypeOfTask CLEAR_AREA
+    }
+    SCR_ScenarioFrameworkTaskType "{61EE00D32AADA5BC}" {
+     m_eTypeOfTask LAST
+    }
+    SCR_ScenarioFrameworkTaskType "{61EE00D32AEDCC76}" {
+     m_eTypeOfTask EXTRACTION
+    }
+    SCR_ScenarioFrameworkTaskType "{61EE00D325EE5308}" {
+     m_eTypeOfTask DEFAULT
+    }
+   }
+   m_aCoreAreas {
+    "SH_MOB"
+   }
+   m_bDynamicDespawn 1
+   m_iUpdateRate 1
+  }
+  SCR_GameOverScreenManagerComponent "{56DEC646298AD219}" {
+   m_GameOverScreenConfig SCR_GameOverScreenConfig "{56DEC6462FFDD82D}" : "{651583FFFB7FC765}Configs/GameOverScreen/GameOverScreensConfig.conf" {
+   }
+  }
+  SCR_GroupsManagerComponent "{5706EC99934496F5}" {
+   m_sDefaultGroupPrefab "{8B4D49A9F324E7D5}Prefabs/Groups/PlayableGroup.et"
+   m_iPlayableGroupFrequencyOffset 500
+  }
+  SCR_NametagConfigComponent "{571AA9E54FC9210D}" {
+   m_sConfigPath "{09F7AAA14A642683}Configs/NameTags/NametagFriendlies.conf"
+  }
+  SCR_NotificationSenderComponent "{56FA84B04BE7D4C0}" {
+   m_iKillFeedType DISABLED
+   m_aKillfeedReceiveTypeNames {
+    SCR_NotificationKillfeedreceiveTypeName "{5932B036B747E765}" {
+     m_iKillfeedreceiveType 2147483647
+    }
+    SCR_NotificationKillfeedreceiveTypeName "{5932B036B7003ECC}" {
+     m_iKillfeedreceiveType 2147483647
+    }
+    SCR_NotificationKillfeedreceiveTypeName "{5932B036B7D2B6CF}" {
+     m_iKillfeedreceiveType 2147483647
+    }
+    SCR_NotificationKillfeedreceiveTypeName "{5932B036B6AB6528}" {
+     m_iKillfeedreceiveType 2147483647
+    }
+    SCR_NotificationKillfeedreceiveTypeName "{5932B036A5A136C4}" {
+     m_iKillfeedreceiveType 2147483647
+    }
+   }
+  }
+  SCR_RadialMenuGameModeComponent "{5C7E75494DC4CB62}" {
+   Enabled 0
+   m_Menu SCR_RadialMenu "{5C7E7549355B981C}" {
+    m_Inputs SCR_RadialMenuInputs "{5B26E2FE7B2FF1D4}" {
+     m_iGamepadDeselectionDelay 400
+    }
+   }
+  }
+  SCR_RadialMenuItemsComponent "{5C92B03271ABD8AA}" {
+   m_MenuController SCR_RadialMenuController "{5C92B0326E1334FB}" {
+   }
+  }
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+   m_SpawnLogic SCR_MenuSpawnLogic "{61D7075BC0C1687D}" {
+   }
+  }
+  SCR_TimeAndWeatherHandlerComponent "{61F91EF183DCEA13}" {
+   m_iStartingHours 20
+  }
+  RplComponent "{56B2B4793BF2E1B4}" {
+   "Rpl State Override" None
+   Streamable Disabled
+  }
+ }
+ coords 7114.537 75.238 6401
+ m_aDisabledResourceTypes {
+  0
+ }
+}
+ScriptedChatEntity ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
+ coords 7114.537 73.598 6408
+}
+SCR_BaseTaskManager TaskManager : "{1AC69CD7907FB4F8}Prefabs/ScenarioFramework/Tasks/TaskManager.et" {
+ coords 7114.537 74.769 6403
+ {
+  CommentEntity {
+   coords 0 1 0
+   m_Comment "TaskManager: "\
+   "Needed for task generation"
+   m_Color 0 0 0
+   m_FaceCamera 1
+   m_TextBackground 1
+   m_BackgroundColor 1 0.6 0
+   m_BackgroundTransparency 0
+  }
+ }
+}
+MusicManager : "{359452CCDBDD03F5}Prefabs/Sounds/Music/MusicManager_Base.et" {
+ coords 7400.013 162.25 4310.169
+}
+SCR_LoadoutManager LoadoutManager_Base_Shadow : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {
+ coords 7114.508 73.842 6406.972
+ m_aPlayerLoadouts {
+  SCR_PlayerArsenalLoadout "{61E978987C425D38}" {
+   m_sLoadoutName "Saved Loadout"
+   m_sLoadoutResource "{3967948B72443B25}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_BaseLoadout.et"
+   m_sLoadoutImage "{30EBD196B483766A}images/Character_RHS_USAF_USMC_AAR_3_shadow.edds"
+   m_sAffiliatedFaction "US"
+  }
+  SCR_FactionPlayerLoadout "{61DB347B6FEA2904}" {
+   m_sLoadoutName "Shadow 0311 RFLM"
+   m_sLoadoutResource "{9E0B5441B270B059}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_AAR_shadow.et"
+   m_sLoadoutImage "{30EBD196B483766A}images/Character_RHS_USAF_USMC_AAR_3_shadow.edds"
+   m_sAffiliatedFaction "US"
+  }
+  SCR_FactionPlayerLoadout "{61F00BEC1E400C01}" {
+   m_sLoadoutName "Shadow 0311 SAW"
+   m_sLoadoutResource "{4E35609ED02B0710}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_MG_shadow.et"
+   m_sLoadoutImage "{68D8A366C8DC9794}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_MG.edds"
+   m_sAffiliatedFaction "US"
+  }
+  SCR_FactionPlayerLoadout "{61F00BEC3A843208}" {
+   m_sLoadoutName "Shadow 8404 Medic "
+   m_sLoadoutResource "{926FA2DCC810863B}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_Medic_shadow.et"
+   m_sLoadoutImage "{72267DC2CE2D381A}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_US_USMC/Character_RHS_USAF_USMC_Medic.edds"
+   m_sAffiliatedFaction "US"
+  }
+  SCR_FactionPlayerLoadout "{61F00BECEA8A4012}" {
+   m_sLoadoutName "Shadow 0365 SL "
+   m_sLoadoutResource "{EF9DFF4282A290D4}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_SL_shadow.et"
+   m_sLoadoutImage "{5830D06A31609667}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_SL.edds"
+   m_sAffiliatedFaction "US"
+  }
+  SCR_FactionPlayerLoadout "{61F00BEDF34AE41F}" {
+   m_sLoadoutName "Shadow Pilot "
+   m_sLoadoutResource "{42A502E3BB727CEB}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_HeliPilot.et"
+   m_sLoadoutImage "{F293529C376FB00C}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_HeliPilot.edds"
+   m_sAffiliatedFaction "US"
+  }
+  SCR_FactionPlayerLoadout "{61F74338DCE854DE}" {
+   m_sLoadoutName "PMC Marksman"
+   m_sLoadoutResource "{D5640BB562716235}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/VV/RG/Blk/Character_RHS_RF_SOBR_Marksman.et"
+   m_sLoadoutImage "{FC58EAAEACDF0597}UI/Textures/EditorPreviews/Characters/Factions/OPFOR/RHS_AFRF/VV/RG/Blk/Character_RHS_RF_SOBR_Marksman.edds"
+   m_sAffiliatedFaction "USSR"
+  }
+ }
+}

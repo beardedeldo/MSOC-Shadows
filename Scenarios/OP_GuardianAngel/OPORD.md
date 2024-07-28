@@ -35,7 +35,7 @@ Objective Bravo: Military Site (087 036)
 
 3. Execution:
 
-- Concept: Once Quarry is secured, clear nearby military site of enemy presence and prepare for counter-offensive. 
+- Concept: Set up an ambush to prevent reinformcments to Objective Alpha (Quarry). Once Quarry is secured, clear military site of enemy presence. 
 - Maneuver: Foot engagements.
 
 EOM. 

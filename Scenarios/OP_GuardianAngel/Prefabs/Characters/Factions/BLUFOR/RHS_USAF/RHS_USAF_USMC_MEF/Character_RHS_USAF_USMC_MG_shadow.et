@@ -1,0 +1,91 @@
+SCR_ChimeraCharacter : "{9E0B5441B270B059}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_AAR_shadow.et" {
+ ID "520EC961A090BBD5"
+ components {
+  SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
+   components {
+    SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
+     InitialStorageSlots {
+      SCR_EquipmentStorageSlot BinocularSlot {
+       Prefab "{03810BEF182ADA0B}Prefabs/Items/Equipment/Binoculars/Rangefinder_Vector21.et"
+      }
+      SCR_EquipmentStorageSlot WristwatchSlot {
+       Prefab "{7C53E6DE2E4BD8CB}Prefabs/Items/Equipment/Watches/Watch_GarminTactixBravo.et"
+      }
+     }
+    }
+   }
+  }
+  FactionAffiliationComponent "{6063106E37B90E37}" {
+   "faction affiliation" "US"
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate "{A598035257A5D0BC}Prefabs/Weapons/MachineGuns/M249/MG_M249_Handguard_RISTop_base.et"
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFB7}" {
+   WeaponType RocketLauncher
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   WeaponType Handgun
+   WeaponTemplate "{E998FA484B0C4BFF}Prefabs/Weapons/Handguns/Glock/Handgun_Glock17.et"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{F114A84F2B23ABC1}Prefabs/Characters/HeadGear/Helmet_OPSCORE/variants/Helmet_OPSCORE_MT_MC_AMP_Marine.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{59671155DDBAD871}Prefabs/Characters/Uniforms/Crye_Shirt/Jacket_Crye_Combat_Shirt_M81.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{4F860E576E2D4E28}Prefabs/Characters/Uniforms/Crye_Pants/crye_pants_m81.et"
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{2105D1F5FBA9D92F}Prefabs/Characters/Vests/Vest_PCGen_III_Pouches/Pouch_Admin.et"
+    }
+    LoadoutSlotInfo HandWear {
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{6063106E91310A3D}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Crye_Pants/crye_pants_m81.et"
+     PrefabsToSpawn +{
+     }
+    }
+    ItemsInitConfigurationItem "{6063106E91310A26}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Crye_Shirt/Jacket_Crye_Combat_Shirt_M81.et"
+     TargetPurpose 1
+     PrefabsToSpawn +{
+     }
+    }
+    ItemsInitConfigurationItem "{60CB7C79B81FEC3D}" {
+     TargetStorage "Prefabs/Items/Equipment/Backpacks/FILBE_Backpack.et"
+     PrefabsToSpawn {
+      "{BEE3897D2286992A}Prefabs/Weapons/Magazines/Box_556x45_M249_200rnd_M855A1_4Ball_1Tracer.et" "{BEE3897D2286992A}Prefabs/Weapons/Magazines/Box_556x45_M249_200rnd_M855A1_4Ball_1Tracer.et"
+     }
+    }
+    ItemsInitConfigurationItem "{60CB7C79B81FEC20}" {
+     TargetStorage "Prefabs/Items/Equipment/Backpacks/FILBE_Backpack.et"
+     PrefabsToSpawn {
+      "{BEE3897D2286992A}Prefabs/Weapons/Magazines/Box_556x45_M249_200rnd_M855A1_4Ball_1Tracer.et" "{D69684663E89D6EA}Prefabs/Items/Equipment/Radios/Radio_ANPRC152A_OLD.et"
+     }
+    }
+    ItemsInitConfigurationItem "{60CB7C79B81FEC25}" {
+     TargetStorage "Prefabs/Characters/Vests/Vest_PCGen_III_Pouches/Pouch_Admin.et"
+     PrefabsToSpawn +{
+     }
+    }
+    ItemsInitConfigurationItem "{60CB7C799C374913}" {
+     PrefabsToSpawn {
+      "{D41D22DD1B8E921E}Prefabs/Weapons/Grenades/M18/Smoke_M18_Green.et" "{D41D22DD1B8E921E}Prefabs/Weapons/Grenades/M18/Smoke_M18_Green.et" "{9DB69176CEF0EE97}Prefabs/Weapons/Grenades/Smoke_ANM8HC.et" "{9DB69176CEF0EE97}Prefabs/Weapons/Grenades/Smoke_ANM8HC.et" "{9DB69176CEF0EE97}Prefabs/Weapons/Grenades/Smoke_ANM8HC.et"
+     }
+    }
+   }
+  }
+ }
+ coords -0.774 0.164 0.138
+ angleX 11.214
+ angleY -28.032
+ angleZ 6.163
+}

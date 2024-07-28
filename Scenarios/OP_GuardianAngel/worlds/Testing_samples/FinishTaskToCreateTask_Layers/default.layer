@@ -1,0 +1,133 @@
+$grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ Area_A {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_bShowDebugShapesDuringRuntime 1
+   }
+  }
+  coords 74.62 4.706 33.999
+  {
+   GenericEntity Move1 : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+    components {
+     SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
+      m_bShowDebugShapesDuringRuntime 1
+      m_sTaskTitle "Task move 1"
+      m_sTaskDescription "Move here in order to spawn Task move 2"
+     }
+    }
+    coords -1.076 -0.935 -4.739
+    {
+     GenericEntity SlotMoveTo1 : "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+      components {
+       SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
+        m_bShowDebugShapesDuringRuntime 1
+        m_aPlugins {
+         SCR_ScenarioFrameworkPluginTrigger "{5A6C6D099D49E4BA}" {
+          m_eActivationPresence PLAYER
+         }
+        }
+       }
+      }
+      coords 0.122 0.012 -0.784
+     }
+    }
+   }
+   SCR_ScenarioFrameworkLogicCounter SpawnTasksCounterB : "{6C1792C71DCAFD55}Prefabs/ScenarioFramework/Components/LogicCounter.et" {
+    coords 0 0 0
+    m_aInputs {
+     SCR_ScenarioFrameworkLogicInput "{5C6E789C0E8E60D3}" {
+      m_InputAction SCR_ScenarioFrameworkActionInputOnTaskEventIncreaseCounter "{5C6E789C0D96C223}" {
+       m_sTaskLayerName "Move1"
+      }
+     }
+    }
+    m_aActions {
+     SCR_ScenarioFrameworkActionSpawnObjects "{5C6E789C2AFCCA60}" {
+      m_aNameOfObjectsToSpawnOnActivation {
+       "Move2"
+      }
+     }
+    }
+   }
+  }
+ }
+ Area_B {
+  coords 79.514 4.922 56.635
+  {
+   GenericEntity Move2 : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+    components {
+     SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
+      m_bShowDebugShapesDuringRuntime 1
+      m_eActivationType ON_TRIGGER_ACTIVATION
+      m_sTaskTitle "Task move 2"
+      m_sTaskDescription "Move here in order to spawn Task move 3"
+     }
+    }
+    coords -1.076 -0.935 -4.739
+    {
+     GenericEntity SlotMoveTo2 : "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+      components {
+       SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
+        m_bShowDebugShapesDuringRuntime 1
+        m_aPlugins {
+         SCR_ScenarioFrameworkPluginTrigger "{5A6C6D099D49E4BA}" {
+          m_eActivationPresence PLAYER
+         }
+        }
+       }
+      }
+      coords 0.122 0.012 -0.784
+     }
+    }
+   }
+   SCR_ScenarioFrameworkLogicCounter SpawnTasksCounterC : "{6C1792C71DCAFD55}Prefabs/ScenarioFramework/Components/LogicCounter.et" {
+    coords -17.654 0.531 -26.772
+    m_aInputs {
+     SCR_ScenarioFrameworkLogicInput "{5C6E789C0E8E60D3}" {
+      m_InputAction SCR_ScenarioFrameworkActionInputOnTaskEventIncreaseCounter "{5C6E789C0D96C223}" {
+       m_sTaskLayerName "Move2"
+      }
+     }
+    }
+    m_aActions {
+     SCR_ScenarioFrameworkActionSpawnObjects "{5C6E789C2AFCCA60}" {
+      m_aNameOfObjectsToSpawnOnActivation {
+       "Move3"
+      }
+     }
+    }
+   }
+  }
+ }
+ Area_C {
+  coords 89.21 3.798 85.052
+  {
+   GenericEntity Move3 : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+    components {
+     SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
+      m_bShowDebugShapesDuringRuntime 1
+      m_eActivationType ON_TRIGGER_ACTIVATION
+      m_sTaskTitle "Task move 3"
+      m_sTaskDescription "Move here"
+     }
+    }
+    coords -1.076 -0.935 -4.739
+    {
+     GenericEntity SlotMoveTo3 : "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+      components {
+       SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
+        m_bShowDebugShapesDuringRuntime 1
+        m_aPlugins {
+         SCR_ScenarioFrameworkPluginTrigger "{5A6C6D099D49E4BA}" {
+          m_eActivationPresence PLAYER
+         }
+        }
+       }
+      }
+      coords 0.122 0.012 -0.784
+     }
+    }
+   }
+  }
+ }
+}

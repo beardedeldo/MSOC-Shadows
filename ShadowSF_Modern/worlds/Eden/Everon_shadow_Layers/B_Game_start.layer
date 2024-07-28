@@ -168,6 +168,11 @@ GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
     }
    }
    SH_MOB_arsenal_USSR {
+    components {
+     SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+      Enabled 0
+     }
+    }
     coords 0 0 0
     {
      GenericEntity : "{AD59EDEAA26CE792}Prefabs/Props/Military/Compositions/USSR/ArsenalBox_USSR.et" {
@@ -185,16 +190,6 @@ GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
    SH_MOB_aviation {
     coords 0 0 0
     {
-     $grp Vehicle : "{70BAEEFC2D3FEE64}Prefabs/Vehicles/Helicopters/UH1H/UH1H.et" {
-      UH1H1 {
-       coords -27.134 1.104 4.75
-       angleY -149
-      }
-      UH1H2 {
-       coords 19.722 0.445 -22.221
-       angleY -149
-      }
-     }
      StaticModelEntity : "{80DF3BD810D032AF}Prefabs/Structures/Industrial/Towers/LightTower_01/LightTower_01.et" {
       coords -20.306 8.743 58.137
       angleY 172.042
@@ -220,9 +215,34 @@ GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
        angleZ 0.298
       }
      }
-     Vehicle UH1H_armed1 : "{DDDD9B51F1234DF3}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed.et" {
-      coords -11.902 0.919 -24.426
-      angleY -149
+     $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+      UH60_armed {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{F503F71C08BE3F7D}Prefabs/Vehicles/Helicopters/AUS_MH60/AUS_UH60_armed.et"
+        }
+       }
+       coords -25.272 0.481 4.459
+       angleY -146.746
+      }
+      UH60_armed2 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{F503F71C08BE3F7D}Prefabs/Vehicles/Helicopters/AUS_MH60/AUS_UH60_armed.et"
+        }
+       }
+       coords 18.647 0.445 -22.67
+       angleY -146.746
+      }
+      UH60_armed3 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{F503F71C08BE3F7D}Prefabs/Vehicles/Helicopters/AUS_MH60/AUS_UH60_armed.et"
+        }
+       }
+       coords -11.142 0.871 -22.88
+       angleY -146.746
+      }
      }
     }
    }
@@ -232,7 +252,7 @@ GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
      GenericEntity : "{3970981B94D3F882}Prefabs/Systems/Arsenal/ArsenalBoxes/US/ArsenalBox_USMC.et" {
       components {
        SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
-        m_eSupportedArsenalItemTypes 1016830
+        m_eSupportedArsenalItemTypes 361470
         m_eArsenalSaveType NO_RESTRICTIONS
        }
       }
@@ -264,6 +284,7 @@ GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
        m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
         Name "Shadow FOB"
        }
+       m_bSpawnPointEnabled 0
       }
       Opfor_arsenal_spawn {
        coords -209.603 -7.733 289.884
@@ -271,6 +292,7 @@ GenericEntity SH_MOB : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/A
        m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
         Name "OPFOR Arsenals"
        }
+       m_bSpawnPointEnabled 0
       }
      }
      SCR_SpawnPoint US_spawn_main : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et" {

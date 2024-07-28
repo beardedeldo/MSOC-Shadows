@@ -1,0 +1,22 @@
+GameProject {
+ ID "Operation Guardian Angel"
+ GUID "61F91D0C4902C82A"
+ TITLE "OP_Guardian_Angel"
+ Dependencies {
+  "5F268647F8A1A1F4" "595F2BF2F44836FB"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}

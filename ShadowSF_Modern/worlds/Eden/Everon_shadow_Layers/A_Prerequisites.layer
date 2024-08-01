@@ -21,14 +21,6 @@ SCR_AIWorld SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
     }
    }
   }
-  SCR_AISettingsComponent "{512CCCD0856CB4B9}" {
-   m_fWeaponFiredReactionDistance 300
-   m_fPerceptionSafe 0.8
-   m_fPerceptionVigilant 2.6
-   m_fAimAccuracyErrorModifier 0.75
-   m_fAttackReactionDelayModifier 0.1
-   m_eForceFlashlightState ON
-  }
  }
  coords 7114.537 75.004 6402
  {
@@ -217,35 +209,36 @@ SCR_LoadoutManager LoadoutManager_Base_Shadow : "{AA4E7419A1FF65B0}Prefabs/MP/Ma
    m_sLoadoutImage "{30EBD196B483766A}images/Character_RHS_USAF_USMC_AAR_3_shadow.edds"
    m_sAffiliatedFaction "US"
   }
+  SCR_FactionPlayerLoadout "{62032AAE46A6A9F6}" {
+   m_sLoadoutName "Shadow Paratrooper"
+   m_sLoadoutResource "{BAAAAD523E667C33}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_PARA_shadow.et"
+   m_sLoadoutImage "{E79F5AD1DE37A54C}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_AAR.edds"
+   m_sAffiliatedFaction "US"
+  }
   SCR_FactionPlayerLoadout "{61DB347B6FEA2904}" {
    m_sLoadoutName "Shadow 0311 RFLM"
    m_sLoadoutResource "{9E0B5441B270B059}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_AAR_shadow.et"
    m_sLoadoutImage "{30EBD196B483766A}images/Character_RHS_USAF_USMC_AAR_3_shadow.edds"
-   m_sAffiliatedFaction "US"
   }
   SCR_FactionPlayerLoadout "{61F00BEC1E400C01}" {
    m_sLoadoutName "Shadow 0311 SAW"
    m_sLoadoutResource "{4E35609ED02B0710}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_MG_shadow.et"
    m_sLoadoutImage "{68D8A366C8DC9794}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_MG.edds"
-   m_sAffiliatedFaction "US"
   }
   SCR_FactionPlayerLoadout "{61F00BEC3A843208}" {
    m_sLoadoutName "Shadow 8404 Medic "
    m_sLoadoutResource "{926FA2DCC810863B}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_Medic_shadow.et"
    m_sLoadoutImage "{72267DC2CE2D381A}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_US_USMC/Character_RHS_USAF_USMC_Medic.edds"
-   m_sAffiliatedFaction "US"
   }
   SCR_FactionPlayerLoadout "{61F00BECEA8A4012}" {
    m_sLoadoutName "Shadow 0365 SL "
    m_sLoadoutResource "{EF9DFF4282A290D4}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_SL_shadow.et"
    m_sLoadoutImage "{5830D06A31609667}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_US_USMC/Character_US_USMC_SL.edds"
-   m_sAffiliatedFaction "US"
   }
   SCR_FactionPlayerLoadout "{61F00BEDF34AE41F}" {
    m_sLoadoutName "Shadow Pilot "
    m_sLoadoutResource "{42A502E3BB727CEB}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_HeliPilot.et"
    m_sLoadoutImage "{F293529C376FB00C}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_HeliPilot.edds"
-   m_sAffiliatedFaction "US"
   }
   SCR_FactionPlayerLoadout "{61F74338DCE854DE}" {
    m_sLoadoutName "PMC Marksman"

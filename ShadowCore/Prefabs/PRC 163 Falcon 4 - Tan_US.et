@@ -10,7 +10,7 @@ GenericEntity : "{5879D8E9C56E358D}Prefabs/Items/Core/Radio_base.et" {
      ChannelFrequency 49000
     }
     RadioTransceiver "{6164D6717765F682}" {
-     ChannelFrequency 46500
+     ChannelFrequency 49500
     }
    }
   }

@@ -3,6 +3,20 @@ GameProject {
  GUID "61EAF5D776D87D38"
  TITLE "ShadowCore"
  Dependencies {
-  "58D0FB3206B6F859"
+  "58D0FB3206B6F859" "6164D6708E1203B0" "60B524F7A5AE96A8"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+  }
+  GameProjectConfig HEADLESS {
+  }
  }
 }

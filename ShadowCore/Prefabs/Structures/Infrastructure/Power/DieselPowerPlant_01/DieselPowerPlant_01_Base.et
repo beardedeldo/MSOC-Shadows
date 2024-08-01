@@ -1,0 +1,258 @@
+SCR_DestructibleBuildingEntity : "{A43A100E3C377DB2}Prefabs/Structures/Core/Building_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SignalsManagerComponent "{61EE00DB180BE626}" {
+  }
+  SCR_BuildingSoundComponent "{61EE00DB180BE7DE}" {
+   Filenames {
+    "{89B05F441A247752}Sounds/Structures/Infrastructure/Power/DieselPowerPlant_01/Structures_DieselPowerPlant_01.acp"
+   }
+   IncludeInactive 1
+   SoundPoints {
+    SoundPointInfo Pipe_1 {
+     Offset 14 3 -2.2
+    }
+    SoundPointInfo Pipe_2 {
+     Offset 14 3 -8.5
+    }
+    SoundPointInfo Vent_1 {
+     Offset -3 7.5 1
+    }
+    SoundPointInfo Vent_2 {
+     Offset -3 7.5 -4
+    }
+    SoundPointInfo Vent_Clank_1 {
+     Offset 13 6 2
+    }
+    SoundPointInfo Boiler {
+     Offset 10 2 7
+    }
+   }
+   m_iTimeIntervalMin 4
+   m_iTimeIntervalMax 7
+   m_vMins -8 6 -11
+   m_vMaxs -1 8 8
+  }
+  MeshObject "{506EDA9D46FC6C06}" {
+   Object "{6DDC11148F1B9D9C}Assets/Structures/Infrastructure/Power/DieselPowerPlant_01/DieselPowerPlant_01.xob"
+  }
+  RigidBody "{506EDA9CBE1B57FF}" {
+   ModelGeometry 1
+   Static 1
+  }
+  SCR_MapDescriptorComponent "{61EE00DB180BE7D0}" {
+  }
+ }
+ SlotBoneMappings {
+  SlotBoneMappingObject "{61EE00DB180BE7CC}" {
+   BonePrefix "Socket_ElectricityJunction_01"
+   Prefab "{1CB7D843AF3CE2BD}Prefabs/Structures/BuildingParts/Eletrical/ElectricityJunction_01.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7C9}" {
+   BonePrefix "Socket_KillSwitch_01"
+   Prefab "{AAA9315EB1CC7531}Prefabs/Structures/BuildingParts/Eletrical/KillSwitch_01.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7C4}" {
+   BonePrefix "Socket_LightSwitch_04"
+   Prefab "{FCD5B0DE50F886B7}Prefabs/Structures/BuildingParts/Eletrical/LightSwitch_04.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7C5}" {
+   BonePrefix "Socket_LoudspeakerMicrophone_01"
+   Prefab "{90BCDBBA44D6886B}Prefabs/Structures/BuildingParts/Eletrical/LoudspeakerMicrophone_01.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7C0}" {
+   BonePrefix "Socket_SocketElectrical_02"
+   Prefab "{9465BE9D286359D7}Prefabs/Structures/BuildingParts/Eletrical/SocketElectrical_02.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7C1}" {
+   BonePrefix "Socket_SocketElectricalLarge_01"
+   Prefab "{031522A609CFE64F}Prefabs/Structures/BuildingParts/Eletrical/SocketElectricalLarge_01.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7FE}" {
+   BonePrefix "Socket_SocketElectricalLarge_02"
+   Prefab "{6F411646B50B6961}Prefabs/Structures/BuildingParts/Eletrical/SocketElectricalLarge_02.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7FC}" {
+   BonePrefix "Socket_Diesel_Generator_01"
+   Prefab "{B8EA3DCD71F736B5}Prefabs/Structures/BuildingParts/Eletrical/DieselGenerator_01/DieselGenerator_01.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7FA}" {
+   BonePrefix "Socket_Faucet_01"
+   Prefab "{D0BD7A55306FC46B}Prefabs/Props/Furniture/Faucet_01.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7F9}" {
+   BonePrefix "Socket_Sink_01"
+   Prefab "{49012FE1DEF653EE}Prefabs/Props/Furniture/Sink_01.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7F2}" {
+   BonePrefix "Socket_Toilet_02"
+   Prefab "{63728F331E1BED60}Prefabs/Props/Furniture/Toilet_02.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7F0}" {
+   BonePrefix "Socket_LightIndustrial_01"
+   Prefab "{E34303CB179E13D6}Prefabs/Structures/BuildingParts/Lights/LightIndustrial_01.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7EE}" {
+   BonePrefix "Socket_LightIndustrial_02"
+   Prefab "{8F17372BAB5A9CF8}Prefabs/Structures/BuildingParts/Lights/LightIndustrial_02.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7EC}" {
+   BonePrefix "Socket_LampFluorescent_02"
+   Prefab "{DF9B306707F2BD15}Prefabs/Props/Furniture/LampFluorescent/LampFluorescent_02.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7EA}" {
+   BonePrefix "Socket_LampFluorescent_01"
+   Prefab "{B3CF0487BB36323B}Prefabs/Props/Furniture/LampFluorescent/LampFluorescent_01.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7E8}" {
+   BonePrefix "Socket_ElectricityBox_01"
+   Prefab "{94DCE76C1FFBA9BA}Prefabs/Structures/BuildingParts/Eletrical/ElectricityBox_01.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7E6}" {
+   BonePrefix "Socket_ElectricityBox_02"
+   Prefab "{F888D38CA33F2694}Prefabs/Structures/BuildingParts/Eletrical/ElectricityBox_02.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7E4}" {
+   BonePrefix "Socket_ElectricityBox_Medium_01"
+   Prefab "{9B4F35315B8A7209}Prefabs/Structures/BuildingParts/Eletrical/ElectricityBoxes/ElectricityBox_medium_01.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7E2}" {
+   BonePrefix "Socket_ElectricityBox_Medium_02"
+   Prefab "{F71B01D1E74EFD27}Prefabs/Structures/BuildingParts/Eletrical/ElectricityBoxes/ElectricityBox_medium_02.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7E3}" {
+   BonePrefix "Socket_ElectricityBox_Small_01"
+   Prefab "{CDE4035B661F9555}Prefabs/Structures/BuildingParts/Eletrical/ElectricityBoxes/ElectricityBox_small_01.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7E1}" {
+   BonePrefix "Socket_ElectricityBox_Small_02"
+   Prefab "{A1B037BBDADB1A7B}Prefabs/Structures/BuildingParts/Eletrical/ElectricityBoxes/ElectricityBox_small_02.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE796}" {
+   BonePrefix "Socket_LampIndustrial_03"
+   Prefab "{BB6989EB97F4F67E}Prefabs/Structures/BuildingParts/Lights/LampIndustrial_03.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE797}" {
+   BonePrefix "Socket_Door_Single_Ext"
+   Prefab "{1E01D526381C4B5F}Prefabs/Structures/BuildingParts/Doors/DoorSet_MetalDoor_01_L_EXT.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE795}" {
+   BonePrefix "Socket_Door_Double_Ext"
+   Prefab "{2F51CBF130077DAA}Prefabs/Structures/BuildingParts/Doors/DoorSet_Services_E_A_Double_UNI_B_EXT.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE790}" {
+   BonePrefix "Socket_Door_Garage"
+   Prefab "{0BB684BD42CCD7E1}Prefabs/Structures/BuildingParts/Doors/DoorSet_Garage_E_03_EXT.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE78E}" {
+   BonePrefix "Socket_Door_Int_Double_Industrial"
+   Prefab "{E286F281A306707A}Prefabs/Structures/BuildingParts/Doors/DoorSet_Industrial_01_INT.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE78C}" {
+   BonePrefix "Socket_Door_Int_Double_Office"
+   Prefab "{4C0ECE04CC4A628A}Prefabs/Structures/BuildingParts/Doors/DoorSet_Services_E_A_Double_UNI_B_INT.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE78A}" {
+   BonePrefix "Socket_Door_Int_Left"
+   Prefab "{66A908B66DC3277A}Prefabs/Structures/BuildingParts/Doors/DoorSet_Village_E_01_L_INT_COV_B.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE788}" {
+   BonePrefix "Socket_Door_Int_Office"
+   Prefab "{13EA797E9145BFE3}Prefabs/Structures/BuildingParts/Doors/DoorSet_Services_E_A_Left_UNI_B_INT.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE789}" {
+   BonePrefix "Socket_Win_Services_Int_135x300"
+   Prefab "{8D848BCFE2530FF1}Prefabs/Structures/BuildingParts/Windows/Win_Services_E_A/Win_Services_E_A_UNI_135x300_111_B_INT.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE784}" {
+   BonePrefix "Socket_Win_Services_Int_68x300"
+   Prefab "{68585B0075224146}Prefabs/Structures/BuildingParts/Windows/Win_Services_E_A/Win_Services_E_A_UNI_68x300_111_B_INT.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE782}" {
+   BonePrefix "Socket_ElectricityJunction_02"
+   Prefab "{6401BFEA3B30EBF7}Prefabs/Structures/BuildingParts/Eletrical/ElectricityJunction_02/ElectricityJunction_02.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE780}" {
+   BonePrefix "Socket_Win_GlassBlock_200x235"
+   Prefab "{83AAA23E7EF08258}Prefabs/Structures/BuildingParts/Windows/Win_GlassBlock_01/Win_GlassBlock_01_200x325.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7BF}" {
+   BonePrefix "Socket_Win_GlassBlock_200x275"
+   Prefab "{D50721D5BCE9B17D}Prefabs/Structures/BuildingParts/Windows/Win_GlassBlock_01/Win_GlassBlock_01_200x275.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7BD}" {
+   BonePrefix "Socket_Win_GlassBlock_100x275"
+   Prefab "{95F700F00AF5333A}Prefabs/Structures/BuildingParts/Windows/Win_GlassBlock_01/Win_GlassBlock_01_100x275.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7BB}" {
+   BonePrefix "socket_Glass_01_88x154_clear"
+   Prefab "{FEC9E591743B4F8B}Prefabs/Structures/BuildingParts/Windows/Glass_88x154/Glass_88x154.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7B9}" {
+   BonePrefix "socket_Glass_01_200x100_M1"
+   Prefab "{678AB1A771B8A06F}Prefabs/Structures/BuildingParts/Windows/Glass_200x100_M1/Glass_200x100_M1_wired.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7B6}" {
+   BonePrefix "Socket_Win_Office_E_195x72"
+   Prefab "{76414EACD6D0EAAA}Prefabs/Structures/BuildingParts/Windows/Win_Office_E_A/Win_Office_E_195x72_2_B.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7B2}" {
+   BonePrefix "Socket_Win_Office_E_195x182"
+   Prefab "{FD97350D58923F1E}Prefabs/Structures/BuildingParts/Windows/Win_Office_E_A/Win_Office_E_195x182_2_B.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7B0}" {
+   BonePrefix "Socket_SmokestackMetal_E_01"
+   Prefab "{6FC492B696FF2DFC}Prefabs/Structures/Industrial/Smokestacks/SmokestackMetal_E_01/SmokestackMetal_E_01.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7AC}" {
+   BonePrefix "socket_Glass_01_88x154_mesh"
+   Prefab "{EBB31DB229895D75}Prefabs/Structures/BuildingParts/Windows/Glass_88x154/Glass_88x154_wired.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7AD}" {
+   BonePrefix "Socket_CabinetElectricalLargeSet_01_V1"
+   Prefab "{EDBDB550EDC0D174}Prefabs/Structures/BuildingParts/Eletrical/CabinetElectricalLargeSet_01/CabinetElectricalLargeSet_01_V1.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7A8}" {
+   BonePrefix "Socket_CabinetElectricalLargeSet_01_V2"
+   Prefab "{81E981B051045E5A}Prefabs/Structures/BuildingParts/Eletrical/CabinetElectricalLargeSet_01/CabinetElectricalLargeSet_01_V2.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE7A0}" {
+   BonePrefix "Socket_CabinetElectricalLargeSet_01_V3"
+   Prefab "{6475CD495DE1C931}Prefabs/Structures/BuildingParts/Eletrical/CabinetElectricalLargeSet_01/CabinetElectricalLargeSet_01_V3.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE75E}" {
+   BonePrefix "Socket_CabinetElectricalLarge_01_EndPanel"
+   Prefab "{3A91334C5569E834}Prefabs/Structures/BuildingParts/Eletrical/CabinetElectricalLargeSet_01/CabinetElectricalLargeSet_01_EndPanel.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE75C}" {
+   BonePrefix "Socket_Ladder_DieselPowerPlant_01_322"
+   Prefab "{B8508AD8AA5464E8}Prefabs/Structures/BuildingParts/Ladders/Ladder_DieselPowerPlant_01/Ladder_DieselPowerPlant_01_322_B.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE75D}" {
+   BonePrefix "Socket_Ladder_DieselPowerPlant_01_386"
+   Prefab "{BE3D3EA72E000EFB}Prefabs/Structures/BuildingParts/Ladders/Ladder_DieselPowerPlant_01/Ladder_DieselPowerPlant_01_386_B.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE75B}" {
+   BonePrefix "Socket_Ladder_DieselPowerPlant_01_866"
+   Prefab "{5E6E2D5FBB966C01}Prefabs/Structures/BuildingParts/Ladders/Ladder_DieselPowerPlant_01/Ladder_DieselPowerPlant_01_866_B.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE759}" {
+   BonePrefix "Socket_Entry_Direct_01_narrow"
+   Prefab "{FA188839C5E6DAD3}Prefabs/Structures/BuildingParts/Entry/Entry_Direct_01_narrow.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE756}" {
+   BonePrefix "Socket_Entry_Direct_01_wide"
+   Prefab "{69A8FFE5527CB776}Prefabs/Structures/BuildingParts/Entry/Entry_Direct_01.et"
+  }
+  SlotBoneMappingObject "{61EE00DB180BE754}" {
+   BonePrefix "Socket_Entry_Slope"
+   Prefab "{18E3F1942F2C8509}Prefabs/Structures/BuildingParts/Entry/Entry_Slope_Platform_01.et"
+  }
+ }
+ {
+  EnvironmentProbeEntity : "{6F46BA45228BFA0B}Prefabs/Structures/Infrastructure/Power/DieselPowerPlant_01/Probe_DieselPowerPlant_01.et" {
+   ID "61EE00DB180BE62C"
+   coords 1.364 5.563 -2.646
+  }
+ }
+}

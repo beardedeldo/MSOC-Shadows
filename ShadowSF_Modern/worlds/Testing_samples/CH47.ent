@@ -1,0 +1,3 @@
+SubScene {
+ Parent "{0C253DE0B56DAFE5}worlds/GameMaster/GM_KunarRagion.ent"
+}

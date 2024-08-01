@@ -1,0 +1,18 @@
+GenericEntity : "{5879D8E9C56E358D}Prefabs/Items/Core/Radio_base.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  BaseRadioComponent "{5A30BAE7673C63CA}" {
+   Transceivers {
+    RadioTransceiver "{6164D6716B1D9217}" {
+     ChannelFrequency 50000
+    }
+    RadioTransceiver "{6164D6716B1D9211}" {
+     ChannelFrequency 49000
+    }
+    RadioTransceiver "{6164D6716B1D9212}" {
+     ChannelFrequency 46500
+    }
+   }
+  }
+ }
+}

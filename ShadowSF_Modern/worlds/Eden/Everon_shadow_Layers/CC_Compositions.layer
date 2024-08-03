@@ -2,6 +2,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Quarry_comps {
   coords 8840.034 199.421 3894.695
   {
+   SCR_DestructibleBuildingEntity : "{4A69647388F17A23}Prefabs/Structures/Houses/Shed/Shed_01/Shed_01_Base_shadow.et" {
+    coords -39.114 198.576 49.846
+    angleY 87.126
+   }
    $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     Quarry_prison {
      coords -39.086 -2.251 49.34
@@ -282,14 +286,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Military_comps {
   coords 8654.048 150.992 3448.905
   {
-   $grp Vehicle : "{1C5FE7B7FF49BB8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Base.et" {
-    BTR70_Base1 {
-     coords -11.147 -1.365 -4.765
-    }
-    BTR70_Base2 {
-     coords -109.151 -7.248 69.407
-     angleY -83.078
-    }
+   Vehicle BTR70_Base1 : "{1C5FE7B7FF49BB8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Base.et" {
+    coords -11.147 -1.365 -4.765
    }
    GenericEntity : "{1EB5949DF6738E38}Prefabs/Compositions/Slotted/SlotFlatSmall/VehicleMaintenance_S_USSR_01.et" {
     coords 180.397 -55.838 -766.669
@@ -605,6 +603,229 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        }
       }
      }
+     GenericEntity {
+      ID "5D16956BA778F607"
+      {
+       StaticModelEntity {
+        ID "5CC2D58E866FB3DA"
+        {
+         SCR_DestructibleBuildingEntity {
+          ID "5A5344E1DC2830DD"
+          coords 0 0.1 0
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+ Saint_Pierre_area {
+  coords 9803.288 0 1497.351
+  {
+   $grp Vehicle : "{1C5FE7B7FF49BB8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Base.et" {
+    BTR70_Base2 {
+     coords 3.499 8.634 81.028
+     angleY -144.132
+    }
+    BTR70_Base3 {
+     coords 79.232 2.842 45.081
+     angleY -63.756
+    }
+    BTR70_Base4 {
+     coords 325.529 2.457 -3.993
+     angleY -63.756
+    }
+    BTR70_Base5 {
+     coords 520.944 11.378 136.814
+     angleY -144.132
+    }
+   }
+   Vehicle Ural4320_ammo1 : "{3336BE330C4F355B}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_ammo.et" {
+    coords -93.057 22.441 214.184
+    angleY 131.453
+   }
+   GenericEntity : "{520CC573CA9FBC4F}Prefabs/Structures/Wreck/uh60.et" {
+    coords 152.558 2.6 24.799
+    angleX 0.035
+    angleY -89.855
+    angleZ 5.255
+   }
+   $grp GenericEntity : "{623390265AA7DA97}Prefabs/Structures/Wreck/mq9.et" {
+    {
+     coords -1.143 0 15.749
+     angleX 13.479
+     angleY -20.274
+     angleZ -4.921
+    }
+    {
+     coords 108.289 19.144 -6.759
+     angleX 80.953
+     angleY 0
+    }
+    {
+     coords 168.692 4.318 16.465
+     angleX 1.711
+     angleY -19.268
+     angleZ 0.497
+    }
+   }
+   SCR_DestructibleBuildingEntity : "{74B221077A871D91}Prefabs/Structures/Bulding/Military/fortified_nest_big_ep1.et" {
+    coords 102.573 7.76 64.154
+    angleY 38.486
+   }
+   GenericEntity : "{939E032C3B6E837A}Prefabs/Props/Industrial/CargoContainers/CargoContainer_01/CargoContainer_02_20ft_Chernarussian.et" {
+    coords 358.524 2.614 19.019
+    angleY 9.791
+   }
+   $grp SCR_DestructibleBuildingEntity : "{947C9E403283DC3E}Prefabs/Structures/Hangar/Hangar.et" {
+    {
+     coords 161.583 2.517 20.62
+     angleY 84.11
+    }
+    {
+     coords 348.495 2.531 28.123
+     angleY 14.67
+    }
+   }
+   SCR_DestructibleBuildingEntity : "{9CEC8BB63429FF28}Prefabs/Structures/Airport/ControlTower_01.et" {
+    coords 251.67 2.8 85.115
+    angleY -74
+   }
+   Vehicle Ural4320_transport_covered_closed1 : "{9DD4FD3527CB46C8}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport_covered_closed.et" {
+    coords -86.245 22.358 219.538
+    angleY 132.135
+   }
+   SCR_DestructibleBuildingEntity : "{A24E20F839D2EB6F}Prefabs/Structures/Stairs/MEStairs.et" {
+    coords 104.094 0.847 73.902
+    angleY 33.447
+   }
+   GenericEntity : "{BC914C56435AC081}Prefabs/Props/Military/SupplyBox/SupplyShippingContainers/SupplyShippingContainers_01/Dst/CargoContainer_01_10ft_Ruin_base.et" {
+    coords 351.415 2.437 41.466
+   }
+   $grp GenericEntity : "{C5341109EB1AB7B5}Prefabs/Destructible/GMFX_Destructible_Radar_RPL5.et" {
+    {
+     coords 329.538 15.314 113.098
+    }
+    {
+     coords 335.279 15.076 133.894
+    }
+   }
+   GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/CargoContainer_01/CargoContainer_01_40ft_red.et" {
+    coords 352.415 2.614 15.115
+    angleY -77.418
+   }
+   GenericEntity : "{E1F858F259B0DF63}Prefabs/Props/Signs/Industrial/SignIndustrial_30x20_1_FireHazard.et" {
+    coords 352.622 4.772 3.447
+    angleY -163.911
+   }
+   SCR_DestructibleBuildingEntity : "{E29192D96BCA9047}Prefabs/Structures/Bulding/Military/Barrack_1.et" {
+    coords 119.328 2.531 77.269
+    angleY 0
+   }
+   $grp GenericEntity : "{F2C5628C6D12840C}Prefabs/Props/Industrial/CargoContainers/CargoContainer_01/CargoContainer_02_20ft_HansaAtlantic.et" {
+    {
+     coords 349.943 2.614 24.825
+     angleY 97.843
+    }
+    {
+     coords 348.604 2.614 21.33
+     angleY 97.843
+    }
+   }
+   GenericEntity : "{F68F3B7247F6E810}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_USSR_01.et" {
+    coords 549.101 8.953 100.192
+    angleY 163.056
+    {
+     GenericEntity {
+      ID "5D16956BA778EE09"
+      {
+       DecalEntity {
+        ID "56DEFDB4A9499F9B"
+        coords 0 0 0
+       }
+      }
+     }
+     GenericEntity {
+      ID "5D16956BA778F607"
+      {
+       StaticModelEntity {
+        ID "5CC2D58E866FB3DA"
+        {
+         SCR_DestructibleBuildingEntity {
+          ID "5A5344E1DC2830DD"
+          coords 0 0.1 0
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+   SCR_DestructibleBuildingEntity : "{FBCE1861B987EA68}Prefabs/Structures/Military/Houses/GuardTower_01/GuardTower_01.et" {
+    coords 522.889 10.022 110.53
+    angleY -105.515
+   }
+  }
+ }
+ Saint_Pierre_dest_items {
+  coords 10152.705 2.614 1533.022
+  {
+   GenericEntity : "{4C931B452C796A2A}Prefabs/Destructible/AmmoStorage/GMFX_AmmoStorage_USSR.et" {
+    coords 11.211 0 -5.851
+   }
+   $grp GenericEntity : "{6B52C6B5FEC3E369}Prefabs/Destructible/GMFX_Destructible_AmmoDump.et" {
+    {
+     coords -7.167 0 4.763
+    }
+    {
+     coords -9.441 0 5.356
+    }
+    {
+     coords -8.872 0 8.442
+    }
+   }
+   $grp GenericEntity : "{8B9AFAD3A1548FCE}Prefabs/Destructible/AmmoStorage/GMFX_AmmoStorage.et" {
+    {
+     coords 10.876 0 -8.301
+    }
+    {
+     coords 10.899 0 -10.49
+    }
+   }
+   $grp GenericEntity : "{EA3F58CE2AF832FD}Prefabs/Destructible/RedBarrel/GMFX_RedBarrel.et" {
+    {
+     coords 6.745 0 2.902
+    }
+    {
+     coords 7.959 0 1.698
+    }
+    {
+     coords 8.479 0 4.892
+    }
+    {
+     coords 9.799 0 4.23
+    }
+    {
+     coords 10.286 0 2.028
+    }
+    {
+     coords 7.656 0 7.375
+    }
+    {
+     coords 5.484 0 4.695
+    }
+   }
+   $grp GenericEntity : "{FFCDFB1375A99125}Prefabs/Destructible/GMFX_Destructible_RPL5_01_generator.et" {
+    {
+     coords -4.618 0 7.368
+    }
+    {
+     coords -12.411 0 -12.885
+    }
+    {
+     coords -9.652 0 -4.044
     }
    }
   }

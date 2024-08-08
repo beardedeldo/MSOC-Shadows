@@ -1,0 +1,3 @@
+SubScene {
+ Parent "{8C950350188D37A8}worlds/MussaloCombatOps.ent"
+}

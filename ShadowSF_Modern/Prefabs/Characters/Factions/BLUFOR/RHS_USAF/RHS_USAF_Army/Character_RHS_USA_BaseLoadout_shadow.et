@@ -1,6 +1,20 @@
 SCR_ChimeraCharacter : "{FDAEA6C9F2673B02}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/Character_RHS_USAF_Base.et" {
  ID "520EC961A090B1EE"
  components {
+  SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
+   components {
+    SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
+     InitialStorageSlots {
+      SCR_EquipmentStorageSlot BinocularSlot {
+       Prefab "{03810BEF182ADA0B}Prefabs/Items/Equipment/Binoculars/Rangefinder_Vector21.et"
+      }
+      SCR_EquipmentStorageSlot WristwatchSlot {
+       Prefab "{7C53E6DE2E4BD8CB}Prefabs/Items/Equipment/Watches/Watch_GarminTactixBravo.et"
+      }
+     }
+    }
+   }
+  }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
     LoadoutSlotInfo Hat {

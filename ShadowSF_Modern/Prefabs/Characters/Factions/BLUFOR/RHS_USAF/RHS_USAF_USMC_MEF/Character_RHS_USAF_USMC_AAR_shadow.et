@@ -28,6 +28,13 @@ SCR_ChimeraCharacter : "{3967948B72443B25}Prefabs/Characters/Factions/BLUFOR/RHS
    WeaponType Handgun
    WeaponTemplate "{E998FA484B0C4BFF}Prefabs/Weapons/Handguns/Glock/Handgun_Glock17.et"
   }
+  SCR_CharacterIdentityComponent "{5584CBC63E092DBC}" {
+   Identity Identity "{5584CBC6363C648B}" {
+    Name "Luna"
+    Alias "JLuna"
+    Surname "Junior"
+   }
+  }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
     LoadoutSlotInfo Hat {
@@ -84,5 +91,5 @@ SCR_ChimeraCharacter : "{3967948B72443B25}Prefabs/Characters/Factions/BLUFOR/RHS
   }
  }
  coords 0 0 0
- angleZ -18.209
+ angleY -70.5
 }

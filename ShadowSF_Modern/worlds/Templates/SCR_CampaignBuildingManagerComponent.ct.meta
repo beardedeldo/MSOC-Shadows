@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{E8D4549FE042E539}worlds/Templates/SCR_CampaignBuildingManagerComponent.ct"
+ Configurations {
+  ComponentTemplateResourceClass PC {
+  }
+  ComponentTemplateResourceClass XBOX_ONE : PC {
+  }
+  ComponentTemplateResourceClass XBOX_SERIES : PC {
+  }
+  ComponentTemplateResourceClass PS4 : PC {
+  }
+  ComponentTemplateResourceClass PS5 : PC {
+  }
+  ComponentTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

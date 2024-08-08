@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{7FB277F811E4AF05}Prefabs/Characters/HeadGear/Hat_Beanie/variants/Hat_beanie_green_sordin.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

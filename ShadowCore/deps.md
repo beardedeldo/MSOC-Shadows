@@ -3,3 +3,5 @@
 - Arma Terrain Core 
 - ParachuteTestLol
 - Game Master FX
+- Ace Core 
+- Ace Medical 

@@ -146,6 +146,8 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
    m_SpawnLogic SCR_MenuSpawnLogic "{620D4CA3A708C55A}" {
    }
   }
+  SCR_SaveLoadComponent "{6214DD4E582FF65E}" {
+  }
   SCR_TimeAndWeatherHandlerComponent "{62110A0B384511AB}" {
    m_bRandomStartingDaytime 1
    m_bRandomStartingDaytimeRange 1
@@ -154,6 +156,9 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
   }
  }
  coords 5937.66 -9.938 3354.929
+ m_aDisabledResourceTypes {
+  0
+ }
 }
 ScriptedChatEntity ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
  coords 5937.66 -9.938 3361.929

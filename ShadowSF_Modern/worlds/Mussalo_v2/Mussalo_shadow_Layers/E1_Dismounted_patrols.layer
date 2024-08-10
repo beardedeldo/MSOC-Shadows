@@ -49,7 +49,7 @@ GenericEntity Dismounted_patrol1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/
          }
         }
        }
-       coords -229.513 -0.797 95.036
+       coords -52.957 0.185 29.592
       }
       SlotWaypoint8 {
        components {
@@ -58,7 +58,7 @@ GenericEntity Dismounted_patrol1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/
          }
         }
        }
-       coords -128.638 0.632 -291.373
+       coords 65.642 -0.088 -151.725
       }
       SlotWaypoint9 {
        components {
@@ -67,7 +67,7 @@ GenericEntity Dismounted_patrol1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/
          }
         }
        }
-       coords 19.735 19.072 -503.321
+       coords -44.748 0.107 -251.688
       }
      }
     }
@@ -95,7 +95,7 @@ GenericEntity Dismounted_patrol1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/
          m_fPerceptionFactor 0.8
         }
        }
-       coords 3.143 0.381 3.344
+       coords 297.608 0.115 275.561
       }
       SlotAI16 {
        components {

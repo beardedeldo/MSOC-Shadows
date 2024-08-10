@@ -3588,6 +3588,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         components {
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           42 41 43 46
+          }
           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6060CE91146CF8DF}" {
           }
           m_bSpawnAIOnWPPos 1
@@ -3638,6 +3642,106 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
         coords 389.788 0.832 390.883
+        angleY -46.462
+       }
+       SlotAI78 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           42 41 43 46
+          }
+          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6060CE91146CF8DF}" {
+          }
+          m_bSpawnAIOnWPPos 1
+          m_sWPToSpawn "{1B0E3436C30FA211}Prefabs/AI/Waypoints/AIWaypoint_Attack.et"
+          m_bBalanceOnPlayersCount 1
+         }
+        }
+        coords -55.304 7.352 -35.424
+        angleY -45.136
+       }
+       SlotAI81 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           42 41 43 46
+          }
+          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6060CE91146CF8DF}" {
+          }
+          m_bSpawnAIOnWPPos 1
+          m_sWPToSpawn "{1B0E3436C30FA211}Prefabs/AI/Waypoints/AIWaypoint_Attack.et"
+          m_bBalanceOnPlayersCount 1
+         }
+        }
+        coords 97.527 11.926 -90.439
+        angleY -45.136
+       }
+       SlotAI82 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           42 41 43 46
+          }
+          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6060CE91146CF8DF}" {
+          }
+          m_bSpawnAIOnWPPos 1
+          m_sWPToSpawn "{1B0E3436C30FA211}Prefabs/AI/Waypoints/AIWaypoint_Attack.et"
+          m_bBalanceOnPlayersCount 1
+         }
+        }
+        coords 110.549 11.858 -93.557
+        angleY -45.136
+       }
+       SlotAI83 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_eEntityCatalogType CHARACTER
+          m_aIncludedEditableEntityLabels {
+           42 41 43 46
+          }
+          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6060CE91146CF8DF}" {
+          }
+          m_bSpawnAIOnWPPos 1
+          m_sWPToSpawn "{1B0E3436C30FA211}Prefabs/AI/Waypoints/AIWaypoint_Attack.et"
+          m_bBalanceOnPlayersCount 1
+         }
+        }
+        coords -82.841 -0.104 -10.881
+        angleY -45.136
+       }
+       SlotAI84 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6060CE911466FE0A}" {
+          }
+          m_bSpawnAIOnWPPos 1
+          m_sWPToSpawn "{750A8D1695BD6998}Prefabs/AI/Waypoints/AIWaypoint_Move.et"
+          m_bBalanceOnPlayersCount 1
+         }
+        }
+        coords -22.755 -0.029 19.692
+        angleY -46.462
+       }
+       SlotAI85 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6060CE911466FE0A}" {
+          }
+          m_bSpawnAIOnWPPos 1
+          m_sWPToSpawn "{750A8D1695BD6998}Prefabs/AI/Waypoints/AIWaypoint_Move.et"
+          m_bBalanceOnPlayersCount 1
+         }
+        }
+        coords -19.007 -0.029 28.249
         angleY -46.462
        }
       }
@@ -3753,10 +3857,15 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
              m_eActivationType ON_AREA_TRIGGER_ACTIVATION
              m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+             m_eEntityCatalogType CHARACTER
+             m_aIncludedEditableEntityLabels {
+              43 42 44 45 46 48 49
+             }
              m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{60F3182F74B7A584}" {
               m_aLayerName {
               }
              }
+             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
              m_bBalanceOnPlayersCount 1
             }
            }
@@ -3792,6 +3901,46 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            }
            coords 9.152 0 6.74
            angleY 59.757
+          }
+          SlotAI79 {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_eActivationType ON_AREA_TRIGGER_ACTIVATION
+             m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+             m_eEntityCatalogType CHARACTER
+             m_aIncludedEditableEntityLabels {
+              43 42 44 45 46 48 49
+             }
+             m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{60F3182F74B7A584}" {
+              m_aLayerName {
+              }
+             }
+             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+             m_bBalanceOnPlayersCount 1
+            }
+           }
+           coords 2.969 -3.2 4.459
+           angleY -133.871
+          }
+          SlotAI80 {
+           components {
+            SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+             m_eActivationType ON_AREA_TRIGGER_ACTIVATION
+             m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+             m_eEntityCatalogType CHARACTER
+             m_aIncludedEditableEntityLabels {
+              43 42 44 45 46 48 49
+             }
+             m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{60F3182F74B7A584}" {
+              m_aLayerName {
+              }
+             }
+             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+             m_bBalanceOnPlayersCount 1
+            }
+           }
+           coords 19.16 -4.258 -4.15
+           angleY -133.871
           }
          }
         }

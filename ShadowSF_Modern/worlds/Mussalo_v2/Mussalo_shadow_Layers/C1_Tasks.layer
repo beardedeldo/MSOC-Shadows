@@ -231,7 +231,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
   }
  }
- A_Briefing_init {
+ A1_Briefing_init {
   coords 3383.809 14.735 525.155
   angleY -57.418
   {
@@ -272,7 +272,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     m_aActions {
      SCR_ScenarioFrameworkActionSpawnObjects "{61F2B82469733BBC}" {
       m_aNameOfObjectsToSpawnOnActivation {
-       "LayerTaskClearArea5"
+       "LayerTaskMove1"
       }
      }
     }
@@ -282,9 +282,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  B_Area_small_airport {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    m_eActivationType ON_TRIGGER_ACTIVATION
     m_bDynamicDespawn 1
-    m_iDynamicDespawnRange 900
+    m_iDynamicDespawnRange 700
     m_bShowDebugShapesInWorkbench 1
    }
   }
@@ -294,44 +293,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     components {
      SCR_ScenarioFrameworkLayerTaskClearArea "{5A6513F46D132331}" {
       m_sFactionKey "US"
-      m_eActivationType ON_TRIGGER_ACTIVATION
-      m_sTaskTitle "Secure the airport to establish a supply route. "
-      m_sTaskDescription "Operation Nightfall"\
-      "2000EST09102024"\
-      ""\
-      "Objective: Small Airport"\
-      "1. Situation:"\
-      "a. Weather:"\
-      "- Thunderstorm. Early morning. "\
-      "b. Enemy:"\
-      "- Spatnez forces. Expect infantry, light/heavy armor. Heavy presence at the airport."\
-      ""\
-      "c. Friendly Forces:"\
-      "- MSOC Shadows Reaper One and Two Squads. Eagles on standby for reinserts."\
-      ""\
-      "2. Mission:"\
-      "- Reapers are to attack and capture the small airport. Establish and secure a supply route for friendly forces to ensure sustained operations in the area."\
-      ""\
-      "3. Execution:"\
-      "a. Concept of Operation:"\
-      "- Infiltrate using very wide flight path around the primary area of operations (AO) to avoid early detection. "\
-      "- Move rapidly to secure the airport and establish a defensive perimeter."\
-      ""\
-      "b. Maneuver:"\
-      "- Phase 1: Blackhawk transport to the infiltration point."\
-      "- Phase 2: Foot engagements to approach and capture the airport."\
-      "- Phase 3: Secure the airport, establish defensive positions, and prepare for possible enemy counterattacks."\
-      "- Phase 4: Secure airport to establish a supply route for friendly forces."\
-      ""\
-      "c. Tasks to Subordinate Units:"\
-      "- Reaper One: Lead the initial assault on the airport, neutralize enemy forces, and secure the control tower."\
-      "- Reaper Two: Support Reaper One, focusing on clearing the area of patrols and establishing a defensive perimeter."\
-      "- Eagles: Provide reinsert and supply support. CAS only if requested. "\
-      ""\
-      "d. Coordinating Instructions:"\
-      "- Communication: Standard MSOC Shadows communication protocols and PACE plan. "\
-      "- Rules of Engagement: Engage enemy forces on sight, prioritize capturing key infrastructure intact."\
-      "- Timeline: Begin infiltration at 2100 EST. Complete the capture and securing of the airport by 2230 EST."
+      m_sTaskTitle "Secure the airport from enemy presence. "
       m_bPlaceMarkerOnSubjectSlot 1
      }
     }
@@ -342,29 +304,12 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        coords -21.915 -6.548 -13.862
        {
         $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-         X_DF_squads3 {
-          coords 8.385 -1.202 35.487
-          {
-           GenericEntity SlotAI101 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-            components {
-             SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-              m_sFactionKey "USSR"
-              m_sObjectToSpawn "{4C44B4D8F2820F25}Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_SentryTeam.et"
-              m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{61EE00C888BBD419}" {
-               m_aLayerName {
-                ""
-               }
-              }
-              m_bSpawnAIOnWPPos 1
-              m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-              m_eAIGroupFormation Line
-             }
-            }
-            coords -122.14 1.036 7.817
+         X_CQC_tower {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_SpawnChildren RANDOM_BASED_ON_PLAYERS_COUNT
            }
           }
-         }
-         X_CQC_tower {
           coords -38.351 3.676 -36.93
           {
            $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
@@ -381,7 +326,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 38.981 5.617 52.773
@@ -399,7 +344,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 47.377 11.712 47.827
@@ -417,7 +362,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 41.379 5.617 57.901
@@ -435,7 +380,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 46.77 4.097 47.631
@@ -453,7 +398,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 36.193 1.816 51.113
@@ -471,7 +416,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 38.947 1.816 53.107
@@ -489,7 +434,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 38.776 -1.984 58.651
@@ -507,7 +452,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 37.366 -1.984 53.641
@@ -525,7 +470,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 42.531 -1.984 50.694
@@ -543,7 +488,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 44.574 11.712 55.006
@@ -561,7 +506,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 50.672 11.712 44.724
@@ -641,7 +586,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -18.002 2.169 -3.881
@@ -659,7 +604,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -17.552 2.169 6.121
@@ -677,7 +622,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -14.454 2.169 6.512
@@ -695,7 +640,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -22.048 2.169 10.181
@@ -713,7 +658,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -14.677 2.169 14.887
@@ -731,7 +676,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -21.364 2.169 -6.881
@@ -749,7 +694,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 19.839 0.676 -20.281
@@ -767,7 +712,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 19.52 1.81 -0.926
@@ -785,7 +730,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 22.594 1.81 9.372
@@ -803,7 +748,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 23.241 1.81 -7.861
@@ -821,7 +766,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 13.411 1.81 -8.39
@@ -839,7 +784,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 16.372 1.81 -12.951
@@ -848,6 +793,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
          }
          X_CQC_civ_bld {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            Enabled 0
+           }
+          }
           coords -118.269 -0.178 -142.179
           {
            $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
@@ -864,7 +814,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -5.687 -0.431 -12.781
@@ -882,7 +832,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 10.595 -0.031 38.237
@@ -900,7 +850,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 12.408 0.708 22.45
@@ -918,7 +868,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 3.548 0.709 23.284
@@ -936,7 +886,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -74.786 1.309 -134.569
@@ -954,7 +904,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -73.709 0.959 -148.888
@@ -972,7 +922,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -73.235 0.959 -153.036
@@ -990,7 +940,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -65.173 1.262 -169.294
@@ -999,6 +949,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
          }
          X_CQC_pplant {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_SpawnChildren RANDOM_BASED_ON_PLAYERS_COUNT
+           }
+          }
           coords 24.533 7.962 -197.684
           {
            $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
@@ -1015,7 +970,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 11.298 3.12 -0.981
@@ -1033,7 +988,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -3.34 -7.984 2.013
@@ -1051,7 +1006,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -2.538 -8.01 -7.431
@@ -1069,7 +1024,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 11.702 -4.469 -5.853
@@ -1087,7 +1042,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 9.46 -0.669 1.368
@@ -1105,7 +1060,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords 11.998 -0.669 7.229
@@ -1115,6 +1070,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
                m_sFactionKey "USSR"
                m_sObjectToSpawn "{472F2B06FF9BF37D}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_4.et"
+               m_fPerceptionFactor 0.5
               }
              }
              coords 11.406 -0.669 -1.604
@@ -1124,6 +1080,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
                m_sFactionKey "USSR"
                m_sObjectToSpawn "{472F2B06FF9BF37D}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_4.et"
+               m_fPerceptionFactor 0.5
               }
              }
              coords -4.654 -7.961 8.874
@@ -1133,6 +1090,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
                m_sFactionKey "USSR"
                m_sObjectToSpawn "{472F2B06FF9BF37D}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_4.et"
+               m_fPerceptionFactor 0.5
               }
              }
              coords 1.271 -7.982 18.218
@@ -1157,7 +1115,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -0.432 0 -4.325
@@ -1175,7 +1133,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -3.489 0 -0.022
@@ -1199,7 +1157,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                }
                m_aExcludedEditableEntityLabels {
                }
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.3
               }
              }
              coords 14.112 0.002 -7.792
@@ -1216,7 +1174,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                }
                m_aExcludedEditableEntityLabels {
                }
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.3
               }
              }
              coords -21.656 -0.012 -0.011
@@ -1241,7 +1199,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{A88F0B6CF25BD1DE}Prefabs/AI/Waypoints/AIWaypoint_Scout.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -3.684 -0.208 4.908
@@ -1259,7 +1217,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{A88F0B6CF25BD1DE}Prefabs/AI/Waypoints/AIWaypoint_Scout.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -53.802 0.798 12.395
@@ -1277,7 +1235,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{A88F0B6CF25BD1DE}Prefabs/AI/Waypoints/AIWaypoint_Scout.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -51.96 0.602 -49.858
@@ -1295,7 +1253,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{A88F0B6CF25BD1DE}Prefabs/AI/Waypoints/AIWaypoint_Scout.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -27.316 0.371 -120.681
@@ -1313,7 +1271,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_aExcludedEditableEntityLabels {
                }
                m_sWPToSpawn "{A88F0B6CF25BD1DE}Prefabs/AI/Waypoints/AIWaypoint_Scout.et"
-               m_fPerceptionFactor 0.8
+               m_fPerceptionFactor 0.5
               }
              }
              coords -43.442 0.03 -135.448
@@ -1464,7 +1422,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
          }
          Road_block {
-          coords 261.958 -1.474 78.615
+          coords 386.121 -2.165 95.196
           {
            $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
             SlotAI58 {
@@ -1483,7 +1441,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 0.8
               }
              }
-             coords 5.953 0.024 1.26
+             coords 5.953 0.029 1.26
             }
             SlotAI60 {
              components {
@@ -1501,7 +1459,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 0.8
               }
              }
-             coords 0.599 -0.039 -1.229
+             coords 0.599 -0.02 -1.229
             }
             SlotAI61 {
              components {
@@ -1519,7 +1477,122 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 0.8
               }
              }
-             coords 3.182 0.191 6.106
+             coords 3.182 0.15 6.106
+            }
+           }
+          }
+         }
+         CQC_farm {
+          coords 170.628 -0.065 149.73
+          {
+           $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+            SlotAI71 {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sFactionKey "USSR"
+               m_sObjectToSpawn "{8CA70597606992EC}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Medic.et"
+               m_bRandomizePerFaction 1
+               m_eEntityCatalogType CHARACTER
+               m_aIncludedEditableEntityLabels {
+                44 40 41 42 43 45 46 47 48
+               }
+               m_aExcludedEditableEntityLabels {
+               }
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+               m_fPerceptionFactor 0.5
+              }
+             }
+             coords -28.359 0.201 19.423
+            }
+            SlotAI72 {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sFactionKey "USSR"
+               m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
+               m_bRandomizePerFaction 1
+               m_eEntityCatalogType CHARACTER
+               m_aIncludedEditableEntityLabels {
+                44 40 41 42 43 45 46 47 48
+               }
+               m_aExcludedEditableEntityLabels {
+               }
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+               m_fPerceptionFactor 0.5
+              }
+             }
+             coords -35.121 -0.311 -8.265
+            }
+            SlotAI73 {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sFactionKey "USSR"
+               m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
+               m_bRandomizePerFaction 1
+               m_eEntityCatalogType CHARACTER
+               m_aIncludedEditableEntityLabels {
+                44 40 41 42 43 45 46 47 48
+               }
+               m_aExcludedEditableEntityLabels {
+               }
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+               m_fPerceptionFactor 0.5
+              }
+             }
+             coords -31.287 -0.316 -8.408
+            }
+            SlotAI74 {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sFactionKey "USSR"
+               m_sObjectToSpawn "{8CA70597606992EC}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Medic.et"
+               m_bRandomizePerFaction 1
+               m_eEntityCatalogType CHARACTER
+               m_aIncludedEditableEntityLabels {
+                44 40 41 42 43 45 46 47 48
+               }
+               m_aExcludedEditableEntityLabels {
+               }
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+               m_fPerceptionFactor 0.5
+              }
+             }
+             coords 20.749 0.241 -2.284
+            }
+            SlotAI75 {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sFactionKey "USSR"
+               m_sObjectToSpawn "{8CA70597606992EC}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Medic.et"
+               m_bRandomizePerFaction 1
+               m_eEntityCatalogType CHARACTER
+               m_aIncludedEditableEntityLabels {
+                44 40 41 42 43 45 46 47 48
+               }
+               m_aExcludedEditableEntityLabels {
+               }
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+               m_fPerceptionFactor 0.5
+              }
+             }
+             coords 26.923 0.236 6.25
+            }
+            SlotAI76 {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sFactionKey "USSR"
+               m_sObjectToSpawn "{8CA70597606992EC}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Medic.et"
+               m_bRandomizePerFaction 1
+               m_eEntityCatalogType CHARACTER
+               m_aIncludedEditableEntityLabels {
+                44 40 41 42 43 45 46 47 48
+               }
+               m_aExcludedEditableEntityLabels {
+               }
+               m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+               m_fPerceptionFactor 0.5
+              }
+             }
+             coords 16.891 3.541 -3.929
             }
            }
           }
@@ -1541,7 +1614,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            m_sFactionKey "US"
            m_aPlugins {
             SCR_ScenarioFrameworkPluginTrigger "{5A633AF5368D26A3}" {
-             m_fAreaRadius 717
+             m_fAreaRadius 384
              m_sActivatedByThisFaction "US"
             }
            }
@@ -1551,6 +1624,80 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         }
        }
       }
+     }
+    }
+   }
+  }
+ }
+ A2_MoveTo_Airport {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_eActivationType ON_TRIGGER_ACTIVATION
+    m_iDynamicDespawnRange 600
+   }
+  }
+  coords 849.158 3.063 6315.414
+  angleY -57.418
+  {
+   GenericEntity LayerTaskMove1 : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+    components {
+     SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
+      m_sFactionKey "US"
+      m_eActivationType ON_TRIGGER_ACTIVATION
+      m_sTaskTitle "OPORD Nightfall"
+      m_sTaskDescription "Operation Nightfall"\
+      "2000EST09102024"\
+      ""\
+      "Objective: Small Airport"\
+      "1. Situation:"\
+      "a. Weather:"\
+      "- Thunderstorm. Early morning. "\
+      "b. Enemy:"\
+      "- Spatnez forces. Expect infantry, light/heavy armor. Heavy presence at the airport."\
+      ""\
+      "c. Friendly Forces:"\
+      "- MSOC Shadows Reaper One and Two Squads. Eagles on standby for reinserts."\
+      ""\
+      "2. Mission:"\
+      "- Reapers are to attack and capture the small airport. Establish and secure a supply route for friendly forces to ensure sustained operations in the area."\
+      ""\
+      "3. Execution:"\
+      "a. Concept of Operation:"\
+      "- Infiltrate using very wide flight path around the primary area of operations (AO) to avoid early detection. "\
+      "- Move rapidly to secure the airport and establish a defensive perimeter."\
+      ""\
+      "b. Maneuver:"\
+      "- Phase 1: Blackhawk transport to the infiltration point."\
+      "- Phase 2: Foot engagements to approach and capture the airport."\
+      "- Phase 3: Secure the airport, establish defensive positions, and prepare for possible enemy counterattacks."\
+      "- Phase 4: Secure airport to establish a supply route for friendly forces."\
+      ""\
+      "c. Tasks to Subordinate Units:"\
+      "- Reaper One: Lead the initial assault on the airport, neutralize enemy forces, and secure the control tower."\
+      "- Reaper Two: Support Reaper One, focusing on clearing the area of patrols and establishing a defensive perimeter."\
+      "- Eagles: Provide reinsert and supply support. CAS only if requested. "\
+      ""\
+      "d. Coordinating Instructions:"\
+      "- Communication: Standard MSOC Shadows communication protocols and PACE plan. "\
+      "- Rules of Engagement: Engage enemy forces on sight, prioritize capturing key infrastructure intact."\
+      "- Timeline: Begin infiltration at 2100 EST. Complete the capture and securing of the airport by 2230 EST."
+     }
+    }
+    coords 1.334 0.103 0.771
+    {
+     GenericEntity SlotMoveTo3 : "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+      components {
+       SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
+        m_sFactionKey "US"
+        m_aPlugins {
+         SCR_ScenarioFrameworkPluginTrigger "{5A6C6D099D49E4BA}" {
+          m_fAreaRadius 1
+          m_sActivatedByThisFaction "US"
+         }
+        }
+       }
+      }
+      coords 0.705 0 -2.969
      }
     }
    }

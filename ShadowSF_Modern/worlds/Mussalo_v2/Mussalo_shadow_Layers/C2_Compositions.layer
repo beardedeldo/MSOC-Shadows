@@ -45,6 +45,9 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      coords 40.533 0 -266.161
     }
    }
+   SCR_DestructibleBuildingEntity : "{8E3EDA119269CCA6}PrefabLibrary/Structures/Airport/Hangar_01.et" {
+    coords 337.058 -2.02 -43.126
+   }
    SCR_DestructibleBuildingEntity : "{A5E49CC9C7C6E1E3}Prefabs/Structures/Infrastructure/Power/DieselPowerPlant_01/DieselPowerPlant_01_Base.et" {
     coords 51.022 -0.876 -291.851
    }
@@ -62,11 +65,15 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
    $grp GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/CargoContainer_01/CargoContainer_01_40ft_red.et" {
     {
-     coords 37.633 0.003 -41.256
+     coords 32.321 0.003 -12.967
+     angleY -175.77
+    }
+    {
+     coords 32.4 0.003 -36.629
      angleY -85.261
     }
     {
-     coords 38.476 0.003 -37.133
+     coords 38.623 0.003 -41.614
      angleY -85.261
     }
    }
@@ -108,14 +115,370 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   }
  }
  Airport_checkpoints {
-  coords 1151.107 1.623 6378.38
+  coords 1275.27 0.949 6394.961
   {
    StaticModelEntity : "{80DF3BD810D032AF}Prefabs/Structures/Industrial/Towers/LightTower_01/LightTower_01.et" {
-    coords 42.257 0.984 25.447
+    coords 27.439 1.101 29.446
    }
    GenericEntity : "{9F9924B626C5FA2C}Prefabs/Compositions/Slotted/SlotRoadLarge/Checkpoint_L_USSR_01.et" {
-    coords 7.366 -0.051 -2.072
+    coords 7.366 -0.061 -2.071
     angleY 77.746
+    {
+     GenericEntity {
+      ID "5CC72E06418CF129"
+      coords -2.881 0 3.81
+      angleY -36.56
+     }
+     GenericEntity {
+      ID "5CC72E06418CF13D"
+      coords -3.759 -0.018 3.648
+      angleY -98.441
+     }
+     GenericEntity {
+      ID "5CC72E06418CFE9F"
+      coords 3.174 0.038 -6.18
+      angleY -180
+      {
+       GenericEntity {
+        ID "5CB0D996E74F360C"
+        coords 1.087 -0.017 0.033
+        angleY -1.74
+       }
+       GenericEntity {
+        ID "5CB0D996E74F360F"
+        coords -0.877 0.019 -0.047
+        angleY 178.26
+       }
+       GenericEntity {
+        ID "5CB0D996E74F360B"
+        coords -0.001 0.667 0
+       }
+       StaticModelEntity {
+        ID "5CB0D996E74F3603"
+        coords 0.211 -0.003 -0.05
+        angleY 178.26
+       }
+      }
+     }
+     GenericEntity {
+      ID "5CC72E06418CFEDC"
+      coords 5.704 0.2 -4.946
+      angleY 180
+      {
+       GenericEntity {
+        ID "5CB0D991ADDD9E49"
+        coords 0.963 -0.022 1.088
+        angleY -24.809
+       }
+       GenericEntity {
+        ID "5CB0D991ADDD9E4F"
+        coords -0.219 0.01 0.368
+        angleY 140.191
+       }
+       GenericEntity {
+        ID "5CB0D991ADDD9E44"
+        coords -0.74 0.018 -0.75
+        angleY 90
+       }
+       StaticModelEntity {
+        ID "5CB0D991ADDD9E45"
+        coords -0.721 0.018 -0.692
+        angleY -84.264
+       }
+       StaticModelEntity {
+        ID "5CB0D991ADDD9E4A"
+        coords 0.127 0.001 0.698
+        angleY -28.717
+       }
+       StaticModelEntity {
+        ID "5CB0D991ADDD9E40"
+        coords -0.954 0.737 -0.683
+        angleY 14.077
+       }
+       StaticModelEntity {
+        ID "5CB0D991ADDD9E41"
+        coords 0.083 1.292 0.746
+        angleY 60
+       }
+      }
+     }
+     GenericEntity {
+      ID "5CC72E06418CF1C0"
+      coords -3.8 0.041 -0.154
+      angleX -75
+      angleY 82.915
+     }
+     GenericEntity {
+      ID "5CC72E06418CF008"
+      coords -4.032 -0.031 2.911
+      angleY -9.857
+      {
+       DecalEntity {
+        ID "56E0B29E0A38F52E"
+        coords 0.001 0 0
+        angleX -90
+       }
+      }
+     }
+     GenericEntity {
+      ID "5CC72E06418CF067"
+      coords 5.411 0.095 -3.467
+      angleY -42.615
+      {
+       DecalEntity {
+        ID "56E0B29E0A38F52E"
+        coords 0 0 0
+        angleX -90
+       }
+      }
+     }
+     GenericEntity {
+      ID "5CC72E06418CF0C9"
+      coords 6.409 0.119 3.396
+      angleY -77.301
+      {
+       GenericEntity {
+        ID "5CB0D997E5503E18"
+        coords -0.747 0.402 0.317
+        angleY 22.885
+        angleZ -71.175
+       }
+       GenericEntity {
+        ID "5216C470CA8AD60B"
+        coords -0.051 0.715 0.007
+        angleX -0.03
+        angleY 0.033
+        angleZ -0.085
+       }
+       GenericEntity {
+        ID "5216C470CA8AD618"
+        coords 0.004 0.353 -0.002
+        angleX -0.06
+        angleY 0.628
+        angleZ -0.044
+       }
+      }
+     }
+     GenericEntity {
+      ID "5CC72E06418CF0DE"
+      coords 6.212 0.495 5.219
+      angleX -75
+      angleY 16.384
+     }
+     GenericEntity {
+      ID "5CC72E06418CF166"
+      coords -3.14 -0.01 3.342
+      angleY 11.535
+     }
+     GenericEntity {
+      ID "5CC72E06418CF1D9"
+      coords -6.16 -0.01 -2.495
+      angleX 27.802
+     }
+     GenericEntity {
+      ID "5CC72E06418CF1FD"
+      coords -4.033 -0.022 -0.256
+      angleY -164.13
+     }
+     GenericEntity {
+      ID "5CC72E06418CFE24"
+      coords -3.817 -0.012 5.397
+      angleY 0
+      {
+       GenericEntity {
+        ID "570C9564D02F5C92"
+        coords 0.02 0.002 -0.53
+        angleY 90.188
+       }
+       GenericEntity {
+        ID "5C5AC612D4755239"
+        coords -0.122 0.364 0.28
+        angleY -180
+       }
+       GenericEntity {
+        ID "5C5AC612D47552FB"
+        coords 0.037 0.2 0.391
+       }
+      }
+     }
+     GenericEntity {
+      ID "5CC72E06418CFFB1"
+      coords 5.127 0.088 -2.871
+      angleY -90.07
+      {
+       GenericEntity {
+        ID "5CB0D993388817E2"
+        coords 0.088 0.864 -0.265
+       }
+      }
+     }
+     GenericEntity {
+      ID "5CC72E06418CF19A"
+      coords 6.331 0.108 -3.281
+     }
+     GenericEntity {
+      ID "5CC72E06418CFFEE"
+      coords 3.269 0.044 -4.959
+      angleY 99.18
+      {
+       GenericEntity {
+        ID "5CB0D990C2645A75"
+        coords -0.346 -0.055 0.158
+        angleY -2.333
+       }
+       GenericEntity {
+        ID "5CB0D990C265B654"
+        coords 0.069 -0.069 -0.38
+        angleY -80.757
+       }
+       GenericEntity {
+        ID "5CB0D990C265B655"
+        coords 0.3 -0.063 0.225
+        angleY -88.298
+       }
+      }
+     }
+     GenericEntity {
+      ID "5CC72E06418CF048"
+      coords 2.021 0.023 -6.49
+      angleY 13.341
+      {
+       DecalEntity {
+        ID "56E0B29E17039037"
+        coords 0 -0.001 0.001
+        angleX -90
+       }
+      }
+     }
+     GenericEntity {
+      ID "5CC72E06418CF05A"
+      coords 5.046 0.089 -6.522
+      angleY -15.852
+      {
+       DecalEntity {
+        ID "56E0B29E17039037"
+        coords 0.001 0 0
+        angleX -90
+       }
+      }
+     }
+     GenericEntity {
+      ID "5CC72E06418CF073"
+      coords 3.585 0.052 -4.745
+      angleY -21.982
+      {
+       DecalEntity {
+        ID "56E0B29E17039037"
+        coords 0 0 0
+        angleX -90
+       }
+      }
+     }
+     GenericEntity {
+      ID "5CC72E06418CF0B7"
+      coords -2.984 -0.017 -0.065
+      angleY -15.852
+      {
+       DecalEntity {
+        ID "56E0B29E17039037"
+        coords 0 0 0
+        angleX -90
+       }
+      }
+     }
+     GenericEntity {
+      ID "5CC72E06418CFF41"
+      coords -6.262 0.011 -5.145
+      angleY 90
+     }
+     GenericEntity {
+      ID "5CC72E06418CFF57"
+      coords -6.262 -0.01 -3.504
+      angleY -90
+     }
+     GenericEntity {
+      ID "5CC72E06418CF1D4"
+      coords 6.459 -0.231 -6.007
+      angleX 21.92
+      angleY 150
+     }
+     GenericEntity {
+      ID "5CC72E06418CF1E8"
+      coords -1.743 -0.018 -0.012
+      angleY 73.067
+     }
+     GenericEntity {
+      ID "5CC72E06418CFF06"
+      coords -2.811 0.539 0.563
+      angleY 65.12
+      angleZ -76.996
+     }
+     GenericEntity {
+      ID "5CC72E06418CFF19"
+      coords -3.031 -0.017 -0.331
+      angleY 74.086
+     }
+     GenericEntity {
+      ID "5E5C73D2049F5625"
+      coords 6.038 0.109 1.668
+      angleY 97.507
+     }
+     GenericEntity {
+      ID "5CC72E06418CF08D"
+      coords -1.193 0.127 5.658
+      angleY 32.809
+     }
+     GenericEntity {
+      ID "5CC72E06418CF099"
+      coords -2.889 0.1 5.981
+      angleY -11.166
+     }
+     GenericEntity {
+      ID "5CC72E06418CF0E8"
+      coords -4.719 0.071 6.158
+      angleY 5.39
+     }
+     GenericEntity {
+      ID "5E5C73D2049F561B"
+      coords -0.585 0.005 3.14
+      angleY -15.922
+     }
+     GenericEntity {
+      ID "5E5C73D2049F5637"
+      coords 1.719 0.022 -4.664
+      angleY -120.889
+     }
+     StaticModelEntity {
+      ID "5CC72E06418CFFD8"
+      coords 4.895 0.081 -4.363
+      angleY -27.132
+     }
+     StaticModelEntity {
+      ID "5CC72E06418CFFC8"
+      coords 4.957 0.181 -4.452
+      angleY -47.481
+     }
+     StaticModelEntity {
+      ID "5CC72E06418CFEA6"
+      coords 0.29 -0.003 -5.977
+      angleY 84.762
+     }
+     StaticModelEntity {
+      ID "5CC72E06418CFEB0"
+      coords -6.149 0.037 -6.318
+      angleY 9.829
+     }
+     StaticModelEntity {
+      ID "5CC72E06418CFF2A"
+      coords -1.17 -0.016 0.648
+      angleY -16.008
+     }
+     StaticModelEntity {
+      ID "5CC72E06418CFF6A"
+      coords 6.285 0.105 -2.302
+      angleY -9.476
+     }
+    }
    }
   }
  }
@@ -443,22 +806,22 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   coords 903.125 3.062 6340.914
   {
    GenericEntity : "{04E378640D28B236}Prefabs/Compositions/Misc/SubCompositions/PalletFuel_Cluttered_01.et" {
-    coords 2.01 -0 3.439
+    coords 2.01 0 3.439
     angleY 0
    }
    GenericEntity : "{8BE153775299BA55}Prefabs/Compositions/Misc/SubCompositions/PalletFuel_Cluttered_US_01.et" {
-    coords -0.424 -0 3.614
+    coords -0.424 0 3.614
    }
    GenericEntity : "{EECE34969CD3405F}Prefabs/Compositions/Misc/SubCompositions/PalletFuel_Camo_USSR_01.et" {
-    coords -2.827 -0 3.448
+    coords -2.827 0 3.448
     angleY 0
    }
    $grp GenericEntity : "{FCAEE66F9E615D8C}PrefabsEditable/Auto/Compositions/Misc/CustomEntities/InteractionPoints/E_FuelService_USSR_NoAffiliation.et" {
     {
-     coords 4.712 -0 3.668
+     coords 4.712 0 3.668
     }
     {
-     coords -5.801 -0 3.746
+     coords -5.801 0 3.746
     }
    }
   }

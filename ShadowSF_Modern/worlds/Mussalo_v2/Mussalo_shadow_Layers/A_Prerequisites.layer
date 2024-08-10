@@ -98,6 +98,13 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
   }
   SCR_CommandingManagerComponent "{620D00D13E0E3879}" {
   }
+  SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
+   m_fDOTScale 0.2
+   m_fRegenScale 1.1
+   m_bPermitUnconsciousVON 0
+   m_fTourniquettedLegMovementSlowdown 0.5
+   m_fTourniquetStrengthMultiplier 0.9
+  }
   SCR_GameModeSFManager "{5A96783ABCA252AE}" {
    m_aTaskTypesAvailable {
     SCR_ScenarioFrameworkTaskType "{620EDA6FAD4A05AD}" {

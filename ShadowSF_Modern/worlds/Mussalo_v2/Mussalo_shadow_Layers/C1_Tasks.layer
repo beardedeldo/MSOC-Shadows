@@ -570,6 +570,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
          }
          X_CQC_barracks {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_SpawnChildren RANDOM_BASED_ON_PLAYERS_COUNT
+           }
+          }
           coords 86.797 -1.568 -21.019
           {
            $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
@@ -1160,7 +1165,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 0.3
               }
              }
-             coords 14.112 0.002 -7.792
+             coords 3.533 0.002 -36.871
+             angleY 131.754
             }
             SlotAI126 {
              components {
@@ -1177,7 +1183,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 0.3
               }
              }
-             coords -21.656 -0.012 -0.011
+             coords -22.211 -0.012 -33.302
             }
            }
           }
@@ -1286,18 +1292,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             Slot249 {
              components {
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-               m_aActivationActions {
-                SCR_ScenarioFrameworkActionToggleEngine "{61F4EE83E87E684B}" {
-                 m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{61F4EE83F45097E1}" {
-                  m_sLayerName "Slot7"
-                 }
-                }
-                SCR_ScenarioFrameworkActionToggleLights "{61F4EE83F9E726B7}" {
-                 m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{61F4EE8382D308F5}" {
-                  m_sLayerName "Slot7"
-                 }
-                }
-               }
                m_sObjectToSpawn "{13139B95B13DDA35}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_tanker_camo1.et"
               }
              }
@@ -1311,8 +1305,9 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
                m_aActivationActions {
                 SCR_ScenarioFrameworkActionToggleLights "{61F4EE83CE474667}" {
+                 m_iMaxNumberOfActivations 1
                  m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{61F4EE83DD19EC87}" {
-                  m_sLayerName "Car_near_prison"
+                  m_sLayerName "Slot7"
                  }
                  m_eLightType Hazard
                 }
@@ -1329,23 +1324,32 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_sFactionKey "USSR"
                m_aActivationActions {
                 SCR_ScenarioFrameworkActionToggleEngine "{61F4EE83E87E684B}" {
+                 m_iMaxNumberOfActivations 1
                  m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{61F4EE83F45097E1}" {
-                  m_sLayerName "Slot7"
+                  m_sLayerName "Slot266"
                  }
                 }
                 SCR_ScenarioFrameworkActionToggleLights "{61F4EE83F9E726B7}" {
+                 m_iMaxNumberOfActivations 1
                  m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{61F4EE8382D308F5}" {
-                  m_sLayerName "Slot7"
+                  m_sLayerName "Slot266"
                  }
+                }
+                SCR_ScenarioFrameworkActionToggleLights "{62152A4078B03585}" {
+                 m_iMaxNumberOfActivations 1
+                 m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{62152A40024A2B1E}" {
+                  m_sLayerName "Slot266"
+                 }
+                 m_eLightType Hazard
                 }
                }
                m_sObjectToSpawn "{32E77EC32ED2B6D1}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_Arsenal.et"
               }
              }
-             coords -7892.411 -194.738 2502.783
-             angleX 1.917
-             angleY -88.191
-             angleZ 2.82
+             coords -7937.082 -194.835 2541.712
+             angleX 2.391
+             angleY 170.482
+             angleZ -2.431
             }
             Slot267 {
              components {
@@ -1353,20 +1357,23 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_sFactionKey "USSR"
                m_aActivationActions {
                 SCR_ScenarioFrameworkActionToggleEngine "{61F4EE83E87E684B}" {
+                 m_iMaxNumberOfActivations 1
                  m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{61F4EE83F45097E1}" {
-                  m_sLayerName "Slot7"
+                  m_sLayerName "Slot267"
                  }
                 }
                 SCR_ScenarioFrameworkActionToggleLights "{61F4EE83F9E726B7}" {
+                 m_iMaxNumberOfActivations 1
                  m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{61F4EE8382D308F5}" {
-                  m_sLayerName "Slot7"
+                  m_sLayerName "Slot267"
                  }
+                 m_eLightType HiBeam
                 }
                }
                m_sObjectToSpawn "{2C95509CA3E61DE1}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_command_camo1.et"
               }
              }
-             coords -7892.144 -194.699 2512.384
+             coords -7892.144 -194.835 2512.384
              angleX 1.917
              angleY -88.191
              angleZ 2.82
@@ -1376,14 +1383,23 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
                m_aActivationActions {
                 SCR_ScenarioFrameworkActionToggleEngine "{61F4EE83E87E684B}" {
+                 m_iMaxNumberOfActivations 1
                  m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{61F4EE83F45097E1}" {
-                  m_sLayerName "Slot7"
+                  m_sLayerName "Slot268"
                  }
                 }
                 SCR_ScenarioFrameworkActionToggleLights "{61F4EE83F9E726B7}" {
+                 m_iMaxNumberOfActivations 1
                  m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{61F4EE8382D308F5}" {
-                  m_sLayerName "Slot7"
+                  m_sLayerName "Slot268"
                  }
+                }
+                SCR_ScenarioFrameworkActionToggleLights "{62152A40F61A4AFC}" {
+                 m_iMaxNumberOfActivations 1
+                 m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{62152A40F2EBD983}" {
+                  m_sLayerName "Slot268"
+                 }
+                 m_eLightType Hazard
                 }
                }
                m_sObjectToSpawn "{6E9142CD2471741C}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_engineer.et"
@@ -1397,17 +1413,13 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             Slot269 {
              components {
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-               m_sFactionKey "USSR"
                m_aActivationActions {
-                SCR_ScenarioFrameworkActionToggleEngine "{61F4EE83E87E684B}" {
-                 m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{61F4EE83F45097E1}" {
-                  m_sLayerName "Slot7"
+                SCR_ScenarioFrameworkActionToggleLights "{62152A4268FE9FE6}" {
+                 m_iMaxNumberOfActivations 1
+                 m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{62152A4274DE6540}" {
+                  m_sLayerName "Slot269"
                  }
-                }
-                SCR_ScenarioFrameworkActionToggleLights "{61F4EE83F9E726B7}" {
-                 m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{61F4EE8382D308F5}" {
-                  m_sLayerName "Slot7"
-                 }
+                 m_eLightType Hazard
                 }
                }
                m_sObjectToSpawn "{32E77EC32ED2B6D1}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_Arsenal.et"
@@ -1417,6 +1429,24 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
              angleX 1.917
              angleY -88.191
              angleZ 2.82
+            }
+            Slot272 {
+             components {
+              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+               m_aActivationActions {
+                SCR_ScenarioFrameworkActionToggleLights "{61F4EE83CE474667}" {
+                 m_iMaxNumberOfActivations 1
+                 m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{61F4EE83DD19EC87}" {
+                  m_sLayerName "Slot272"
+                 }
+                 m_eLightType AllLights
+                }
+               }
+               m_sObjectToSpawn "{43C4AF1EEBD001CE}Prefabs/Vehicles/Wheeled/UAZ452/UAZ452_ambulance.et"
+              }
+             }
+             coords -7889.947 -194.835 2371.057
+             angleY -92.098
             }
            }
           }
@@ -1520,7 +1550,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 0.5
               }
              }
-             coords -35.121 -0.311 -8.265
+             coords -32.659 -0.311 -3.825
             }
             SlotAI73 {
              components {
@@ -1538,7 +1568,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                m_fPerceptionFactor 0.5
               }
              }
-             coords -31.287 -0.316 -8.408
+             coords -33.761 -0.316 -7.804
             }
             SlotAI74 {
              components {

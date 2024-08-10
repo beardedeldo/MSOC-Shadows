@@ -149,8 +149,12 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
   SCR_SaveLoadComponent "{6214DD4E582FF65E}" {
   }
   SCR_TimeAndWeatherHandlerComponent "{62110A0B384511AB}" {
+   m_iStartingHours 23
+   m_iStartingMinutes 30
    m_bRandomStartingDaytime 1
    m_bRandomStartingDaytimeRange 1
+   m_fDayTimeAcceleration 3
+   m_fNightTimeAcceleration 3
    m_bRandomStartingWeather 1
    m_bRandomWeatherChanges 1
   }

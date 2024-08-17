@@ -1661,19 +1661,4 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
    }
   }
  }
- C130_infil {
-  components {
-   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
-   }
-  }
-  coords 3220.047 0 -97.481
-  {
-   SCR_DestructibleBuildingEntity : "{8D35B3D72731D649}Prefabs/Structures/Wreck/c130.et" {
-    coords -93.186 204.893 354.787
-    angleY 75.109
-    angleZ -9.278
-   }
-  }
- }
 }

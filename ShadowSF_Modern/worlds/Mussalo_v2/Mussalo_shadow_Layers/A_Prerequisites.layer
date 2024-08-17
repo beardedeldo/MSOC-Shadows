@@ -21,6 +21,13 @@ SCR_AIWorld SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
     }
    }
   }
+  SCR_AISettingsComponent "{512CCCD0856CB4B9}" {
+   m_fPerceptionSafe 0.8
+   m_fPerceptionVigilant 2.6
+   m_fAimAccuracyErrorModifier 0.75
+   m_fAttackReactionDelayModifier 0.1
+   m_eForceFlashlightState ON
+  }
  }
  coords 4222.679 1.69 2667.403
 }
@@ -149,7 +156,7 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
   SCR_SaveLoadComponent "{6214DD4E582FF65E}" {
   }
   SCR_TimeAndWeatherHandlerComponent "{62110A0B384511AB}" {
-   m_iStartingHours 23
+   m_iStartingHours 2
    m_iStartingMinutes 30
    m_bRandomStartingDaytime 1
    m_bRandomStartingDaytimeRange 1

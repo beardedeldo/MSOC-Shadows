@@ -1,0 +1,123 @@
+GenericEntity Area_A : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ components {
+  SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+   m_iRandomPercent 100
+   m_bShowDebugShapesDuringRuntime 1
+   m_fAreaRadius 55
+   m_bShowDebugShapesInWorkbench 1
+  }
+ }
+ coords 81.093 4.706 64.021
+ {
+  GenericEntity Task_Defend : "{775C493CE872C3A5}Prefabs/ScenarioFramework/Components/LayerTaskDefend.et" {
+   components {
+    SCR_ScenarioFrameworkLayerTaskDefend "{5C52E161174024CB}" {
+     m_sTaskTitle "Task Defend Area"
+     m_sTaskDescription "Your objective is to defend area"
+     m_sTaskPrefab "{888DC29A0B4F3F20}Prefabs/ScenarioFramework/Tasks/TaskDefend.et"
+     m_sTriggerName "myNamedTrigger"
+     m_sCountdownTitleText "DEFEND AREA"
+     m_fDefendTime 60
+     m_aFactionSettings {
+      SCR_ScenarioFrameworkTaskDefendAttackingFaction "{5C5A81043FCD0717}" {
+       m_sFactionKey "USSR"
+      }
+      SCR_ScenarioFrameworkTaskDefendDefendingFaction "{5C5A8104314438A8}" {
+       m_sFactionKey "US"
+      }
+     }
+     m_fMinDefenderPercentageRatio 0.51
+     m_aAttackerLayerNames {
+      "Attacker_USSR"
+     }
+    }
+   }
+   coords -2.168 0.243 -9.564
+   {
+    $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+     Defender_US {
+      components {
+       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+        m_iRandomPercent 100
+       }
+      }
+      coords 2.085 -0.049 8.664
+      {
+       GenericEntity Slot1 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{887DB60486A18575}Prefabs/Weapons/Tripods/Tripod_M122_MG_M60.et"
+         }
+        }
+        coords -5.973 -0.019 -20.426
+        angleY 16.182
+       }
+       GenericEntity myNamedTrigger : "{D183AFE8DAF9793D}Prefabs/ScenarioFramework/Components/SlotPlayerTrigger.et" {
+        components {
+         SCR_ScenarioFrameworkSlotTrigger "{5A4B5098DE424991}" {
+          m_aPlugins {
+           SCR_ScenarioFrameworkPluginTrigger "{5AC53D73FCB1F805}" {
+            m_fAreaRadius 150
+            m_eActivationPresence ANY_CHARACTER
+           }
+          }
+         }
+        }
+        coords 1.521 -0.66 -21.83
+       }
+       GenericEntity Slot_Defend : "{E123BAC59A9B3D5F}Prefabs/ScenarioFramework/Components/SlotDefend.et" {
+        components {
+         SCR_ScenarioFrameworkSlotDefend "{5C52E161597D867A}" {
+          m_sObjectToSpawn "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/TriggerCharacterSlow.et"
+         }
+        }
+        coords -1.122 0.049 -3.341
+       }
+      }
+     }
+     Attacker_USSR {
+      components {
+       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+        m_bEnableRepeatedSpawn 1
+        m_iRepeatedSpawnNumber 2
+        m_fRepeatedSpawnTimer 15
+       }
+      }
+      coords 6.527 0.026 15.14
+      {
+       $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+        SlotAI1 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_bEnableRepeatedSpawn 1
+           m_sObjectToSpawn "{98EB9CDD85B8C92C}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Unarmed.et"
+          }
+         }
+         coords -1.797 -0.252 1.563
+        }
+        SlotAI2 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_bEnableRepeatedSpawn 1
+           m_sObjectToSpawn "{98EB9CDD85B8C92C}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Unarmed.et"
+          }
+         }
+         coords -5.751 -0.659 -0.617
+        }
+        SlotAI3 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_bEnableRepeatedSpawn 1
+           m_sObjectToSpawn "{98EB9CDD85B8C92C}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Unarmed.et"
+          }
+         }
+         coords -3.357 -0.39 0.074
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

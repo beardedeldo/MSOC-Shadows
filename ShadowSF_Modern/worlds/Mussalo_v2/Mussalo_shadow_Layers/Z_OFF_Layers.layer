@@ -1,0 +1,234 @@
+$grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ D_Exfil {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    Enabled 0
+    m_eActivationType ON_TRIGGER_ACTIVATION
+   }
+  }
+  coords 8227.509 223.103 2171.841
+  {
+   GenericEntity LayerTaskMove2 : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+    components {
+     SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
+      m_eActivationType ON_TRIGGER_ACTIVATION
+      m_sTaskTitle "Move to this location and call Exfil. "
+      m_sTaskDescription "Congratulations you've successfully completed Operation Guardian Angel. Tme to return to base. Nice work Shadows!"
+     }
+    }
+    coords 0 -18.327 0
+    {
+     $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+      Exfil_enemy_near {
+       coords 105.72 28.211 238.067
+       {
+        GenericEntity SlotAI34 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{657590C1EC9E27D3}Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et"
+          }
+         }
+         coords 0.29 0.062 3.731
+        }
+       }
+      }
+      Exfil_area1 {
+       coords 0 18.327 0
+       {
+        $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+         SlotAI48 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{42A502E3BB727CEB}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_HeliPilot.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{61F6EAE9410E6056}" {
+             m_aLayerName {
+              "SlotWaypoint20a"
+             }
+            }
+           }
+          }
+          coords 4.359 0.022 1.331
+         }
+         SlotAI51 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sObjectToSpawn "{9E0B5441B270B059}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_AAR_shadow.et"
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{61F6EAE9410E6056}" {
+             m_aLayerName {
+              "SlotWaypoint20a"
+             }
+            }
+           }
+          }
+          coords -0.169 0.022 -6.013
+          angleY 54.531
+         }
+        }
+        GenericEntity A_UH60_armed4 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         components {
+          SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+           m_aActivationActions {
+            SCR_ScenarioFrameworkActionToggleEngine "{61F6EAEC15BF772B}" {
+             m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{61F6EAEC27A9987A}" {
+              m_sLayerName "A_UH60_armed4"
+             }
+            }
+           }
+           m_sObjectToSpawn "{F503F71C08BE3F7D}Prefabs/Vehicles/Helicopters/AUS_MH60/AUS_UH60_armed.et"
+          }
+         }
+         coords -1.533 0.01 0.708
+         angleY 130.038
+        }
+        GenericEntity SlotWaypoint20a : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+         components {
+          SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+           m_Waypoint SCR_ScenarioFrameworkWaypointGetInNearest "{61F6EAE8B1CDB201}" {
+            m_fCompletionRadius 2
+           }
+          }
+         }
+         coords 4.522 0.993 -3.159
+         angleY 32.032
+        }
+       }
+      }
+     }
+     GenericEntity SlotMoveTo2 : "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+      components {
+       SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
+        m_aPlugins {
+         SCR_ScenarioFrameworkPluginTrigger "{5A6C6D099D49E4BA}" {
+          m_sActivatedByThisFaction "US"
+          m_fMinimumPlayersNeededPercentage 0.75
+          m_fActivationCountdownTimer 60
+          m_bEnableAudio 1
+          m_sCountdownAudio "SOUND_RESPAWNMENU"
+         }
+        }
+       }
+      }
+      coords 0 19.648 0
+     }
+    }
+   }
+  }
+ }
+ F_Exfil_SP {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    Enabled 0
+    m_eActivationType ON_TRIGGER_ACTIVATION
+   }
+  }
+  coords 10650.383 1.75 1548.974
+  angleY -50.49
+  {
+   GenericEntity LayerTaskMove4 : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
+    components {
+     SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
+      m_eActivationType ON_TRIGGER_ACTIVATION
+      m_sTaskTitle "Move to this location and call Exfil. "
+      m_sTaskDescription "Command is calling us back to the airstrip and issuing an immediate evac from Everon. "
+     }
+    }
+    coords 0 -18.327 0
+    {
+     GenericEntity Exfil_area2 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+      coords 0 18.327 0
+      {
+       $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+        SlotAI99 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{42A502E3BB727CEB}Prefabs/Characters/Factions/BLUFOR/US_Army/Character_US_HeliPilot.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{61F6EAE9410E6056}" {
+            m_aLayerName {
+             "SlotWaypoint20a2"
+            }
+           }
+           m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+          }
+         }
+         coords 4.359 0.022 1.331
+        }
+        SlotAI100 {
+         components {
+          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+           m_sObjectToSpawn "{9E0B5441B270B059}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_AAR_shadow.et"
+           m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{61F6EAE9410E6056}" {
+           }
+          }
+         }
+         coords -0.169 0.022 -6.013
+         angleY 54.531
+        }
+       }
+       GenericEntity A_UH60_armed2 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_aActivationActions {
+           SCR_ScenarioFrameworkActionToggleEngine "{61F6EAEC15BF772B}" {
+            m_Getter SCR_ScenarioFrameworkGetSpawnedEntity "{61F6EAEC27A9987A}" {
+             m_sLayerName "A_UH60_armed4"
+            }
+           }
+          }
+          m_sObjectToSpawn "{F503F71C08BE3F7D}Prefabs/Vehicles/Helicopters/AUS_MH60/AUS_UH60_armed.et"
+         }
+        }
+        coords -1.533 0.01 0.708
+        angleY 130.038
+       }
+       GenericEntity SlotWaypoint20a2 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
+        components {
+         SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+          m_Waypoint SCR_ScenarioFrameworkWaypointGetInNearest "{61F6EAE8B1CDB201}" {
+           m_fCompletionRadius 2
+          }
+         }
+        }
+        coords 4.522 0.993 -3.159
+        angleY 32.032
+       }
+      }
+     }
+     SCR_ScenarioFrameworkLogicCounter LogicCounter7 : "{6C1792C71DCAFD55}Prefabs/ScenarioFramework/Components/LogicCounter.et" {
+      coords 4296.336 42.794 11116.936
+      angleY 50.49
+      m_aInputs {
+       SCR_ScenarioFrameworkLogicInput "{61F2B824B108BB84}" {
+        m_InputAction SCR_ScenarioFrameworkActionInputOnTaskEventIncreaseCounter "{61F2B824441E4AE7}" {
+         m_sTaskLayerName "LayerTaskMove4"
+        }
+       }
+      }
+      m_aActions {
+       SCR_ScenarioFrameworkActionSpawnObjects "{61F2B82469733BBC}" {
+        m_aNameOfObjectsToSpawnOnActivation {
+         "LayerTaskMove5"
+        }
+       }
+      }
+     }
+     GenericEntity SlotMoveTo4 : "{A44004A770A5D8BE}Prefabs/ScenarioFramework/Components/SlotMoveTo.et" {
+      components {
+       SCR_ScenarioFrameworkSlotExtraction "{5A1EEEC837EEA27B}" {
+        m_aPlugins {
+         SCR_ScenarioFrameworkPluginTrigger "{5A6C6D099D49E4BA}" {
+          m_sActivatedByThisFaction "US"
+          m_fMinimumPlayersNeededPercentage 0.75
+          m_fActivationCountdownTimer 60
+          m_bEnableAudio 1
+          m_sCountdownAudio "SOUND_RESPAWNMENU"
+         }
+        }
+       }
+      }
+      coords 0 19.648 0
+     }
+    }
+   }
+  }
+ }
+}

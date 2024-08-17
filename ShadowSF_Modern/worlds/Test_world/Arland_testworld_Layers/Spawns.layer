@@ -4,3 +4,40 @@ SCR_SpawnPoint : "{2B1758F237E4820E}Prefabs/MP/Spawning/SpawnPoint_FIA.et" {
 SCR_SpawnPoint : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et" {
  coords 1417.638 38 2927.788
 }
+GenericEntity Layer3 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+ components {
+  SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+   m_iRepeatedSpawnNumber 3
+   m_fRepeatedSpawnTimer 8
+   m_eActivationType ON_TRIGGER_ACTIVATION
+   m_aActivationActions {
+    SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+     m_iDelayInSeconds 20
+     m_iDelayInSecondsMax 30
+     m_aActions {
+      SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+       m_iMaxNumberOfActivations 4
+       m_aNameOfObjectsToSpawnOnActivation {
+        "Slot9"
+       }
+      }
+     }
+    }
+   }
+   m_bExcludeFromDynamicDespawn 1
+  }
+ }
+ coords 1433.66 38.555 2851.494
+ {
+  GenericEntity Slot3 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+   components {
+    SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+     m_eActivationType ON_TRIGGER_ACTIVATION
+     m_bExcludeFromDynamicDespawn 1
+     m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+    }
+   }
+   coords -3.831 -0.001 16.363
+  }
+ }
+}

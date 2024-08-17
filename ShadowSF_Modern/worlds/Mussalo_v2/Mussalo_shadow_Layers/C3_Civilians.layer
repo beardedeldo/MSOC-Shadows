@@ -1,0 +1,55 @@
+GenericEntity Civilian_1 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+ coords 893.094 3.062 6298.199
+ {
+  $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+   SlotAI111 {
+    components {
+     SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+      m_sObjectToSpawn "{472F2B06FF9BF37D}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_4.et"
+     }
+    }
+    coords -9.645 0 15.304
+   }
+   SlotAI1 {
+    components {
+     SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+      m_sObjectToSpawn "{472F2B06FF9BF37D}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_4.et"
+     }
+    }
+    coords -5.994 0 45.99
+   }
+   SlotAI110 {
+    components {
+     SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+      m_sObjectToSpawn "{2CDFBF355F3410DD}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_2.et"
+     }
+    }
+    coords -102.394 0.575 -128.164
+   }
+   SlotAI112 {
+    components {
+     SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+      m_sObjectToSpawn "{CEE7531F4FBAEB38}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_6.et"
+     }
+    }
+    coords -113.203 -0.233 -92.721
+   }
+   SlotAI113 {
+    components {
+     SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+      m_sObjectToSpawn "{C6FAF52907A544AC}Prefabs/Characters/Factions/CIV/Dockworker/Character_CIV_Dockworker_1.et"
+     }
+    }
+    coords -110.324 -0.209 -97.851
+   }
+   SlotAI114 {
+    components {
+     SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+      m_sObjectToSpawn "{D97EAE64721478F3}Prefabs/Characters/Factions/CIV/ConstructionWorker/Character_CIV_ConstructionWorker_Randomized.et"
+     }
+    }
+    coords -122.553 -0.613 -157.044
+   }
+  }
+ }
+}

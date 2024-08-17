@@ -1,0 +1,322 @@
+AudioClass {
+ signals {
+  SignalClass {
+   id 5133
+   name "Signal 12"
+   tl -1804.915 39.086
+   res "{A45B14CDEA2D5DCD}Sounds/_SharedData/Signals/Props/Props_Occlusion.sig"
+   inputsport {
+    1 6 7 23 52 56
+   }
+   outputsport {
+    5 37
+   }
+   inputvalues {
+    0 0 0 0 1000 400
+   }
+   inputvaluesmin {
+    0 0 0 0 0 0
+   }
+   inputvaluesmax {
+    1 1 1 1 10000 10000
+   }
+   path "{A45B14CDEA2D5DCD}Sounds/_SharedData/Signals/Props/Props_Occlusion.sig"
+  }
+ }
+ filters {
+  FilterClass : "{C8BF585AA246C60F}Sounds/_SharedData/Configs/Filter/Character/Filter_Character_Occlusion_OBSOLETE.conf" {
+   id 9238
+   name "Filter 13"
+   version 5
+   tl -1610.058 40.775
+   parent "{C8BF585AA246C60F}Sounds/_SharedData/Configs/Filter/Character/Filter_Character_Occlusion_OBSOLETE.conf"
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 5133
+       port 5
+      }
+     }
+    }
+   }
+   pi {
+    3 0
+   }
+  }
+ }
+ sounds {
+  SoundClass {
+   id 12297
+   name "SOUND_SIREN_INCOMING"
+   version 5
+   tl -773.357 588.429
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 13330
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB 3
+   outState 22539
+   outStatePort 79879
+   speedOfSoundSimulation 1
+  }
+  SoundClass {
+   id 20489
+   name "SOUND_SIREN_GENERIC"
+   version 5
+   tl -774.827 184.538
+   ins {
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 3090
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB 3
+   outState 22539
+   outStatePort 79879
+  }
+ }
+ mixers {
+  MixerClass {
+   id 22539
+   name "OutputState"
+   version 4
+   tl -352.077 224.538
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   ins {
+    ConnectionsClass connections {
+     id 79879
+     links {
+      ConnectionClass connection {
+       id 20489
+       port 65
+      }
+      ConnectionClass connection {
+       id 12297
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 152583
+     links {
+      ConnectionClass connection {
+       id 20489
+       port 5
+      }
+      ConnectionClass connection {
+       id 12297
+       port 5
+      }
+     }
+    }
+   }
+   pi {
+    49152 0
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialogue" "Music" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb" "VON_Reverb" "Dialogue_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "UI" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large"
+   }
+  }
+ }
+ shaders {
+  ShaderClass {
+   id 3090
+   name "Flush Shader"
+   version 5
+   tl -1140.058 185.178
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 4124
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 10259
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 7189
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 9238
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 1028
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+  }
+  ShaderClass {
+   id 13330
+   name "Flush Shader"
+   version 5
+   tl -1137.143 605.714
+   ins {
+    ConnectionsClass connections {
+     id 0
+     links {
+      ConnectionClass connection {
+       id 4124
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 1
+     links {
+      ConnectionClass connection {
+       id 19475
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 2
+     links {
+      ConnectionClass connection {
+       id 7189
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 4
+     links {
+      ConnectionClass connection {
+       id 9238
+       port 65
+      }
+     }
+    }
+    ConnectionsClass connections {
+     id 64
+     links {
+      ConnectionClass connection {
+       id 14340
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    23 0
+   }
+  }
+ }
+ amplitudes {
+  AmplitudeClass {
+   id 10259
+   name "AmplitudeLarge"
+   version 5
+   tl -1605.308 -106.577
+   curve Logarithm
+   innerRange 64
+   outerRange 3000
+  }
+  AmplitudeClass {
+   id 19475
+   name "AmplitudeSmall"
+   version 5
+   tl -1573.75 668.75
+   curve Logarithm
+   innerRange 32
+   outerRange 1000
+  }
+ }
+ frequency {
+  FrequencyClass {
+   id 7189
+   name "Frequency 8"
+   version 5
+   tl -1875.308 460.111
+   dynamicUpdate 1
+   enableDistanceAtt 1
+   filterStrength 1.5
+   enableDirectivity 1
+  }
+ }
+ banks_local {
+  BankLocalClass {
+   id 1028
+   name "SIREN_AIR_RAID_DEVON"
+   version 7
+   tl -1596.571 202.714
+   Volume 6
+   "Loop count" 255
+   "Infinite loop" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{ACA4F25F72AD1F8B}Sounds/siren_air_raid_devon.wav"
+    }
+   }
+  }
+  BankLocalClass {
+   id 14340
+   name "SIREN_INCOMING"
+   version 7
+   tl -1569.286 568.036
+   Volume 8
+   "Loop count" 255
+   "Infinite loop" 1
+   Samples {
+    AudioBankSampleClass Sample {
+     Filename "{460EB5A0D085C9FB}Sounds/siren_alarm_incoming.wav"
+    }
+   }
+  }
+ }
+ spatialities {
+  SpatialityClass {
+   id 4124
+   name "Spatiality 4"
+   version 5
+   tl -1878.165 550.27
+   spatialFactor 1
+  }
+ }
+ version 1
+}

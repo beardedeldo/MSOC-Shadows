@@ -1,73 +1,11 @@
-GenericEntity Dismounted_patrol1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
- components {
-  SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-   m_fAreaRadius 5
-   m_bDynamicDespawn 1
-   m_iDynamicDespawnRange 450
-   m_bShowDebugShapesInWorkbench 1
-  }
- }
- coords 862.865 3.063 6286.565
+GenericEntity BaseP_patrol : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ coords 1689.02 7.626 6621.693
  {
   $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
    Patrol_waypoints {
-    coords 0 0 0
+    coords -826.155 -4.563 -335.128
     {
      $grp GenericEntity : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
-      SlotWaypoint4 {
-       components {
-        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
-         m_Waypoint SCR_ScenarioFrameworkWaypointPatrol "{61F30C299C51B0B4}" {
-         }
-        }
-       }
-       coords 139.255 -1.021 -108.116
-      }
-      SlotWaypoint5 {
-       components {
-        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
-         m_Waypoint SCR_ScenarioFrameworkWaypointPatrol "{61F30C299C51B0B4}" {
-         }
-        }
-       }
-       coords 187.939 0.009 164.727
-      }
-      SlotWaypoint6 {
-       components {
-        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
-         m_Waypoint SCR_ScenarioFrameworkWaypointPatrol "{61F30C299C51B0B4}" {
-         }
-        }
-       }
-       coords -24.022 -0.001 136.244
-      }
-      SlotWaypoint7 {
-       components {
-        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
-         m_Waypoint SCR_ScenarioFrameworkWaypointPatrol "{61F30C299C51B0B4}" {
-         }
-        }
-       }
-       coords -52.957 0.185 29.592
-      }
-      SlotWaypoint8 {
-       components {
-        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
-         m_Waypoint SCR_ScenarioFrameworkWaypointPatrol "{61F30C299C51B0B4}" {
-         }
-        }
-       }
-       coords 65.642 -0.088 -151.725
-      }
-      SlotWaypoint9 {
-       components {
-        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
-         m_Waypoint SCR_ScenarioFrameworkWaypointPatrol "{61F30C299C51B0B4}" {
-         }
-        }
-       }
-       coords -44.748 0.107 -251.688
-      }
       A_Patrol_WP_Cycle {
        components {
         SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
@@ -81,32 +19,50 @@ GenericEntity Dismounted_patrol1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/
        }
        coords 0 0 0
       }
+      SlotWaypoint7 {
+       components {
+        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+         m_Waypoint SCR_ScenarioFrameworkWaypointPatrol "{61F30C299C51B0B4}" {
+         }
+        }
+       }
+       coords 697.448 -1.078 299.866
+      }
+      SlotWaypoint4 {
+       components {
+        SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+         m_Waypoint SCR_ScenarioFrameworkWaypointPatrol "{61F30C299C51B0B4}" {
+         }
+        }
+       }
+       coords 715.319 -1.17 177.601
+      }
      }
     }
    }
-   patrol13 {
+   Patrol_AI {
     components {
      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
       m_SpawnChildren RANDOM_BASED_ON_PLAYERS_COUNT
      }
     }
-    coords -102.471 -0.764 -125.959
+    coords 17.846 0.766 3.886
     {
      $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
-      SlotAI107 {
+      SlotAI87 {
        components {
         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
          m_sObjectToSpawn "{4C44B4D8F2820F25}Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_SentryTeam.et"
          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{61F20408937F1506}" {
           m_aLayerName {
-           "Patrol_waypoints"
+           "A_Patrol_WP_Cycle"
           }
          }
          m_eAIGroupFormation Column
          m_fPerceptionFactor 0.8
         }
        }
-       coords 297.608 0.115 275.561
+       coords -14.906 -0.991 11.337
       }
       SlotAI16 {
        components {
@@ -114,14 +70,14 @@ GenericEntity Dismounted_patrol1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/
          m_sObjectToSpawn "{4C44B4D8F2820F25}Prefabs/Groups/OPFOR/Spetsnaz/Group_USSR_Spetsnaz_SentryTeam.et"
          m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{61F20408937F1506}" {
           m_aLayerName {
-           "Patrol_waypoints"
+           "A_Patrol_WP_Cycle"
           }
          }
          m_eAIGroupFormation Column
          m_fPerceptionFactor 0.8
         }
        }
-       coords 190.572 0.305 33.909
+       coords -44.781 0.532 8.943
       }
      }
     }

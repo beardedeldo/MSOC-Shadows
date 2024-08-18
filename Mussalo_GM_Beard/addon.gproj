@@ -1,0 +1,8 @@
+GameProject {
+ ID "MussaloGMBeard"
+ GUID "62250B00E2790EB8"
+ TITLE "Mussalo_GM_Beard"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}

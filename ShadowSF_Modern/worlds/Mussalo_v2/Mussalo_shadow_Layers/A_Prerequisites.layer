@@ -156,7 +156,7 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
   SCR_SaveLoadComponent "{6214DD4E582FF65E}" {
   }
   SCR_TimeAndWeatherHandlerComponent "{62110A0B384511AB}" {
-   m_iStartingHours 2
+   m_iStartingHours 1
    m_iStartingMinutes 30
    m_bRandomStartingDaytime 1
    m_bRandomStartingDaytimeRange 1
@@ -202,6 +202,7 @@ SCR_LoadoutManager LoadoutManager_Base_Shadow : "{AA4E7419A1FF65B0}Prefabs/MP/Ma
    m_sLoadoutName "Shadow Paratrooper"
    m_sLoadoutResource "{BAAAAD523E667C33}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_PARA_shadow.et"
    m_sLoadoutImage "{B7FE87E35079BB18}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_US_USMC/Character_RHS_USAF_USMC_AAR.edds"
+   m_sAffiliatedFaction "US"
   }
   SCR_FactionPlayerLoadout "{61DB347B6FEA2904}" {
    m_sLoadoutName "Shadow 0311 RFLM"

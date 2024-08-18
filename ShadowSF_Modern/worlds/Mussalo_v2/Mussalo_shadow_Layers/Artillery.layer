@@ -1,466 +1,979 @@
-GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
- coords 676.135 3.458 6389.3
- {
-  GenericEntity Layer27 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-   components {
-    SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-     m_aActivationActions {
-      SCR_ScenarioFrameworkActionShowHint "{6222154855C1BD06}" {
-       m_sTitle "Clear to the target"
-       m_sText "All clear to procede to the target."
-       m_sFactionKey "US"
+$grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ Area2 {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_bDynamicDespawn 1
+    m_iDynamicDespawnRange 100
+   }
+  }
+  coords 830.138 -37.722 6244.783
+  {
+   GenericEntity Layer27 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+    components {
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      m_aActivationActions {
+       SCR_ScenarioFrameworkActionShowHint "{6222154855C1BD06}" {
+        m_iMaxNumberOfActivations 1
+        m_sTitle "Clear to the target"
+        m_sText "All clear to procede to the target."
+        m_sFactionKey "US"
+       }
+      }
+     }
+    }
+    coords 35.57 1.469 1.593
+    {
+     $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+      C_Art_strike {
+       components {
+        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionWaitAndExecute "{622215483BDCECA8}" {
+           m_iMaxNumberOfActivations 1
+           m_iDelayInSeconds 10
+           m_iDelayInSecondsMax 20
+           m_aActions {
+            SCR_ScenarioFrameworkActionShowHint "{62221549DCBBF9ED}" {
+             m_sTitle "INCOMING!"
+             m_sText "Incoming artillery strike. Take cover!"
+             m_sFactionKey "US"
+            }
+            SCR_ScenarioFrameworkActionSpawnObjects "{62221549E19D4EB6}" {
+             m_aNameOfObjectsToSpawnOnActivation {
+              "Shell1" "Shell2" "Shell3" "Shell4" "Shell5" "Shell6" "Shell7" "Shell8"
+             }
+            }
+           }
+          }
+         }
+         m_bExcludeFromDynamicDespawn 1
+        }
+       }
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+         Shell1 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_eActivationType ON_TRIGGER_ACTIVATION
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+              m_iMaxNumberOfActivations 1
+              m_iDelayInSeconds 1
+              m_iDelayInSecondsMax 10
+              m_bLooped 1
+              m_aActions {
+               SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+                m_iMaxNumberOfActivations 4
+                m_aNameOfObjectsToSpawnOnActivation {
+                 "Slot1"
+                }
+               }
+              }
+             }
+            }
+            m_bExcludeFromDynamicDespawn 1
+           }
+          }
+          coords -90.903 -1.792 -92.854
+          {
+           GenericEntity Slot1 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_bExcludeFromDynamicDespawn 1
+              m_sObjectToSpawn "{453B3D926D22E9DA}Prefabs/Systems/Artillery/ArtilleryBarrage_Medium_dub.et"
+             }
+            }
+            coords 4.134 40.92 79.162
+           }
+          }
+         }
+         Shell3 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_eActivationType ON_TRIGGER_ACTIVATION
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+              m_iMaxNumberOfActivations 1
+              m_iDelayInSeconds 15
+              m_iDelayInSecondsMax 20
+              m_bLooped 1
+              m_aActions {
+               SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+                m_iMaxNumberOfActivations 4
+                m_aNameOfObjectsToSpawnOnActivation {
+                 "Slot4"
+                }
+               }
+              }
+             }
+            }
+            m_bExcludeFromDynamicDespawn 1
+           }
+          }
+          coords -157.574 0.032 138.606
+          {
+           GenericEntity Slot4 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_bExcludeFromDynamicDespawn 1
+              m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+             }
+            }
+            coords 67.765 39.163 -58.905
+           }
+          }
+         }
+         Shell2 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_eActivationType ON_TRIGGER_ACTIVATION
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+              m_iMaxNumberOfActivations 1
+              m_iDelayInSeconds 5
+              m_iDelayInSecondsMax 15
+              m_bLooped 1
+              m_aActions {
+               SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+                m_iMaxNumberOfActivations 4
+                m_aNameOfObjectsToSpawnOnActivation {
+                 "Slot5"
+                }
+               }
+              }
+             }
+            }
+            m_bExcludeFromDynamicDespawn 1
+           }
+          }
+          coords 55.327 -1.469 -89.235
+          {
+           GenericEntity Slot5 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_bExcludeFromDynamicDespawn 1
+              m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+             }
+            }
+            coords -3.831 40.365 16.363
+           }
+          }
+         }
+         Shell4 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_eActivationType ON_TRIGGER_ACTIVATION
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+              m_iMaxNumberOfActivations 1
+              m_iDelayInSeconds 20
+              m_iDelayInSecondsMax 25
+              m_bLooped 1
+              m_aActions {
+               SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+                m_iMaxNumberOfActivations 4
+                m_aNameOfObjectsToSpawnOnActivation {
+                 "Slot8"
+                }
+               }
+              }
+             }
+            }
+            m_bExcludeFromDynamicDespawn 1
+           }
+          }
+          coords -68.639 14.131 155.564
+          {
+           GenericEntity Slot8 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_bExcludeFromDynamicDespawn 1
+              m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+             }
+            }
+            coords -31.931 28.52 12.151
+           }
+          }
+         }
+         Shell5 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_eActivationType ON_TRIGGER_ACTIVATION
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+              m_iMaxNumberOfActivations 1
+              m_iDelayInSeconds 30
+              m_iDelayInSecondsMax 35
+              m_bLooped 1
+              m_aActions {
+               SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+                m_iMaxNumberOfActivations 4
+                m_aNameOfObjectsToSpawnOnActivation {
+                 "Slot9"
+                }
+               }
+              }
+             }
+            }
+            m_bExcludeFromDynamicDespawn 1
+           }
+          }
+          coords -24.089 -1.47 -207.899
+          {
+           GenericEntity Slot9 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_bExcludeFromDynamicDespawn 1
+              m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+             }
+            }
+            coords 67.381 40.375 152.981
+           }
+          }
+         }
+         Shell6 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_eActivationType ON_TRIGGER_ACTIVATION
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+              m_iMaxNumberOfActivations 1
+              m_iDelayInSeconds 20
+              m_iDelayInSecondsMax 35
+              m_bLooped 1
+              m_aActions {
+               SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+                m_iMaxNumberOfActivations 4
+                m_aNameOfObjectsToSpawnOnActivation {
+                 "Slot10"
+                }
+               }
+              }
+             }
+            }
+            m_bExcludeFromDynamicDespawn 1
+           }
+          }
+          coords -55.836 -1.772 140.961
+          {
+           GenericEntity Slot10 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_bExcludeFromDynamicDespawn 1
+              m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+             }
+            }
+            coords 39.147 41.087 33.451
+           }
+          }
+         }
+         Shell7 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_eActivationType ON_TRIGGER_ACTIVATION
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+              m_iMaxNumberOfActivations 1
+              m_iDelayInSeconds 5
+              m_iDelayInSecondsMax 25
+              m_bLooped 1
+              m_aActions {
+               SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+                m_iMaxNumberOfActivations 4
+                m_aNameOfObjectsToSpawnOnActivation {
+                 "Slot11"
+                }
+               }
+              }
+             }
+            }
+            m_bExcludeFromDynamicDespawn 1
+           }
+          }
+          coords 54.133 -1.47 19.245
+          {
+           GenericEntity Slot11 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_bExcludeFromDynamicDespawn 1
+              m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+             }
+            }
+            coords -3.831 40.786 16.363
+           }
+          }
+         }
+         Shell8 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_eActivationType ON_TRIGGER_ACTIVATION
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+              m_iMaxNumberOfActivations 1
+              m_iDelayInSeconds 25
+              m_iDelayInSecondsMax 40
+              m_bLooped 1
+              m_aActions {
+               SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+                m_iMaxNumberOfActivations 4
+                m_aNameOfObjectsToSpawnOnActivation {
+                 "Slot12"
+                }
+               }
+              }
+             }
+            }
+            m_bExcludeFromDynamicDespawn 1
+           }
+          }
+          coords 10.757 -1.47 193.467
+          {
+           GenericEntity Slot12 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_bExcludeFromDynamicDespawn 1
+              m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+             }
+            }
+            coords -3.831 40.785 16.363
+           }
+          }
+         }
+        }
+       }
+      }
+      A_warning {
+       components {
+        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionSpawnObjects "{6222AEE83AF00219}" {
+           m_iMaxNumberOfActivations 1
+           m_aNameOfObjectsToSpawnOnActivation {
+            "Slot6" "Slot7"
+           }
+          }
+          SCR_ScenarioFrameworkActionShowPopupNotification "{6222AEF7D75F1F63}" {
+           m_iMaxNumberOfActivations 1
+           m_sTitle "INCOMING!"
+           m_sText "Artillery incoming. Take cover!"
+           m_sFactionKey "US"
+          }
+         }
+        }
+       }
+       coords 0 0 0
+       {
+        GenericEntity Color_alarm : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+         components {
+          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+           m_eActivationType ON_TRIGGER_ACTIVATION
+           m_aActivationActions {
+            SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+             m_iMaxNumberOfActivations 1
+             m_iDelayInSecondsMax 3
+             m_aActions {
+              SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+               m_iMaxNumberOfActivations 4
+               m_aNameOfObjectsToSpawnOnActivation {
+                "Slot6" "Slot7"
+               }
+              }
+             }
+            }
+           }
+           m_bExcludeFromDynamicDespawn 1
+          }
+         }
+         coords -11.951 0 -18.644
+         {
+          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+           Slot6 {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_sObjectToSpawn "{FF17BFD4972B8DAF}Prefabs/Systems/Smoke/Wrapper_Smoke_Red_dup.et"
+              m_bShowDebugShapesInWorkbench 0
+             }
+            }
+            coords -68.116 39.159 91.123
+           }
+           Slot7 {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_sObjectToSpawn "{132244CF41D4DE8D}Prefabs/Systems/Sound/sound_airraidsiren_dup.et"
+              m_bShowDebugShapesInWorkbench 0
+             }
+            }
+            coords 92.208 38.429 108.754
+           }
+          }
+         }
+        }
+       }
+      }
+      B_warning_notification {
+       components {
+        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionShowPopupNotification "{6222AEF7D75F1F63}" {
+           m_iMaxNumberOfActivations 1
+           m_sTitle "INCOMING!"
+           m_sText "Artillery incoming. Take cover!"
+           m_sFactionKey "US"
+          }
+         }
+        }
+       }
+       coords -12.653 -0.053 51.905
+       {
+        $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+         Layer1 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionShowPopupNotification "{6222AEF7D75F1F63}" {
+              m_iMaxNumberOfActivations 1
+              m_sTitle "INCOMING!"
+              m_sText "Artillery incoming. Take cover!"
+              m_sFactionKey "US"
+             }
+            }
+           }
+          }
+          coords 5.632 -1.877 -97.028
+         }
+         Layer4 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionShowPopupNotification "{6222AEF7D75F1F63}" {
+              m_iMaxNumberOfActivations 1
+              m_sTitle "INCOMING!"
+              m_sText "Artillery incoming. Take cover!"
+              m_sFactionKey "US"
+             }
+            }
+           }
+          }
+          coords 5.632 -1.877 -97.028
+         }
+         Layer5 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionShowPopupNotification "{6222AEF7D75F1F63}" {
+              m_iMaxNumberOfActivations 1
+              m_sTitle "INCOMING!"
+              m_sText "Artillery incoming. Take cover!"
+              m_sFactionKey "US"
+             }
+            }
+           }
+          }
+          coords 46.512 -0.061 -56.693
+         }
+        }
+       }
       }
      }
     }
    }
-   coords 35.57 1.469 1.593
-   {
-    $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-     C_Art_strike {
-      components {
-       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-        m_aActivationActions {
-         SCR_ScenarioFrameworkActionWaitAndExecute "{622215483BDCECA8}" {
-          m_iDelayInSeconds 10
-          m_iDelayInSecondsMax 20
-          m_aActions {
-           SCR_ScenarioFrameworkActionShowHint "{62221549DCBBF9ED}" {
-            m_sTitle "INCOMING!"
-            m_sText "Incoming artillery strike. Take cover!"
-            m_sFactionKey "US"
-           }
-           SCR_ScenarioFrameworkActionSpawnObjects "{62221549E19D4EB6}" {
-            m_aNameOfObjectsToSpawnOnActivation {
-             "Shell1" "Shell2" "Shell3" "Shell4" "Shell5" "Shell6" "Shell7" "Shell8"
-            }
-           }
-          }
-         }
-        }
-        m_bExcludeFromDynamicDespawn 1
-       }
-      }
-      coords 0 0 0
-      {
-       $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-        Shell1 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           m_eActivationType ON_TRIGGER_ACTIVATION
-           m_aActivationActions {
-            SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
-             m_iDelayInSecondsMax 10
-             m_bLooped 1
-             m_aActions {
-              SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
-               m_iMaxNumberOfActivations 4
-               m_aNameOfObjectsToSpawnOnActivation {
-                "Slot1"
-               }
-              }
-             }
-            }
-           }
-           m_bExcludeFromDynamicDespawn 1
-          }
-         }
-         coords -81.458 -2.517 -4.252
-         {
-          GenericEntity Slot1 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_eActivationType ON_TRIGGER_ACTIVATION
-             m_bExcludeFromDynamicDespawn 1
-             m_sObjectToSpawn "{453B3D926D22E9DA}Prefabs/Systems/Artillery/ArtilleryBarrage_Medium_dub.et"
-            }
-           }
-           coords -26.591 0.247 16.363
-          }
-         }
-        }
-        Shell3 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           m_eActivationType ON_TRIGGER_ACTIVATION
-           m_aActivationActions {
-            SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
-             m_iDelayInSeconds 15
-             m_iDelayInSecondsMax 20
-             m_bLooped 1
-             m_aActions {
-              SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
-               m_iMaxNumberOfActivations 4
-               m_aNameOfObjectsToSpawnOnActivation {
-                "Slot4"
-               }
-              }
-             }
-            }
-           }
-           m_bExcludeFromDynamicDespawn 1
-          }
-         }
-         coords -176.089 -4.926 -112.414
-         {
-          GenericEntity Slot4 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_eActivationType ON_TRIGGER_ACTIVATION
-             m_bExcludeFromDynamicDespawn 1
-             m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
-            }
-           }
-           coords -3.831 0 16.363
-          }
-         }
-        }
-        Shell2 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           m_eActivationType ON_TRIGGER_ACTIVATION
-           m_aActivationActions {
-            SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
-             m_iDelayInSeconds 5
-             m_iDelayInSecondsMax 15
-             m_bLooped 1
-             m_aActions {
-              SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
-               m_iMaxNumberOfActivations 4
-               m_aNameOfObjectsToSpawnOnActivation {
-                "Slot5"
-               }
-              }
-             }
-            }
-           }
-           m_bExcludeFromDynamicDespawn 1
-          }
-         }
-         coords -59.634 -3.64 -36.347
-         {
-          GenericEntity Slot5 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_eActivationType ON_TRIGGER_ACTIVATION
-             m_bExcludeFromDynamicDespawn 1
-             m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
-            }
-           }
-           coords -3.831 0.474 16.363
-          }
-         }
-        }
-        Shell4 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           m_eActivationType ON_TRIGGER_ACTIVATION
-           m_aActivationActions {
-            SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
-             m_iDelayInSeconds 20
-             m_iDelayInSecondsMax 25
-             m_bLooped 1
-             m_aActions {
-              SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
-               m_iMaxNumberOfActivations 4
-               m_aNameOfObjectsToSpawnOnActivation {
-                "Slot8"
-               }
-              }
-             }
-            }
-           }
-           m_bExcludeFromDynamicDespawn 1
-          }
-         }
-         coords -82.454 -0.111 -93.034
-         {
-          GenericEntity Slot8 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_eActivationType ON_TRIGGER_ACTIVATION
-             m_bExcludeFromDynamicDespawn 1
-             m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
-            }
-           }
-           coords -3.831 -3.307 16.363
-          }
-         }
-        }
-        Shell5 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           m_eActivationType ON_TRIGGER_ACTIVATION
-           m_aActivationActions {
-            SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
-             m_iDelayInSeconds 30
-             m_iDelayInSecondsMax 35
-             m_bLooped 1
-             m_aActions {
-              SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
-               m_iMaxNumberOfActivations 4
-               m_aNameOfObjectsToSpawnOnActivation {
-                "Slot9"
-               }
-              }
-             }
-            }
-           }
-           m_bExcludeFromDynamicDespawn 1
-          }
-         }
-         coords -15.747 -2.26 -58.527
-         {
-          GenericEntity Slot9 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_eActivationType ON_TRIGGER_ACTIVATION
-             m_bExcludeFromDynamicDespawn 1
-             m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
-            }
-           }
-           coords -3.831 0.193 16.363
-          }
-         }
-        }
-        Shell6 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           m_eActivationType ON_TRIGGER_ACTIVATION
-           m_aActivationActions {
-            SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
-             m_iDelayInSeconds 20
-             m_iDelayInSecondsMax 35
-             m_bLooped 1
-             m_aActions {
-              SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
-               m_iMaxNumberOfActivations 4
-               m_aNameOfObjectsToSpawnOnActivation {
-                "Slot10"
-               }
-              }
-             }
-            }
-           }
-           m_bExcludeFromDynamicDespawn 1
-          }
-         }
-         coords -5.668 -3.282 -114.328
-         {
-          GenericEntity Slot10 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_eActivationType ON_TRIGGER_ACTIVATION
-             m_bExcludeFromDynamicDespawn 1
-             m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
-            }
-           }
-           coords -3.831 -0.013 16.363
-          }
-         }
-        }
-        Shell7 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           m_eActivationType ON_TRIGGER_ACTIVATION
-           m_aActivationActions {
-            SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
-             m_iDelayInSeconds 5
-             m_iDelayInSecondsMax 25
-             m_bLooped 1
-             m_aActions {
-              SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
-               m_iMaxNumberOfActivations 4
-               m_aNameOfObjectsToSpawnOnActivation {
-                "Slot11"
-               }
-              }
-             }
-            }
-           }
-           m_bExcludeFromDynamicDespawn 1
-          }
-         }
-         coords 11.376 -1.461 -41.661
-         {
-          GenericEntity Slot11 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_eActivationType ON_TRIGGER_ACTIVATION
-             m_bExcludeFromDynamicDespawn 1
-             m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
-            }
-           }
-           coords -3.831 0.331 16.363
-          }
-         }
-        }
-        Shell8 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           m_eActivationType ON_TRIGGER_ACTIVATION
-           m_aActivationActions {
-            SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
-             m_iDelayInSeconds 25
-             m_iDelayInSecondsMax 40
-             m_bLooped 1
-             m_aActions {
-              SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
-               m_iMaxNumberOfActivations 4
-               m_aNameOfObjectsToSpawnOnActivation {
-                "Slot12"
-               }
-              }
-             }
-            }
-           }
-           m_bExcludeFromDynamicDespawn 1
-          }
-         }
-         coords -12.121 -0.151 3.553
-         {
-          GenericEntity Slot12 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_eActivationType ON_TRIGGER_ACTIVATION
-             m_bExcludeFromDynamicDespawn 1
-             m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
-            }
-           }
-           coords -3.831 -0.082 16.363
-          }
-         }
-        }
+  }
+ }
+ Area1 {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_bDynamicDespawn 1
+    m_iDynamicDespawnRange 100
+   }
+  }
+  coords 1303.658 -67.629 6355.489
+  {
+   GenericEntity Layer32 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+    components {
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      m_aActivationActions {
+       SCR_ScenarioFrameworkActionShowHint "{6222154855C1BD06}" {
+        m_iMaxNumberOfActivations 1
+        m_sTitle "Clear to the target"
+        m_sText "All clear to procede to the target."
+        m_sFactionKey "US"
        }
       }
      }
-     A_warning {
-      components {
-       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-        m_aActivationActions {
-         SCR_ScenarioFrameworkActionSpawnObjects "{6222AEE83AF00219}" {
-          m_aNameOfObjectsToSpawnOnActivation {
-           "Slot6" "Slot7"
-          }
-         }
-         SCR_ScenarioFrameworkActionShowPopupNotification "{6222AEF7D75F1F63}" {
-          m_iMaxNumberOfActivations 1
-          m_sTitle "INCOMING!"
-          m_sText "Artillery incoming. Take cover!"
-          m_sFactionKey "US"
-         }
-        }
-       }
-      }
-      coords 0 0 0
-      {
-       GenericEntity Color_alarm : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-        components {
-         SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-          m_eActivationType ON_TRIGGER_ACTIVATION
-          m_aActivationActions {
-           SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
-            m_iDelayInSecondsMax 3
-            m_aActions {
-             SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
-              m_iMaxNumberOfActivations 4
-              m_aNameOfObjectsToSpawnOnActivation {
-               "Slot6" "Slot7"
-              }
+    }
+    coords 35.57 1.469 1.593
+    {
+     $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+      C_Art_strike2 {
+       components {
+        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionWaitAndExecute "{622215483BDCECA8}" {
+           m_iMaxNumberOfActivations 1
+           m_iDelayInSeconds 10
+           m_iDelayInSecondsMax 20
+           m_aActions {
+            SCR_ScenarioFrameworkActionShowHint "{62221549DCBBF9ED}" {
+             m_iMaxNumberOfActivations 1
+             m_sTitle "INCOMING!"
+             m_sText "Incoming artillery strike. Take cover!"
+             m_sFactionKey "US"
+            }
+            SCR_ScenarioFrameworkActionSpawnObjects "{62221549E19D4EB6}" {
+             m_iMaxNumberOfActivations 1
+             m_aNameOfObjectsToSpawnOnActivation {
+              "Shell10" "Shell11" "Shell12" "Shell13" "Shell14" "Shell15" "Shell16" "Shell17"
              }
             }
            }
           }
-          m_bExcludeFromDynamicDespawn 1
          }
+         m_bExcludeFromDynamicDespawn 1
         }
-        coords -11.951 0 -18.644
-        {
-         $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-          Slot6 {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_eActivationType ON_TRIGGER_ACTIVATION
-             m_sObjectToSpawn "{FF17BFD4972B8DAF}Prefabs/Systems/Smoke/Wrapper_Smoke_Red_dup.et"
-             m_bShowDebugShapesInWorkbench 0
+       }
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+         Shell9 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_eActivationType ON_TRIGGER_ACTIVATION
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+              m_iMaxNumberOfActivations 1
+              m_iDelayInSecondsMax 10
+              m_bLooped 1
+              m_aActions {
+               SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+                m_iMaxNumberOfActivations 4
+                m_aNameOfObjectsToSpawnOnActivation {
+                 "Slot275"
+                }
+               }
+              }
+             }
             }
+            m_bExcludeFromDynamicDespawn 1
            }
-           coords -1.879 -0.454 13.197
           }
-          Slot7 {
-           components {
-            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_eActivationType ON_TRIGGER_ACTIVATION
-             m_sObjectToSpawn "{132244CF41D4DE8D}Prefabs/Systems/Sound/sound_airraidsiren_dup.et"
-             m_bShowDebugShapesInWorkbench 0
+          coords -90.903 -1.792 -92.854
+          {
+           GenericEntity Slot275 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_bExcludeFromDynamicDespawn 1
+              m_sObjectToSpawn "{453B3D926D22E9DA}Prefabs/Systems/Artillery/ArtilleryBarrage_Medium_dub.et"
+             }
             }
+            coords 4.134 68.477 59.367
            }
-           coords -9.464 -2.261 -28.552
+          }
+         }
+         Shell10 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_eActivationType ON_TRIGGER_ACTIVATION
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+              m_iMaxNumberOfActivations 1
+              m_iDelayInSeconds 15
+              m_iDelayInSecondsMax 20
+              m_bLooped 1
+              m_aActions {
+               SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+                m_iMaxNumberOfActivations 4
+                m_aNameOfObjectsToSpawnOnActivation {
+                 "Slot278"
+                }
+               }
+              }
+             }
+            }
+            m_bExcludeFromDynamicDespawn 1
+           }
+          }
+          coords -157.574 0.032 138.606
+          {
+           GenericEntity Slot278 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_bExcludeFromDynamicDespawn 1
+              m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+             }
+            }
+            coords 67.765 39.163 -58.905
+           }
+          }
+         }
+         Shell11 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_eActivationType ON_TRIGGER_ACTIVATION
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+              m_iMaxNumberOfActivations 1
+              m_iDelayInSeconds 5
+              m_iDelayInSecondsMax 15
+              m_bLooped 1
+              m_aActions {
+               SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+                m_iMaxNumberOfActivations 4
+                m_aNameOfObjectsToSpawnOnActivation {
+                 "Slot279"
+                }
+               }
+              }
+             }
+            }
+            m_bExcludeFromDynamicDespawn 1
+           }
+          }
+          coords 55.327 -1.469 -89.235
+          {
+           GenericEntity Slot279 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_bExcludeFromDynamicDespawn 1
+              m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+             }
+            }
+            coords -186.786 70.047 141.699
+           }
+          }
+         }
+         Shell12 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_eActivationType ON_TRIGGER_ACTIVATION
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+              m_iMaxNumberOfActivations 1
+              m_iDelayInSeconds 20
+              m_iDelayInSecondsMax 25
+              m_bLooped 1
+              m_aActions {
+               SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+                m_iMaxNumberOfActivations 4
+                m_aNameOfObjectsToSpawnOnActivation {
+                 "Slot280"
+                }
+               }
+              }
+             }
+            }
+            m_bExcludeFromDynamicDespawn 1
+           }
+          }
+          coords -68.639 14.131 155.564
+          {
+           GenericEntity Slot280 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_bExcludeFromDynamicDespawn 1
+              m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+             }
+            }
+            coords -40.443 56.101 -89.432
+           }
+          }
+         }
+         Shell13 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_eActivationType ON_TRIGGER_ACTIVATION
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+              m_iMaxNumberOfActivations 1
+              m_iDelayInSeconds 30
+              m_iDelayInSecondsMax 35
+              m_bLooped 1
+              m_aActions {
+               SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+                m_iMaxNumberOfActivations 4
+                m_aNameOfObjectsToSpawnOnActivation {
+                 "Slot281"
+                }
+               }
+              }
+             }
+            }
+            m_bExcludeFromDynamicDespawn 1
+           }
+          }
+          coords -24.089 -1.47 -207.899
+          {
+           GenericEntity Slot281 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_bExcludeFromDynamicDespawn 1
+              m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+             }
+            }
+            coords -55.488 67.63 135.686
+           }
+          }
+         }
+         Shell14 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_eActivationType ON_TRIGGER_ACTIVATION
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+              m_iMaxNumberOfActivations 1
+              m_iDelayInSeconds 20
+              m_iDelayInSecondsMax 35
+              m_bLooped 1
+              m_aActions {
+               SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+                m_iMaxNumberOfActivations 4
+                m_aNameOfObjectsToSpawnOnActivation {
+                 "Slot282"
+                }
+               }
+              }
+             }
+            }
+            m_bExcludeFromDynamicDespawn 1
+           }
+          }
+          coords -55.836 -1.772 140.961
+          {
+           GenericEntity Slot282 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_bExcludeFromDynamicDespawn 1
+              m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+             }
+            }
+            coords 19.69 67.932 -212.791
+           }
+          }
+         }
+         Shell15 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_eActivationType ON_TRIGGER_ACTIVATION
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+              m_iMaxNumberOfActivations 1
+              m_iDelayInSeconds 5
+              m_iDelayInSecondsMax 25
+              m_bLooped 1
+              m_aActions {
+               SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+                m_iMaxNumberOfActivations 4
+                m_aNameOfObjectsToSpawnOnActivation {
+                 "Slot283"
+                }
+               }
+              }
+             }
+            }
+            m_bExcludeFromDynamicDespawn 1
+           }
+          }
+          coords 54.133 -1.47 19.245
+          {
+           GenericEntity Slot283 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_bExcludeFromDynamicDespawn 1
+              m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+             }
+            }
+            coords -99.436 68.547 16.363
+           }
+          }
+         }
+         Shell16 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_eActivationType ON_TRIGGER_ACTIVATION
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+              m_iMaxNumberOfActivations 1
+              m_iDelayInSeconds 25
+              m_iDelayInSecondsMax 40
+              m_bLooped 1
+              m_aActions {
+               SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+                m_iMaxNumberOfActivations 4
+                m_aNameOfObjectsToSpawnOnActivation {
+                 "Slot284"
+                }
+               }
+              }
+             }
+            }
+            m_bExcludeFromDynamicDespawn 1
+           }
+          }
+          coords 10.757 -1.47 193.467
+          {
+           GenericEntity Slot284 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_bExcludeFromDynamicDespawn 1
+              m_sObjectToSpawn "{72BEEF40AF179763}Prefabs/Weapons/Warheads/Explosions/Explosion_Tnt_Large.et"
+             }
+            }
+            coords -3.831 67.63 -260.038
+           }
           }
          }
         }
        }
       }
-     }
-     B_warning_notification {
-      components {
-       SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-        m_aActivationActions {
-         SCR_ScenarioFrameworkActionShowPopupNotification "{6222AEF7D75F1F63}" {
-          m_iMaxNumberOfActivations 1
-          m_sTitle "INCOMING!"
-          m_sText "Artillery incoming. Take cover!"
-          m_sFactionKey "US"
+      A_warning2 {
+       components {
+        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionSpawnObjects "{6222AEE83AF00219}" {
+           m_iMaxNumberOfActivations 1
+           m_aNameOfObjectsToSpawnOnActivation {
+            "Slot285" "Slot286"
+           }
+          }
+          SCR_ScenarioFrameworkActionShowPopupNotification "{6222AEF7D75F1F63}" {
+           m_iMaxNumberOfActivations 1
+           m_sTitle "INCOMING!"
+           m_sText "Artillery incoming. Take cover!"
+           m_sFactionKey "US"
+          }
+         }
+        }
+       }
+       coords 0 0 0
+       {
+        GenericEntity Color_alarm2 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+         components {
+          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+           m_eActivationType ON_TRIGGER_ACTIVATION
+           m_aActivationActions {
+            SCR_ScenarioFrameworkActionWaitAndExecute "{62221549356D08C3}" {
+             m_iMaxNumberOfActivations 1
+             m_iDelayInSecondsMax 3
+             m_aActions {
+              SCR_ScenarioFrameworkActionSpawnObjects "{622215493BC0BBD8}" {
+               m_iMaxNumberOfActivations 4
+               m_aNameOfObjectsToSpawnOnActivation {
+                "Slot6" "Slot7"
+               }
+              }
+             }
+            }
+           }
+           m_bExcludeFromDynamicDespawn 1
+          }
+         }
+         coords -11.951 0 -18.644
+         {
+          $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+           Slot285 {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_sObjectToSpawn "{FF17BFD4972B8DAF}Prefabs/Systems/Smoke/Wrapper_Smoke_Red_dup.et"
+              m_bShowDebugShapesInWorkbench 0
+             }
+            }
+            coords -13.661 66.646 35.068
+           }
+           Slot286 {
+            components {
+             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+              m_eActivationType ON_TRIGGER_ACTIVATION
+              m_sObjectToSpawn "{132244CF41D4DE8D}Prefabs/Systems/Sound/sound_airraidsiren_dup.et"
+              m_bShowDebugShapesInWorkbench 0
+             }
+            }
+            coords -109.033 71.306 108.487
+           }
+          }
          }
         }
        }
       }
-      coords -12.653 -0.053 51.905
-      {
-       $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-        Layer1 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           m_aActivationActions {
-            SCR_ScenarioFrameworkActionShowPopupNotification "{6222AEF7D75F1F63}" {
-             m_iMaxNumberOfActivations 1
-             m_sTitle "INCOMING!"
-             m_sText "Artillery incoming. Take cover!"
-             m_sFactionKey "US"
-            }
-           }
+      B_warning_notification2 {
+       components {
+        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+         m_aActivationActions {
+          SCR_ScenarioFrameworkActionShowPopupNotification "{6222AEF7D75F1F63}" {
+           m_iMaxNumberOfActivations 1
+           m_sTitle "INCOMING!"
+           m_sText "Artillery incoming. Take cover!"
+           m_sFactionKey "US"
           }
          }
-         coords 5.632 -1.877 -97.028
         }
-        Layer4 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           m_aActivationActions {
-            SCR_ScenarioFrameworkActionShowPopupNotification "{6222AEF7D75F1F63}" {
-             m_iMaxNumberOfActivations 1
-             m_sTitle "INCOMING!"
-             m_sText "Artillery incoming. Take cover!"
-             m_sFactionKey "US"
+       }
+       coords -12.653 -0.053 51.905
+       {
+        $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+         Layer29 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionShowPopupNotification "{6222AEF7D75F1F63}" {
+              m_iMaxNumberOfActivations 1
+              m_sTitle "INCOMING!"
+              m_sText "Artillery incoming. Take cover!"
+              m_sFactionKey "US"
+             }
             }
            }
           }
+          coords 5.632 67.225 -97.028
          }
-         coords 5.632 -1.877 -97.028
-        }
-        Layer5 {
-         components {
-          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-           m_aActivationActions {
-            SCR_ScenarioFrameworkActionShowPopupNotification "{6222AEF7D75F1F63}" {
-             m_iMaxNumberOfActivations 1
-             m_sTitle "INCOMING!"
-             m_sText "Artillery incoming. Take cover!"
-             m_sFactionKey "US"
+         Layer30 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionShowPopupNotification "{6222AEF7D75F1F63}" {
+              m_iMaxNumberOfActivations 1
+              m_sTitle "INCOMING!"
+              m_sText "Artillery incoming. Take cover!"
+              m_sFactionKey "US"
+             }
             }
            }
           }
+          coords 5.632 67.225 -97.028
          }
-         coords 46.512 -0.061 -56.693
+         Layer31 {
+          components {
+           SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+            m_aActivationActions {
+             SCR_ScenarioFrameworkActionShowPopupNotification "{6222AEF7D75F1F63}" {
+              m_iMaxNumberOfActivations 1
+              m_sTitle "INCOMING!"
+              m_sText "Artillery incoming. Take cover!"
+              m_sFactionKey "US"
+             }
+            }
+           }
+          }
+          coords 46.512 68.619 -56.693
+         }
         }
        }
       }

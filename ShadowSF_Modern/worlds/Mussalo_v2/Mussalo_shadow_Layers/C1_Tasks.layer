@@ -1,9 +1,24 @@
-SCR_SpawnPoint US_spawn_main2 : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et" {
- coords 689.005 4.237 6409.151
- angleY 84.451
- m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
-  Name "Shadow Division MOB"
+GenericEntity SlotAI162 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+ components {
+  SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+   m_sFactionKey "USSR"
+   m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
+   m_bRandomizePerFaction 1
+   m_eEntityCatalogType CHARACTER
+   m_aIncludedEditableEntityLabels {
+    44 40 41 42 43 45 46 47 48
+   }
+   m_aExcludedEditableEntityLabels {
+   }
+   m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6220CEBFF3F0A894}" {
+    m_aLayerName {
+     "SlotWaypoint12"
+    }
+   }
+   m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+  }
  }
+ coords 1151.36 2.593 5958.358
 }
 $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
  A1_Briefing_init {
@@ -51,6 +66,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     }
     m_aActions {
      SCR_ScenarioFrameworkActionSpawnObjects "{61F2B82469733BBC}" {
+      m_iMaxNumberOfActivations 1
       m_aNameOfObjectsToSpawnOnActivation {
        "LayerTaskMove1"
       }
@@ -63,10 +79,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
     m_aActivationActions {
-     SCR_ScenarioFrameworkActionQRFDispacher "{6220CEBB19E43745}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
+     SCR_ScenarioFrameworkActionQRFDispacher "{6224FAAC46093D37}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer1"
-      m_fQRFSpawnDelay 5
-      m_fQRFNextWaveDelay 10
+      m_iThreshold 4
+      m_iNumberOfAvailableQRFWaves 5
+      m_fQRFNextWaveDelay 60
      }
     }
     m_bDynamicDespawn 1
@@ -77,24 +94,46 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   coords 879.869 3.064 6316.41
   {
    GenericEntity QRFSpawnpointsLayer1 : "{63D611AA694A8AE3}Prefabs/ScenarioFramework/Compositions/QRFSpawnpointsLayer.et" {
-    coords 188.773 -0.981 131.618
+    coords 7.153 -0.003 12.043
     {
      GenericEntity QRFSpawnpoint33 {
       ID "6054EE897FB6C21B"
-      coords 496.277 -0.061 56.111
-     }
-     GenericEntity QRFSpawnpoint34 : "{FCE82B7F21949782}Prefabs/ScenarioFramework/Compositions/QRFSpawnpoint.et" {
       components {
        SCR_ScenarioFrameworkQRFSlotAI "{5A26B3E02AC77BA0}" {
-        m_iGroupType INFANTRY
         m_aSCR_QRFSpawnSafeZone {
-         SCR_QRFSpawnSafeZone "{6220CEB8DF4C65AB}" {
+         SCR_QRFSpawnSafeZone "{6224FAAE8850ADC5}" {
           m_iMinDistanceToClosestObserver 100
          }
         }
        }
       }
-      coords 520.032 -1.147 40.003
+      coords 61.392 0.156 189.499
+     }
+     $grp GenericEntity : "{FCE82B7F21949782}Prefabs/ScenarioFramework/Compositions/QRFSpawnpoint.et" {
+      QRFSpawnpoint34 {
+       components {
+        SCR_ScenarioFrameworkQRFSlotAI "{5A26B3E02AC77BA0}" {
+         m_aSCR_QRFSpawnSafeZone {
+          SCR_QRFSpawnSafeZone "{6224FAAC2BE5AB61}" {
+           m_iMinDistanceToClosestObserver 150
+          }
+         }
+        }
+       }
+       coords 435.16 0.876 239.254
+      }
+      QRFSpawnpoint36 {
+       components {
+        SCR_ScenarioFrameworkQRFSlotAI "{5A26B3E02AC77BA0}" {
+         m_aSCR_QRFSpawnSafeZone {
+          SCR_QRFSpawnSafeZone "{6224FAAC2BE5AB61}" {
+           m_iMinDistanceToClosestObserver 150
+          }
+         }
+        }
+       }
+       coords 119.834 9.328 304.327
+      }
      }
     }
    }
@@ -249,12 +288,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        }
       }
       Attacker_USSR {
-       components {
-        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-         m_iRepeatedSpawnNumber 2
-         m_fRepeatedSpawnTimer 15
-        }
-       }
        coords 6.527 0.026 15.14
        {
         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
@@ -491,22 +524,48 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Defend_US_fob {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_aActivationActions {
+     SCR_ScenarioFrameworkActionQRFDispacher "{6224FAA939B01756}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
+      m_sQRFLayerName "QRFSpawnpointsLayer4"
+      m_iNumberOfAvailableQRFWaves 5
+      m_fQRFSpawnDelay 10
+     }
+    }
     m_bDynamicDespawn 1
-    m_iDynamicDespawnRange 300
+    m_iDynamicDespawnRange 200
     m_bShowDebugShapesInWorkbench 1
    }
   }
   coords 1056.458 1.363 6108.309
   {
+   GenericEntity QRFSpawnpointsLayer4 : "{63D611AA694A8AE3}Prefabs/ScenarioFramework/Compositions/QRFSpawnpointsLayer.et" {
+    coords 3.605 0.602 8.68
+    {
+     GenericEntity QRFSpawnpoint35 {
+      ID "6054EE897FB6C21B"
+      components {
+       SCR_ScenarioFrameworkQRFSlotAI "{5A26B3E02AC77BA0}" {
+        m_aSCR_QRFSpawnSafeZone {
+         SCR_QRFSpawnSafeZone "{6224FAA8F5B821F4}" {
+          m_iMinDistanceToClosestObserver 100
+         }
+        }
+       }
+      }
+      coords 181.971 0.47 -195.156
+     }
+    }
+   }
    GenericEntity LayerTaskDefend3 : "{775C493CE872C3A5}Prefabs/ScenarioFramework/Components/LayerTaskDefend.et" {
     components {
      SCR_ScenarioFrameworkLayerTaskDefend "{5C52E161174024CB}" {
       m_sTaskTitle "Defend the US small FOB. "
       m_sTaskDescription "Reinforce defense of friendly forces. "
       m_sTaskPrefab "{888DC29A0B4F3F20}Prefabs/ScenarioFramework/Tasks/TaskDefend.et"
+      m_bPlaceMarkerOnSubjectSlot 1
       m_sTriggerName "myNamedTrigger"
       m_sCountdownTitleText "DEFEND AREA"
-      m_fDefendTime 800
+      m_fDefendTime 500
       m_bDisplayCountdownHUD 0
       m_aFactionSettings {
        SCR_ScenarioFrameworkTaskDefendAttackingFaction "{5C5A81043FCD0717}" {
@@ -530,9 +589,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        components {
         SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
          m_iRandomPercent 100
-         m_bEnableRepeatedSpawn 1
-         m_iRepeatedSpawnNumber 2
-         m_fRepeatedSpawnTimer 180
         }
        }
        coords 2.084 0.001 8.665
@@ -589,7 +645,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           SCR_ScenarioFrameworkSlotTrigger "{5A4B5098DE424991}" {
            m_aPlugins {
             SCR_ScenarioFrameworkPluginTrigger "{5AC53D73FCB1F805}" {
-             m_fAreaRadius 120
+             m_fAreaRadius 80
              m_eActivationPresence ANY_CHARACTER
             }
            }
@@ -618,13 +674,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        }
       }
       Attacker_USSR2 {
-       components {
-        SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-         m_bEnableRepeatedSpawn 1
-         m_iRepeatedSpawnNumber 3
-         m_fRepeatedSpawnTimer 220
-        }
-       }
        coords 6.526 -0.24 15.141
        {
         $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
@@ -648,7 +697,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
            }
           }
-          coords 207.213 6.578 -124.556
+          coords 207.213 6.841 -124.556
          }
          SlotAI102 {
           components {
@@ -670,7 +719,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
            }
           }
-          coords 204.93 8.378 -96.413
+          coords 204.93 9.029 -96.413
          }
          SlotAI103 {
           components {
@@ -692,7 +741,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
            }
           }
-          coords 234.666 3.472 -103.707
+          coords 234.666 2.514 -103.707
          }
          SlotAI104 {
           components {
@@ -714,7 +763,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
            }
           }
-          coords 231.678 3.681 -110.58
+          coords 231.678 2.594 -110.58
          }
          SlotAI105 {
           components {
@@ -736,7 +785,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
            }
           }
-          coords 209.339 1.13 -184.46
+          coords 209.339 1.781 -184.46
          }
          SlotAI106 {
           components {
@@ -758,7 +807,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
            }
           }
-          coords 204.233 0.946 -196.312
+          coords 204.233 1.597 -196.312
          }
          SlotAI107 {
           components {
@@ -780,7 +829,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
            }
           }
-          coords 181.378 -0.772 -218.72
+          coords 181.378 -0.121 -218.72
          }
          SlotAI108 {
           components {
@@ -802,7 +851,73 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
            }
           }
-          coords 177.811 -0.686 -207.088
+          coords 177.811 -0.035 -207.088
+         }
+         SlotAI158 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sFactionKey "USSR"
+            m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
+            m_bRandomizePerFaction 1
+            m_eEntityCatalogType CHARACTER
+            m_aIncludedEditableEntityLabels {
+             44 40 41 42 43 45 46 47 48
+            }
+            m_aExcludedEditableEntityLabels {
+            }
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6220CEBFF3F0A894}" {
+             m_aLayerName {
+              "SlotWaypoint12"
+             }
+            }
+            m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+           }
+          }
+          coords 92.98 1.089 -187.913
+         }
+         SlotAI161 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sFactionKey "USSR"
+            m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
+            m_bRandomizePerFaction 1
+            m_eEntityCatalogType CHARACTER
+            m_aIncludedEditableEntityLabels {
+             44 40 41 42 43 45 46 47 48
+            }
+            m_aExcludedEditableEntityLabels {
+            }
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6220CEBFF3F0A894}" {
+             m_aLayerName {
+              "SlotWaypoint12"
+             }
+            }
+            m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+           }
+          }
+          coords 94.946 1.247 -174.703
+         }
+         SlotAI163 {
+          components {
+           SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+            m_sFactionKey "USSR"
+            m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
+            m_bRandomizePerFaction 1
+            m_eEntityCatalogType CHARACTER
+            m_aIncludedEditableEntityLabels {
+             44 40 41 42 43 45 46 47 48
+            }
+            m_aExcludedEditableEntityLabels {
+            }
+            m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{6220CEBFF3F0A894}" {
+             m_aLayerName {
+              "SlotWaypoint12"
+             }
+            }
+            m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+           }
+          }
+          coords 80.86 1.489 -167.146
          }
         }
         GenericEntity SlotWaypoint12 : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
@@ -1093,6 +1208,16 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   }
  }
  MSR_alpha_def {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_aTriggerActions {
+     SCR_ScenarioFrameworkActionQRFDispacher "{6224FAA82CAE4A85}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
+      m_sQRFLayerName "QRFSpawnpointsLayer5"
+      m_iNumberOfAvailableQRFWaves 5
+     }
+    }
+   }
+  }
   coords 1283.822 0.722 6372.921
   angleY -10.049
   {
@@ -1224,6 +1349,15 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       }
       coords 0.781 -0.411 -22.361
       angleY 78.052
+     }
+    }
+   }
+   GenericEntity QRFSpawnpointsLayer5 : "{63D611AA694A8AE3}Prefabs/ScenarioFramework/Compositions/QRFSpawnpointsLayer.et" {
+    coords 21.931 -0.261 0
+    {
+     GenericEntity QRFSpawnpoint37 {
+      ID "6054EE897FB6C21B"
+      coords 291.432 1.388 61.777
      }
     }
    }

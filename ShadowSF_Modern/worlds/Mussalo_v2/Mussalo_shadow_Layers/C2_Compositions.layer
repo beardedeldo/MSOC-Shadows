@@ -839,10 +839,21 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   }
  }
  Enemy_staging_area {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_iDynamicDespawnRange 250
+    m_bShowDebugShapesInWorkbench 1
+   }
+  }
   coords 1624.876 2.006 6561.92
   {
    $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     OPFOR_Vics {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_bExcludeFromDynamicDespawn 1
+      }
+     }
      coords 1.949 -0.079 5.469
      {
       $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
@@ -1026,7 +1037,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
          }
         }
-        coords -47.93 -0.018 -134.468
+        coords -48.134 -0.011 -134.656
         angleY -132.753
        }
        BTR_2 {
@@ -1046,7 +1057,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
          }
         }
-        coords -94.365 1.733 -128.546
+        coords -95.155 1.766 -129.266
         angleY -144.978
        }
       }
@@ -1068,7 +1079,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
           m_aExcludedEditableEntityLabels {
           }
-          m_sWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
          }
         }
         coords -37.381 -0.047 -35.333
@@ -1101,7 +1111,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
           m_aExcludedEditableEntityLabels {
           }
-          m_sWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
          }
         }
         coords -1.991 0.205 7.12
@@ -1134,7 +1143,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
           m_aExcludedEditableEntityLabels {
           }
-          m_sWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
          }
         }
         coords 19.272 1.241 -51.697
@@ -1167,7 +1175,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
           m_aExcludedEditableEntityLabels {
           }
-          m_sWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
          }
         }
         coords 11.194 1.237 36.198
@@ -1200,7 +1207,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
           m_aExcludedEditableEntityLabels {
           }
-          m_sWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
          }
         }
         coords -44.81 1.068 -19.006
@@ -1217,6 +1223,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
           m_aExcludedEditableEntityLabels {
           }
+          m_sWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
          }
         }
         coords -40.168 -6.916 -4.649
@@ -1233,7 +1240,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
           m_aExcludedEditableEntityLabels {
           }
-          m_sWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
          }
         }
         coords -4.011 0.087 -9.648
@@ -1250,6 +1256,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
           m_aExcludedEditableEntityLabels {
           }
+          m_sWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
          }
         }
         coords -46.183 1.029 10.212
@@ -1282,6 +1289,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
           m_aExcludedEditableEntityLabels {
           }
+          m_sWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
          }
         }
         coords -20.537 0.506 28.145
@@ -1314,6 +1322,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
           m_aExcludedEditableEntityLabels {
           }
+          m_sWPToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
          }
         }
         coords 14.028 0.161 -6.872
@@ -1354,6 +1363,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
     }
     Camo_Vics {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_bExcludeFromDynamicDespawn 1
+      }
+     }
      coords 0 0 0
      {
       $grp GenericEntity : "{E08CD985DF63F56B}Prefabs/Structures/Military/CamoNets/CamoNet_Large_01_base.et" {
@@ -1362,7 +1376,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         angleY -163.131
        }
        {
-        coords -89.824 2.085 -118.932
+        coords -89.276 1.58 -118.388
         angleY -134.302
        }
        {

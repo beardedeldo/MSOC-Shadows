@@ -55,10 +55,12 @@ SCR_GameModeEditor GameMode_Editor_Full1 : "{DA3986AF1B5032B7}Prefabs/MP/Modes/E
     }
    }
   }
+  SCR_TimeAndWeatherHandlerComponent "{62254D7378AA5C28}" {
+  }
  }
  coords 3377.69 8.648 3581.053
  {
-  SCR_FactionManager {
+  SCR_FactionManager "62254D7360154429" {
    ID "56E685E92F1B7E7A"
    Factions {
     SCR_Faction "{56DEAC40D2DBC8B1}" {

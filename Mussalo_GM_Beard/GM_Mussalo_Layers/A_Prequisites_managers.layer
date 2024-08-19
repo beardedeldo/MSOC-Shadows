@@ -21,12 +21,6 @@ SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
     }
    }
   }
-  SCR_AISettingsComponent "{512CCCD0856CB4B9}" {
-   m_fPerceptionSafe 0.8
-   m_fPerceptionVigilant 2.6
-   m_fAimAccuracyErrorModifier 0.75
-   m_fAttackReactionDelayModifier 0.1
-  }
  }
  coords 5338.131 2.656 2011.567
 }

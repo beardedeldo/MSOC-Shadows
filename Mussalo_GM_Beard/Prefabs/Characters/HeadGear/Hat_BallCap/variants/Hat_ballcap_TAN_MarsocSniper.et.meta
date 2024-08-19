@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{E83E0F1EDE4DBAFD}Prefabs/Characters/HeadGear/Hat_BallCap/variants/Hat_ballcap_TAN_MarsocSniper.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

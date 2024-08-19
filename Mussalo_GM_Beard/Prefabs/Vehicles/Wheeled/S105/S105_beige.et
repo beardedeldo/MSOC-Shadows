@@ -1,0 +1,9 @@
+Vehicle : "{8EB38BBD860DA06E}Prefabs/Vehicles/Wheeled/S105/S105_lightblue.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  AICarMovementComponent "{5A3EFB66475D9F87}" {
+   "Max Speed" 45
+   CruiseVehicleSpeedKmh 35
+  }
+ }
+}

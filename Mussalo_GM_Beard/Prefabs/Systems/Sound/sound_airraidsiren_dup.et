@@ -1,0 +1,55 @@
+GenericEntity {
+ ID "6222D695A3C4FCC3"
+ components {
+  SignalsManagerComponent "{6222D695A3C4FCD0}" {
+  }
+  SoundComponent "{6222D695A3C4FCE9}" {
+   Filenames {
+    "{76BB8DEAF958EE9D}Sounds/GMFX_Siren_Air_Raid.acp"
+   }
+   OnFrameUpdate 1
+   DistanceManagement 0
+  }
+  TimerTriggerComponent "{6222D695B78A38BA}" {
+   TRIGGER_ALIVE 1
+   TIMER 35
+  }
+  Bacon_PlaySoundComponent "{6222D695A3C4FCFE}" {
+   m_soundEventName "SOUND_SIREN_GENERIC"
+  }
+  SCR_EditableEntityComponent "{6222D695A3C4FCF8}" {
+   m_EntityType SYSTEM
+   m_UIInfo SCR_EditableEntityUIInfo "{6222D695A3C4FCF7}" {
+    Name "Sound: Air Raid Siren"
+    Description "very loud"
+    Icon "{F02CC9ED8E974DA3}UI/Textures/Notifications/Notification_Sound_Unmuted.edds"
+    m_Image "{1BC4A1E1EF9089D8}Prefabs/Systems/Sound/icon_sound.edds"
+    m_aAuthoredLabels {
+     1001
+    }
+    m_aAutoLabels {
+     41251
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{6222D695A3C4FC0C}" {
+      m_BudgetType SYSTEMS
+      m_Value 20
+     }
+    }
+   }
+   m_Flags 65
+  }
+  SCR_PreviewEntityComponent "{6222D695A3C4FC06}" {
+   m_aEntries {
+    SCR_BasePreviewEntry "{6222D695A3C4FC01}" {
+     m_Mesh "{E3F57B450939B769}Assets/Structures/Military/Sirens/SirenMilitary_E_01/SirenMilitary_E_01_addon.xob"
+     m_Shape MESH
+    }
+   }
+  }
+  RplComponent "{6222D695A3C4FC1E}" {
+   Streamable Disabled
+  }
+ }
+ coords 157.204 1.49 123.056
+}

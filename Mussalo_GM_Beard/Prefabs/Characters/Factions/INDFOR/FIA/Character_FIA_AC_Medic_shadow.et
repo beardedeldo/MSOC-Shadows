@@ -1,0 +1,140 @@
+SCR_ChimeraCharacter : "{DE3786C0C6C978D4}Prefabs/Characters/Factions/INDFOR/FIA/Character_FIA_BaseLoadout.et" {
+ ID "520EC961A090B1EE"
+ components {
+  SCR_CommunicationSoundComponent "{54FD05D0C92D071F}" {
+   Filenames + {
+    "{0D4A60A33022D9DE}Sounds/RadioProtocol/RadioProtocol_CombatOps_CZ.acp"
+   }
+  }
+  SCR_CharacterInventoryStorageComponent "{520EA1D2DB118DAC}" {
+   components {
+    SCR_EquipmentStorageComponent "{56B49DA9722B635D}" {
+     InitialStorageSlots {
+      SCR_EquipmentStorageSlot BinocularSlot {
+       Prefab "{03810BEF182ADA0B}Prefabs/Items/Equipment/Binoculars/Rangefinder_Vector21.et"
+      }
+      SCR_EquipmentStorageSlot WristwatchSlot {
+       Prefab "{7C53E6DE2E4BD8CB}Prefabs/Items/Equipment/Watches/Watch_GarminTactixBravo.et"
+      }
+     }
+    }
+   }
+  }
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#AR-Role_AC_Medic"
+    Icon "{F3FCC3B9732551D9}UI/Textures/Editor/EditableEntities/Characters/EditableEntity_Character_Medic.edds"
+   }
+  }
+  CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
+   WeaponTemplate "{6883E434BD3306B8}Prefabs/Weapons/Rifles/M4A1/Rifle_M4A1_RAS_NT4_Peq_Aimpoint.et"
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Hat {
+     Prefab "{3E2C2A050DE84A64}Prefabs/Characters/HeadGear/Hat_TruckerCap_01/Hat_TruckerCap_01_fkdynamo.et"
+    }
+    LoadoutSlotInfo Jacket {
+     Prefab "{FEEC97AEB32EFB9B}Prefabs/Characters/Uniforms/Shirt_CottonShirt_01/Shirt_CottonShirt_01_V2_Dirty.et"
+    }
+    LoadoutSlotInfo ArmoredVest {
+     Prefab "{2AE67D84AEFAA51D}Prefabs/Characters/Vests/Vest_AVS/Vest_AVS_Emr.et"
+    }
+    LoadoutSlotInfo Pants {
+     Prefab "{C749B2C1C2CF3863}Prefabs/Characters/Uniforms/Civi_Pants/Civi_Jeans_Blue_Ripped.et"
+    }
+    LoadoutSlotInfo Boots {
+     Prefab "{660952F979E8EBF2}Prefabs/Characters/Footwear/Boots_solomon_ultra_x/Footwear_Altama_Boots.et"
+    }
+    LoadoutSlotInfo Back {
+     Prefab "{99B347D92F16A6D3}Prefabs/Items/Equipment/Backpacks/backpack_511_rush12/Backpack_511_rush12_od.et"
+    }
+    LoadoutSlotInfo Vest {
+     Prefab "{911D35D01C9A0FAF}Prefabs/Characters/Vests/Vest_Taktika/Variants/Vest_Taktika_belt_arsarma_medic.et"
+    }
+    LoadoutSlotInfo HandWear {
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{5D7CC173FAA7C00E}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Shirt_CottonShirt_01/Shirt_CottonShirt_01_V2_Dirty.et"
+     PrefabsToSpawn {
+      "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et"
+     }
+    }
+    ItemsInitConfigurationItem "{5D7CC173FAA7C00C}" {
+     TargetStorage "Prefabs/Characters/Vests/Vest_Taktika_Pouches/Pouch_Taktika_magpouch_base.et"
+     PrefabsToSpawn {
+      "{A540E8600876C2A2}Prefabs/Weapons/Magazines/Pmag/Magazine_556x45_PmagWindowed_Coy_30rnd_M855A1_last5tracer.et" "{A540E8600876C2A2}Prefabs/Weapons/Magazines/Pmag/Magazine_556x45_PmagWindowed_Coy_30rnd_M855A1_last5tracer.et"
+     }
+    }
+    ItemsInitConfigurationItem "{620EDA681F536AB3}" {
+     TargetStorage "Prefabs/Items/Equipment/Backpacks/backpack_511_rush12/Backpack_511_rush12_od.et"
+     PrefabsToSpawn {
+      "{4CDB9A030F685F80}Prefabs/Items/Medicine/SalineBag_01/SalineBag_US_01_base.et" "{9BBDEE253A16CC66}Prefabs/Weapons/Grenades/M18/Smoke_M18_Yellow.et" "{9BBDEE253A16CC66}Prefabs/Weapons/Grenades/M18/Smoke_M18_Yellow.et" "{9132672C4D9B2102}Prefabs/Items/Equipment/Kits/MedicalKit_01/MedicalKit_01_FIA.et" "{4CDB9A030F685F80}Prefabs/Items/Medicine/SalineBag_01/SalineBag_US_01_base.et" "{4CDB9A030F685F80}Prefabs/Items/Medicine/SalineBag_01/SalineBag_US_01_base.et" "{5B2FD067D70C1E8F}Prefabs/Items/Medicine/EpinephrineInjection/ACE_Medical_EpinephrineInjection.et" "{5B2FD067D70C1E8F}Prefabs/Items/Medicine/EpinephrineInjection/ACE_Medical_EpinephrineInjection.et"
+     }
+    }
+    ItemsInitConfigurationItem "{620F0AF704F7C1FC}" {
+     TargetStorage "Prefabs/Characters/Uniforms/Civi_Pants/Civi_Jeans_Blue_Ripped.et"
+     PrefabsToSpawn {
+      "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_USSR_01.et" "{80E75A71C29190DB}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_USSR_01.et" "{80E75A71C29190DB}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_USSR_01.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_USSR_01.et" "{C3F1FA1E2EC2B345}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_USSR_01.et" "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et" "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et" "{4CDB9A030F685F80}Prefabs/Items/Medicine/SalineBag_01/SalineBag_US_01_base.et"
+     }
+    }
+    ItemsInitConfigurationItem "{620F1DE4CA235E56}" {
+     TargetStorage "Prefabs/Characters/Vests/Vest_Taktika_Pouches/Pouch_Taktika_holster.et"
+     PrefabsToSpawn {
+      "{E998FA484B0C4BFF}Prefabs/Weapons/Handguns/Glock/Handgun_Glock17.et"
+     }
+    }
+    ItemsInitConfigurationItem "{620F1DE4CA938C7F}" {
+     TargetStorage "Prefabs/Characters/Vests/Vest_Taktika_Pouches/Pouch_Taktika_magpouch_pistol.et"
+     PrefabsToSpawn {
+      "{F20D1122BC5CD9F2}Prefabs/Weapons/Magazines/glock_magazine/Magazine_9x19_Glock_17rnd.et"
+     }
+    }
+    ItemsInitConfigurationItem "{620F1DE44BA32140}" {
+     TargetStorage "Prefabs/Characters/Vests/Vest_Taktika_Pouches/Pouch_Taktika_magpouch_base.et"
+     PrefabsToSpawn {
+      "{A540E8600876C2A2}Prefabs/Weapons/Magazines/Pmag/Magazine_556x45_PmagWindowed_Coy_30rnd_M855A1_last5tracer.et"
+     }
+    }
+    ItemsInitConfigurationItem "{620F1DE4486A5179}" {
+     TargetStorage "Prefabs/Characters/Vests/Vest_Taktika_Pouches/Pouch_ArsArma_magouch_morphed_ATACS.et"
+     PrefabsToSpawn {
+      "{A540E8600876C2A2}Prefabs/Weapons/Magazines/Pmag/Magazine_556x45_PmagWindowed_Coy_30rnd_M855A1_last5tracer.et"
+     }
+    }
+    ItemsInitConfigurationItem "{620F1DE43D60A1DE}" {
+     TargetStorage "Prefabs/Characters/Vests/Vest_Taktika_Pouches/Pouch_Taktika_radioPouch.et"
+     PrefabsToSpawn {
+      "{2E5F2CB55FEC8B7E}Prefabs/Radios_other/PRC 163 Falcon 4 - Green_FIA.et"
+     }
+    }
+    ItemsInitConfigurationItem "{6210D7C45887D409}" {
+     TargetStorage "Prefabs/Characters/Vests/Vest_Taktika_Pouches/Pouch_Taktika_droppouch.et"
+     PrefabsToSpawn {
+      "{F20D1122BC5CD9F2}Prefabs/Weapons/Magazines/glock_magazine/Magazine_9x19_Glock_17rnd.et" "{F20D1122BC5CD9F2}Prefabs/Weapons/Magazines/glock_magazine/Magazine_9x19_Glock_17rnd.et"
+     }
+    }
+    ItemsInitConfigurationItem "{6210F243E7FDA4F3}" {
+     TargetStorage "Prefabs/Characters/Vests/Vest_Taktika_Pouches/Pouch_Taktika_magpouch_morphed_base.et"
+     PrefabsToSpawn {
+      "{A540E8600876C2A2}Prefabs/Weapons/Magazines/Pmag/Magazine_556x45_PmagWindowed_Coy_30rnd_M855A1_last5tracer.et"
+     }
+    }
+    ItemsInitConfigurationItem "{6210F243E466CFA1}" {
+     TargetStorage "Prefabs/Characters/Vests/Vest_Taktika_Pouches/Pouch_Taktika_magpouch_morphed_base.et"
+     PrefabsToSpawn {
+      "{A540E8600876C2A2}Prefabs/Weapons/Magazines/Pmag/Magazine_556x45_PmagWindowed_Coy_30rnd_M855A1_last5tracer.et"
+     }
+    }
+   }
+  }
+ }
+ coords 0 0 0
+ angleX 11.668
+ angleY -45.521
+ angleZ 0.648
+}

@@ -1,0 +1,16 @@
+GenericEntity : "{93FC2145F05A1EEE}Prefabs/Systems/Sound/sound_airraidsiren.et" {
+ ID "5C969C4C4AF59215"
+ components {
+  TimerTriggerComponent "{6222D696A7FF3944}" {
+   TIMER 5
+  }
+  Bacon_PlaySoundComponent "{5C969C4E98100BF1}" {
+   m_soundEventName "SOUND_SIREN_INCOMING"
+  }
+  SCR_EditableEntityComponent "{5C969C4F238C879D}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5C969C4F10BC6672}" {
+    Name "Sound: Incoming Siren"
+   }
+  }
+ }
+}

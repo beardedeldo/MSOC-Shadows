@@ -1,0 +1,26 @@
+GenericEntity : "{255ED0C0B4DB3A77}Prefabs/Characters/Vests/Vest_AVS/Vest_AVS_6x9_base.et" {
+ ID "50D8C49B3558F152"
+ components {
+  RHS_ClothNodeStorageComponent "{5E8ECC6318C07954}" {
+   Attributes SCR_ItemAttributeCollection "{5E8ECC63152ECC55}" {
+    ItemDisplayName UIInfo "{5E8ECC6310D5F5D3}" {
+     Name "#RHS-Vest_AVS_Name (6×9 #RHS-Plates_sideplates_Name) - #RHS-Camo_MULTICAM #RHS-Color_BLK"
+    }
+   }
+  }
+  BaseLoadoutClothComponent "{5312D798A71DFBB1}" {
+   Slots {
+    LoadoutSlotInfo Camerband {
+     Prefab "{AE59C971FCF71C61}Prefabs/Characters/Vests/Vest_AVS/attachment_AVS_camerband_6x9_MCBlk.et"
+    }
+   }
+   WornMaterialsOverride {
+    "{38423772BF0839E8}Assets/Characters/Vests/Vest_AVS/data/AVS_MCBlk.emat"
+   }
+   ItemMaterialsOverride {
+    "{38423772BF0839E8}Assets/Characters/Vests/Vest_AVS/data/AVS_MCBlk.emat"
+   }
+  }
+ }
+ coords 99.352 1 149.562
+}

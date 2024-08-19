@@ -1,0 +1,16 @@
+ParticleEffectEntity : "{368468E074A05C05}Prefabs/Systems/Smoke/Wrapper_Smoke_base.et" {
+ ID "5992E02DDDC47A4F"
+ components {
+  TimerTriggerComponent "{5992E02DAEBEEF84}" {
+   TIMER 40
+  }
+  SCR_EditableEntityComponent "{5992E02DFBA112F0}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5992E02DF0230824}" {
+    Name "Smoke - Red - M18 Grenade"
+    Description "emits for 90s, deletes after 120s"
+    m_Image "{6517A870BEC72AB8}Prefabs/Systems/Smoke/smoke_grenade_red.edds"
+   }
+  }
+ }
+ EffectPath "{94CAB105E065775C}Particles/Weapon/Smoke_grenade_M18_Red.ptc"
+}

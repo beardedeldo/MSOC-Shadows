@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{59671155DDBAD871}Prefabs/Characters/Uniforms/Crye_Shirt/Jacket_Crye_Combat_Shirt_M81.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

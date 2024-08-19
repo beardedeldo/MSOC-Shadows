@@ -1,0 +1,18 @@
+GameEntity : "{A36613EAD646961D}Prefabs/Characters/HeadGear/Helmet_OPSCORE/Helmet_OPSCORE_XP_MC_AMP.et" {
+ ID "50D485E1435D6C72"
+ components {
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   Slots {
+    RHS_LoadoutSlotInfo Goggles {
+     Prefab "{2934192D7BA3465E}Prefabs/Characters/Eyewear/gascan/Eyewear_gascan.et"
+    }
+    RHS_LoadoutSlotInfo NVG {
+     Prefab "{275F298DE10E7A15}Prefabs/Items/Equipment/Nightvision/PVS31/NVG_PVS31_WP_TAN_MC.et"
+    }
+    RHS_LoadoutSlotInfo TopVelcro {
+     Prefab "{5F7EF7FEBC39B874}Prefabs/Items/Equipment/Nightvision/HelstarStrobe/Helstar.et"
+    }
+   }
+  }
+ }
+}

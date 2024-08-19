@@ -1,0 +1,15 @@
+GameEntity : "{8D2A87974105B86A}Prefabs/Characters/HeadGear/Helmet_OPSCORE/Helmet_OPSCORE_XP_MC.et" {
+ ID "50D485E1435D6C72"
+ components {
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   Slots {
+    RHS_LoadoutSlotInfo Masks {
+     Prefab "{40ED520CE1154848}Prefabs/Characters/HeadGear/Helmet_LShZ/Balaclava_LShZ_black.et"
+    }
+    RHS_LoadoutSlotInfo NVG {
+     Prefab "{B0534A120633D08D}Prefabs/Items/Equipment/Nightvision/1PN138/NVG_1PN138.et"
+    }
+   }
+  }
+ }
+}

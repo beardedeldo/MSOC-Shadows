@@ -5,3 +5,6 @@
 - Game Master FX
 - Ace Core 
 - Ace Medical 
+- CRX Enfusion AI
+- Sikorsky MH60 DAP Project 
+- MediSikorsky (added medical support component)

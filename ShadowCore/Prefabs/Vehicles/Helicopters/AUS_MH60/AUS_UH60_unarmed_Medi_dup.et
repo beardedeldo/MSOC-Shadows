@@ -1,0 +1,47 @@
+Vehicle : "{F503F71C08BE3F7D}Prefabs/Vehicles/Helicopters/AUS_MH60/AUS_UH60_armed.et" {
+ ID "5DB688595BAB2FD7"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{62281A8C7A8652BD}" {
+     SourceMaterial "AUS_MH60_Doors_Exterior"
+     AssignedMaterial "{37C036A2826F2F5E}Assets/Vehicles/Helicopters/AUS_MH60/Data/AUS_MH60_Doors_Exterior_Medi.emat"
+    }
+    MaterialAssignClass "{62281A8C7A8652C8}" {
+     SourceMaterial "AUS_MH60_External_Cowlings"
+     AssignedMaterial "{ECC3168436304FD5}Assets/Vehicles/Helicopters/AUS_MH60/Data/AUS_MH60_External_Cowlings_MEDI.emat"
+    }
+    MaterialAssignClass "{62281A8C7A8652C7}" {
+     SourceMaterial "AUS_MH60_Hull_Exterior"
+     AssignedMaterial "{1E3C94B4914AAF48}Assets/Vehicles/Helicopters/AUS_MH60/Data/AUS_MH60_Hull_Exterior_Medi.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "MH60 Blackhawk - Unarmed"
+    m_aAuthoredLabels {
+     3 51 37 210
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EF07CE9B4A73374}" {
+      m_BudgetType RANK_CORPORAL
+      m_Value 2
+     }
+    }
+   }
+  }
+  SCR_HealSupportStationComponent "{62281A8C09BF79E1}" {
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo GunnerLeft {
+     Enabled 0
+    }
+    RegisteringComponentSlotInfo GunnerRight {
+     Enabled 0
+    }
+   }
+  }
+ }
+}

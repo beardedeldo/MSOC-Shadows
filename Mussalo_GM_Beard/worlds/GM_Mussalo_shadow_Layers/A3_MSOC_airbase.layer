@@ -42,6 +42,14 @@ $grp GenericEntity : "{A13F6A7F82DF031B}Prefabs/Compositions/Slotted/SlotFlatLar
   coords 1016.041 2.313 6266.521
  }
 }
+$grp Vehicle : "{CC57B5D63FAC290F}Prefabs/Vehicles/Helicopters/AUS_MH60/AUS_UH60_armed_shadow.et" {
+ AUS_UH60_armed_shadow1 {
+  coords 980.356 2.031 6267.104
+ }
+ AUS_UH60_armed_shadow2 {
+  coords 979.856 1.331 6299.584
+ }
+}
 SCR_DestructibleBuildingEntity : "{DAC148D18C3835B9}Prefabs/Structures/Military/Bunkers/ShelterMilitary_E_01/ShelterMilitary_E_01_long.et" {
  coords 893.964 0 6277.082
  angleY -90.661

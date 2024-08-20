@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{CC57B5D63FAC290F}Prefabs/Vehicles/Helicopters/AUS_MH60/AUS_UH60_armed_shadow.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

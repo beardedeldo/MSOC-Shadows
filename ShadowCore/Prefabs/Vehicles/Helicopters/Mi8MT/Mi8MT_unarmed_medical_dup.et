@@ -1,0 +1,170 @@
+Vehicle : "{B6B8C164FD6377EA}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_unarmed_base.et" {
+ ID "57DA6675519A417B"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{62291393403F6731}" {
+     SourceMaterial "Exterier_35715EB3956D22B9"
+     AssignedMaterial "{DB2D7E448F20D142}Assets/Vehicles/Helicopters/Mi8/Data/Mi8_Body_medical.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{5298E609432D192D}" {
+    Name "#Mi-8MT Medical Helicopter"
+    m_aAuthoredLabels + {
+     24
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 1400
+     }
+     SCR_EntityBudgetValue "{611E87CA7FF4ED82}" {
+      m_BudgetType RANK_CORPORAL
+     }
+    }
+   }
+  }
+  SCR_HealSupportStationComponent "{62291393403F6757}" {
+   m_bIsVehicle 1
+   m_bAllowGetFactionFromParent 1
+   m_sOnUseSoundEffectEventName "SOUND_HEAL_DONE"
+   m_sCharacterVoiceEventOnUse "SOUND_VOICE_PAIN_RELIEVE_DELAY"
+   m_sOnHealUpdateSoundEffectEventName "SOUND_HEAL_PARTIAL"
+   m_sOnHealBloodUpdateSoundEffectEventName "SOUND_HEAL_PARTIAL"
+   m_eSupportStationPriority MEDIUM
+   m_eFactionUsageCheck 3
+   m_iDamageHealedEachExecution 100
+   m_iSupplyCostDamageHealed 1
+   m_iBloodHealedEachExecute 500
+  }
+  SCR_LoadCasualtySupportStationComponent "{62291393403F676E}" {
+   m_bIsVehicle 1
+   m_bSendNotificationOnUse 0
+   m_bAllowGetFactionFromParent 1
+   m_eSupportStationPriority MEDIUM
+   m_eFactionUsageCheck 3
+   m_sOverrideUserActionName "#AR-UserAction_LoadCasualtyInAmbulance"
+  }
+  SCR_ResourceComponent "{60DAD313D31A3A96}" {
+   m_aEncapsulators {
+    SCR_ResourceEncapsulator "{60DAD313D31A3A88}" {
+     m_sDebugName "Encapsulator - UAZ452"
+     m_aActions {
+      SCR_ResourceEncapsulatorActionChangeResourceValue "{60DAD313D31A3ABB}" {
+       m_fResourceValueCurrent 40
+      }
+     }
+    }
+   }
+   m_aConsumers {
+    SCR_ResourceConsumer "{62291393403F677C}" {
+     m_sDebugName "Vehicle - Consumer"
+     m_eResourceRights ALL
+     m_eGeneratorIdentifier DEFAULT
+     m_fResourceRange 135
+     m_ContainerQueue SCR_ResourceConsumerContainerQueue "{62291393403F677F}" {
+      m_StoragePolicies {
+       SCR_ResourceConsumerStoragePolicy "{62291393403F6779}" {
+        m_StorageQueue SCR_ResourceConsumerContainerStorageQueue "{62291393403F677B}" {
+        }
+       }
+       SCR_ResourceConsumerStoragePolicy "{62291393403F6777}" {
+        m_StorageQueue SCR_ResourceConsumerContainerStorageQueue "{62291393403F6770}" {
+        }
+        m_eStorageType STORED
+       }
+       SCR_ResourceConsumerStoragePolicy "{62291393403F6773}" {
+        m_StorageQueue SCR_ResourceConsumerContainerStorageQueue "{62291393403F608D}" {
+        }
+        m_eStorageType CARGO_PROP
+       }
+       SCR_ResourceConsumerStoragePolicy "{62291393403F608F}" {
+        m_StorageQueue SCR_ResourceConsumerContainerStorageQueue "{62291393403F6089}" {
+        }
+        m_eStorageType CARGO_VEHICLE
+       }
+      }
+     }
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5E1E99434B3A7648}" {
+   Attributes SCR_ItemAttributeCollection "{5E1E99434D59196F}" {
+    ItemDisplayName SCR_InventoryUIInfo "{5E1E99434F2A4FD7}" {
+     m_aItemHints {
+      SCR_SupplyStoredItemHintUIInfo "{62291393403F6090}" {
+       Name "#AR-Item_SupplyStorage_Hint1"
+       Icon "{8EB808BFA227C080}UI/Textures/Icons/InventoryHints/InventoryHint_SuppliesStored.edds"
+       m_bHideInArsenal 1
+      }
+      SCR_SupplyMoveItemHintUIInfo "{62291393403F60A9}" {
+       Name "#AR-Item_SupplyStorage_Hint2"
+       Icon "{307100AF2FD9AA65}UI/Textures/Icons/InventoryHints/InventoryHint_SuppliesMove.edds"
+       m_eShowWithInputDevice KEYBOARD_MOUSE_ONLY
+       m_bHideInArsenal 1
+      }
+      SCR_SupplyAvailableItemHintUIInfo "{62291393403F60A5}" {
+       Name "#AR-Item_SupplyConsumer_Hint1"
+       Icon "{8EB808BFA227C080}UI/Textures/Icons/InventoryHints/InventoryHint_SuppliesStored.edds"
+       m_bHideInArsenal 1
+      }
+     }
+    }
+   }
+   MultiSlots {
+    MultiSlotConfiguration "{60F6C7859029DD32}" {
+     NumSlots 0
+    }
+    MultiSlotConfiguration "{62291393403F60BE}" {
+     SlotTemplate InventoryStorageSlot Tourniquet {
+      Prefab "{80E75A71C29190DB}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_USSR_01.et"
+     }
+    }
+    MultiSlotConfiguration "{62291393403F60B1}" {
+     SlotTemplate InventoryStorageSlot Morphine {
+      Prefab "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et"
+     }
+    }
+    MultiSlotConfiguration "{62291393403F60C8}" {
+     SlotTemplate InventoryStorageSlot Saline {
+      Prefab "{527D7C5D2E476BDC}Prefabs/Items/Medicine/SalineBag_01/SalineBag_USSR_01.et"
+     }
+    }
+    MultiSlotConfiguration "{62291393403F60CA}" {
+     SlotTemplate InventoryStorageSlot Medkit {
+      Prefab "{21EF98BFC1EB3793}Prefabs/Items/Equipment/Kits/MedicalKit_01/MedicalKit_01_USSR.et"
+     }
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo door_rear {
+     PivotID "Scene_Root"
+     Prefab "{E1267F946BF1BDB9}Prefabs/Vehicles/Helicopters/Mi8MT/VehParts/Mi8MT_rear_door_medical.et"
+    }
+    RegisteringComponentSlotInfo SeatsRear {
+     Prefab "{94273C930032F9D7}Prefabs/Vehicles/Helicopters/Mi8MT/VehParts/Seats/VehPart_MI8_seats_cargo_medical.et"
+    }
+    RegisteringComponentSlotInfo Arsenal {
+     Prefab "{65F17676960CBF58}Prefabs/Vehicles/Core/VirtualSlots/Ambulance_VirtualArsenalSlot.et"
+    }
+   }
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   additionalActions {
+    SCR_ResourceContainerVehicleLoadAction "{5DAD751A3D2FE182}" : "{A0E53319BFA4E848}Configs/Resources/Supplies/Actions/Supplies_Vehicle_Load.conf" {
+     ParentContextList {
+      "door_l01_door"
+     }
+    }
+    SCR_ResourceContainerVehicleUnloadAction "{5DAD751A3BF8492E}" : "{F10C4B3E2E87F15B}Configs/Resources/Supplies/Actions/Supplies_Vehicle_Unload.conf" {
+     ParentContextList {
+      "door_l01_door"
+     }
+    }
+   }
+  }
+ }
+}

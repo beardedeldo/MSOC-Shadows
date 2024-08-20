@@ -21,6 +21,13 @@ SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
     }
    }
   }
+  SCR_AISettingsComponent "{512CCCD0856CB4B9}" {
+   m_fPerceptionSafe 0.8
+   m_fPerceptionVigilant 2.6
+   m_fAimAccuracyErrorModifier 0.75
+   m_fAttackReactionDelayModifier 0.1
+   m_eForceFlashlightState ON
+  }
  }
  coords 5338.131 2.656 2011.567
 }
@@ -49,7 +56,31 @@ SCR_GameModeEditor GameMode_Editor_Full1 : "{DA3986AF1B5032B7}Prefabs/MP/Modes/E
     }
    }
   }
+  SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
+   m_fDOTScale 0.2
+   m_fRegenScale 1.1
+   m_fTourniquettedLegMovementSlowdown 0.5
+   m_fTourniquetStrengthMultiplier 0.9
+  }
   SCR_TimeAndWeatherHandlerComponent "{62272AEA7CC70C7D}" {
+  }
+  SCR_WelcomeScreenComponent "{5D7290AC8A3E657E}" {
+   m_BaseLayout SCR_WelcomeScreenThreeHorizontalColumns "{5D7290AC92D25160}" {
+    m_LeftColumn SCR_WelcomeScreenIntroductionContent "{5D7290ABF7423AA2}" {
+     m_aIntroduction {
+      SCR_WelcomeScreenIntroduction "{5D7290ABCBFE3176}" {
+       m_sContentImage "{88A0D7D52EB25424}images/MSOC_shadows.edds"
+      }
+     }
+    }
+    m_RightColumn SCR_WelcomeScreenIntroductionContent "{5D7290ABFF9DBADC}" {
+     m_aIntroduction {
+      SCR_WelcomeScreenIntroduction "{5D729EC0BC408CC1}" {
+       m_sContentImage "{3CEA73C5F41C0AA1}images/Gaymaster.edds"
+      }
+     }
+    }
+   }
   }
  }
  coords 3377.69 8.648 3581.053

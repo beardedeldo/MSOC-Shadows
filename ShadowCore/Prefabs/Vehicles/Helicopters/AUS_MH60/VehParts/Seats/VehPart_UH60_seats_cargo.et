@@ -1,0 +1,21 @@
+GenericEntity : "{205599C7074F1E02}Prefabs/Vehicles/Helicopters/UH1H/VehParts/Seats/VehPart_UH1H_seats_cargo.et" {
+ ID "4B42E71698F5739C"
+ components {
+  SCR_BaseCompartmentManagerComponent "{2CD4A765A7D52986}" {
+   CompartmentSlots {
+    SCR_PatientCompartmentSlot Passenger_l01 {
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+      }
+     }
+    }
+    SCR_PatientCompartmentSlot Passenger_l02 {
+    }
+    SCR_PatientCompartmentSlot passenger_14 {
+    }
+    SCR_PatientCompartmentSlot passenger_154 {
+    }
+   }
+  }
+ }
+}

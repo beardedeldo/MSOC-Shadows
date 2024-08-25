@@ -1,6 +1,5 @@
 - Arma Reforger
 - PRC 163 Falcon 4
-- Arma Terrain Core 
 - ParachuteTestLol
 - Game Master FX
 - Ace Core 

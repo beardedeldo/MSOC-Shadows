@@ -1,4 +1,4 @@
-Vehicle : "{1C5FE7B7FF49BB8D}Prefabs/Vehicles/Wheeled/BTR70/BTR70_Base.et" {
+Vehicle : "{543A50BF3A42AD47}Prefabs/Vehicles/Core/Wheeled_APC_Base.et" {
  ID "BBCBA43A9778AE21"
  components {
   AICarMovementComponent "{5A3EFB66475D9F87}" {

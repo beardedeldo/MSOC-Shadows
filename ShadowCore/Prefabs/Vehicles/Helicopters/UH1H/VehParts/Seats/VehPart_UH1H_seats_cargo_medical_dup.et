@@ -1,0 +1,177 @@
+GenericEntity : "{AE717361AD90B6EC}Prefabs/Vehicles/Helicopters/UH1H/VehParts/Seats/VehPart_UH1H_seats_base.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Object "{B0A46CDFE35A7B66}Assets/Vehicles/Helicopters/UH1H/VehParts/Seats/UH1H_Seats_cargo.xob"
+  }
+  SCR_BaseCompartmentManagerComponent "{2CD4A765A7D52986}" {
+   DoorInfoList {
+    CompartmentDoorReference "{622AA65E4F95B3F4}" {
+     AnimDoorIndex 2
+    }
+    CompartmentDoorReference "{622AA65E4F95B304}" {
+     AnimDoorIndex 3
+    }
+   }
+   CompartmentSlots {
+    CargoCompartmentSlot Passenger_l01 : "{D01EE2B6A3D0FC26}Prefabs/Vehicles/Helicopters/UH1H/CargoCompartment_UH1H_Left.conf" {
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList {
+        "passenger_l01"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "door_l03"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
+      PivotID "passangerIdle_L01"
+     }
+     ContextName "passenger_l01"
+    }
+    SCR_PatientCompartmentSlot Passenger_l02 : "{D01EE2B6A3D0FC26}Prefabs/Vehicles/Helicopters/UH1H/CargoCompartment_UH1H_Left.conf" {
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+       "passenger_l02"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList {
+        "passenger_l02"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "door_l03"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
+      PivotID "passangerIdle_L02"
+     }
+     OverrideExitPositionInfo PointInfo "{622AA65E4F95B324}" {
+      PivotID "passangerIdle_L02"
+      Angles 0 -90 0
+     }
+     ContextName "passenger_l02"
+    }
+    SCR_PatientCompartmentSlot Passenger_l03 : "{D01EE2B6A3D0FC26}Prefabs/Vehicles/Helicopters/UH1H/CargoCompartment_UH1H_Left.conf" {
+     CompartmentAction SCR_GetInUserAction "{5086CC2FCCAA457D}" {
+      ParentContextList +{
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+       "passenger_l03"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList {
+        "passenger_l03"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "door_l03"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
+      PivotID "passangerIdle_L03"
+     }
+     ContextName "passenger_l03"
+    }
+    CargoCompartmentSlot Passenger_r01 : "{5A3AC00D6D74CB9A}Prefabs/Vehicles/Helicopters/UH1H/CargoCompartment_UH1H_Right.conf" {
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+       "passenger_r01"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList {
+        "passenger_r01"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "door_r03"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
+      PivotID "passangerIdle_R01"
+     }
+     ContextName "passenger_r01"
+    }
+    SCR_PatientCompartmentSlot Passenger_r02 : "{5A3AC00D6D74CB9A}Prefabs/Vehicles/Helicopters/UH1H/CargoCompartment_UH1H_Right.conf" {
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+       "passenger_r02"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList {
+        "passenger_r02"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "door_r03"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
+      PivotID "passangerIdle_R02"
+     }
+     OverrideExitPositionInfo PointInfo "{622AA65E4F95B345}" {
+      PivotID "passangerIdle_R02"
+      Angles 0 90 0
+     }
+     ContextName "passenger_r02"
+    }
+    SCR_PatientCompartmentSlot Passenger_r03 : "{5A3AC00D6D74CB9A}Prefabs/Vehicles/Helicopters/UH1H/CargoCompartment_UH1H_Right.conf" {
+     SwitchSeatAction SCR_SwitchSeatAction "{509D56665850650D}" {
+      ParentContextList {
+       "passenger_r03"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D528255CC646B68}" {
+       ParentContextList {
+        "passenger_r03"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E00C44348}" {
+       ParentContextList {
+        "door_r03"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "{699366C6D607AD06}" {
+      PivotID "passangerIdle_R03"
+     }
+     ContextName "passenger_r03"
+    }
+   }
+  }
+  VehicleAnimationComponent "{50B812962B17E60B}" {
+   AnimGraph "{2E7DC909B8C4128F}Assets/Vehicles/Helicopters/UH1H/workspace/UH1A.agr"
+   AnimInstance "{C3179CD2A4CD4061}Assets/Vehicles/Helicopters/UH1H/workspace/UH1A.asi"
+   StartNode "MasterControlVehicle"
+   AnimInjection AnimationAttachmentInfo "{50B812961A339FD2}" {
+    AnimGraph "{2E7DC909B8C4128F}Assets/Vehicles/Helicopters/UH1H/workspace/UH1A.agr"
+    AnimInstance "{E01854FEDB1BA7B0}Assets/Vehicles/Helicopters/UH1H/workspace/UH1A_player.asi"
+   }
+   AutoVariablesBind 1
+  }
+ }
+}

@@ -554,8 +554,21 @@ Vehicle : "{DDDD9B51F1234DF3}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed.et" {
     }
     MultiSlotConfiguration "{62291DE99BC6C83E}" {
      SlotTemplate InventoryStorageSlot MedicalKit {
-      Prefab "{AE578EEA4244D41F}Prefabs/Items/Equipment/Kits/MedicalKit_01/MedicalKit_01_US.et"
+      Prefab "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et"
      }
+     NumSlots 2
+    }
+    MultiSlotConfiguration "{622CDCEEDD37B80B}" {
+     SlotTemplate InventoryStorageSlot Radio {
+      Prefab "{16FBC910CA95ECB3}Prefabs/PRC 163 Falcon 4 - Black_US.et"
+     }
+     NumSlots 2
+    }
+    MultiSlotConfiguration "{622CDCEEAF75F5BA}" {
+     SlotTemplate InventoryStorageSlot test {
+      Prefab "{5028D9E699AE3A73}Prefabs/Items/Equipment/Kits/RearmingKit_01/RearmingKit_01_US.et"
+     }
+     NumSlots 2
     }
    }
    m_fMaxWeight 600

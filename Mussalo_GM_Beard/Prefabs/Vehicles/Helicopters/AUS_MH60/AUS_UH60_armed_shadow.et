@@ -1,6 +1,9 @@
 Vehicle : "{DDDD9B51F1234DF3}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed.et" {
  ID "5DB688595BAB2FD7"
  components {
+  SCR_FuelConsumptionComponent "{5D5921F8C6EFACA8}" {
+   m_fFuelConsumption 120
+  }
   SCR_ResourceComponent "{5E42966FDD776489}" {
    m_aEncapsulators {
     SCR_ResourceEncapsulator "{5E42966E7BBDAD6D}" {
@@ -60,6 +63,12 @@ Vehicle : "{DDDD9B51F1234DF3}Prefabs/Vehicles/Helicopters/UH1H/UH1H_armed.et" {
    MultiSlots {
     MultiSlotConfiguration "{62291DE99BC6C83E}" {
      NumSlots 2
+    }
+    MultiSlotConfiguration "{622CDCEEDD37B80B}" {
+     SlotTemplate InventoryStorageSlot Radio {
+      Prefab "{37F022D0CDC84C11}Prefabs/Weapons/Launchers/M72/Launcher_M72A3_base.et"
+     }
+     NumSlots 6
     }
     MultiSlotConfiguration "{6229233E325C252D}" {
      SlotTemplate InventoryStorageSlot epinephrine {

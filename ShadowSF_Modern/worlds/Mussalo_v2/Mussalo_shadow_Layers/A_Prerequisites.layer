@@ -43,7 +43,6 @@ SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Manage
     Description "Marine Special Operations Company - Shadows"
     m_sNameUpper "SHADOW DIVISION"
    }
-   m_bIsPlayable 1
    m_aPredefinedGroups {
     SCR_GroupPreset "{61E6FE0119B59627}" {
      m_sGroupName "Shadow Command"
@@ -93,6 +92,13 @@ SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Manage
     Name "CIA Shadows"
    }
    m_bIsPlayable 1
+   m_aPredefinedGroups {
+    SCR_GroupPreset "{623932785EEA304B}" {
+     m_sGroupDescription "Shadow One"
+     m_iGroupSize 12
+     m_iRadioFrequency 44499
+    }
+   }
   }
  }
 }

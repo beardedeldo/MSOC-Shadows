@@ -2,7 +2,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Area_0 {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{61028BC76260ED9F}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer_0"
@@ -44,7 +43,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Area_1_Ambient {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{6064CA9015F24B69}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer2"
@@ -786,7 +784,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Area_2_Ambient {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{6064CAAEC423117F}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer22"
@@ -1401,7 +1398,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Area_3_Ambient {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_fAreaRadius 5
     m_bDynamicDespawn 1
     m_iDynamicDespawnRange 500
@@ -2132,7 +2128,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Area_4_Ambient {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{6064CA96A8C9811C}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer3"
@@ -2421,7 +2416,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Area_A {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{60FE77CD8250DF5E}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer_A"
@@ -4043,7 +4037,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Area_B {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{60FE77CDF6946AF7}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer_B"
@@ -5835,7 +5828,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Area_C {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{60FE77CDEFFE7C81}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer_C"
@@ -7765,7 +7757,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Area_D {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{60FE77CDE10A85B1}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer_D"
@@ -9378,7 +9369,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Area_E {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{60FE77CDDFAECC7B}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer_E"
@@ -10974,7 +10964,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Area_F {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{60FE77CDD65FBCBB}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer_F"
@@ -12430,7 +12419,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Area_G {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{60FE77CD51B4ABAF}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer_G"
@@ -13329,7 +13317,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Area_H {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{60FE77CD40EAF981}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer_H"
@@ -14729,7 +14716,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Area_I {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_aActivationActions {
      SCR_ScenarioFrameworkActionQRFDispacher "{60FE77CDBE038994}" : "{323CE89802F85CC0}Prefabs/ScenarioFramework/Core/QRFDispacherAction.conf" {
       m_sQRFLayerName "QRFSpawnpointsLayer_I"
@@ -16052,7 +16038,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Area_Insertion {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_SpawnChildren RANDOM_ONE
    }
   }
@@ -18191,11 +18176,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   }
  }
  Extraction_A {
-  components {
-   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
-   }
-  }
   coords 6086.731 2.655 1570.56
   {
    GenericEntity TaskExtraction_A : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
@@ -18342,11 +18322,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   }
  }
  Extraction_B {
-  components {
-   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
-   }
-  }
   coords 1497.402 2.942 4066.771
   {
    GenericEntity TaskExtraction_B : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
@@ -18611,11 +18586,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   }
  }
  Extraction_C {
-  components {
-   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
-   }
-  }
   coords 5231.408 3.129 4674.938
   {
    GenericEntity TaskExtraction_C : "{246BEC080F393398}Prefabs/ScenarioFramework/Components/LayerTaskMove.et" {
@@ -18897,7 +18867,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Hideout_1 {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_sFactionKey "FIA"
     m_fAreaRadius 5
     m_bDynamicDespawn 1
@@ -19329,7 +19298,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Hideout_10 {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_sFactionKey "FIA"
     m_fAreaRadius 5
     m_bDynamicDespawn 1
@@ -19786,7 +19754,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Hideout_11 {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_sFactionKey "FIA"
     m_fAreaRadius 5
     m_bDynamicDespawn 1
@@ -20999,7 +20966,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Hideout_2 {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_sFactionKey "FIA"
     m_fAreaRadius 5
     m_bDynamicDespawn 1
@@ -21476,7 +21442,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Hideout_3 {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_sFactionKey "FIA"
     m_fAreaRadius 5
     m_bDynamicDespawn 1
@@ -21991,7 +21956,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Hideout_4 {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_sFactionKey "FIA"
     m_fAreaRadius 5
     m_bDynamicDespawn 1
@@ -22593,7 +22557,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Hideout_5 {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_sFactionKey "FIA"
     m_fAreaRadius 5
     m_bDynamicDespawn 1
@@ -23155,7 +23118,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Hideout_7 {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_sFactionKey "FIA"
     m_fAreaRadius 5
     m_bDynamicDespawn 1
@@ -23756,7 +23718,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Hideout_8 {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_fAreaRadius 5
     m_bDynamicDespawn 1
     m_iDynamicDespawnRange 30
@@ -24229,7 +24190,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Hideout_9 {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_sFactionKey "FIA"
     m_fAreaRadius 5
     m_bDynamicDespawn 1
@@ -24755,11 +24715,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   }
  }
  MainCompositions {
-  components {
-   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
-   }
-  }
   coords 4215.611 1.859 2694.275
   {
    GenericEntity MainCompositionLayer : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
@@ -25045,7 +25000,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Stash_1 {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_sFactionKey "FIA"
     m_fAreaRadius 5
     m_bDynamicDespawn 1
@@ -25114,7 +25068,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             Slot255 {
              components {
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-               m_sObjectToSpawn "{92A0764C4EDF7C14}Prefabs/Weapons/Rifles/M16/Variants/Rifle_M16A2_carbine_OliveGreen_Solid.et"
+               m_sObjectToSpawn "{2EBF60EF24B108FC}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Ball.et"
               }
              }
              coords 1.302 -0.497 -8.045
@@ -25136,7 +25090,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             Slot257 {
              components {
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-               m_sObjectToSpawn "{2EBF60EF24B108FC}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Ball.et"
+               m_sObjectToSpawn "{8069A3DF6410FDDF}Prefabs/Weapons/Handguns/M17/Handgun_M17.et"
               }
              }
              coords 1.134 -0.516 -8.269
@@ -25154,7 +25108,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             Slot_308 {
              components {
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-               m_sObjectToSpawn "{81EB948E6414BD6F}Prefabs/Weapons/Rifles/M14/Rifle_M21_ARTII.et"
+               m_sObjectToSpawn "{728EC6D18198290E}Prefabs/Weapons/Rifles/AK74M/Rifle_AK105_b30u_b31n_tan.et"
               }
              }
              coords 7.612 0.259 -9.706
@@ -25165,7 +25119,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             Slot_309 {
              components {
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-               m_sObjectToSpawn "{3E413771E1834D2F}Prefabs/Weapons/Rifles/M16/Rifle_M16A2.et"
+               m_sObjectToSpawn "{BD30BE4A3D8B9DAC}Prefabs/Weapons/Magazines/Pmag/Magazine_556x45_PmagWindowed_30rnd_M855A1_last5tracer.et"
+               m_sID "{2259092E586DD78B}Prefabs/Weapons/Rifles/AKS74UN/Rifle_AKS74UN_b18_t1.et"
               }
              }
              coords 8.258 0.267 -9.401
@@ -25176,7 +25131,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             Slot_310 {
              components {
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-               m_sObjectToSpawn "{2EBF60EF24B108FC}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Ball.et"
+               m_sObjectToSpawn "{AF2B2A5270708E19}Prefabs/Weapons/Rifles/AN94/Rifle_AN94_1P63.et"
               }
              }
              coords 7.734 0.253 -9.441
@@ -25187,7 +25142,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             Slot_311 {
              components {
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-               m_sObjectToSpawn "{2EBF60EF24B108FC}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Ball.et"
+               m_sObjectToSpawn "{7CC59071811730DF}Prefabs/Weapons/Rifles/AN94/Rifle_AN94Railed_GP_1p87_1p90.et"
               }
              }
              coords 8.068 0.257 -9.141
@@ -25198,7 +25153,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             Slot_312 {
              components {
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-               m_sObjectToSpawn "{2EBF60EF24B108FC}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Ball.et"
+               m_sObjectToSpawn "{0761CE8644BBB28E}Prefabs/Weapons/Rifles/M27IAR/Rifle_M27IAR_TA31RCO.et"
               }
              }
              coords 7.874 0.255 -9.344
@@ -25209,7 +25164,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             Slot_313 {
              components {
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-               m_sObjectToSpawn "{6D18CC33708EE712}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_Base.et"
+               m_sObjectToSpawn "{A7F6CE7849B7CA81}Prefabs/Weapons/Rifles/M27IAR/Rifle_M38SDMR_M8541.et"
               }
              }
              coords 8.259 0.246 -9.003
@@ -25220,7 +25175,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             Slot_314 {
              components {
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-               m_sObjectToSpawn "{6D18CC33708EE712}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_Base.et"
+               m_sObjectToSpawn "{56CE827F9AD5880E}Prefabs/Weapons/Rifles/M40/Rifle_M40A5_Optic_PEQ.et"
               }
              }
              coords 8.628 0.246 -9.541
@@ -25231,13 +25186,49 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             Slot_317 {
              components {
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-               m_sObjectToSpawn "{6D18CC33708EE712}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_Base.et"
+               m_sObjectToSpawn "{140239B2D3707B29}Prefabs/Weapons/Rifles/M4A1/Rifle_M4A1_M203_RAS_ACOG.et"
               }
              }
              coords 8.093 0.254 -9.986
              angleX -2.097
              angleY -32.13
              angleZ 88.592
+            }
+            Slot287 {
+             components {
+              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+               m_sObjectToSpawn "{BD30BE4A3D8B9DAC}Prefabs/Weapons/Magazines/Pmag/Magazine_556x45_PmagWindowed_30rnd_M855A1_last5tracer.et"
+               m_sID "{2259092E586DD78B}Prefabs/Weapons/Rifles/AKS74UN/Rifle_AKS74UN_b18_t1.et"
+              }
+             }
+             coords 6.672 0.212 -10.036
+             angleX 0.064
+             angleY 108.379
+             angleZ -88.609
+            }
+            Slot289 {
+             components {
+              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+               m_sObjectToSpawn "{BD30BE4A3D8B9DAC}Prefabs/Weapons/Magazines/Pmag/Magazine_556x45_PmagWindowed_30rnd_M855A1_last5tracer.et"
+               m_sID "{2259092E586DD78B}Prefabs/Weapons/Rifles/AKS74UN/Rifle_AKS74UN_b18_t1.et"
+              }
+             }
+             coords 3.33 -1.009 -11.175
+             angleX 0.064
+             angleY 108.379
+             angleZ -88.609
+            }
+            Slot290 {
+             components {
+              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+               m_sObjectToSpawn "{BD30BE4A3D8B9DAC}Prefabs/Weapons/Magazines/Pmag/Magazine_556x45_PmagWindowed_30rnd_M855A1_last5tracer.et"
+               m_sID "{2259092E586DD78B}Prefabs/Weapons/Rifles/AKS74UN/Rifle_AKS74UN_b18_t1.et"
+              }
+             }
+             coords 3.33 -1.009 -11.175
+             angleX 0.064
+             angleY 108.379
+             angleZ -88.609
             }
            }
           }
@@ -25249,7 +25240,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             Slot_320 {
              components {
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-               m_sObjectToSpawn "{A7AF84C6C58BA3E8}Prefabs/Weapons/MachineGuns/RPK74/MG_RPK74.et"
+               m_sObjectToSpawn "{A598035257A5D0BC}Prefabs/Weapons/MachineGuns/M249/MG_M249_Handguard_RISTop_base.et"
               }
              }
              coords 11.456 0.591 -15.041
@@ -25260,7 +25251,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             Slot_326 {
              components {
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-               m_sObjectToSpawn "{A89BC9D55FFB4CD8}Prefabs/Weapons/MachineGuns/PKM/MG_PKM.et"
+               m_sObjectToSpawn "{73C1C37B8A2A1545}Prefabs/Weapons/MachineGuns/M240/MG_M240_base.et"
               }
              }
              coords 11.631 0.617 -15.28
@@ -25280,7 +25271,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             Slot_328 {
              components {
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-               m_sObjectToSpawn "{A6737DA00653A39C}Prefabs/Weapons/Magazines/Box_762x54_PK_100rnd_Ball.et"
+               m_sObjectToSpawn "{BA5EE984C491EF81}Prefabs/Weapons/MachineGuns/RPK74/MG_RPK74N_base.et"
               }
              }
              coords 11.246 0.445 -14.585
@@ -25289,7 +25280,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             Slot_329 {
              components {
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-               m_sObjectToSpawn "{D78C667F59829717}Prefabs/Weapons/Magazines/Magazine_545x39_RPK_45rnd_4Ball_1Tracer.et"
+               m_sObjectToSpawn "{B440ADCCF966E05B}Prefabs/Weapons/MachineGuns/RPK74M/MG_RPK74M_base.et"
               }
              }
              coords 11.602 0.396 -14.337
@@ -25299,7 +25290,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             Slot_330 {
              components {
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-               m_sObjectToSpawn "{D78C667F59829717}Prefabs/Weapons/Magazines/Magazine_545x39_RPK_45rnd_4Ball_1Tracer.et"
+               m_sObjectToSpawn "{B131613386C19802}Prefabs/Weapons/GrenadeLaunchers/GM94/GL_GM94_base.et"
               }
              }
              coords 10.803 0.387 -14.645
@@ -25310,7 +25301,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             Slot_331 {
              components {
               SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-               m_sObjectToSpawn "{D78C667F59829717}Prefabs/Weapons/Magazines/Magazine_545x39_RPK_45rnd_4Ball_1Tracer.et"
+               m_sObjectToSpawn "{A70E7A74987C7F3B}Prefabs/Weapons/MachineGuns/RPK74N/MG_RPK74N_Railed_1P87_1P90.et"
               }
              }
              coords 10.813 0.389 -15.071
@@ -25467,7 +25458,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Stash_2 {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_sFactionKey "FIA"
     m_fAreaRadius 5
     m_bDynamicDespawn 1
@@ -25770,10 +25760,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       Slot34 {
        components {
         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{9713FE6DDCC9510D}Prefabs/Characters/Vests/Vest_Lifchik/Vest_Lifchik.et"
+         m_sObjectToSpawn "{BD30BE4A3D8B9DAC}Prefabs/Weapons/Magazines/Pmag/Magazine_556x45_PmagWindowed_30rnd_M855A1_last5tracer.et"
         }
        }
-       coords -0.225 0.627 -3.084
+       coords -0.225 0.509 -3.084
        angleX 74.4
        angleY 139.07
        angleZ 10.483
@@ -25781,10 +25771,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       Slot262 {
        components {
         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{2EBF60EF24B108FC}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Ball.et"
+         m_sObjectToSpawn "{BD30BE4A3D8B9DAC}Prefabs/Weapons/Magazines/Pmag/Magazine_556x45_PmagWindowed_30rnd_M855A1_last5tracer.et"
         }
        }
-       coords -0.105 0.528 -2.644
+       coords -0.105 0.519 -2.644
        angleX -2.781
        angleY -150.246
        angleZ 92.279
@@ -25792,10 +25782,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       Slot263 {
        components {
         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{92A0764C4EDF7C14}Prefabs/Weapons/Rifles/M16/Variants/Rifle_M16A2_carbine_OliveGreen_Solid.et"
+         m_sObjectToSpawn "{BD30BE4A3D8B9DAC}Prefabs/Weapons/Magazines/Pmag/Magazine_556x45_PmagWindowed_30rnd_M855A1_last5tracer.et"
         }
        }
-       coords -0.007 0.85 -2.776
+       coords -0.044 0.508 -2.758
        angleX 83.316
        angleY 116.315
        angleZ 103.084
@@ -25803,10 +25793,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       Slot264 {
        components {
         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{2EBF60EF24B108FC}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Ball.et"
+         m_sObjectToSpawn "{BD30BE4A3D8B9DAC}Prefabs/Weapons/Magazines/Pmag/Magazine_556x45_PmagWindowed_30rnd_M855A1_last5tracer.et"
         }
        }
-       coords -0.07 0.543 -2.573
+       coords -0.07 0.534 -2.573
        angleX -2.781
        angleY -150.246
        angleZ 92.279
@@ -25819,7 +25809,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
  Stash_3 {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
     m_sFactionKey "FIA"
     m_fAreaRadius 5
     m_bDynamicDespawn 1

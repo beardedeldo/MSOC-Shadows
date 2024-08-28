@@ -1,0 +1,743 @@
+GameEntity : "{5879D8E9C56E358D}Prefabs/Items/Core/Radio_base.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  SoundComponent "{6238CE8AA05FDDFC}" {
+   Filenames {
+    "{0026043E3CD828D0}Sounds/Items/_SharedData/PickUp/Items_PickUp_Generic_Metallic.acp" "{7F55C292FBA55048}Sounds/Items/_SharedData/Drop/Items_Drop_Generic_Metallic.acp" "{EA86CA50811DB84A}Sounds/Items/Equipment/Radios/ANPRC_152/R_ANPRC152_Operation.acp"
+   }
+  }
+  BaseRadioComponent "{5A30BAE7673C63CA}" {
+   Enabled 1
+   "Encryption key" "candleSauce"
+   "Turned on" 1
+   Transceivers {
+    RHS_RadioTransceiver "{6238CE8AA05FDD18}" {
+     ChannelFrequency 52000
+     "Transmitting Range" 2000
+     "Min tunable frequency" 32000
+     "Max tunable frequency" 72000
+     "Frequency resolution" 10
+    }
+    RHS_RadioTransceiver "{6238CE8AA05FDD16}" {
+     ChannelFrequency 48000
+     "Transmitting Range" 2000
+     "Min tunable frequency" 0
+     "Max tunable frequency" 72000
+     "Frequency resolution" 10
+     m_bCanBeAdjusted 0
+     m_bCanBeToggled 0
+     m_bCanBeUsed 0
+    }
+   }
+  }
+  FactionAffiliationComponent "{6238CE8AA05FDD2D}" {
+   "faction affiliation" "FIA"
+  }
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Enabled 0
+  }
+  MeshObject "{5A30BAE7673C63D1}" {
+   Object "{12AF27023DDF15E7}Assets/Items/Equipment/Radios/Radio_ANPRC152/PRC_152_Body.xob"
+  }
+  ParametricMaterialInstanceComponent "{6238CE8AA05FDD21}" {
+   EmissiveMultiplier 0
+  }
+  RHS_ANPRC152RadioComponent "{5A30BAE7673C63D4}" {
+   m_eAnimVariable ANPRC152
+   m_iRadioCategory PERSONAL_VISIBLE
+   m_iRadioType ANPRC152
+   m_aFreqPresets {
+    RHS_RadioFrequencyPreset "{6238CE8AA05FDD38}" {
+     m_iFrequency 52000
+     m_eDefaultKnobPosition PRE1
+     m_sEncryptionKey "chickenNuggets"
+    }
+    RHS_RadioFrequencyPreset "{6238CE8AA05FDD34}" {
+     m_iFrequency 56000
+     m_eDefaultKnobPosition PRE2
+     m_sEncryptionKey "chickenNuggets"
+    }
+    RHS_RadioFrequencyPreset "{6238CE8AA05FDD37}" {
+     m_iFrequency 60000
+     m_eDefaultKnobPosition PRE3
+     m_sEncryptionKey "chickenNuggets"
+    }
+    RHS_RadioFrequencyPreset "{6238CE8AA05FDD31}" {
+     m_iFrequency 64000
+     m_eDefaultKnobPosition PRE4
+     m_sEncryptionKey "chickenNuggets"
+    }
+    RHS_RadioFrequencyPreset "{6238CE8AA05FDD33}" {
+     m_iFrequency 68000
+     m_eDefaultKnobPosition PRE5
+     m_sEncryptionKey "chickenNuggets"
+    }
+   }
+   m_aKnobRotation {
+    RHS_KnobRotation "{6238CE8AA05FDD4F}" {
+    }
+    RHS_KnobRotation "{6238CE8AA05FDD4A}" {
+     m_eKnobState PRE1
+     m_fKnobRotation 0.2
+    }
+    RHS_KnobRotation "{6238CE8AA05FDD46}" {
+     m_eKnobState PRE2
+     m_fKnobRotation 0.4
+    }
+    RHS_KnobRotation "{6238CE8AA05FDD56}" {
+     m_eKnobState PRE3
+     m_fKnobRotation 0.6
+    }
+    RHS_KnobRotation "{6238CE8AA05FDD50}" {
+     m_eKnobState PRE4
+     m_fKnobRotation 0.8
+    }
+    RHS_KnobRotation "{6238CE8AA05FDD52}" {
+     m_eKnobState PRE5
+     m_fKnobRotation 1
+    }
+   }
+   m_iMaxNumOfPresets 10
+   m_fMaxWattage 5
+   m_fMaxPowerRange 6000
+   m_aRadioMenu {
+    RHS_RadioMenuOptions "{6238CE8AA05FDD6D}" {
+     m_sMenuPosName "BEEP"
+     m_sMenuPosTag "BEEP"
+     m_aOptions {
+      RHS_RadioOptionProperty "{6238CE8AA05FDD68}" {
+       m_sOptionName "OFF"
+      }
+      RHS_RadioOptionProperty "{6238CE8AA05FDD6B}" {
+       m_sOptionName "ON"
+       m_fOptionValue 1
+      }
+     }
+     m_iCurrentOptionID 1
+    }
+    RHS_RadioMenuOptions "{6238CE8AA05FDD67}" {
+     m_sMenuPosName "POWER"
+     m_sMenuPosTag "POWER"
+     m_aOptions {
+      RHS_RadioOptionProperty "{6238CE8AA05FDD61}" {
+       m_sOptionName "LOW"
+       m_fOptionValue 0.5
+      }
+      RHS_RadioOptionProperty "{6238CE8AA05FDD63}" {
+       m_sOptionName "MEDIUM"
+       m_fOptionValue 2
+      }
+      RHS_RadioOptionProperty "{6238CE8AA05FDD7D}" {
+       m_sOptionName "HIGH"
+       m_fOptionValue 5
+      }
+     }
+     m_iCurrentOptionID 1
+    }
+    RHS_RadioMenuOptions "{6238CE8AA05FDD78}" {
+     m_sMenuPosName "LED"
+     m_sMenuPosTag "LED"
+     m_aOptions {
+      RHS_RadioOptionProperty "{6238CE8AA05FDE89}" {
+       m_sOptionName "OFF"
+      }
+      RHS_RadioOptionProperty "{6238CE8AA05FDE8B}" {
+       m_sOptionName "ON"
+       m_fOptionValue 1
+      }
+      RHS_RadioOptionProperty "{6238CE8AA05FDE85}" {
+       m_sOptionName "AUTO"
+       m_fOptionValue 2
+      }
+     }
+     m_iCurrentOptionID 2
+    }
+    RHS_RadioMenuOptions "{6238CE8AA05FDE87}" {
+     m_sMenuPosName "SCND TRANS"
+     m_sMenuPosTag "SCND TRANS"
+     m_aOptions {
+      RHS_RadioOptionProperty "{6238CE8AA05FDE81}" {
+       m_sOptionName "OFF"
+      }
+      RHS_RadioOptionProperty "{6238CE8AA05FDE82}" {
+       m_sOptionName "ON"
+       m_fOptionValue 48000
+      }
+     }
+     m_iCurrentOptionID 1
+    }
+    RHS_RadioMenuOptions "{6238CE8AA05FDE9C}" {
+     m_sMenuPosName "%1 ENC KEY"
+     m_sMenuPosTag "ENC KEY"
+     m_aOptions {
+      RHS_RadioOptionProperty "{6238CE8AA05FDE9E}" {
+       m_sOptionName "DEFAULT"
+      }
+      RHS_RadioOptionProperty "{6238CE8AA05FDE99}" {
+       m_sOptionName "CUSTOM"
+       m_fOptionValue 1
+      }
+     }
+     m_bPerPreset 1
+    }
+    RHS_RadioMenuOptions "{6238CE8AA05FDE9B}" {
+     m_sMenuPosName "%1 CUST KEY"
+     m_sMenuPosTag "CUST KEY"
+     m_aOptions {
+      RHS_RadioOptionProperty "{6238CE8AA05FDE95}" {
+       m_sOptionName "*******"
+       m_fOptionValue 0
+      }
+     }
+     m_bInputCustValMode 1
+     m_bPerPreset 1
+    }
+    RHS_RadioMenuOptions "{6238CE8AA05FDE90}" {
+     m_sMenuPosName "FREQ RES"
+     m_sMenuPosTag "FREQ RESOLUTION"
+     m_aOptions {
+      RHS_RadioOptionProperty "{6238CE8AA05FDE92}" {
+       m_sOptionName "10"
+       m_fOptionValue 10
+      }
+      RHS_RadioOptionProperty "{6238CE8AA05FDE93}" {
+       m_sOptionName "100"
+       m_fOptionValue 100
+      }
+      RHS_RadioOptionProperty "{6238CE8AA05FDEAD}" {
+       m_sOptionName "1000"
+       m_fOptionValue 1000
+      }
+      RHS_RadioOptionProperty "{6238CE8AA05FDEAF}" {
+       m_sOptionName "5000"
+       m_fOptionValue 5000
+      }
+     }
+     m_iCurrentOptionID 1
+    }
+    RHS_RadioMenuOptions "{6238CE8AA05FDEAA}" {
+     m_sMenuPosName "%1 PRE FREQ"
+     m_sMenuPosTag "PRE FREQ"
+     m_aOptions {
+      RHS_RadioOptionProperty "{6238CE8AA05FDEAB}" {
+       m_sOptionName "%2"
+      }
+     }
+     m_bInputCustValMode 1
+     m_bPerPreset 1
+    }
+    RHS_RadioMenuOptions "{6238CE8AA05FDEA6}" {
+     m_sMenuPosName "NEW PRE"
+     m_sMenuPosTag "NEW PRE"
+     m_aOptions {
+      RHS_RadioOptionProperty "{6238CE8AA05FDEA0}" {
+       m_sOptionName "NEW PRE FREQ"
+      }
+     }
+     m_bInputCustValMode 1
+     m_bPerPreset 0
+    }
+   }
+   m_sRXTransmitionReceiveText "⬅"
+   m_sRXTransmitionTransmitText "➡"
+   m_sRXTransmitionScanText "♲"
+  }
+  RHS_ANPRC152RadioScreenComponent "{6238CE8AA05FDEBF}" {
+   m_sLayoutName "{5ADAA9674B10B552}UI/layouts/Radios/ANPRC152.layout"
+  }
+  RHS_RadioStorageComponent "{6238CE8AA05FDEB7}" {
+   Attributes SCR_ItemAttributeCollection "{6238CE8AA05FDEDF}" {
+    ItemDisplayName UIInfo "{6238CE8AA05FDEDA}" {
+     Name "#RHS-Item_ANPRC152_Name"
+     Description "#RHS-Item_ANPRC152_Description"
+     Icon "{F38FC154DE225E20}Assets/Items/Equipment/Radios/Radio_ANPRC152/data/icon.edds"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{6238CE8AA05FDEEC}" {
+     Weight 0.5
+     SizeSetupStrategy Manual
+     ItemDimensions 5 10 4
+     ItemVolume 200
+     RestingUP Left
+     PivotBoneName "i_battery"
+     RestingAdditiveOffsetLS 0.1 0 0
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{6238CE8AA05FDEE5}" {
+     AnimationAttachments {
+      AnimationAttachmentInfo "{6238CE8AA05FDEE1}" {
+       AnimGraph "{1EC741FF939F9F57}Assets/Items/Equipment/workspaces/Watch_SandY184A.agr"
+       AnimInstance "{7FD36D3756A08396}Assets/Items/Equipment/workspaces/Watch_SandY184A_player.asi"
+       BindingName "Gadget"
+      }
+     }
+     HandAdditiveRotation 0 90 270
+     HandAdditiveTranslation 0 0.048 -0.1
+     AllowInspection 1
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6238CE8AA05FDEF5}" {
+      CameraPreset Right
+      CameraOrbitAngles 25 0 0
+      CameraDistanceToItem 1
+      CameraOffset 0 0 0
+      ItemRenderRotation 0 25 0
+      FOV 5
+     }
+    }
+    CommonItemType "RADIO"
+    m_Size SLOT_1x1
+    m_SlotType SLOT_VEST
+   }
+   StoragePurpose 96
+   UseCapacityCoefficient 0
+   MaxCumulativeVolume 3000
+   InitialStorageSlots {
+    InventoryStorageSlot Battery {
+     PivotID "i_battery"
+     ChildPivotID "i_battery"
+     Prefab "{D3269BA0CE6F6390}Prefabs/Items/Equipment/Radios/Attachments/Attachment_ANPRC152_Battery.et"
+    }
+    InventoryStorageSlot Antenna {
+     PivotID "i_antenna"
+     ChildPivotID "i_antenna"
+     Prefab "{DD193B9D8BAFD2D9}Prefabs/Items/Equipment/Radios/Attachments/Attachment_ANPRC152_Antenna.et"
+    }
+   }
+  }
+  RigidBody "{5A30BAE7673C63D3}" {
+   ModelGeometry 1
+  }
+  ProcAnimComponent "{6238CE8AA05FDE19}" {
+   Parameters {
+    ProcAnimParams "{6238CE8AA05FDE16}" {
+     ResourceName "{3FB10C3EE4DF2F92}Anims/proc/ANPRC152_Body.pap"
+     BoneNames {
+      "i_channel_power"
+     }
+     SimulationDistance 20
+     SimulateOnDedicatedServer 0
+    }
+   }
+  }
+  SCR_SoundDataComponent "{5B18D20ED0099A17}" {
+   Enabled 0
+  }
+  ActionsManagerComponent "{508AB5952B584B2E}" {
+   ActionContexts {
+    UserActionContext "{508AC2ABEC97066C}" {
+     ContextName "default"
+     Position PointInfo "{508AC2ABEAC4A0F5}" {
+      PivotID "i_channel_power"
+     }
+     Radius 0.1
+    }
+    UserActionContext "{6238CE8AA05FDE21}" {
+     ContextName "knob_power_channel"
+     Position PointInfo "{6238CE8AA05FDE23}" {
+      PivotID "i_channel_power"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{6238CE8AA05FDE3F}" {
+     ContextName "antenna"
+     Position PointInfo "{6238CE8AA05FDE34}" {
+      PivotID "i_antenna"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{6238CE8AA05FDE30}" {
+     ContextName "battery"
+     Position PointInfo "{6238CE8AA05FDE31}" {
+      PivotID "i_battery"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{6238CE8AA05FDE4D}" {
+     ContextName "clr"
+     Position PointInfo "{6238CE8AA05FDE4E}" {
+      PivotID "i_clr"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{6238CE8AA05FDE49}" {
+     ContextName "ent"
+     Position PointInfo "{6238CE8AA05FDE4B}" {
+      PivotID "i_ent"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{6238CE8AA05FDE46}" {
+     ContextName "plus"
+     Position PointInfo "{6238CE8AA05FDE40}" {
+      PivotID "i_plus"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{6238CE8AA05FDE5C}" {
+     ContextName "minus"
+     Position PointInfo "{6238CE8AA05FDE5E}" {
+      PivotID "i_minus"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{6238CE8AA05FDE5A}" {
+     ContextName "c0"
+     Position PointInfo "{6238CE8AA05FDE55}" {
+      PivotID "i_0"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{6238CE8AA05FDE50}" {
+     ContextName "c1"
+     Position PointInfo "{6238CE8AA05FDE52}" {
+      PivotID "i_1"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{6238CE8AA05FDE6C}" {
+     ContextName "c2"
+     Position PointInfo "{6238CE8AA05FDE6E}" {
+      PivotID "i_2"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{6238CE8AA05FDE69}" {
+     ContextName "c3"
+     Position PointInfo "{6238CE8AA05FDE6B}" {
+      PivotID "i_3"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{6238CE8AA05FDE66}" {
+     ContextName "c4"
+     Position PointInfo "{6238CE8AA05FDE60}" {
+      PivotID "i_4"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{6238CE8AA05FDE63}" {
+     ContextName "c5"
+     Position PointInfo "{6238CE8AA05FDE7E}" {
+      PivotID "i_5"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{6238CE8AA05FDE78}" {
+     ContextName "c6"
+     Position PointInfo "{6238CE8AA05FDE7B}" {
+      PivotID "i_6"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{6238CE8AA05FDE76}" {
+     ContextName "c7"
+     Position PointInfo "{6238CE8AA05FDE77}" {
+      PivotID "i_7"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{6238CE8AA05FDE72}" {
+     ContextName "c8"
+     Position PointInfo "{6238CE8AA05FDF8C}" {
+      PivotID "i_8"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{6238CE8AA05FDF8E}" {
+     ContextName "c9"
+     Position PointInfo "{6238CE8AA05FDF8F}" {
+      PivotID "i_9"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{6238CE8AA05FDF8A}" {
+     ContextName "right"
+     Position PointInfo "{6238CE8AA05FDF84}" {
+      PivotID "i_right"
+     }
+     Radius 0.05
+    }
+    UserActionContext "{6238CE8AA05FDF86}" {
+     ContextName "left"
+     Position PointInfo "{6238CE8AA05FDFA6}" {
+      PivotID "i_left"
+     }
+     Radius 0.05
+    }
+   }
+   additionalActions {
+    RHS_EARHSDetachAntennaAction "{6238CE8AA05FDFBC}" {
+     ParentContextList {
+      "antenna"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDFBE}" {
+      Name "Detach antenna"
+     }
+     "Sort Priority" 1
+    }
+    RHS_EARHSAntennaFoldAction "{6238CE8AA05FDFBA}" {
+     ParentContextList {
+      ""
+     }
+     UIInfo UIInfo "{6238CE8AA05FDFB4}" {
+      Name "Unfold antenna"
+     }
+     m_iFoldString "Fold antenna"
+    }
+    RHS_EARHSDetachBatteryAction "{6238CE8AA05FDFB0}" {
+     ParentContextList {
+      "battery"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDFB1}" {
+      Name "#AR-UserAction_Detach"
+     }
+     "Sort Priority" 1
+    }
+    RHS_EARHSAttachBatteryAction "{6238CE8AA05FDFCD}" {
+     ParentContextList {
+      "battery"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDFCF}" {
+      Name "#AR-UserAction_Attach"
+     }
+     "Sort Priority" 1
+    }
+    RHS_EARHSRotateKnobAction "{6238CE8AA05FDFCA}" {
+     ParentContextList {
+      "knob_power_channel"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDFC5}" {
+      Name "#RHS_Action_TurnOFF"
+     }
+    }
+    RHS_EARHSRotateKnobAction "{6238CE8AA05FDFC7}" {
+     ParentContextList {
+      "knob_power_channel"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDFC1}" {
+      Name "Set to first knob position"
+     }
+     "Sort Priority" 1
+     m_eKnobPosition PRE1
+    }
+    RHS_EARHSRotateKnobAction "{6238CE8AA05FDFDC}" {
+     ParentContextList {
+      "knob_power_channel"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDFDF}" {
+      Name "Set to second knob position"
+     }
+     "Sort Priority" 2
+     m_eKnobPosition PRE2
+    }
+    RHS_EARHSRotateKnobAction "{6238CE8AA05FDFDA}" {
+     ParentContextList {
+      "knob_power_channel"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDFDB}" {
+      Name "Set to third knob position"
+     }
+     "Sort Priority" 3
+     m_eKnobPosition PRE3
+    }
+    RHS_EARHSRotateKnobAction "{6238CE8AA05FDFD7}" {
+     ParentContextList {
+      "knob_power_channel"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDFD0}" {
+      Name "Set to fourth knob position"
+     }
+     "Sort Priority" 4
+     m_eKnobPosition PRE4
+    }
+    RHS_EARHSRotateKnobAction "{6238CE8AA05FDFD3}" {
+     ParentContextList {
+      "knob_power_channel"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDFED}" {
+      Name "Set to fifth knob position"
+     }
+     "Sort Priority" 5
+     m_eKnobPosition PRE5
+    }
+    RHS_EARHSClearAction "{6238CE8AA05FDFE8}" {
+     ParentContextList {
+      "clr"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDFEA}" {
+      Name "CLR"
+     }
+    }
+    RHS_EARHSEnterAction "{6238CE8AA05FDFE5}" {
+     ParentContextList {
+      "ent"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDFE6}" {
+      Name "ENT"
+     }
+    }
+    RHS_EARHSChangePresetAction "{6238CE8AA05FDFE1}" {
+     ParentContextList {
+      "plus"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDFE3}" {
+      Name "Next Value"
+     }
+    }
+    RHS_EARHSChangePresetAction "{6238CE8AA05FDFFD}" {
+     ParentContextList {
+      "minus"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDFFE}" {
+      Name "Prev value"
+     }
+     m_iDirection -1
+    }
+    RHS_EARHSInputNumberAction "{6238CE8AA05FDFF9}" {
+     ParentContextList {
+      "c0"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDFFB}" {
+      Name "Number"
+     }
+     m_iInputValue 0
+    }
+    RHS_EARHSInputNumberAction "{6238CE8AA05FDFF5}" {
+     ParentContextList {
+      "c1"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDFF7}" {
+      Name "Number"
+     }
+    }
+    RHS_EARHSInputNumberAction "{6238CE8AA05FDFF1}" {
+     ParentContextList {
+      "c2"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDFF3}" {
+      Name "Number"
+     }
+     m_iInputValue 2
+    }
+    RHS_EARHSInputNumberAction "{6238CE8AA05FDF0E}" {
+     ParentContextList {
+      "c3"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDF0F}" {
+      Name "Number"
+     }
+     m_iInputValue 3
+    }
+    RHS_EARHSInputNumberAction "{6238CE8AA05FDF0A}" {
+     ParentContextList {
+      "c4"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDF04}" {
+      Name "Number"
+     }
+     m_iInputValue 4
+    }
+    RHS_EARHSInputNumberAction "{6238CE8AA05FDF06}" {
+     ParentContextList {
+      "c5"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDF00}" {
+      Name "Number"
+     }
+     m_iInputValue 5
+    }
+    RHS_EARHSInputNumberAction "{6238CE8AA05FDF02}" {
+     ParentContextList {
+      "c6"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDF03}" {
+      Name "Number"
+     }
+     m_iInputValue 6
+    }
+    RHS_EARHSInputNumberAction "{6238CE8AA05FDF1D}" {
+     ParentContextList {
+      "c7"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDF1F}" {
+      Name "Number"
+     }
+     "Sort Priority" -1
+     m_iInputValue 7
+    }
+    RHS_EARHSInputNumberAction "{6238CE8AA05FDF1A}" {
+     ParentContextList {
+      "c8"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDF1B}" {
+      Name "Number"
+     }
+     m_iInputValue 8
+    }
+    RHS_EARHSInputNumberAction "{6238CE8AA05FDF15}" {
+     ParentContextList {
+      "c9"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDF17}" {
+      Name "Number"
+     }
+     m_iInputValue 9
+    }
+    RHS_EARHSChangeFrequencyAction "{6238CE8AA05FDF12}" {
+     ParentContextList {
+      "left"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDF13}" {
+      Name "Prev frequency"
+     }
+     Duration -2
+     PerformPerFrame 1
+     m_iDirection -1
+    }
+    RHS_EARHSChangeFrequencyAction "{6238CE8AA05FDF2F}" {
+     ParentContextList {
+      "right"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDF29}" {
+      Name "Next frequency"
+     }
+     Duration -2
+     PerformPerFrame 1
+    }
+    RHS_EARHSChangeMenuAction "{6238CE8AA05FDF25}" {
+     ParentContextList {
+      "left"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDF27}" {
+      Name "Prev position"
+     }
+     m_iDirection -1
+    }
+    RHS_EARHSChangeMenuAction "{6238CE8AA05FDF22}" {
+     ParentContextList {
+      "right"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDF3C}" {
+      Name "Next position"
+     }
+    }
+    RHS_EARHSChangeOptionAction "{6238CE8AA05FDF3E}" {
+     ParentContextList {
+      "left"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDF3F}" {
+      Name "Prev value"
+     }
+     m_iDirection -1
+    }
+    RHS_EARHSChangeOptionAction "{6238CE8AA05FDF39}" {
+     ParentContextList {
+      "right"
+     }
+     UIInfo UIInfo "{6238CE8AA05FDF3B}" {
+      Name "Next value"
+     }
+    }
+   }
+  }
+ }
+}

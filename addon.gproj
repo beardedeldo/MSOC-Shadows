@@ -1,0 +1,22 @@
+GameProject {
+ ID "MussaloGMBeard"
+ GUID "62250B00E2790EB8"
+ TITLE "Mussalo_GM_Beard"
+ Dependencies {
+  "58D0FB3206B6F859" "595F2BF2F44836FB" "61EAF5D776D87D38"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}

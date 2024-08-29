@@ -1,0 +1,96 @@
+GenericEntity Base_friendlyAI : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ components {
+  SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+   m_bShowDebugShapesInWorkbench 1
+  }
+ }
+ coords 3301.884 13.135 498.695
+ {
+  $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+   Shadow_AI {
+    coords 51.026 -0.965 64.906
+    {
+     GenericEntity SlotAI62 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+      components {
+       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+        m_sFactionKey "US"
+        m_sObjectToSpawn "{9E0B5441B270B059}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_AAR_shadow.et"
+        m_eEntityCatalogType CHARACTER
+        m_aIncludedEditableEntityLabels {
+         46 44 43
+        }
+        m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{620D00DD4B583C9C}" {
+        }
+        m_sWPToSpawn "{4ECD14650D82F5CA}Prefabs/AI/Waypoints/AIWaypoint_Loiter_CO.et"
+       }
+      }
+      coords -4.905 -1.085 8.988
+     }
+    }
+   }
+   Layer21 {
+    coords 38.108 -1.978 51.247
+    {
+     GenericEntity SlotAI65 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+      components {
+       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+        m_sFactionKey "US"
+        m_sObjectToSpawn "{9E0B5441B270B059}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_AAR_shadow.et"
+        m_eEntityCatalogType CHARACTER
+        m_aIncludedEditableEntityLabels {
+         46
+        }
+        m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{620D00DD4B583C9C}" {
+        }
+        m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+       }
+      }
+      coords 0.48 0.095 -15.82
+     }
+    }
+   }
+   Layer23 {
+    coords 38.108 -1.978 51.247
+    {
+     GenericEntity SlotAI67 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+      components {
+       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+        m_sFactionKey "US"
+        m_sObjectToSpawn "{4E35609ED02B0710}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_MG_shadow.et"
+        m_eEntityCatalogType CHARACTER
+        m_aIncludedEditableEntityLabels {
+         43
+        }
+        m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{620D00DD4B583C9C}" {
+        }
+        m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+       }
+      }
+      coords 0.48 0.095 -8.162
+     }
+    }
+   }
+   Layer24 {
+    coords 51.128 -1.088 49.238
+    {
+     GenericEntity SlotAI64 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+      components {
+       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+        m_sFactionKey "US"
+        m_sObjectToSpawn "{926FA2DCC810863B}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MEF/Character_RHS_USAF_USMC_Medic_shadow.et"
+        m_eEntityCatalogType CHARACTER
+        m_aIncludedEditableEntityLabels {
+         44
+        }
+        m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{620D00DD4B583C9C}" {
+        }
+        m_sWPToSpawn "{2FCBE5C76E285A7B}Prefabs/AI/Waypoints/AIWaypoint_DefendSmall.et"
+       }
+      }
+      coords 0.48 0.095 -15.82
+     }
+    }
+   }
+  }
+ }
+}

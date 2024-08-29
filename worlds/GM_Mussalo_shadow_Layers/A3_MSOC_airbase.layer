@@ -1,0 +1,60 @@
+$grp SCR_DestructibleBuildingEntity : "{4BE4C27399CF3B00}Prefabs/Structures/Military/Bunkers/ShelterMilitary_E_01/ShelterMilitary_E_01.et" {
+ {
+  coords 891.494 0 6291.227
+  angleY -89.709
+ }
+ {
+  coords 892.183 0 6262.031
+  angleY -90.403
+ }
+}
+SCR_DestructibleBuildingEntity : "{67418023AB7FB8DA}Prefabs/Structures/Military/Houses/Barracks_01/Barracks_01_medical_white.et" {
+ coords 975.145 -0.001 6191.161
+}
+$grp StaticModelEntity : "{69C51128071163C3}Prefabs/Compositions/Misc/SubCompositions/Tent_Medical_Cluttered_US_01.et" {
+ {
+  coords 1003.257 2.184 6198.541
+  angleY 0
+ }
+ {
+  coords 1016.727 2.176 6198.541
+  angleY 0
+ }
+}
+SCR_DestructibleBuildingEntity : "{6AB811A185D78D2A}Prefabs/Structures/Services/Government/MunicipalOffice_E_01/MunicipalOffice_E_01_Military.et" {
+ coords 899.786 -0.001 6430.486
+ angleY -90.401
+}
+GenericEntity : "{76D4FE49EA6C57F3}Prefabs/Compositions/Slotted/SlotFlatLarge/LivingArea_L_US_01.et" {
+ coords 1021.476 1.906 6154.857
+}
+$grp GenericEntity : "{A13F6A7F82DF031B}Prefabs/Compositions/Slotted/SlotFlatLarge/Helipad_L_US_01.et" {
+ {
+  coords 981.009 0.922 6302.948
+ }
+ {
+  coords 1013.97 1.461 6303.5
+ }
+ {
+  coords 981.326 1.68 6267.765
+ }
+ {
+  coords 1016.041 2.313 6266.521
+ }
+}
+$grp Vehicle : "{CC57B5D63FAC290F}Prefabs/Vehicles/Helicopters/AUS_MH60/AUS_UH60_armed_shadow.et" {
+ AUS_UH60_armed_shadow1 {
+  coords 980.356 2.031 6267.104
+ }
+ AUS_UH60_armed_shadow2 {
+  coords 979.856 1.331 6299.584
+ }
+}
+SCR_DestructibleBuildingEntity : "{DAC148D18C3835B9}Prefabs/Structures/Military/Bunkers/ShelterMilitary_E_01/ShelterMilitary_E_01_long.et" {
+ coords 893.964 0 6277.082
+ angleY -90.661
+}
+SCR_DestructibleBuildingEntity : "{F16324CB8CB07C00}Prefabs/Structures/Military/Houses/GarageMilitary_E_01/GarageMilitary_E_01.et" {
+ coords 1192.601 0 6365.21
+ angleY -4.125
+}

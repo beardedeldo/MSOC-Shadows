@@ -1,0 +1,618 @@
+$grp GenericEntity {
+ Large_US_Camo_Cover2 {
+  components {
+   MeshObject "{623408F457FC0DB7}" {
+    Object "{8B80E4D12700C6DC}Assets/Structures/Military/CamoNets/CamoNet_Large.xob"
+   }
+  }
+  coords 1250.069 16.052 4921.739
+  angleY -76.723
+ }
+ Small_USSR_Tent4 {
+  components {
+   MeshObject "{623408F52B51B4CB}" {
+    Object "{DD46D4CC01937A7D}Assets/Structures/Military/Camps/TentSmallUSSR_01/TentSmallUSSR_01.xob"
+   }
+  }
+  coords 1256.216 17.241 4921.813
+ }
+ Large_US_Camo_Cover1 {
+  components {
+   MeshObject "{623408F68AC4801E}" {
+    Object "{8B80E4D12700C6DC}Assets/Structures/Military/CamoNets/CamoNet_Large.xob"
+   }
+  }
+  coords 1280.816 7.969 5054.746
+  angleY -157.937
+ }
+ Small_USSR_Tent1 {
+  components {
+   MeshObject "{623408F6E008A210}" {
+    Object "{DD46D4CC01937A7D}Assets/Structures/Military/Camps/TentSmallUSSR_01/TentSmallUSSR_01.xob"
+   }
+  }
+  coords 1284.426 6.534 5062.061
+ }
+ Small_USSR_Tent2 {
+  components {
+   MeshObject "{623408F6E3FCB074}" {
+    Object "{DD46D4CC01937A7D}Assets/Structures/Military/Camps/TentSmallUSSR_01/TentSmallUSSR_01.xob"
+   }
+  }
+  coords 1285.702 7.086 5048.181
+ }
+ Small_USSR_Tent3 {
+  components {
+   MeshObject "{623408F6E879DD2B}" {
+    Object "{DD46D4CC01937A7D}Assets/Structures/Military/Camps/TentSmallUSSR_01/TentSmallUSSR_01.xob"
+   }
+  }
+  coords 1293.069 6.103 5054.449
+ }
+ Med_US_Camo_Cover1 {
+  components {
+   MeshObject "{623408F7BC835949}" {
+    Object "{D947C65936F9B625}Assets/Structures/Military/CamoNets/CamoNet_Medium.xob"
+   }
+  }
+  coords 1264.313 8.844 5052.424
+  angleY 141.606
+ }
+ Small_USSR_Tent5 {
+  components {
+   MeshObject "{623408F78FE93E65}" {
+    Object "{DD46D4CC01937A7D}Assets/Structures/Military/Camps/TentSmallUSSR_01/TentSmallUSSR_01.xob"
+   }
+  }
+  coords 1263.084 8.554 5048.328
+ }
+ Small_USSR_Tent6 {
+  components {
+   MeshObject "{623408F7F1F469D1}" {
+    Object "{DD46D4CC01937A7D}Assets/Structures/Military/Camps/TentSmallUSSR_01/TentSmallUSSR_01.xob"
+   }
+  }
+  coords 1260.85 8.55 5050.611
+ }
+ Large_US_Camo_Cover3 {
+  components {
+   MeshObject "{623408F7DF0C1A12}" {
+    Object "{8B80E4D12700C6DC}Assets/Structures/Military/CamoNets/CamoNet_Large.xob"
+   }
+  }
+  coords 1132.717 13.036 5009.267
+  angleY 93.446
+ }
+ Small_USSR_Tent7 {
+  components {
+   MeshObject "{623408F7074520AD}" {
+    Object "{DD46D4CC01937A7D}Assets/Structures/Military/Camps/TentSmallUSSR_01/TentSmallUSSR_01.xob"
+   }
+  }
+  coords 1125.653 12.304 5012.706
+ }
+ Small_USSR_Tent8 {
+  components {
+   MeshObject "{623408F707B1EE6F}" {
+    Object "{DD46D4CC01937A7D}Assets/Structures/Military/Camps/TentSmallUSSR_01/TentSmallUSSR_01.xob"
+   }
+  }
+  coords 1128.271 12.324 5014.754
+ }
+ Small_USSR_Tent9 {
+  components {
+   MeshObject "{623408F7725EBBE7}" {
+    Object "{DD46D4CC01937A7D}Assets/Structures/Military/Camps/TentSmallUSSR_01/TentSmallUSSR_01.xob"
+   }
+  }
+  coords 1132.319 12.541 5015.308
+ }
+ Med_US_Camo_Cover2 {
+  components {
+   MeshObject "{623408F74C7E1070}" {
+    Object "{2887EE12F560057F}Assets/Structures/Military/CamoNets/CamoNet_Medium_Top.xob"
+   }
+  }
+  coords 1185.245 14.809 4950.906
+  angleY 23.399
+ }
+ Bunkbeds {
+  components {
+   MeshObject "{623408F2A0C4B432}" {
+    Object "{01814EFB07DE95DD}Assets/Props/Furniture/BunkBed_01/BunkBed_01_Double.xob"
+   }
+  }
+  coords 1167.907 15.534 4947.729
+  angleY 53.22
+ }
+ Miltable1 {
+  components {
+   MeshObject "{623408F23DEA8D70}" {
+    Object "{8996CA7B010FEBA4}Assets/Props/Military/Furniture/USSR/TableMilitary_USSR_02.xob"
+   }
+  }
+  coords 1163.673 15.53 4946.638
+  angleY 50.082
+ }
+ ussrsnack {
+  components {
+   MeshObject "{623408F3854C9318}" {
+    Object "{A47ED22E6647430A}Assets/Items/Food/ArmyCrackers_Soviet_01.xob"
+   }
+  }
+  coords 1164.016 16.434 4946.317
+ }
+ cigs {
+  components {
+   MeshObject "{623408F33BCF3568}" {
+    Object "{74A0A675F1DD4092}Assets/Props/Civilian/Ashtray_01/Ashtray_01_Full.xob"
+   }
+  }
+  coords 1163.316 16.429 4947.264
+ }
+ Smokegrenade {
+  components {
+   MeshObject "{623408FCB1BE7184}" {
+    Object "{B7D40C3C1366B89D}Assets/Weapons/Grenades/ANM8HC/Smoke_ANM8HC.xob"
+   }
+  }
+  coords 1163.305 16.509 4947.029
+ }
+ Opencabinets {
+  components {
+   MeshObject "{623408FC9F0B38AC}" {
+    Object "{80C774B9FAF40FA6}Assets/Props/Military/Furniture/USSR/Dst/TableMilitary_USSR_02_cabinet_dst_00.xob"
+   }
+  }
+  coords 1162.825 15.524 4947.576
+  angleY 50.835
+ }
+ Red_rug {
+  components {
+   MeshObject "{623408FCFEE4244F}" {
+    Object "{B681933EF4F86DF7}Assets/Props/Furniture/Carpet_03/Carpet_03_tassels.xob"
+   }
+  }
+  coords 1166.014 15.555 4949.31
+  angleY 50.411
+ }
+ Cot1 {
+  components {
+   MeshObject "{623408FC31EFF495}" {
+    Object "{6E47500CEEB8FC30}Assets/Props/Military/Furniture/USSR/CotMilitary_USSR_01.xob"
+   }
+  }
+  coords 1165.122 15.514 4951.351
+  angleY -40.522
+ }
+ Seat1 {
+  components {
+   MeshObject "{623408FC093570F5}" {
+    Object "{B4D812579BA957C6}Assets/Props/Military/Furniture/USSR/ChairMilitary_USSR_01.xob"
+   }
+  }
+  coords 1163.646 15.53 4947.088
+  angleY 45.734
+ }
+ Milradio {
+  components {
+   MeshObject "{623408FC54DC2CB0}" {
+    Object "{DBE3AEFE90AC25D0}Assets/Props/Military/Radios/RadioStation_R123M_01.xob"
+   }
+  }
+  coords 1163.778 16.421 4950.62
+  angleY 138.08
+ }
+ Pirate_painting {
+  components {
+   MeshObject "{623408FDAA9C0112}" {
+    Object "{476276BB781C0569}Assets/Props/Decorations/PaintingSmall_01_400x600/PaintingSmall_01.xob"
+   }
+  }
+  coords 1163.367 17.206 4946.295
+  angleY 40.61
+ }
+ Warningposter {
+  components {
+   MeshObject "{623408FDFB2C0E6F}" {
+    Object "{E24974B50D38A883}Assets/Props/Commercial/Posters/Leaflet_01.xob"
+   }
+  }
+  coords 1164.023 17.109 4951.127
+  angleY 140.466
+ }
+ Coffee_table {
+  components {
+   MeshObject "{623408FFFEF14524}" {
+    Object "{E1DB1C04C6607E77}Assets/Props/Furniture/TableDining_01/TableDining_01.xob"
+   }
+  }
+  coords 1162.431 15.518 4948.944
+  scale 0.643
+ }
+ m9 {
+  components {
+   MeshObject "{623408FF2C884853}" {
+    Object "{1E38513800383D64}Assets/Weapons/Handguns/M9/M9_body.xob"
+   }
+  }
+  coords 1162.443 16.132 4948.703
+  angleZ -87.119
+ }
+ bullet_9mm1 {
+  components {
+   MeshObject "{623408FF5D9DFC9F}" {
+    Object "{049EAC7C19E1B570}Assets/Weapons/Ammo/Bullets/9x19/Bullet_9x19.xob"
+   }
+  }
+  coords 1162.444 16.101 4948.957
+  angleX 89.679
+  angleY 180
+  angleZ -180
+ }
+ bullet_9mm2 {
+  components {
+   MeshObject "{623408FF5D9DFC9F}" {
+    Object "{049EAC7C19E1B570}Assets/Weapons/Ammo/Bullets/9x19/Bullet_9x19.xob"
+   }
+  }
+  coords 1162.434 16.101 4948.973
+  angleX 89.679
+  angleY 180
+  angleZ -180
+ }
+ bullet_9mm3 {
+  components {
+   MeshObject "{623408FF5D9DFC9F}" {
+    Object "{049EAC7C19E1B570}Assets/Weapons/Ammo/Bullets/9x19/Bullet_9x19.xob"
+   }
+  }
+  coords 1162.434 16.1 4948.993
+  angleX 89.679
+  angleY 180
+  angleZ -180
+ }
+ bullet_9mm4 {
+  components {
+   MeshObject "{623408FF5D9DFC9F}" {
+    Object "{049EAC7C19E1B570}Assets/Weapons/Ammo/Bullets/9x19/Bullet_9x19.xob"
+   }
+  }
+  coords 1162.47 16.101 4948.995
+  angleX 89.679
+  angleY 180
+  angleZ -180
+ }
+ bullet_9mm5 {
+  components {
+   MeshObject "{623408FF5D9DFC9F}" {
+    Object "{049EAC7C19E1B570}Assets/Weapons/Ammo/Bullets/9x19/Bullet_9x19.xob"
+   }
+  }
+  coords 1162.44 16.099 4949.009
+  angleX 89.679
+  angleY 180
+  angleZ -180
+ }
+ bullet_9mm6 {
+  components {
+   MeshObject "{623408FF5D9DFC9F}" {
+    Object "{049EAC7C19E1B570}Assets/Weapons/Ammo/Bullets/9x19/Bullet_9x19.xob"
+   }
+  }
+  coords 1162.462 16.101 4948.98
+  angleX 89.679
+  angleY 180
+  angleZ -180
+ }
+ {
+  components {
+   MeshObject "{6238D5D414B537B0}" {
+    Object "{B4D812579BA957C6}Assets/Props/Military/Furniture/USSR/ChairMilitary_USSR_01.xob"
+   }
+  }
+  coords 1161.949 13.778 4916.012
+  angleY 31.649
+ }
+ {
+  components {
+   MeshObject "{623908213C5C1947}" {
+    Object "{21540DEBD15D623A}Assets/Structures/Military/CamoNets/CamoNet_Tent_US.xob"
+   }
+  }
+  coords 1144.597 12.781 4936.599
+  angleY -149.047
+ }
+}
+GenericEntity : "{06B10E092A40431B}Prefabs/Props/Military/Compositions/USSR/PersonnelService_USSR_Small.et" {
+ coords 1163.656 15.518 4949.802
+ angleY 139.661
+}
+$grp Vehicle : "{0B4DEA8078B78A9B}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469_PKM.et" {
+ UAZ469_PKM1 {
+  coords 1185.776 15.382 4951.1
+  angleY 27.426
+ }
+ UAZ469_PKM2 {
+  coords 1183.407 15.139 4952.289
+  angleY 29.612
+ }
+}
+GenericEntity : "{0D7AF55E9248DEFF}PrefabsEditable/Auto/Compositions/Misc/SubCompositions/E_Crate_Bottles_01.et" {
+ coords 1163.452 13.889 4915.914
+ angleY -20.766
+}
+GenericEntity : "{1666078C5157E508}Prefabs/Compositions/Misc/SubCompositions/CanvasCover_Cluttered_USSR_02.et" {
+ coords 1134.898 11.51 4923.709
+ angleY 0
+}
+$grp StaticModelEntity : "{172DD50ACF177B9E}Prefabs/Props/Military/Furniture/ChairMilitary_USSR_01.et" {
+ {
+  coords 1165.976 14.463 4916.796
+  angleY -27.193
+ }
+ {
+  coords 1165.907 14.421 4921.371
+  angleY 32.755
+ }
+}
+Vehicle Ural4320_command1 : "{1BABF6B33DA0AEB6}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_command.et" {
+ coords 1265.487 8.372 5050.558
+ angleY 129.314
+}
+GenericEntity : "{23C947376C7E12D8}PrefabsEditable/Auto/Compositions/Misc/SubCompositions/E_Crate_Firewood_01.et" {
+ coords 1167.56 14.355 4918.116
+ angleY 90.235
+}
+StaticModelEntity : "{24F819D251467B5C}PrefabsEditable/Auto/Structures/Military/Camps/TentUSSR_01/E_TentUSSR_01_camonet_foundation.et" {
+ coords 1165.168 15.351 4948.405
+ angleY 53.127
+}
+GameEntity : "{2521D0D11FB543C7}PrefabsEditable/Auto/Props/Civilian/E_Fireplace_01.et" {
+ coords 1164.703 14.275 4919.115
+}
+$grp Vehicle : "{3918E80DF5393F8C}Prefabs/Vehicles/Wheeled/K17/APC_K17_Epoch_camo1.et" {
+ APC_K17_Epoch_camo1 {
+  coords 1133.22 13.009 5008.577
+  angleY 74.508
+ }
+ APC_K17_Epoch_camo2 {
+  coords 1281.293 7.235 5053.471
+  angleY -154.792
+ }
+}
+$grp GenericEntity : "{39FFC65E0B390094}Prefabs/Systems/DeployableRadios/DeployableItemTentReplacementUSSR.et" {
+ {
+  coords 1160.742 14.14 4922.914
+ }
+ {
+  coords 1165.456 14.518 4924.92
+ }
+ {
+  coords 1167.617 13.487 4906.897
+ }
+ {
+  coords 1162.718 13.4 4908.356
+ }
+ {
+  coords 1174.578 14.287 4910.813
+ }
+}
+GenericEntity : "{3ADFF2151F37334C}Prefabs/Props/Military/Camps/CamoNet_PalletFuel_Soviet.et" {
+ coords 1166.726 14.537 4932.158
+}
+StaticModelEntity : "{42417A541F82B0F9}Prefabs/Compositions/Misc/SubCompositions/ChairMilitary_Cluttered_USSR_01.et" {
+ coords 1162.244 14.031 4920.175
+ angleY 0
+}
+GenericEntity : "{493FA697C1312879}Prefabs/Props/Commercial/Posters/PosterSingle_A3_AIDS_V1.et" {
+ coords 1166.678 17.103 4946.03
+ angleY -31.382
+}
+GenericEntity : "{4EF68238FE2FC26B}Prefabs/Compositions/Misc/SubCompositions/CanvasCover_Cluttered_USSR_04.et" {
+ coords 1125.591 11.891 5019.484
+ angleY -13.873
+}
+GenericEntity : "{50A752B7D5E679A2}Prefabs/Props/Industrial/Repair/GasWelder_01.et" {
+ coords 1249.964 9.767 5049.592
+}
+GenericEntity : "{68ED84218EA1BDC3}Prefabs/Compositions/Slotted/SlotFlatSmall/Antenna_S_USSR_01.et" {
+ coords 1151.397 12.781 4903.167
+ angleY 11.052
+}
+$grp GenericEntity : "{7492BAA88AFCEDCE}Prefabs/Compositions/Slotted/SlotFlatSmall/Bunker_S_USSR_01.et" {
+ {
+  coords 1295.161 6.285 5077.709
+  angleY 42.905
+ }
+ {
+  coords 988.264 1.312 5041.303
+  angleY -51.972
+ }
+ {
+  coords 919.963 6.473 4956.792
+  angleY -86.555
+ }
+ {
+  coords 1126.171 5.551 4761.085
+  angleY 165.359
+ }
+ {
+  coords 1427.352 4.722 4771.497
+  angleY -168.799
+ }
+ {
+  coords 1501.039 10.527 4883.164
+  angleY 31.058
+ }
+}
+GenericEntity : "{7A32336CED936A26}Prefabs/Compositions/Misc/SubCompositions/CanvasCover_Cluttered_USSR_01.et" {
+ coords 1141.172 13.273 4949.305
+ angleY 76.421
+}
+$grp GenericEntity : "{805AE0C6C4485211}PrefabsEditable/Auto/Structures/Signs/Military/E_Sign_Warning_USSR_01.et" {
+ {
+  coords 1537.407 1.56 4937.387
+  angleY 94.018
+ }
+ {
+  coords 1538.258 1.56 4945.969
+  angleY 94.706
+ }
+ {
+  coords 1221.636 11.808 4830.201
+  angleY -167.926
+ }
+ {
+  coords 1233.181 11.687 4829.063
+  angleY -168.718
+ }
+ {
+  coords 1146.233 13.266 4941.686
+  angleY 41.576
+ }
+}
+GenericEntity : "{818571DF82B787FF}PrefabsEditable/Auto/Props/Civilian/E_RadioSmall_01_black.et" {
+ coords 1163.984 16.432 4946.085
+}
+GenericEntity : "{8751F77B1038FC72}Prefabs/Props/Industrial/Repair/VehicleGarbage_01_pile_large.et" {
+ coords 1247.589 9.885 5051.903
+}
+SCR_DestructibleEntity : "{8CC739F5E368DEF5}PrefabsEditable/Auto/Props/Garbage/Bins/E_TrashBin_02_patched.et" {
+ coords 1162.383 15.534 4948.2
+ scale 0.606
+}
+GenericEntity : "{90A74133C1DC6226}Prefabs/Props/Industrial/Repair/EngineCrane_01.et" {
+ coords 1248.018 9.839 5049.448
+ angleY 41.273
+}
+GenericEntity : "{90C8F17A319F4D47}Prefabs/Structures/Signs/Military/Supplies/Sign_SupplyStorage_01_Fuel_USSR.et" {
+ coords 1148.482 13.453 4940.411
+ angleY 37.616
+}
+$grp StaticModelEntity : "{93E06E731212BD96}Prefabs/Structures/Walls/BarbedWire/BarbedTape_01/BarbedTape_01_Triple.et" {
+ {
+  coords 1534.41 -0.209 4937.233
+ }
+ {
+  coords 1535.381 0.074 4939.923
+ }
+ {
+  coords 1535.381 0 4942.875
+ }
+ {
+  coords 1535.608 0 4945.782
+ }
+ {
+  coords 1220.578 0 4833.922
+  angleY 99.277
+ }
+ {
+  coords 1223.684 -0.315 4834.41
+  angleY -80.856
+ }
+ {
+  coords 1227.496 0 4833.785
+  angleY 89.968
+ }
+ {
+  coords 1230.382 0.189 4834.119
+  angleY 92.143
+ }
+ {
+  coords 1233.876 0 4834.103
+  angleY 93.139
+ }
+}
+GenericEntity : "{9DB69176CEF0EE97}Prefabs/Weapons/Grenades/Smoke_ANM8HC.et" {
+ coords 1163.197 15.654 4946.818
+ angleX 0.363
+ angleY 43.668
+}
+GenericEntity : "{A817454D4372DBCA}Prefabs/Structures/Military/CamoNets/Soviet/CamoNet_Tent_Soviet.et" {
+ coords 1164.497 14.47 4934.06
+}
+$grp SCR_DestructibleBuildingEntity : "{B9F871C090EB5F65}PrefabsEditable/Auto/Structures/Forest/DeerStands/E_DeerStand_01.et" {
+ {
+  coords 1172.786 0 4893.212
+ }
+ {
+  coords 1117.7 -0 4897.432
+  angleY 41.259
+ }
+ {
+  coords 1082.107 0.074 4953.752
+  angleY -20.708
+ }
+ {
+  coords 1090.664 0 5020.266
+  angleY 117.301
+ }
+ {
+  coords 1317.981 -0 5041.052
+  angleY -132.221
+ }
+ {
+  coords 1231.918 -0 5074.724
+  angleY -176.637
+ }
+ {
+  coords 1490.143 0 4898.843
+  angleY -127.706
+ }
+ {
+  coords 1427.891 0 4806.332
+  angleY -48.038
+ }
+ {
+  coords 1197.8 0 4849.732
+  angleY -22.03
+ }
+}
+GenericEntity : "{C1E897330D6FCC03}PrefabsEditable/Auto/Props/Civilian/E_Notebook_01_Double.et" {
+ coords 1163.604 16.429 4946.874
+ angleY -140.493
+}
+GenericEntity : "{C819E0B7454461F2}Prefabs/Items/Equipment/Compass/Compass_Adrianov_Map.et" {
+ coords 1162.615 16.115 4948.749
+ angleY -42.05
+}
+GameEntity : "{CCFBDDED9E41349A}PrefabsEditable/Auto/Props/Civilian/LampKerosene_01/E_LampKerosene_01_military_USSR.et" {
+ coords 1162.997 16.437 4947.032
+ angleY 51.553
+}
+GenericEntity : "{F22B50EC1A16D380}PrefabsEditable/Auto/Props/Military/Camps/E_PalletAmmo_01_US_camo.et" {
+ coords 1164.882 15.529 4945.445
+ angleY 47.372
+}
+GenericEntity : "{F2AE5479B9F6889B}PrefabsEditable/Auto/Props/Civilian/E_BeerBottle_01_empty_green.et" {
+ coords 1163.696 16.44 4946.298
+}
+$grp GenericEntity : "{FC4BE1ACA1209194}PrefabsEditable/Auto/Props/Military/WaterTanks/E_MobileFuelTank_USSR_01.et" {
+ {
+  coords 1163.758 14.576 4934.612
+  angleY 85.647
+ }
+ {
+  coords 1251.198 9.533 5052.737
+  angleY 121.353
+ }
+}
+$grp GenericEntity : "{FEA6D4F59C34A6C4}PrefabLibrary/Props/Military/PalletFuel_01.et" {
+ {
+  coords 1144.096 12.555 4933.237
+  angleY 31.003
+ }
+ {
+  coords 1141.704 12.421 4934.526
+  angleY 30.984
+ }
+ {
+  coords 1145.333 12.884 4935.561
+  angleY 29.757
+ }
+ {
+  coords 1143.168 12.722 4936.838
+  angleY 32.888
+ }
+}

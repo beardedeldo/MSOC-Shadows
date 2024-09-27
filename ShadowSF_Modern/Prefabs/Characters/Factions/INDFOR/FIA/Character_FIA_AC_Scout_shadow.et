@@ -27,12 +27,12 @@ SCR_ChimeraCharacter : "{DE3786C0C6C978D4}Prefabs/Characters/Factions/INDFOR/FIA
    }
   }
   CharacterWeaponSlotComponent "{520EA1D2F659CFAB}" {
-   WeaponTemplate "{56CE827F9AD5880E}Prefabs/Weapons/Rifles/M40/Rifle_M40A5_Optic_PEQ.et"
+   WeaponTemplate "{B65DCFEFE63F121D}Prefabs/Weapons/Rifles/M40/Rifle_M40A5_Thermal.et"
   }
   BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
    Slots {
     LoadoutSlotInfo Hat {
-     Prefab "{7FB277F811E4AF05}Prefabs/Characters/HeadGear/Hat_Beanie/variants/Hat_beanie_green_sordin.et"
+     Prefab "{5F578C59D0AE2135}Prefabs/Characters/HeadGear/Helmet_OPSCORE/variants/ION/Helmet_OPSCORE_XP_Black_PELTOR_ION.et"
     }
     LoadoutSlotInfo Jacket {
      Prefab "{00ECD7EB467C97D7}Prefabs/Characters/Uniforms/Shirt_CottonShirt_01/Shirt_CottonShirt_01_V3_Dirty.et"
@@ -47,6 +47,7 @@ SCR_ChimeraCharacter : "{DE3786C0C6C978D4}Prefabs/Characters/Factions/INDFOR/FIA
      Prefab "{660952F979E8EBF2}Prefabs/Characters/Footwear/Boots_solomon_ultra_x/Footwear_Altama_Boots.et"
     }
     LoadoutSlotInfo Back {
+     Prefab "{4A93B3F0B33FF104}Prefabs/Items/Equipment/Backpacks/backpack_511_rush12/Backpack_511_rush12_MC.et"
     }
     LoadoutSlotInfo Vest {
      Prefab "{1EDF99F5B1AEA223}Prefabs/Characters/Vests/Vest_Taktika/Variants/Vest_Taktika_arsarma_sniper.et"
@@ -67,23 +68,23 @@ SCR_ChimeraCharacter : "{DE3786C0C6C978D4}Prefabs/Characters/Factions/INDFOR/FIA
      TargetStorage "Prefabs/Characters/Uniforms/Civi_Pants/Civi_Jeans_Blue_Ripped.et"
      TargetPurpose 1
      PrefabsToSpawn {
-      "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et" "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" "{D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et" "{8435F7561C0FBB44}Prefabs/Items/Medicine/SalineBag_01/SalineBag_01_base.et" "{D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et"
+      "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et" "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" "{5B2FD067D70C1E8F}Prefabs/Items/Medicine/EpinephrineInjection/ACE_Medical_EpinephrineInjection.et" "{8435F7561C0FBB44}Prefabs/Items/Medicine/SalineBag_01/SalineBag_01_base.et" "{D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et"
      }
     }
     ItemsInitConfigurationItem "{620EDA75D42332B0}" {
      TargetStorage "Prefabs/Characters/Vests/Vest_TV110_Pouches/Minimap_ArsArma_GMR_FG.et"
      PrefabsToSpawn {
-      "{6CDC3AA07A9A639E}Prefabs/Weapons/Magazines/Magazine_762x51_M40_5rnd_M62_T.et" "{6CDC3AA07A9A639E}Prefabs/Weapons/Magazines/Magazine_762x51_M40_5rnd_M62_T.et" "{6CDC3AA07A9A639E}Prefabs/Weapons/Magazines/Magazine_762x51_M40_5rnd_M62_T.et" "{925F3A6F7FE0DE64}Prefabs/Weapons/Magazines/Magazine_762x51_M40_5rnd_M61AP.et" "{925F3A6F7FE0DE64}Prefabs/Weapons/Magazines/Magazine_762x51_M40_5rnd_M61AP.et" "{EC9E0F22B90013F3}Prefabs/Weapons/Magazines/Magazine_762x51_M40_5rnd_M80.et" "{EC9E0F22B90013F3}Prefabs/Weapons/Magazines/Magazine_762x51_M40_5rnd_M80.et" "{925F3A6F7FE0DE64}Prefabs/Weapons/Magazines/Magazine_762x51_M40_5rnd_M61AP.et"
+      "{6CDC3AA07A9A639E}Prefabs/Weapons/Magazines/Magazine_762x51_M40_5rnd_M62_T.et" "{6CDC3AA07A9A639E}Prefabs/Weapons/Magazines/Magazine_762x51_M40_5rnd_M62_T.et" "{925F3A6F7FE0DE64}Prefabs/Weapons/Magazines/Magazine_762x51_M40_5rnd_M61AP.et" "{925F3A6F7FE0DE64}Prefabs/Weapons/Magazines/Magazine_762x51_M40_5rnd_M61AP.et" "{EC9E0F22B90013F3}Prefabs/Weapons/Magazines/Magazine_762x51_M40_5rnd_M80.et" "{EC9E0F22B90013F3}Prefabs/Weapons/Magazines/Magazine_762x51_M40_5rnd_M80.et" "{33CBDE73AB48172A}Prefabs/Weapons/Explosives/DemoBlock_M112/DemoBlock_M112.et" "{33CBDE73AB48172A}Prefabs/Weapons/Explosives/DemoBlock_M112/DemoBlock_M112.et"
      }
     }
     ItemsInitConfigurationItem "{620EDA754D687A8C}" {
      TargetStorage "Prefabs/Characters/Vests/Vest_TV110_Pouches/Pouch_UP101_Admin_big_FG.et"
      PrefabsToSpawn {
-      "{33CBDE73AB48172A}Prefabs/Weapons/Explosives/DemoBlock_M112/DemoBlock_M112.et"
+      "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et"
      }
     }
     ItemsInitConfigurationItem "{620F1DEB4DF7C560}" {
-     TargetStorage "Prefabs/Characters/Vests/Vest_Taktika_Pouches/Pouch_Taktika_holster.et"
+     TargetStorage "Prefabs/Characters/Vests/Vest_TV110_Pouches/Pouch_HP103_Holster_FG.et"
      PrefabsToSpawn {
       "{E998FA484B0C4BFF}Prefabs/Weapons/Handguns/Glock/Handgun_Glock17.et"
      }
@@ -95,9 +96,9 @@ SCR_ChimeraCharacter : "{DE3786C0C6C978D4}Prefabs/Characters/Factions/INDFOR/FIA
      }
     }
     ItemsInitConfigurationItem "{620F1DEB584AAE37}" {
-     TargetStorage "Prefabs/Characters/Vests/Vest_Taktika_Pouches/Pouch_Taktika_radioPouch.et"
+     TargetStorage "Prefabs/Characters/Vests/Vest_TV110_Pouches/Pouch_UP111_radioClosed_FG.et"
      PrefabsToSpawn {
-      "{2E5F2CB55FEC8B7E}Prefabs/Radios_other/PRC 163 Falcon 4 - Green_FIA.et"
+      "{FBFEA572AFE3BCA4}Prefabs/Items/Equipment/Radios/FIA_Radio_ANPRC152A_OLD.et"
      }
     }
     ItemsInitConfigurationItem "{620F325518AD2C21}" {
@@ -109,18 +110,18 @@ SCR_ChimeraCharacter : "{DE3786C0C6C978D4}Prefabs/Characters/Factions/INDFOR/FIA
     ItemsInitConfigurationItem "{620F360D04AB612C}" {
      TargetStorage "Prefabs/Characters/Vests/Vest_Taktika_Pouches/Pouch_Taktika_droppouch.et"
      PrefabsToSpawn {
-      "{33CBDE73AB48172A}Prefabs/Weapons/Explosives/DemoBlock_M112/DemoBlock_M112.et"
+      "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et"
      }
     }
-    ItemsInitConfigurationItem "{620F360D2E3F85B3}" {
-     TargetStorage "Prefabs/Characters/Vests/Vest_Taktika_Pouches/Pouch_Taktika_magpouch_pistol.et"
+    ItemsInitConfigurationItem "{624809F297A5BAF7}" {
+     TargetStorage "Prefabs/Items/Equipment/Backpacks/backpack_511_rush12/Backpack_511_rush12_MC.et"
      PrefabsToSpawn {
-      "{F20D1122BC5CD9F2}Prefabs/Weapons/Magazines/glock_magazine/Magazine_9x19_Glock_17rnd.et" "{F20D1122BC5CD9F2}Prefabs/Weapons/Magazines/glock_magazine/Magazine_9x19_Glock_17rnd.et"
+      "{B22094C2953A0799}Prefabs/Items/Equipment/Kits/RearmingKit_01/RHS_RearmingKit_01_US_dup.et" "{ACC9B43941CE5EA6}Prefabs/Weapons/Attachments/Optics/Optic_leupoldMK4/Optic_leupoldMK4.et" "{CE0AF733722B3977}Prefabs/Items/Equipment/Detonators/BlastingMachine_M34/BlastingMachine_M34_base.et" "{E83E0F1EDE4DBAFD}Prefabs/Characters/HeadGear/Hat_BallCap/variants/Hat_ballcap_TAN_MarsocSniper.et"
      }
     }
    }
   }
  }
  coords 0 0 0
- angleY -53.395
+ angleY -91
 }

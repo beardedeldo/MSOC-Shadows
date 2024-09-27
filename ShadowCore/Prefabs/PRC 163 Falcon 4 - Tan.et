@@ -1,0 +1,29 @@
+GenericEntity : "{5879D8E9C56E358D}Prefabs/Items/Core/Radio_base.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  BaseRadioComponent "{5A30BAE7673C63CA}" {
+   Transceivers {
+    RadioTransceiver "{6164D6717765F687}" {
+     ChannelFrequency 44500
+     "Min tunable frequency" 44500
+     "Max tunable frequency" 45000
+    }
+    RadioTransceiver "{6164D6717765F684}" {
+     ChannelFrequency 43500
+     "Min tunable frequency" 43500
+     "Max tunable frequency" 44000
+    }
+    RadioTransceiver "{6164D6717765F682}" {
+     ChannelFrequency 42500
+     "Min tunable frequency" 42500
+     "Max tunable frequency" 43000
+    }
+    RadioTransceiver "{6164D6717765F683}" {
+     ChannelFrequency 41500
+     "Min tunable frequency" 41500
+     "Max tunable frequency" 42000
+    }
+   }
+  }
+ }
+}

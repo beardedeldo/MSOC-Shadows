@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{DF1EC5960CC8B9FB}Prefabs/ScenarioFramework/Core/QRFDispacherAction_modern.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

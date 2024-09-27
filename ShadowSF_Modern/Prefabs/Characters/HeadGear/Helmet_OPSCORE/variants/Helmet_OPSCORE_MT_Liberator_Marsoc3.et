@@ -1,0 +1,15 @@
+GameEntity : "{97A2E60C473269E4}Prefabs/Characters/HeadGear/Helmet_OPSCORE/Helmet_OPSCORE_MT_Liberator.et" {
+ ID "50D485E1435D6C72"
+ components {
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   Slots {
+    RHS_LoadoutSlotInfo Masks {
+     Prefab "{244A6A1121439AAC}Prefabs/Characters/HeadGear/Helmet_LShZ/Balaclava_LShZ_base.et"
+    }
+    RHS_LoadoutSlotInfo NVG {
+     Prefab "{B7BA7694F821F556}Prefabs/Items/Equipment/Nightvision/PVS14/NVG_PVS14Dual.et"
+    }
+   }
+  }
+ }
+}

@@ -30,7 +30,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
         }
        }
-       coords -78.898 0.456 -147.89
+       coords -55.281 0.086 -105.485
       }
       GenericEntity Slot3 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
        components {
@@ -52,7 +52,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords -78.034 0.287 -140.82
+       coords -54.417 -0.007 -100.836
        angleY 19.21
       }
       GenericEntity SlotWaypoint12a : "{EBD91177954E8236}Prefabs/ScenarioFramework/Components/SlotWaypoint.et" {
@@ -62,7 +62,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          }
         }
        }
-       coords -80.971 0.422 -147.891
+       coords -57.353 0.172 -107.905
       }
      }
     }
@@ -83,7 +83,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
          }
         }
-        coords -83.952 0.395 -165.694
+        coords -60.34 -0.093 -124.361
        }
        SlotWaypoint13 {
         components {
@@ -92,7 +92,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
          }
         }
-        coords -229.139 -1.672 182.647
+        coords 58.934 3.652 204.374
         angleY 57.794
        }
        SlotWaypoint1 {
@@ -102,7 +102,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
          }
         }
-        coords 14.55 5.255 -324.469
+        coords -286.86 -1.032 279.071
         angleY 86.691
        }
       }
@@ -131,8 +131,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         components {
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sFactionKey "USSR"
-          m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
-          m_bRandomizePerFaction 1
+          m_sObjectToSpawn "{3F7107C165CB65F5}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/VV/RG/Atacs/Character_RHS_RF_SOF_AAT3.et"
           m_eEntityCatalogType CHARACTER
           m_aIncludedEditableEntityLabels {
            44 40 41 42 43 45 46 47 48
@@ -155,8 +154,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         components {
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sFactionKey "USSR"
-          m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
-          m_bRandomizePerFaction 1
+          m_sObjectToSpawn "{3F7107C165CB65F5}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/VV/RG/Atacs/Character_RHS_RF_SOF_AAT3.et"
           m_eEntityCatalogType CHARACTER
           m_aIncludedEditableEntityLabels {
            44 40 41 42 43 45 46 47 48
@@ -261,9 +259,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        SlotAI139 {
         components {
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-          m_sFactionKey "USSR"
-          m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
-          m_bRandomizePerFaction 1
+          m_sObjectToSpawn "{3F7107C165CB65F5}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/VV/RG/Atacs/Character_RHS_RF_SOF_AAT3.et"
           m_eEntityCatalogType CHARACTER
           m_aIncludedEditableEntityLabels {
            44 40 41 42 43 45 46 47 48
@@ -285,9 +281,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        SlotAI140 {
         components {
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
-          m_sFactionKey "USSR"
-          m_sObjectToSpawn "{ADB43E67E3766CE7}Prefabs/Characters/Factions/OPFOR/USSR_Army/Spetsnaz/Character_USSR_SF_Sharpshooter.et"
-          m_bRandomizePerFaction 1
+          m_sObjectToSpawn "{3F7107C165CB65F5}Prefabs/Characters/Factions/OPFOR/RHS_AFRF/VV/RG/Atacs/Character_RHS_RF_SOF_AAT3.et"
           m_eEntityCatalogType CHARACTER
           m_aIncludedEditableEntityLabels {
            44 40 41 42 43 45 46 47 48

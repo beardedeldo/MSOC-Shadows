@@ -43,6 +43,7 @@ SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Manage
     Description "Marine Special Operations Company - Shadows"
     m_sNameUpper "SHADOW DIVISION"
    }
+   m_bIsPlayable 1
    m_aPredefinedGroups {
     SCR_GroupPreset "{61E6FE0119B59627}" {
      m_sGroupName "Shadow Command"
@@ -114,7 +115,6 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
   SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
    m_fDOTScale 0.2
    m_fRegenScale 1.1
-   m_bPermitUnconsciousVON 0
    m_fTourniquettedLegMovementSlowdown 0.5
    m_fTourniquetStrengthMultiplier 0.9
   }
@@ -162,7 +162,7 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameM
   SCR_SaveLoadComponent "{6214DD4E582FF65E}" {
   }
   SCR_TimeAndWeatherHandlerComponent "{62110A0B384511AB}" {
-   m_iStartingHours 1
+   m_iStartingHours 22
    m_iStartingMinutes 30
    m_bRandomStartingDaytime 1
    m_bRandomStartingDaytimeRange 1

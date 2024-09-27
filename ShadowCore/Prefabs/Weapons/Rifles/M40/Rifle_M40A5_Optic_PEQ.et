@@ -1,0 +1,14 @@
+GenericEntity : "{9A2AA760B16BCDBE}Prefabs/Weapons/Rifles/M40/Rifle_M40A5.et" {
+ ID "5260C45AAAA407F4"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    AttachmentSlotComponent "{5E0E3155DB81CDD4}" {
+     AttachmentSlot InventoryStorageSlot Scope {
+      Prefab "{ACC9B43941CE5EA6}Prefabs/Weapons/Attachments/Optics/Optic_leupoldMK4/Optic_leupoldMK4.et"
+     }
+    }
+   }
+  }
+ }
+}

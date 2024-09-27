@@ -1,0 +1,14 @@
+GameEntity : "{6451FB59BAB301CA}Prefabs/Characters/HeadGear/Helmet_OPSCORE/Helmet_OPSCORE_XP_Black_PELTOR.et" {
+ ID "50D485E1435D6C72"
+ components {
+  BaseLoadoutClothComponent "{5112706CD4157AF8}" {
+   Slots {
+    RHS_LoadoutSlotInfo NVG {
+     Prefab "{B385064A383A384B}Prefabs/Items/Equipment/Nightvision/PVS14/NVG_PVS14Dual_WP.et"
+    }
+   }
+  }
+ }
+ coords 0 0 0
+ angleY 153
+}

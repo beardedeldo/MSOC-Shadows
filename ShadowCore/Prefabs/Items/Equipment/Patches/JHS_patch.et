@@ -1,0 +1,23 @@
+GameEntity : "{B41CBDEDF7B897D7}Prefabs/Items/Equipment/Patches/Patch_Base.et" {
+ ID "5DB09136945FC6DB"
+ components {
+  InventoryItemComponent "{5DB09136B1C985CE}" {
+   Attributes SCR_ItemAttributeCollection "{5DB09136B1C985C1}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{5DB09136B1C985EB}" {
+     Name "JHS"
+    }
+   }
+  }
+  MeshObject "{5DB09136B1C985B5}" {
+   Object "{C945212812FF7DEA}MSOC_Patches/Patch_mesh_original - Copy.xob"
+  }
+  BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
+   WornMaterialsOverride {
+    "{B80F7C1CC1725FC2}MSOC_Patches/Import/JHS.emat"
+   }
+   ItemMaterialsOverride {
+    "{B80F7C1CC1725FC2}MSOC_Patches/Import/JHS.emat"
+   }
+  }
+ }
+}

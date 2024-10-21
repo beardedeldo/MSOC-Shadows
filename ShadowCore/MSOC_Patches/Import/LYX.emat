@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{CA0AB90808F2A71C}MSOC_Patches/Import/LYX_patch_BCR.edds"
+ NMOMap "{F2D2029AD185F582}MSOC_Patches/Import/LYX_patch_NMO.edds"
+}

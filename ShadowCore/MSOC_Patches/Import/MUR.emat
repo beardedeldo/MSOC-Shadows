@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{854BD5FA58C00347}MSOC_Patches/Import/MUR_BCR.edds"
+ NMOMap "{BD936E6881B751D9}MSOC_Patches/Import/MUR_NMO.edds"
+}

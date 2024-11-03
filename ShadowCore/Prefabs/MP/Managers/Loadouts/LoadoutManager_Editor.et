@@ -1,14 +1,13 @@
-SCR_LoadoutManager : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {
+SCR_LoadoutManager : "{B54D08AEA74A5354}Prefabs/MP/Managers/Loadouts/LoadoutManager_Editor.et" {
  ID "56B2B47708C4F23A"
  m_aPlayerLoadouts {
   SCR_FactionPlayerLoadout "{5596D845DBEEF78C}" {
    m_sLoadoutResource "{39DE841FBF372194}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MARSOC_AR.et"
    m_sLoadoutImage "{F9177AC7F545CDD9}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MARSOC/Character_RHS_USAF_MARSOC_AR.edds"
   }
-  SCR_FactionPlayerLoadout "{62A36A836F6DB822}" {
-   m_sLoadoutName "Saved Loadout "
+  SCR_FactionPlayerLoadout "{62AF2806F2AE35E9}" {
    m_sLoadoutResource "{39DE841FBF372194}Prefabs/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_MARSOC/Character_RHS_USMC_MARSOC_AR.et"
-   m_sLoadoutImage "{F9177AC7F545CDD9}UI/Textures/EditorPreviews/Characters/Factions/BLUFOR/RHS_USAF/RHS_USAF_USMC_MARSOC/Character_RHS_USAF_MARSOC_AR.edds"
+   m_sLoadoutImage "{E3C4C5D85BEC9A92}UI/Textures/Editor/ContentBrowser/RHS_USAF_USMC_MARSOC_Icon.edds"
    m_sAffiliatedFaction "US"
   }
  }

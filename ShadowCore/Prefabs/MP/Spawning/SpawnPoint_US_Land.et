@@ -1,0 +1,6 @@
+SCR_SpawnPoint : "{B28211A4160A6B12}Prefabs/MP/Spawning/SpawnPoint_US_Air.et" {
+ ID "544EB04DCBFBD126"
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+  Name "Land Insertion"
+ }
+}

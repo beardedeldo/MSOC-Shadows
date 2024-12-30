@@ -15,7 +15,7 @@ GenericEntity : "{5879D8E9C56E358E}Prefabs/Items/Equipment/Radios/Radio_Deployab
      Icon "{BF7C73DE63B1FFB7}UI/Textures/VON/R148-100px_UI.edds"
     }
     ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
-     Weight 1.3
+     Weight 0.3
      ItemDimensions 10 10 10
      ItemVolume 300
     }
@@ -33,11 +33,8 @@ GenericEntity : "{5879D8E9C56E358E}Prefabs/Items/Equipment/Radios/Radio_Deployab
     m_eQuickSlotSize SLOT_3x3
    }
   }
-  SCR_RadioComponent "{5A30BAE7673C63D4}" {
-   Enabled 0
-  }
   SCR_RestrictedDeployableSpawnPointComponent "{5EA4A89F0D06E1A8}" {
-   m_sReplacementPrefab "{686C2455111E6331}Prefabs/Systems/DeployableRadios/DeployableItemRadioReplacemenUS_ORP.et"
+   m_sReplacementPrefab "{686C2455111E6330}Prefabs/Systems/DeployableRadios/DeployableItemRadioReplacemenUS_ORP.et"
    m_FactionKey "US"
    m_iMaxSpawnPointsPerGroup 4
    m_eRespawnBudgetType NONE

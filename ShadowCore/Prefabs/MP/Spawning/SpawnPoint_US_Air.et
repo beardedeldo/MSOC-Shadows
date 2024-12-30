@@ -1,0 +1,6 @@
+SCR_SpawnPoint : "{4A21B7AFFFBC616B}Prefabs/MP/Spawning/SpawnPoint_US_HALO.et" {
+ ID "544EB04DCBFBD126"
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+  Name "Air Insertion"
+ }
+}

@@ -1,0 +1,12 @@
+Vehicle : "{E2E6D76FF421A10D}Prefabs/Vehicles/Zodiac/Zodiac_Base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  AICarMovementComponent "{5A3EFB66475D9F87}" {
+   "Max Speed" 40
+   CruiseVehicleSpeedKmh 35
+  }
+  SCR_VehicleDustPerWheel "{5476BC43E4910F64}" {
+   m_fDustTopSpeed 50
+  }
+ }
+}

@@ -1,0 +1,8 @@
+GenericEntity : "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et" {
+ ID "56F2C6D6F7C6DAFA"
+ components {
+  SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+   m_eArsenalSaveType NO_RESTRICTIONS
+  }
+ }
+}

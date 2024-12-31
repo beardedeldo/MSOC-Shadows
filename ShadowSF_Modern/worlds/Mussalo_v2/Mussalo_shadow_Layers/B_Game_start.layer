@@ -1466,9 +1466,9 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      coords 62.888 17.311 95.058
      angleY 33.487
      {
-      SCR_SpawnPoint US_spawn_main : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et" {
-       coords 20.101 -15.564 -111.337
-       angleY 84.451
+      SCR_SpawnPoint US_spawn_main2 : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et" {
+       coords -5217.472 -24.057 3416.469
+       angleY 50.964
        m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
         Name "Shadow Division MOB"
        }
@@ -1578,33 +1578,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
       }
      }
     }
-   }
-  }
- }
- SH_MOB_wrecks {
-  components {
-   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-    Enabled 0
-   }
-  }
-  coords 2935.297 7.399 2115.857
-  {
-   GenericEntity : "{520CC573CA9FBC4F}Prefabs/Structures/Wreck/uh60.et" {
-    coords 62.152 -8.652 179.926
-    angleY -23.027
-   }
-   GenericEntity : "{54425F7795658997}Prefabs/Structures/Wreck/ch47.et" {
-    coords -41.039 -7.785 281.602
-    angleY 0
-   }
-   GenericEntity : "{623390265AA7DA97}Prefabs/Structures/Wreck/mq9.et" {
-    coords 9.461 -7.322 -340.772
-    angleY 0
-    angleZ 10.226
-   }
-   SCR_DestructibleBuildingEntity : "{8D35B3D72731D649}Prefabs/Structures/Wreck/c130.et" {
-    coords 137.724 -12.384 465.117
-    angleY -144.736
    }
   }
  }

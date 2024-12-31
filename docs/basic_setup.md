@@ -62,6 +62,14 @@ For detailed visual guidance, check out these excellent walkthrough videos by Bl
    - Change the `SpawnLogic` by selecting the returning arrow to clear the default.
    - Type and find `SCR_MenuSpawnLogic` to set the new spawn logic.
 
+- If you get the below error during launch, make sure the topo.edds and map.edds are added under `Map Entity`. 
+```
+Reason: NULL pointer to instance. Variable '#return'
+
+Class:      'SCR_MapEntity'
+Entity name:'MapEntity' id:2305843009213693953
+```
+
 > This guide should now cover all necessary steps for setting up and creating a new project.
 
 ## Overriding or Duplicating Items

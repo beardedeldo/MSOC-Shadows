@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{FF27B5E7B51F45F0}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/ArsenalBox_US_NoAffiliation.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

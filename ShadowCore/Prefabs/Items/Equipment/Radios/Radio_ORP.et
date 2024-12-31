@@ -1,0 +1,124 @@
+GenericEntity : "{5879D8E9C56E358E}Prefabs/Items/Equipment/Radios/Radio_Deployable_Base.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  BaseRadioComponent "{5A30BAE7673C63CA}" {
+   Enabled 0
+  }
+  MeshObject "{5A30BAE7673C63D1}" {
+   Object "{A57ED86C0EB9AF93}Assets/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01_medium_packaged.xob"
+  }
+  SCR_DeployableInventoryItemInventoryComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName UIInfo "{5222EB4D07D865FA}" {
+     Name "ORP, Deployable"
+     Description "Deployable ORP"
+     Icon "{BF7C73DE63B1FFB7}UI/Textures/VON/R148-100px_UI.edds"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.3
+     ItemDimensions 10 10 10
+     ItemVolume 300
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{5EA4A89F0D06E1A6}" {
+      CameraPreset Front
+      CameraOrbitAngles -35.26 135 0
+      CameraDistanceToItem 2
+      CameraOffset 0 0 0
+      PreviewModel "{A57ED86C0EB9AF93}Assets/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01_medium_packaged.xob"
+     }
+    }
+    CommonItemType "NONE"
+    m_Size SLOT_3x3
+    m_eQuickSlotSize SLOT_3x3
+   }
+  }
+  SCR_RestrictedDeployableSpawnPointComponent "{5EA4A89F0D06E1A8}" {
+   m_sReplacementPrefab "{686C2455111E6330}Prefabs/Systems/DeployableRadios/DeployableItemRadioReplacemenUS_ORP.et"
+   m_FactionKey "US"
+   m_iMaxSpawnPointsPerGroup 4
+   m_eRespawnBudgetType NONE
+   m_fSuppliesValue 0
+   m_iMaxRespawns 1000
+   m_bAllowAllGroupsToSpawn 1
+   m_bAllowCustomLoadouts 1
+   m_bQueryCharacters 1
+   m_bIgnoreEnemyBases 1
+   m_bIgnoreEnemySpawnPoints 1
+   m_bIgnoreEnemyCharacters 1
+   m_bUnlockActionsForEnemyFactions 1
+   m_bUnlockActionsForAllGroups 1
+  }
+  BaseLoadoutClothComponent "{5EA4A89F0D06E1DE}" {
+   AreaType LoadoutAreaType "{5EA4A89F0D06E1DA}" {
+   }
+   WornModel "{A57ED86C0EB9AF93}Assets/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01_medium_packaged.xob"
+   ItemModel "{A57ED86C0EB9AF93}Assets/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01_medium_packaged.xob"
+   VisibleInVehicle 1
+   DeflatedModel "{A57ED86C0EB9AF93}Assets/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01_medium_packaged.xob"
+   AreaTypeWhenModelChange {
+    LoadoutAreaType "{5EA4A89F0D06E1C6}" {
+    }
+   }
+   BlockedSlots {
+    LoadoutArmoredVestSlotArea "{62A2FE377D8CB26C}" {
+    }
+    LoadoutBinocularsArea "{62A2FE377D8CB268}" {
+    }
+    LoadoutBootsArea "{62A2FE377D8CB26A}" {
+    }
+    LoadoutWatchArea "{62A2FE377D8B4D29}" {
+    }
+    LoadoutBootsArea "{62A2FE377D8B4D17}" {
+    }
+    LoadoutCoverArea "{62A2FE377D8B4D16}" {
+    }
+    LoadoutGooglesArea "{62A2FE377D8B09A1}" {
+    }
+    LoadoutHandwearSlotArea "{62A2FE377D8B09A2}" {
+    }
+    LoadoutHeadCoverArea "{62A2FE377D8B09A3}" {
+    }
+    LoadoutJacketArea "{62A2FE377D8B09A5}" {
+    }
+    LoadoutPantsArea "{62A2FE377D8B09A6}" {
+    }
+    LoadoutSalineBagArea "{62A2FE377D8B09A7}" {
+    }
+    LoadoutVestArea "{62A2FE377D8B09A8}" {
+    }
+    LoadoutWatchArea "{62A2FE377D8B09AF}" {
+    }
+   }
+  }
+  ActionsManagerComponent "{508AB5952B584B2E}" {
+   additionalActions {
+    SCR_DeployableInventoryItemPickUpAction "{51EC842E3A187379}" {
+     UIInfo UIInfo "{51EC842E413D3E1D}" {
+      Name "Pickup ORP"
+     }
+    }
+    SCR_DeployableInventoryItemEquipClothAction "{553AEBE8F3B60801}" {
+     ParentContextList {
+     }
+     VisibilityRange 0
+     m_sEquipActionString ""
+     m_sSwapActionString ""
+     m_sReplaceActionString ""
+    }
+    SCR_DeployInventoryItemRestrictedAction "{5EA4A89F0D06E1CB}" {
+     UIInfo UIInfo "{5EA4A89F0D06E1F5}" {
+      Name "Deploy Objective Rally Point"
+     }
+    }
+    SCR_DismantleInventoryItemBaseAction "{5EA4A89F0D06E1F7}" {
+     UIInfo UIInfo "{5EA4A89F0D06E1F0}" {
+      Name "Dismantle ORP"
+     }
+    }
+   }
+  }
+ }
+ coords 0 0 0
+ angleX -0.013
+}

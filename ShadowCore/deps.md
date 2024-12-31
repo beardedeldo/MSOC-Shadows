@@ -1,8 +1,11 @@
 - Arma Reforger
-- PRC 163 Falcon 4
-- ParachuteTestLol
 - Game Master FX
 - Ace Core 
 - Ace Medical 
-- CRX Enfusion AI
-- Sikorsky MH60 DAP Project 
+- Ace Carry
+- RHS (for patches)
+
+Added 12/28 
+- DarkGru Boats
+- Aircraft and Boats byHeine
+

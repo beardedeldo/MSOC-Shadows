@@ -1,0 +1,9 @@
+Vehicle : "{22A6A34C935BA0B1}Prefabs/Vehicles/Dauntless 34/Dauntless_Base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  AICarMovementComponent "{5A3EFB66475D9F87}" {
+   "Max Speed" 40
+   CruiseVehicleSpeedKmh 35
+  }
+ }
+}

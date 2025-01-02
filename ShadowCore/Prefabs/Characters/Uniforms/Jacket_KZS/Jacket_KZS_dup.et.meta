@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{9F7E98C8D0C18797}Prefabs/Characters/Uniforms/Jacket_KZS/Jacket_KZS_dup.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

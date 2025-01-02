@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{6E928D5851316A2A}ArsenalActionsManagerComponent.ct"
+ Configurations {
+  ComponentTemplateResourceClass PC {
+  }
+  ComponentTemplateResourceClass XBOX_ONE : PC {
+  }
+  ComponentTemplateResourceClass XBOX_SERIES : PC {
+  }
+  ComponentTemplateResourceClass PS4 : PC {
+  }
+  ComponentTemplateResourceClass PS5 : PC {
+  }
+  ComponentTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

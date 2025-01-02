@@ -19,7 +19,6 @@ GenericEntity Area1 : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Ar
          }
         }
        }
-       m_sObjectToSpawn "{CB58D90EA14430AD}Prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et"
       }
      }
      coords 0 0 0

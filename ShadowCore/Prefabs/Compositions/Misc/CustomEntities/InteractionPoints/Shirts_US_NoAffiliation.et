@@ -1,0 +1,63 @@
+GenericEntity : "{A28E5D231A74D95D}Prefabs/Props/Military/Compositions/US/ArsenalBox_US_Equipment.et" {
+ ID "56F2C6D6F7C6DAFA"
+ components {
+  MeshObject "{56F2C6D1431AD85A}" {
+   Object "{1E1D0BB5A92A3E1A}Assets/Characters/Uniforms/Crye_Combat_Shirt/Crye_g3_Shirt_Rolled_item.xob"
+   Materials {
+    MaterialAssignClass "{644326564AC59B0E}" {
+     SourceMaterial "Crye_Shirt_rolled"
+     AssignedMaterial "{ED2FDCD5A9B0B95B}Assets/Characters/Uniforms/Crye_Combat_Shirt/Data/Crye_Shirt_rolled_M81.emat"
+    }
+   }
+  }
+  SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+   m_eSupportedArsenalItemTypes TORSO
+   m_eSupportedArsenalItemModes DEFAULT
+   m_eEditableAttributeGroups OUTFIT
+   m_eArsenalSaveType NO_RESTRICTIONS
+  }
+  SCR_ResupplySupportStationComponent "{5E2CE1BAE058CADC}" {
+   m_sOnUseSoundEffectEventName "SOUND_HEAL_DONE"
+  }
+  SCR_SoundDataComponent "{5C533B76540FC6EE}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{5C533B7655157AD3}" {
+     m_sSoundProject "{7BACA57AF41F033D}Sounds/SupportStations/SupportStations_Character.acp"
+     m_sSoundEventName "SOUND_HEAL_DONE"
+    }
+    SCR_AudioSourceConfiguration "{5C533B76564DF042}" {
+     m_sSoundProject "{7BACA57AF41F033D}Sounds/SupportStations/SupportStations_Character.acp"
+     m_sSoundEventName "SOUND_HEAL_PARTIAL"
+    }
+   }
+  }
+  UniversalInventoryStorageComponent "{56F2C6D15FE6C4CE}" {
+   Attributes SCR_ItemAttributeCollection "{56F2C6D6A36680FB}" {
+    ItemDisplayName SCR_InventoryUIInfo "{56F2C6D6A229E091}" {
+     Name "Combat Shirts"
+     Description "Choose a combat shirt"
+    }
+   }
+  }
+  ActionsManagerComponent "{56F2C6D1431ADB12}" {
+   ActionContexts {
+    UserActionContext "{56F2C6D1431ADB6E}" {
+     Position PointInfo "{56F2C6D1431ADB9D}" {
+      Offset 0 0 0
+     }
+    }
+   }
+   additionalActions {
+    SCR_OpenStorageAction "{58EE8EA3E900BE40}" {
+     UIInfo UIInfo "{58EE8EA3E5E7D64D}" {
+      Name "Combat Shirts"
+     }
+    }
+   }
+  }
+ }
+ coords 0 0 0
+ angleX -68.154
+ angleY -55
+ angleZ 16.056
+}

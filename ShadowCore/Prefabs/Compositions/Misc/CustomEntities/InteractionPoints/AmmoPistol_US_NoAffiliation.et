@@ -1,0 +1,41 @@
+GenericEntity : "{A28E5D231A74D95D}Prefabs/Props/Military/Compositions/US/ArsenalBox_US_Equipment.et" {
+ ID "56F2C6D6F7C6DAFA"
+ components {
+  MeshObject "{56F2C6D1431AD85A}" {
+   Object "{7B3C031A24D06FC2}Assets/Weapons/Ammo/Bullets/9x18/Cartridge_9x18.xob"
+  }
+  SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+   m_eSupportedArsenalItemTypes PISTOL
+   m_eSupportedArsenalItemModes 18
+   m_eEditableAttributeGroups AMMUNITION_MODE
+   m_eArsenalSaveType NO_RESTRICTIONS
+  }
+  UniversalInventoryStorageComponent "{56F2C6D15FE6C4CE}" {
+   Attributes SCR_ItemAttributeCollection "{56F2C6D6A36680FB}" {
+    ItemDisplayName SCR_InventoryUIInfo "{56F2C6D6A229E091}" {
+     Name "Ammo 9x19"
+     Description "Grab some ammo!"
+    }
+   }
+  }
+  ActionsManagerComponent "{56F2C6D1431ADB12}" {
+   ActionContexts {
+    UserActionContext "{56F2C6D1431ADB6E}" {
+     Position PointInfo "{56F2C6D1431ADB9D}" {
+      Offset 0 0 0
+     }
+    }
+   }
+   additionalActions {
+    SCR_OpenStorageAction "{58EE8EA3E900BE40}" {
+     UIInfo UIInfo "{58EE8EA3E5E7D64D}" {
+      Name "Rifles"
+     }
+     ActionTitle "Ammo 9x19"
+    }
+   }
+  }
+ }
+ coords 0 0 0
+ angleY -127.987
+}

@@ -1,0 +1,4 @@
+MatPBRBasic : "{4AB1696B813D4555}MSOC_Patches/Import/A3_patch.emat" {
+ BCRMap "{E0F421307425C7BD}MSOC_Patches/Import/B6_BCR.edds"
+ NMOMap "{D82C9AA2AD529523}MSOC_Patches/Import/B6_NMO.edds"
+}

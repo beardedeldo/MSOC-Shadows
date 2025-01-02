@@ -1,0 +1,42 @@
+ActionsManagerComponent {
+ Enabled 1
+ ActionContexts {
+  UserActionContext "{644326731F9F30EF}" {
+   ContextName "default"
+   Position PointInfo "{644326731F9F30D0}" {
+    Offset 0 0.464 0
+   }
+   Radius 1.5
+  }
+ }
+ additionalActions {
+  SCR_OpenStorageAction "{644326731F9F30DC}" {
+   ParentContextList {
+    "default"
+   }
+   UIInfo UIInfo "{644326731F9F30DD}" {
+    Name "#AR-Inventory_OpenArsenalStorage"
+   }
+  }
+  SCR_SaveArsenalLoadout "{644326731F9F30DF}" {
+   ParentContextList {
+    "default"
+   }
+   UIInfo UIInfo "{644326731F9F30D8}" {
+    Name "#AR-Loadout_Action_SaveLoadout"
+   }
+   Duration 1.5
+   "Sort Priority" 10
+  }
+  SCR_ResupplySelfSupportStationAction "{5E22CEC8BA1D1393}" : "{11F44ADB0B72715F}Configs/Actions/SupportStationActions/Resupply/ArsenalBox/ResupplyAction_HeldWeapon.conf" {
+  }
+  SCR_ResupplySelfSupportStationAction "{5E22CEC8B8EFB9D4}" : "{6CA483DDD400F6FA}Configs/Actions/SupportStationActions/Resupply/ArsenalBox/ResupplyAction_HeldUnderBarrel.conf" {
+  }
+  SCR_ResupplySelfSupportStationAction "{5E22CEC8A6B3812D}" : "{539BA03C501F3C63}Configs/Actions/SupportStationActions/Resupply/ArsenalBox/ResupplyAction_Grenade.conf" {
+  }
+  SCR_ResupplySelfSupportStationAction "{5E22CEC8A5C1BB2C}" : "{E976EE8F9F17FF15}Configs/Actions/SupportStationActions/Resupply/ArsenalBox/ResupplyAction_Morphine.conf" {
+  }
+  SCR_ResupplySelfSupportStationAction "{5E22CEC8A4F18CD6}" : "{367047A0B7C6A2B1}Configs/Actions/SupportStationActions/Resupply/ArsenalBox/ResupplyAction_Bandage.conf" {
+  }
+ }
+}

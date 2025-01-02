@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{529EE66FF5CC20B2}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Shirts_US_Equipment_NoAffiliation.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,36 @@
+SCR_DestructibleEntity : "{8E065B1C87FAF088}Prefabs/Structures/Walls/Net/NetFence_02/NetFence_02_base.et" {
+ ID "51E2F0F09703F07B"
+ components {
+  MeshObject "{56DE7C8DCD0F4E0A}" {
+   Object "{1DE39DCB8BAC9C55}Assets/Structures/Walls/Net/NetFence_02_8m.xob"
+  }
+  NavmeshCustomLinkComponent "{5088C72B466E73FA}" {
+   Enabled 0
+  }
+  RigidBody "{56DE7C8DDE282E03}" {
+   ModelGeometry 1
+   Static 1
+  }
+ }
+ coords 3004.739 20.032 2756.801
+ placement slopelandcontact
+ MaxHealth 3000
+ FirstDestructionPhase SCR_BaseDestructionPhase "{5A18F297698A2425}" {
+  m_sPhaseModel "{1DE39DCB8BAC9C55}Assets/Structures/Walls/Net/NetFence_02_8m.xob"
+  m_aPhaseDestroySpawnObjects {
+   SCR_DebrisSpawnable "{5AC90B39CCEE849A}" {
+    m_ModelPrefabs {
+     "{B11E8C59502202F3}Assets/Structures/Walls/Net/Dst/NetFence_02_8m_dst_03.xob" "{5F0A5D48B967DC13}Assets/Structures/Walls/Net/Dst/NetFence_02_8m_dst_01.xob"
+    }
+   }
+   SCR_DebrisSpawnable "{5AC90B39CAC23456}" {
+    m_ModelPrefabs {
+     "{C1D31E80C2065740}Assets/Structures/Walls/Net/Dst/NetFence_02_8m_dst_05.xob" "{B6D9760836A4B830}Assets/Structures/Walls/Net/Dst/NetFence_02_8m_dst_04.xob" "{C614E4D1A480ED83}Assets/Structures/Walls/Net/Dst/NetFence_02_8m_dst_02.xob"
+    }
+   }
+  }
+ }
+ LastDestructionPhase SCR_BaseDestructionPhase "{5A18F297606BF928}" {
+  m_sPhaseModel "{280035C04DC53363}Assets/Structures/Walls/Net/Dst/NetFence_02_8m_dst_00.xob"
+ }
+}

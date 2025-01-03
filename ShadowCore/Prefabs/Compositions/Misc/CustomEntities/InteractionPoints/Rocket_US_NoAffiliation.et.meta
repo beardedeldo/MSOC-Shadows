@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{F4D9B1A0EFFF13FB}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Rocket_US_NoAffiliation.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

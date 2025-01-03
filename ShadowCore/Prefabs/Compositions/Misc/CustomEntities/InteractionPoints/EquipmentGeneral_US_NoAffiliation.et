@@ -2,19 +2,19 @@ GenericEntity : "{A28E5D231A74D95D}Prefabs/Props/Military/Compositions/US/Arsena
  ID "56F2C6D6F7C6DAFA"
  components {
   MeshObject "{56F2C6D1431AD85A}" {
-   Object "{14E6A7DD36C9E6ED}Assets/Weapons/Rifles/m40a5/rhs_m40a5.xob"
+   Object "{5C84133B0B575862}Assets/Items/Equipment/NVG/pvs14/RHS_LG_DUAL_PVS.xob"
   }
   SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
-   m_eSupportedArsenalItemTypes RIFLE
-   m_eSupportedArsenalItemModes 6
-   m_eEditableAttributeGroups WEAPONS
+   m_eSupportedArsenalItemTypes 589824
+   m_eSupportedArsenalItemModes DEFAULT
+   m_eEditableAttributeGroups OUTFIT
    m_eArsenalSaveType NO_RESTRICTIONS
   }
   UniversalInventoryStorageComponent "{56F2C6D15FE6C4CE}" {
    Attributes SCR_ItemAttributeCollection "{56F2C6D6A36680FB}" {
     ItemDisplayName SCR_InventoryUIInfo "{56F2C6D6A229E091}" {
-     Name "Sniper Rifles"
-     Description "Choose a Sniper rifle. "
+     Name "Additional Equipment"
+     Description "Choose a medical, patches & helmet attachments. "
     }
    }
   }
@@ -29,7 +29,7 @@ GenericEntity : "{A28E5D231A74D95D}Prefabs/Props/Military/Compositions/US/Arsena
    additionalActions {
     SCR_OpenStorageAction "{58EE8EA3E900BE40}" {
      UIInfo UIInfo "{58EE8EA3E5E7D64D}" {
-      Name "Sniper Rifles"
+      Name "Additional Equipment"
      }
     }
    }

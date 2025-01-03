@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{09A16BC5B7184964}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Rocket_Ammo_US_NoAffiliation.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

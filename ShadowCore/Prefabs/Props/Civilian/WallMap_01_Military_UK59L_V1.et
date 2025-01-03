@@ -1,0 +1,13 @@
+GenericEntity : "{DCBC472CDA3EA9B2}Prefabs/Props/Civilian/WallMap_01.et" {
+ ID "527C88289D9C54C0"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Materials {
+    MaterialAssignClass "{6446D1E4F5150BA8}" {
+     SourceMaterial "Map_01_Map"
+     AssignedMaterial "{AF0E53C1F4ECA054}Assets/Props/Commercial/Posters/Data/Poster_weapon_UK59L.emat"
+    }
+   }
+  }
+ }
+}

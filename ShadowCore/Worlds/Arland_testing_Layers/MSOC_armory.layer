@@ -1,23 +1,3 @@
-$grp GenericEntity : "{8435F7561C0FBB44}Prefabs/Items/Medicine/SalineBag_01/SalineBag_01_base.et" {
- {
-  components {
-   ActionsManagerComponent "{508AB5952B584B2E}" {
-    Enabled 0
-   }
-  }
-  coords 1354.994 40.003 2234.679
-  angleY -23.729
- }
- {
-  components {
-   ActionsManagerComponent "{508AB5952B584B2E}" {
-    Enabled 0
-   }
-  }
-  coords 1354.855 40.003 2234.62
-  angleY -23.729
- }
-}
 GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/CargoContainer_01/CargoContainer_01_40ft_red.et" {
  coords 1360.619 38.611 2234.958
  angleY 67.5
@@ -39,7 +19,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -2.599 1.393 4.384
+   coords -2.635 1.396 4.647
    angleX 87.465
    angleY 53.017
    angleZ -93.838
@@ -107,7 +87,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -2.862 1.405 4.892
+   coords -2.898 1.408 5.155
    angleX 0.075
    angleY 112.5
    angleZ -180
@@ -136,11 +116,11 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
    angleY -90.912
   }
   GenericEntity : "{203E1A4BC6BC2BAB}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/EquipmentGeneral_US_NoAffiliation.et" {
-   coords -2.902 1.494 4.494
+   coords -2.938 1.497 4.757
    angleY 158.938
   }
   GenericEntity : "{238A10113E311A73}Prefabs/Props/Fabric/RedCrossCloth/RedCrossClothTemper_01_big_front.et" {
-   coords 0.079 -0.921 -5.549
+   coords 0.079 -1.008 -5.549
    angleY -90.832
   }
   GenericEntity : "{23D34FB66BBC8BEE}Prefabs/Weapons/Attachments/Bipods/harris_bipod/rhs_lt706_harris.et" {
@@ -164,7 +144,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      }
     }
    }
-   coords -1.257 1.9 -4.9
+   coords -1.255 1.751 -4.902
    angleX -0.779
    angleY -90.984
    angleZ 90.799
@@ -175,7 +155,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -2.578 1.414 4.667
+   coords -2.614 1.417 4.93
    angleX -17.838
    angleY 162.484
    angleZ 123.452
@@ -216,7 +196,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
    angleY -7.109
   }
   GenericEntity : "{322F588A5756DD53}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/EquipmentBoxStack_01_V3_base.et" {
-   coords -1.737 0.389 4.899
+   coords -1.769 0.389 5.129
    angleY -88.937
   }
   $grp GenericEntity : "{3238FC0BDB67AA78}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01_base.et" {
@@ -294,10 +274,16 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -3.042 1.42 5.164
+   coords -3.078 1.423 5.427
    angleX -4.337
    angleY 172.828
    angleZ -88.59
+   {
+    LightEntity {
+     ID "5D0CC0E56B2DFA78"
+     coords -0.001 0.197 0.047
+    }
+   }
   }
   GenericEntity : "{3A4E2F9091E70EC7}Prefabs/Weapons/Attachments/Optics/infratech1tws/Optic_Infratech1tws.et" {
    components {
@@ -311,8 +297,8 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
    angleZ 0.177
   }
   GenericEntity : "{3D1D82C62D2ECC0D}Prefabs/Props/Military/Posters/Poster_UncleSam_01.et" {
-   coords -1.261 2.084 5.073
-   angleY -87.931
+   coords -1.335 1.935 4.748
+   angleY -92.697
   }
   GenericEntity : "{3D9AD4314FE34F5B}Prefabs/Weapons/Magazines/Box_762x51_M60_500rnd_Ball.et" {
    components {
@@ -360,7 +346,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -2.753 1.39 4.447
+   coords -2.789 1.393 4.71
    angleX 89.32
    angleY -67.5
   }
@@ -373,6 +359,20 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
    coords -1.902 1.456 -3.519
    angleY -91.453
   }
+  $grp GameEntity : "{50E6A3845C9F20FD}Prefabs/Props/Military/Camps/LanternMilitary_US_01.et" {
+   {
+    coords -1.579 1.766 5.086
+    angleY -67.5
+   }
+   {
+    coords -1.662 0.389 -4.987
+    angleY -67.5
+   }
+   {
+    coords -1.41 1.392 -4.999
+    angleY -135
+   }
+  }
   GenericEntity : "{529EE66FF5CC20B2}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Shirts_US_NoAffiliation.et" {
    coords -1.496 2 3.271
    angleX -85.675
@@ -380,7 +380,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
    angleZ -106.828
   }
   GenericEntity : "{53852DF77C7C0552}Prefabs/Items/Equipment/Accessories/L4G24_EmptyNVGMount/L4G24_EmptyNVGMount_Tan_Model.et" {
-   coords -2.608 1.405 4.544
+   coords -2.643 1.408 4.807
    angleX 61.309
    angleY -67.5
   }
@@ -390,7 +390,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -2.511 1.403 4.846
+   coords -2.547 1.406 5.109
    angleX -24.506
    angleY 112.5
    angleZ -180
@@ -410,7 +410,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -2.489 1.392 4.386
+   coords -2.525 1.395 4.649
    angleX 83.931
    angleY 112.5
    angleZ -180
@@ -430,7 +430,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -1.825 1.767 4.946
+   coords -1.857 1.767 5.176
    angleY 172.183
   }
   $grp GameEntity : "{618BF6A92A1C0B59}Prefabs/Items/Equipment/Patches/Patch_USMC_MSOB.et" {
@@ -463,7 +463,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -2.904 1.392 4.665
+   coords -2.939 1.395 4.928
    angleY -67.5
   }
   GenericEntity : "{61D4F80E49BF9B12}Prefabs/Items/Equipment/Compass/Compass_SY183.et" {
@@ -472,7 +472,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -2.896 1.392 4.757
+   coords -2.932 1.395 5.02
    angleY -67.5
   }
   GameEntity : "{643AB339663E92F7}Prefabs/Items/Equipment/Nightvision/MS2000/Marker_MS2000.et" {
@@ -481,7 +481,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -2.355 1.41 4.381
+   coords -2.391 1.413 4.644
    angleX 89.114
    angleY 112.5
    angleZ -156.219
@@ -509,7 +509,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -2.718 1.391 4.362
+   coords -2.754 1.394 4.625
    angleX 88.346
    angleY -67.5
    angleZ -68.033
@@ -566,7 +566,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -2.764 1.394 4.703
+   coords -2.8 1.397 4.966
    angleY -67.5
    angleZ -72.579
   }
@@ -616,6 +616,26 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
     }
     coords -1.914 1.392 -1.396
     angleY 176.695
+   }
+  }
+  $grp GenericEntity : "{8435F7561C0FBB44}Prefabs/Items/Medicine/SalineBag_01/SalineBag_01_base.et" {
+   {
+    components {
+     ActionsManagerComponent "{508AB5952B584B2E}" {
+      Enabled 0
+     }
+    }
+    coords -1.895 1.392 -5.304
+    angleY -91.229
+   }
+   {
+    components {
+     ActionsManagerComponent "{508AB5952B584B2E}" {
+      Enabled 0
+     }
+    }
+    coords -1.894 1.392 -5.455
+    angleY -91.229
    }
   }
   GameEntity : "{852FB88E8AD446C8}Prefabs/Weapons/Attachments/Underbarrel/UGL_RHS_M203_NoSight.et" {
@@ -677,7 +697,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
     angleY 174.897
    }
    {
-    coords -2.634 0.389 4.858
+    coords -2.666 0.389 5.088
     angleY 178.214
    }
   }
@@ -766,7 +786,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -2.304 1.392 4.659
+   coords -2.34 1.395 4.922
    angleY -67.5
   }
   GameEntity : "{9C030889E9A05770}Prefabs/Characters/Eyewear/npp_strelok/Eyewear_npp_strelok.et" {
@@ -775,7 +795,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -1.632 1.457 4.461
+   coords -2.111 1.469 4.975
    angleY -139.037
   }
   TracerProjectile : "{9CCBDD2ACB73FFA9}Prefabs/Weapons/Ammo/Ammo_762x51_Tracer_M62.et" {
@@ -875,6 +895,60 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
    angleX 2.297
    angleY -178.903
   }
+  $grp GameEntity : "{A76E82E2A746C3D3}Prefabs/Structures/Infrastructure/Lamps/LampStreet_E_01/LightPrefabs/LampStreet_E_01_glass.et" {
+   {
+    coords -1.03 2.314 3.092
+    angleY -91.421
+   }
+   {
+    coords -1.104 2.31 2.016
+    angleY -91.421
+   }
+   {
+    coords -1.103 2.308 1.044
+    angleY -91.421
+   }
+   {
+    coords -1.084 2.308 0.185
+    angleY -91.421
+   }
+   {
+    coords -1.045 2.322 -0.662
+    angleY -91.421
+   }
+   {
+    coords -1.017 2.326 -1.564
+    angleY -91.421
+   }
+   {
+    coords -1.016 2.319 -2.436
+    angleY -91.421
+   }
+   {
+    coords -1.027 2.317 -3.318
+    angleY -91.421
+   }
+   {
+    coords -1.048 2.324 -4.708
+    angleY -91.421
+   }
+   {
+    coords -1.082 2.315 4.742
+    angleY -96.204
+   }
+   {
+    coords -1.029 2.315 -4.005
+    angleY -91.421
+   }
+   {
+    coords -1.022 2.318 -5.491
+    angleY -178.471
+   }
+   {
+    coords -1.075 2.32 3.92
+    angleY 179
+   }
+  }
   GenericEntity : "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" {
    components {
     ActionsManagerComponent "{508AB5952B584B2E}" {
@@ -938,7 +1012,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -2.336 1.391 4.518
+   coords -2.372 1.394 4.781
    angleY -67.5
   }
   GameEntity : "{B355913289C6C38D}Prefabs/Items/Equipment/Accessories/L4G24_EmptyNVGMount/L4G24_EmptyMount_Base.et" {
@@ -947,12 +1021,12 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -2.485 1.409 4.468
+   coords -2.52 1.412 4.731
    angleX 68.657
    angleY -94.212
   }
   GenericEntity : "{B4B85095119382ED}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Helmets_US_NoAffiliation.et" {
-   coords -1.594 0.235 4.39
+   coords -1.616 -0.076 4.253
    angleX 10.761
    angleY -144.509
    angleZ 9.97
@@ -984,7 +1058,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
    angleY -7.52
   }
   GenericEntity : "{C84DF17F96616C76}Prefabs/Props/Military/Manuals/Manual_US_01.et" {
-   coords -2.456 1.392 5.073
+   coords -2.492 1.395 5.336
    angleY -159.252
   }
   GenericEntity : "{CA94242C4ECEBA67}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/GunAttachments_US_NoAffiliation.et" {
@@ -993,7 +1067,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
    angleZ 6.773
   }
   GenericEntity : "{CE84E390AD194DCA}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Vests_US_NoAffiliation.et" {
-   coords -1.497 1.933 2.392
+   coords -1.549 1.98 4.038
    angleX -86.438
    angleY -64.275
    angleZ -27.565
@@ -1016,7 +1090,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -2.611 1.41 4.712
+   coords -2.647 1.413 4.975
    angleX 84.36
    angleY 95.8
    angleZ -72.512
@@ -1065,7 +1139,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -2.668 1.393 4.45
+   coords -2.704 1.396 4.713
    angleX 88.794
    angleY 112.5
    angleZ -180
@@ -1135,7 +1209,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
    angleY -2.919
   }
   GenericEntity : "{F34FC18258C5AD27}Prefabs/Props/Civilian/TablePhotoFrame_01/TablePhotoFrame_01_horizontal.et" {
-   coords -1.962 1.448 4.551
+   coords -1.971 1.451 4.77
    angleY -148.77
   }
   GenericEntity : "{F38DF38C292303EA}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Medical_US_NoAffiliation.et" {
@@ -1178,7 +1252,7 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
      Enabled 0
     }
    }
-   coords -2.927 1.432 4.938
+   coords -2.963 1.435 5.201
    angleY -2.206
   }
   GenericEntity : "{FF9040719A465873}Prefabs/Weapons/Rifles/M27IAR/Rifle_M38SDMR_camo.et" {
@@ -1197,8 +1271,4 @@ GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/Carg
    angleY 179.151
   }
  }
-}
-GenericEntity : "{E021E2FFF02ADF0C}Prefabs/Structures/Infrastructure/Lamps/LampStreet_E_01/LampStreet_E_01_4m.et" {
- coords 1363.638 -1.571 2237.356
- angleY -23.78
 }

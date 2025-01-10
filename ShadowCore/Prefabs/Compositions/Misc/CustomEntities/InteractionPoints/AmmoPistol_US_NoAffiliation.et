@@ -2,7 +2,7 @@ GenericEntity : "{A28E5D231A74D95D}Prefabs/Props/Military/Compositions/US/Arsena
  ID "56F2C6D6F7C6DAFA"
  components {
   MeshObject "{56F2C6D1431AD85A}" {
-   Object "{7B3C031A24D06FC2}Assets/Weapons/Ammo/Bullets/9x18/Cartridge_9x18.xob"
+   Object "{317726F73A3CA775}Assets/Weapons/Magazines/M9/Magazine_15rnd_M9.xob"
   }
   SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
    m_eSupportedArsenalItemTypes PISTOL

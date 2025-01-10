@@ -2,7 +2,7 @@ GenericEntity : "{A28E5D231A74D95D}Prefabs/Props/Military/Compositions/US/Arsena
  ID "56F2C6D6F7C6DAFA"
  components {
   MeshObject "{56F2C6D1431AD85A}" {
-   Object "{D35A47C6289EED49}Assets/Characters/HeadGear/Helmet_OPSCORE/opscore_MT_liberator.xob"
+   Object "{1EFC7335DEC24528}Assets/Characters/HeadGear/Helmet_OPSCORE_SF/OPSCORE_SF_AMP_ground.xob"
   }
   SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
    m_eSupportedArsenalItemTypes HEADWEAR
@@ -13,8 +13,8 @@ GenericEntity : "{A28E5D231A74D95D}Prefabs/Props/Military/Compositions/US/Arsena
   UniversalInventoryStorageComponent "{56F2C6D15FE6C4CE}" {
    Attributes SCR_ItemAttributeCollection "{56F2C6D6A36680FB}" {
     ItemDisplayName SCR_InventoryUIInfo "{56F2C6D6A229E091}" {
-     Name "Combat Helmet"
-     Description "Choose a combat helmet"
+     Name "Combat Gloves"
+     Description "Choose a combat gloves"
     }
    }
   }
@@ -22,14 +22,14 @@ GenericEntity : "{A28E5D231A74D95D}Prefabs/Props/Military/Compositions/US/Arsena
    ActionContexts {
     UserActionContext "{56F2C6D1431ADB6E}" {
      Position PointInfo "{56F2C6D1431ADB9D}" {
-      Offset 0 1.6 0.1
+      Offset 0 0 0
      }
     }
    }
    additionalActions {
     SCR_OpenStorageAction "{58EE8EA3E900BE40}" {
      UIInfo UIInfo "{58EE8EA3E5E7D64D}" {
-      Name "Combat Helmet"
+      Name "Combat Gloves"
      }
     }
    }

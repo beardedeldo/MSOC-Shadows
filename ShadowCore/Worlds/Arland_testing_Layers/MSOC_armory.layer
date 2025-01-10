@@ -1,1274 +1,365 @@
-GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/CargoContainer_01/CargoContainer_01_40ft_red.et" {
- coords 1360.619 38.611 2234.958
- angleY 67.5
+SCR_DestructibleEntity : "{1CDC7A651A5D9AB9}Prefabs/Structures/Walls/Net/NetFence_02/NetFence_02_8m_dup.et" {
+ coords 1341.748 0 2244.824
+ angleY -31.751
+}
+GenericEntity : "{238A10113E311A73}Prefabs/Props/Fabric/RedCrossCloth/RedCrossClothTemper_01_big_front.et" {
+ coords 1349.815 37.596 2248.387
+ angleY -31.19
+}
+$grp GenericEntity : "{3238FC0BDB67AA78}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01_base.et" {
  {
-  GameEntity : "{005374A5149FAC4F}Prefabs/Weapons/Attachments/Lights/Light_m300c_tan.et" {
-   components {
-    ActionsManagerComponent "{557E85EEE1B603FA}" {
-     Enabled 0
-    }
+  components {
+   ActionsManagerComponent "{508AB5952B584B2E}" {
+    Enabled 0
    }
-   coords -1.726 1.399 -4.551
-   angleX -7.781
-   angleY -67.5
-   angleZ 2.152
   }
-  GameEntity : "{01AA4CBAE37EF4D4}Prefabs/Items/Equipment/Patches/A1_patch.et" {
-   components {
-    ActionsManagerComponent "{5DB09136B1C99451}" {
-     Enabled 0
-    }
+  coords 1349.672 40.003 2248.968
+  angleY 49.403
+ }
+ {
+  components {
+   ActionsManagerComponent "{508AB5952B584B2E}" {
+    Enabled 0
    }
-   coords -2.635 1.396 4.647
-   angleX 87.465
-   angleY 53.017
-   angleZ -93.838
   }
-  GenericEntity : "{07ACAA0FE4F5C6CC}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Handwear_US_NoAffiliation.et" {
-   coords -2.251 1.365 1.954
-   angleX 1.851
-   angleY -4.933
-   angleZ -5.76
+  coords 1349.622 40.003 2248.97
+  angleY 49.403
+ }
+ {
+  components {
+   ActionsManagerComponent "{508AB5952B584B2E}" {
+    Enabled 0
+   }
   }
-  $grp GenericEntity : "{092FE092D6DF1EB3}Prefabs/Props/Military/AmmoBoxes/AmmoBox_556x45_1680rnd.et" {
+  coords 1349.54 40.003 2248.934
+  angleY 49.403
+ }
+ {
+  components {
+   ActionsManagerComponent "{508AB5952B584B2E}" {
+    Enabled 0
+   }
+  }
+  coords 1349.621 40.003 2249.01
+  angleY 49.403
+ }
+ {
+  components {
+   ActionsManagerComponent "{508AB5952B584B2E}" {
+    Enabled 0
+   }
+  }
+  coords 1349.698 40.003 2249.04
+  angleY 49.403
+ }
+ {
+  components {
+   ActionsManagerComponent "{508AB5952B584B2E}" {
+    Enabled 0
+   }
+  }
+  coords 1349.735 40.003 2249.026
+  angleY 49.403
+ }
+ {
+  components {
+   ActionsManagerComponent "{508AB5952B584B2E}" {
+    Enabled 0
+   }
+  }
+  coords 1349.76 40.003 2249.009
+  angleY 49.403
+ }
+}
+GenericEntity : "{37DA9B4DBC0427E5}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/EquipmentBoxStack_01_V2_base.et" {
+ coords 1340.245 39 2243.115
+ angleY -46.926
+}
+GenericEntity : "{3D1D82C62D2ECC0D}Prefabs/Props/Military/Posters/Poster_UncleSam_01.et" {
+ coords 1348.654 40.745 2249.243
+ angleY 151.226
+}
+GameEntity : "{50E6A3845C9F20FD}Prefabs/Props/Military/Camps/LanternMilitary_US_01.et" {
+ coords 1348.966 40.003 2249.121
+ angleY -67.5
+}
+$grp GenericEntity : "{8EF9A7BC7B9C732E}Prefabs/Props/Industrial/BenchDrill_01_table.et" {
+ {
+  coords 1349.342 39 2248.94
+  angleY -120.341
+ }
+ {
+  coords 1343.97 39 2245.694
+  angleY -120.341
+ }
+ {
+  coords 1345.773 39 2246.767
+  angleY -120.341
+ }
+ {
+  coords 1344.88 39 2246.226
+  angleY -120.341
+ }
+ {
+  coords 1343.091 39 2245.16
+  angleY -120.341
+ }
+ {
+  coords 1346.677 39 2247.296
+  angleY -120.341
+ }
+ {
+  coords 1342.199 39 2244.618
+  angleY -120.341
+ }
+ {
+  coords 1341.311 39 2244.09
+  angleY -120.082
+ }
+}
+$grp GenericEntity : "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" {
+ {
+  components {
+   ActionsManagerComponent "{508AB5952B584B2E}" {
+    Enabled 0
+   }
+  }
+  coords 1349.739 39.999 2248.91
+  angleX 1.806
+  angleY 49.403
+ }
+ {
+  components {
+   ActionsManagerComponent "{508AB5952B584B2E}" {
+    Enabled 0
+   }
+  }
+  coords 1349.813 40.003 2248.875
+  angleX 1.806
+  angleY 49.403
+ }
+ {
+  components {
+   ActionsManagerComponent "{508AB5952B584B2E}" {
+    Enabled 0
+   }
+  }
+  coords 1349.72 40.003 2248.811
+  angleX 1.806
+  angleY 49.403
+ }
+ {
+  components {
+   ActionsManagerComponent "{508AB5952B584B2E}" {
+    Enabled 0
+   }
+  }
+  coords 1349.781 40.003 2248.772
+  angleX 1.806
+  angleY 49.403
+ }
+ {
+  components {
+   ActionsManagerComponent "{508AB5952B584B2E}" {
+    Enabled 0
+   }
+  }
+  coords 1349.878 40.003 2248.814
+  angleX 1.806
+  angleY 49.403
+ }
+ {
+  components {
+   ActionsManagerComponent "{508AB5952B584B2E}" {
+    Enabled 0
+   }
+  }
+  coords 1349.648 40.003 2248.871
+  angleX 1.806
+  angleY 49.403
+ }
+}
+$grp GenericEntity : "{AC21629F153BAA61}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/Dst/EquipmentBoxStack_01_V3_dst_03_USSR.et" {
+ {
+  coords 1347.472 38.301 2247.707
+  angleY 6.87
+ }
+ {
+  coords 1347.434 38.308 2247.281
+  angleY 4.83
+ }
+}
+GenericEntity MSOC_armory : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ coords 1356.391 39.422 2243.485
+ {
+  GenericEntity Layer4 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+   coords 0 0 0
    {
-    components {
-     ActionsManagerComponent "{5476B36C403D4CC0}" {
-      Enabled 0
-     }
-    }
-    coords -1.956 0.389 0.381
-    angleY -1.814
-   }
-   {
-    components {
-     ActionsManagerComponent "{5476B36C403D4CC0}" {
-      Enabled 0
-     }
-    }
-    coords -1.968 0.389 0.848
-    angleY -1.814
-   }
-   {
-    components {
-     ActionsManagerComponent "{5476B36C403D4CC0}" {
-      Enabled 0
-     }
-    }
-    coords -1.877 0.389 -3.554
-    angleY -0.763
-   }
-  }
-  GenericEntity : "{09A16BC5B7184964}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Rocket_Ammo_US_NoAffiliation.et" {
-   coords -1.693 0.747 -6.531
-   angleX -4.297
-   angleY -179.422
-  }
-  GenericEntity : "{0CAD83389EE8E3DC}Prefabs/Weapons/Magazines/glock_magazine/Magazine_9x19_Glock_17rnd_tan.et" {
-   components {
-    ActionsManagerComponent "{F092E6B0537754FD}" {
-     Enabled 0
-    }
-   }
-   coords -2.074 1.396 1.681
-   angleX 6.908
-   angleY -147.836
-   angleZ 89.817
-  }
-  GenericEntity : "{0F46DA93CB81F141}Prefabs/Weapons/Attachments/Grips/Grip_KAC_Vertical/RHS_KacVertical_base.et" {
-   coords -1.971 1.409 -4.224
-   angleX 85.185
-   angleY -67.5
-   angleZ 25.137
-  }
-  GenericEntity : "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" {
-   components {
-    ActionsManagerComponent "{508AB5952B584B2E}" {
-     Enabled 0
-    }
-   }
-   coords -2.898 1.408 5.155
-   angleX 0.075
-   angleY 112.5
-   angleZ -180
-  }
-  GameEntity : "{158AF827F9114A36}Prefabs/Weapons/Attachments/Optics/exps/Optic_EXPS3-3.et" {
-   components {
-    ActionsManagerComponent "{5284E0EFF569AD07}" {
-     Enabled 0
-    }
-   }
-   coords -1.805 1.402 -4.679
-   angleY -67.5
-  }
-  GameEntity : "{17A5656F850F6FB8}Prefabs/Weapons/Attachments/Lights/Light_m300c_base.et" {
-   components {
-    ActionsManagerComponent "{557E85EEE1B603FA}" {
-     Enabled 0
-    }
-   }
-   coords -1.682 1.4 -4.472
-   angleX -11.619
-   angleY -99.266
-  }
-  SCR_DestructibleEntity : "{1CDC7A651A5D9AB9}Prefabs/Structures/Walls/Net/NetFence_02/NetFence_02_8m_dup.et" {
-   coords -1.388 0.389 -3.552
-   angleY -90.912
-  }
-  GenericEntity : "{203E1A4BC6BC2BAB}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/EquipmentGeneral_US_NoAffiliation.et" {
-   coords -2.938 1.497 4.757
-   angleY 158.938
-  }
-  GenericEntity : "{238A10113E311A73}Prefabs/Props/Fabric/RedCrossCloth/RedCrossClothTemper_01_big_front.et" {
-   coords 0.079 -1.008 -5.549
-   angleY -90.832
-  }
-  GenericEntity : "{23D34FB66BBC8BEE}Prefabs/Weapons/Attachments/Bipods/harris_bipod/rhs_lt706_harris.et" {
-   components {
-    ActionsManagerComponent "{557E85EEE1B603FA}" {
-     Enabled 0
-    }
-   }
-   coords -1.801 1.429 -4.188
-   angleX -3.131
-   angleY -67.5
-  }
-  GenericEntity : "{273C96A8094B84CD}PrefabsEditable/Auto/Props/Civilian/E_WallMap_01_vertical.et" {
-   components {
-    MeshObject "{5872F0EB7FA40561}" {
-     Materials {
-      MaterialAssignClass "{6447548105288A94}" {
-       SourceMaterial "Map_01_Map"
-       AssignedMaterial "{880AED144D321149}Assets/Props/Commercial/Posters/Data/Poster_weapon_SVD.emat"
-      }
-     }
-    }
-   }
-   coords -1.255 1.751 -4.902
-   angleX -0.779
-   angleY -90.984
-   angleZ 90.799
-  }
-  GameEntity : "{275F298DE10E7A15}Prefabs/Items/Equipment/Nightvision/PVS31/NVG_PVS31_WP_TAN_MC.et" {
-   components {
-    ActionsManagerComponent "{5DB09136B1C99451}" {
-     Enabled 0
-    }
-   }
-   coords -2.614 1.417 4.93
-   angleX -17.838
-   angleY 162.484
-   angleZ 123.452
-  }
-  GenericEntity : "{28BC392A46DD235C}Prefabs/Weapons/Rifles/M4A1/base_parts/RHS_M4A1_UpperReceiver.et" {
-   coords -1.868 1.329 1.494
-   angleY -6.059
-  }
-  TracerProjectile : "{2BC4C9C3D171A53B}Prefabs/Weapons/Ammo/Ammo_545x39_Tracer_7T3.et" {
-   coords -2.049 1.392 0.429
-   angleY -67.5
-  }
-  GenericEntity : "{2F12AD584F2C20B6}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Sniper_US_NoAffiliation.et" {
-   components {
-    SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
-     m_eSupportedArsenalItemTypes SNIPER_RIFLE
-     m_eSupportedArsenalItemModes 14
-    }
-   }
-   coords -1.451 1.723 -0.888
-   angleY 177.861
-  }
-  Projectile : "{2FBCA0A7CEDDE7B0}Prefabs/Weapons/Ammo/Ammo_762x39_Ball_57N231.et" {
-   coords -2.197 1.397 -0.538
-   angleY -67.5
-  }
-  GameEntity : "{30B41A4172CBD098}Prefabs/Weapons/Attachments/Optics/ta31rco/Optic_TA31RCO_ARD_army.et" {
-   components {
-    ActionsManagerComponent "{5284E0EFF569AD07}" {
-     Enabled 0
-    }
-   }
-   coords -1.853 1.398 -4.927
-   angleY -94.466
-  }
-  Projectile : "{3157B65339DC38A1}Prefabs/Weapons/Ammo/Ammo_762x54r_API_7BZ3.et" {
-   coords -2.183 1.397 -0.753
-   angleY -7.109
-  }
-  GenericEntity : "{322F588A5756DD53}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/EquipmentBoxStack_01_V3_base.et" {
-   coords -1.769 0.389 5.129
-   angleY -88.937
-  }
-  $grp GenericEntity : "{3238FC0BDB67AA78}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01_base.et" {
-   {
-    components {
-     ActionsManagerComponent "{508AB5952B584B2E}" {
-      Enabled 0
-     }
-    }
-    coords -1.691 1.391 -5.34
-    angleY 49.403
-   }
-   {
-    components {
-     ActionsManagerComponent "{508AB5952B584B2E}" {
-      Enabled 0
-     }
-    }
-    coords -1.672 1.392 -5.368
-    angleY 49.403
-   }
-   {
-    components {
-     ActionsManagerComponent "{508AB5952B584B2E}" {
-      Enabled 0
-     }
-    }
-    coords -1.658 1.392 -5.404
-    angleY 49.403
-   }
-  }
-  Projectile : "{33F3FD3662F44BB7}Prefabs/Weapons/Ammo/Ammo_545x39_AP_7N10.et" {
-   coords -2.089 1.392 0.384
-   angleX 0.025
-   angleY 166.778
-   angleZ 0.035
-  }
-  GenericEntity : "{3482EB8991D2FB13}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Ammo762_US_NoAffiliation.et" {
-   components {
-    ActionsManagerComponent "{56F2C6D1431ADB12}" {
-     additionalActions {
-      SCR_OpenStorageAction "{58EE8EA3E900BE40}" {
-       UIInfo UIInfo "{58EE8EA3E5E7D64D}" {
-        Name "Ammo 7.62"
+    $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+     Slot4 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{CB09A4AFF301692A}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Helmet_US_NoAffiliation.et"
        }
       }
+      coords -7.191 0.581 4.988
+      angleX -2.427
+      angleY -144.686
+      angleZ -2.829
      }
-    }
-   }
-   coords -2.052 1.392 -1.046
-   angleY -67.5
-  }
-  GenericEntity : "{35963585E5E620CF}Prefabs/Weapons/Rifles/M4A1/Variants/Forecon/Rifle_M4A1_RAS_ERGO_Forecon8.et" {
-   components {
-    RHS_SGC_RadialMenuComponent "{5E0ED058CD731BC8}" {
-     Enabled 0
-    }
-    ActionsManagerComponent "{A29AE67FF4D82B0F}" {
-     Enabled 0
-    }
-    WeaponGamepadEffectsManagerComponent "{61A2E5C3F4458F86}" {
-     Enabled 0
-    }
-   }
-   coords -1.489 2.089 0.574
-   angleY 179.149
-  }
-  GenericEntity : "{37DA9B4DBC0427E5}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/EquipmentBoxStack_01_V2_base.et" {
-   coords -1.377 0.389 -6.878
-   angleY 91.618
-  }
-  GameEntity : "{3A421547BC29F679}Prefabs/Items/Equipment/Flashlights/Flashlight_MX991/Flashlight_MX991.et" {
-   components {
-    ActionsManagerComponent "{56A4B11C0BE428FF}" {
-     Enabled 0
-    }
-   }
-   coords -3.078 1.423 5.427
-   angleX -4.337
-   angleY 172.828
-   angleZ -88.59
-   {
-    LightEntity {
-     ID "5D0CC0E56B2DFA78"
-     coords -0.001 0.197 0.047
-    }
-   }
-  }
-  GenericEntity : "{3A4E2F9091E70EC7}Prefabs/Weapons/Attachments/Optics/infratech1tws/Optic_Infratech1tws.et" {
-   components {
-    ActionsManagerComponent "{60D93710EDA6D03D}" {
-     Enabled 0
-    }
-   }
-   coords -1.596 1.399 -4.691
-   angleX -0.014
-   angleY -4.566
-   angleZ 0.177
-  }
-  GenericEntity : "{3D1D82C62D2ECC0D}Prefabs/Props/Military/Posters/Poster_UncleSam_01.et" {
-   coords -1.335 1.935 4.748
-   angleY -92.697
-  }
-  GenericEntity : "{3D9AD4314FE34F5B}Prefabs/Weapons/Magazines/Box_762x51_M60_500rnd_Ball.et" {
-   components {
-    ActionsManagerComponent "{F092E6B0537754FD}" {
-     Enabled 0
-    }
-   }
-   coords -1.658 1.392 -3.618
-   angleX -0.099
-   angleY 0.898
-   angleZ -1.221
-  }
-  GenericEntity : "{48414BA60F3B0DFA}Prefabs/Weapons/Attachments/Muzzle/SUREFIRE/SF_FA762SS.et" {
-   components {
-    ActionsManagerComponent "{5284E0EFF569AD07}" {
-     Enabled 0
-    }
-   }
-   coords -2.068 1.407 -4.723
-   angleY 176.58
-  }
-  Projectile : "{4A3B196E4EA820E9}Prefabs/Weapons/Ammo/RPG/RHS_AmmoRocket_OG7V.et" {
-   components {
-    ActionsManagerComponent "{50F6614BA1D6E54A}" {
-     Enabled 0
-    }
-   }
-   coords -1.473 0.748 -6.584
-   angleY 8.328
-  }
-  GenericEntity : "{4A553DA16504D30C}Prefabs/Weapons/Magazines/Pmag/Magazine_556x45_PmagWindowed_30rnd_Base.et" {
-   components {
-    ActionsManagerComponent "{F092E6B0537754FD}" {
-     Enabled 0
-    }
-   }
-   coords -2.135 1.478 0.617
-   angleX 9.222
-   angleY -93.807
-   angleZ 17.961
-  }
-  GameEntity : "{4B799DDBF2CDF294}Prefabs/Items/Equipment/Patches/Patch_Cat_Blue.et" {
-   components {
-    ActionsManagerComponent "{5DB09136B1C99451}" {
-     Enabled 0
-    }
-   }
-   coords -2.789 1.393 4.71
-   angleX 89.32
-   angleY -67.5
-  }
-  GenericEntity : "{4D2C1E8F3A81F894}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_4Ball_1Tracer.et" {
-   components {
-    ActionsManagerComponent "{F092E6B0537754FD}" {
-     Enabled 0
-    }
-   }
-   coords -1.902 1.456 -3.519
-   angleY -91.453
-  }
-  $grp GameEntity : "{50E6A3845C9F20FD}Prefabs/Props/Military/Camps/LanternMilitary_US_01.et" {
-   {
-    coords -1.579 1.766 5.086
-    angleY -67.5
-   }
-   {
-    coords -1.662 0.389 -4.987
-    angleY -67.5
-   }
-   {
-    coords -1.41 1.392 -4.999
-    angleY -135
-   }
-  }
-  GenericEntity : "{529EE66FF5CC20B2}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Shirts_US_NoAffiliation.et" {
-   coords -1.496 2 3.271
-   angleX -85.675
-   angleY 17.115
-   angleZ -106.828
-  }
-  GenericEntity : "{53852DF77C7C0552}Prefabs/Items/Equipment/Accessories/L4G24_EmptyNVGMount/L4G24_EmptyNVGMount_Tan_Model.et" {
-   coords -2.643 1.408 4.807
-   angleX 61.309
-   angleY -67.5
-  }
-  GameEntity : "{59E0D9B5B6967152}Prefabs/Items/Equipment/Nightvision/PVS31/NVG_PVS31_WP.et" {
-   components {
-    ActionsManagerComponent "{5DB09136B1C99451}" {
-     Enabled 0
-    }
-   }
-   coords -2.547 1.406 5.109
-   angleX -24.506
-   angleY 112.5
-   angleZ -180
-  }
-  GameEntity : "{5AE8F3A22BDB534F}Prefabs/Weapons/Attachments/Lasers/anpeq15/Laser_ANPEQ15_black.et" {
-   components {
-    ActionsManagerComponent "{557E85EEE1B603FA}" {
-     Enabled 0
-    }
-   }
-   coords -2.022 1.397 -4.405
-   angleY -67.5
-  }
-  GameEntity : "{5F7EF7FEBC39B874}Prefabs/Items/Equipment/Nightvision/HelstarStrobe/Helstar.et" {
-   components {
-    ActionsManagerComponent "{5DB09136B1C99451}" {
-     Enabled 0
-    }
-   }
-   coords -2.525 1.395 4.649
-   angleX 83.931
-   angleY 112.5
-   angleZ -180
-  }
-  GenericEntity : "{5F800ED7D8D5B89E}Prefabs/Weapons/Rifles/M4A1/base_parts/RHS_M4_FLASHHIDER.et" {
-   components {
-    ActionsManagerComponent "{5284E0EFF569AD07}" {
-     Enabled 0
-    }
-   }
-   coords -2.038 1.4 1.593
-   angleY -67.5
-  }
-  GameEntity : "{608F66AB8B36B85D}Prefabs/Characters/Eyewear/crossbow/Eyewear_ess_crossbow_blk.et" {
-   components {
-    ActionsManagerComponent "{5112706CD4157AC9}" {
-     Enabled 0
-    }
-   }
-   coords -1.857 1.767 5.176
-   angleY 172.183
-  }
-  $grp GameEntity : "{618BF6A92A1C0B59}Prefabs/Items/Equipment/Patches/Patch_USMC_MSOB.et" {
-   {
-    components {
-     ActionsManagerComponent "{5DB09136B1C99451}" {
-      Enabled 0
-     }
-    }
-    coords -1.53 2.047 3.017
-    angleX 6.085
-    angleY -119.132
-    angleZ -10.229
-   }
-   {
-    components {
-     ActionsManagerComponent "{5DB09136B1C99451}" {
-      Enabled 0
-     }
-    }
-    coords -1.528 2.062 3.503
-    angleX 8.497
-    angleY -71.746
-    angleZ 16.201
-   }
-  }
-  GenericEntity : "{61A705D76908160C}Prefabs/Items/Equipment/Watches/Watch_Orlik38/Watch_Orlik38.et" {
-   components {
-    ActionsManagerComponent "{508AB5952B584B2E}" {
-     Enabled 0
-    }
-   }
-   coords -2.939 1.395 4.928
-   angleY -67.5
-  }
-  GenericEntity : "{61D4F80E49BF9B12}Prefabs/Items/Equipment/Compass/Compass_SY183.et" {
-   components {
-    ActionsManagerComponent "{508AB5952B584B2E}" {
-     Enabled 0
-    }
-   }
-   coords -2.932 1.395 5.02
-   angleY -67.5
-  }
-  GameEntity : "{643AB339663E92F7}Prefabs/Items/Equipment/Nightvision/MS2000/Marker_MS2000.et" {
-   components {
-    ActionsManagerComponent "{5DB09136B1C99451}" {
-     Enabled 0
-    }
-   }
-   coords -2.391 1.413 4.644
-   angleX 89.114
-   angleY 112.5
-   angleZ -156.219
-  }
-  GenericEntity : "{64720F15DB56154E}Prefabs/Weapons/Attachments/Stocks/Stock_AR15_SOPMOD/RHS_M4_SOPMOD_base.et" {
-   coords -1.872 1.422 1.193
-   angleX 5.564
-   angleY -94.767
-   angleZ 85.777
-  }
-  GameEntity : "{65506D3712FA2D29}Prefabs/Weapons/Attachments/Bayonets/Bayonet_6X9-1.et" {
-   components {
-    ActionsManagerComponent "{5284E0EFF569AD07}" {
-     Enabled 0
-    }
-   }
-   coords -1.658 1.401 -4.225
-   angleX -2.775
-   angleY -2.22
-   angleZ 93.826
-  }
-  GameEntity : "{7122907EFFE9ABD1}Prefabs/Items/Equipment/Patches/Patch_US_Flag_Inverse.et" {
-   components {
-    ActionsManagerComponent "{5DB09136B1C99451}" {
-     Enabled 0
-    }
-   }
-   coords -2.754 1.394 4.625
-   angleX 88.346
-   angleY -67.5
-   angleZ -68.033
-  }
-  GenericEntity : "{7276444E72B41B19}Prefabs/Weapons/Rifles/M4A1/Variants/ION/Variants/Rifle_DOM4A1_ION_ReapIR.et" {
-   components {
-    ActionsManagerComponent "{A29AE67FF4D82B0F}" {
-     Enabled 0
-    }
-    WeaponGamepadEffectsManagerComponent "{61A2E5C3F4458F86}" {
-     Enabled 0
-    }
-   }
-   coords -1.466 1.724 0.681
-   angleY 179.226
-  }
-  GenericEntity : "{728604F239E3DA27}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/SAW_US_NoAffiliation.et" {
-   coords -1.701 1.509 -2.537
-   angleX 10.697
-   angleY -178.871
-  }
-  GenericEntity : "{75632A0CA07D3817}Prefabs/Weapons/Magazines/Box_762x51_M60_100rnd_AP.et" {
-   components {
-    ActionsManagerComponent "{F092E6B0537754FD}" {
-     Enabled 0
-    }
-   }
-   coords -1.865 1.456 -2.263
-   angleY -67.5
-  }
-  GenericEntity : "{761A03A9C5BA8D68}Prefabs/Weapons/Magazines/Magazine_762x54_SVD_10rnd_Base.et" {
-   components {
-    ActionsManagerComponent "{F092E6B0537754FD}" {
-     Enabled 0
-    }
-   }
-   coords -1.962 1.41 -0.561
-   angleX -7.247
-   angleY -1.349
-   angleZ -89.014
-  }
-  Projectile : "{79FA751EEBE25DDE}Prefabs/Weapons/Ammo/Ammo_Rocket_M72A3.et" {
-   components {
-    ActionsManagerComponent "{50F6614BA1D6E54A}" {
-     Enabled 0
-    }
-   }
-   coords -1.595 0.718 -6.827
-   angleY 4.784
-  }
-  GameEntity : "{7C53E6DE2E4BD8CB}Prefabs/Items/Equipment/Watches/Watch_GarminTactixBravo.et" {
-   components {
-    ActionsManagerComponent "{508AB5952B584B2E}" {
-     Enabled 0
-    }
-   }
-   coords -2.8 1.397 4.966
-   angleY -67.5
-   angleZ -72.579
-  }
-  GenericEntity : "{7D4234647DD5B84D}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Pants_US_NoAffiliation.et" {
-   coords -1.486 1.186 3.294
-   angleX -89.463
-   angleY -59.062
-   angleZ -32.454
-  }
-  GameEntity : "{7DB681643152613C}Prefabs/Weapons/Attachments/Optics/su230/Optic_SU230_MRDS.et" {
-   components {
-    ActionsManagerComponent "{5284E0EFF569AD07}" {
-     Enabled 0
-    }
-   }
-   coords -1.858 1.392 -4.838
-   angleY -97.023
-  }
-  GenericEntity : "{7E15A14DB5FF7073}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Ammo762_556_US_NoAffiliation.et" {
-   coords -2.006 1.392 -3.358
-   angleY -55.32
-  }
-  $grp GenericEntity : "{7F9923063FBB628B}Prefabs/Props/Military/AmmoBoxes/AmmoBox_762x51_200rnd.et" {
-   {
-    components {
-     ActionsManagerComponent "{5476B36C403D4CC0}" {
-      Enabled 0
-     }
-    }
-    coords -1.843 1.392 -0.497
-    angleY 176.695
-   }
-   {
-    components {
-     ActionsManagerComponent "{5476B36C403D4CC0}" {
-      Enabled 0
-     }
-    }
-    coords -1.731 1.392 -1.007
-    angleY 176.695
-   }
-   {
-    components {
-     ActionsManagerComponent "{5476B36C403D4CC0}" {
-      Enabled 0
-     }
-    }
-    coords -1.914 1.392 -1.396
-    angleY 176.695
-   }
-  }
-  $grp GenericEntity : "{8435F7561C0FBB44}Prefabs/Items/Medicine/SalineBag_01/SalineBag_01_base.et" {
-   {
-    components {
-     ActionsManagerComponent "{508AB5952B584B2E}" {
-      Enabled 0
-     }
-    }
-    coords -1.895 1.392 -5.304
-    angleY -91.229
-   }
-   {
-    components {
-     ActionsManagerComponent "{508AB5952B584B2E}" {
-      Enabled 0
-     }
-    }
-    coords -1.894 1.392 -5.455
-    angleY -91.229
-   }
-  }
-  GameEntity : "{852FB88E8AD446C8}Prefabs/Weapons/Attachments/Underbarrel/UGL_RHS_M203_NoSight.et" {
-   components {
-    ActionsManagerComponent "{5284E0EFF569AD07}" {
-     Enabled 0
-    }
-   }
-   coords -1.759 1.498 1.338
-   angleX -5.889
-   angleY -0.51
-  }
-  GenericEntity : "{8B724921BA06FA61}Prefabs/Weapons/Rifles/M4A1/base_parts/RHS_M4A1_GasBlock.et" {
-   coords -2.088 1.397 1.338
-   angleX -0.571
-   angleY 7.568
-   angleZ 90.152
-  }
-  GenericEntity : "{8E9682666CB56092}Prefabs/Weapons/Magazines/Box_556x45_M249_200rnd_base.et" {
-   components {
-    ActionsManagerComponent "{F092E6B0537754FD}" {
-     Enabled 0
-    }
-   }
-   coords -2.11 1.549 -2.222
-   angleY 97.398
-  }
-  $grp GenericEntity : "{8EF9A7BC7B9C732E}Prefabs/Props/Industrial/BenchDrill_01_table.et" {
-   {
-    coords -1.98 0.389 1.599
-    angleY 177.835
-   }
-   {
-    coords -1.94 0.389 0.554
-    angleY 177.835
-   }
-   {
-    coords -1.903 0.389 -0.486
-    angleY 177.835
-   }
-   {
-    coords -1.871 0.389 -1.525
-    angleY 177.835
-   }
-   {
-    coords -1.832 0.389 -2.571
-    angleY 177.922
-   }
-   {
-    coords -1.795 0.389 -3.52
-    angleY 177.922
-   }
-   {
-    coords -1.738 0.389 -4.537
-    angleY 175.754
-   }
-   {
-    coords -1.664 0.389 -5.539
-    angleY 174.897
-   }
-   {
-    coords -2.666 0.389 5.088
-    angleY 178.214
-   }
-  }
-  GenericEntity : "{8FF49793853DB2F9}Prefabs/Weapons/Magazines/m17_magazines/Magazine_9x19_m17_17rnd.et" {
-   components {
-    ActionsManagerComponent "{F092E6B0537754FD}" {
-     Enabled 0
-    }
-   }
-   coords -2.17 1.403 1.547
-   angleX -1.326
-   angleY -83.947
-   angleZ 87.374
-  }
-  $grp GenericEntity : "{9749CCE07F466A68}Prefabs/Weapons/Magazines/Pmag/Magazine_556x45_PmagWindowed_30rnd_M995.et" {
-   {
-    components {
-     ActionsManagerComponent "{F092E6B0537754FD}" {
-      Enabled 0
-     }
-     MagazineAnimationComponent "{6065396A57709429}" {
-      Enabled 0
-     }
-    }
-    coords -1.941 1.404 0.138
-    angleX -0.994
-    angleY -15.725
-    angleZ 90.783
-   }
-   {
-    components {
-     ActionsManagerComponent "{F092E6B0537754FD}" {
-      Enabled 0
-     }
-     MagazineAnimationComponent "{6065396A57709429}" {
-      Enabled 0
-     }
-    }
-    coords -1.839 1.4 0.377
-    angleX 0.776
-    angleY 150.32
-    angleZ 89
-   }
-   {
-    components {
-     ActionsManagerComponent "{F092E6B0537754FD}" {
-      Enabled 0
-     }
-     MagazineAnimationComponent "{6065396A57709429}" {
-      Enabled 0
-     }
-    }
-    coords -1.878 1.392 0.529
-    angleY -67.5
-    angleZ 91.266
-   }
-  }
-  GameEntity : "{979AF6CFF2AAAE26}Prefabs/Weapons/Attachments/Optics/aimpoint_t1/Optic_su278pvs_high.et" {
-   components {
-    ActionsManagerComponent "{5284E0EFF569AD07}" {
-     Enabled 0
-    }
-   }
-   coords -1.952 1.414 -4.717
-   angleY -67.5
-   angleZ 89.127
-  }
-  GenericEntity : "{99DE5AB4C17BB161}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Backpack_US_NoAffiliation.et" {
-   coords -1.747 1.447 2.001
-   angleX -19.889
-   angleY -58.626
-   angleZ -1.066
-  }
-  GameEntity : "{9A185BC14F1166B4}Prefabs/Weapons/Attachments/Lasers/anpeq15/Laser_ANPEQ15_tan.et" {
-   components {
-    ActionsManagerComponent "{557E85EEE1B603FA}" {
-     Enabled 0
-    }
-   }
-   coords -1.812 1.394 -4.399
-   angleY -114.289
-  }
-  GameEntity : "{9A9555D10664B8CB}Prefabs/Items/Equipment/Nightvision/PVS14/NVG_PVS14_WP.et" {
-   components {
-    ActionsManagerComponent "{5DB09136B1C99451}" {
-     Enabled 0
-    }
-   }
-   coords -2.34 1.395 4.922
-   angleY -67.5
-  }
-  GameEntity : "{9C030889E9A05770}Prefabs/Characters/Eyewear/npp_strelok/Eyewear_npp_strelok.et" {
-   components {
-    ActionsManagerComponent "{5112706CD4157AC9}" {
-     Enabled 0
-    }
-   }
-   coords -2.111 1.469 4.975
-   angleY -139.037
-  }
-  TracerProjectile : "{9CCBDD2ACB73FFA9}Prefabs/Weapons/Ammo/Ammo_762x51_Tracer_M62.et" {
-   coords -2.114 1.397 -0.746
-   angleY 5.852
-  }
-  Projectile : "{9CE4CC890A2A574F}Prefabs/Weapons/Ammo/Ammo_556x45_Ball_M193.et" {
-   coords -2.169 1.392 0.486
-   angleY -67.5
-  }
-  $grp Projectile : "{9D290AA75ADA4618}Prefabs/Weapons/Ammo/Ammo_9x19_Ball_M882.et" {
-   {
-    coords -2.279 1.397 1.616
-    angleY -90.055
-   }
-   {
-    coords -2.333 1.397 1.657
-    angleY -90.055
-   }
-   {
-    coords -2.295 1.397 1.649
-    angleY -90.055
-   }
-   {
-    coords -2.303 1.398 1.776
-    angleY -178.841
-   }
-   {
-    coords -2.346 1.397 1.742
-    angleY -178.841
-   }
-   {
-    coords -2.294 1.398 1.817
-    angleY -178.841
-   }
-   {
-    coords -2.319 1.398 1.729
-    angleY -178.841
-   }
-   {
-    coords -2.232 1.398 1.736
-    angleY -81.897
-   }
-   {
-    coords -2.224 1.397 1.642
-    angleY -81.897
-   }
-   {
-    coords -2.297 1.397 1.592
-    angleY -81.897
-   }
-   {
-    coords -2.329 1.397 1.633
-    angleY -90.055
-   }
-  }
-  Projectile : "{9DA944F4D6A611BA}Prefabs/Weapons/Ammo/Ammo_9x19_HP_JHP.et" {
-   coords -2.305 1.398 1.687
-   angleY -67.5
-  }
-  Projectile : "{9F39DD07E2860466}Prefabs/Weapons/Ammo/Ammo_762x51_AP_M61.et" {
-   coords -2.124 1.397 -0.623
-   angleY -67.5
-  }
-  GenericEntity : "{A24D6E22F32299B0}Prefabs/Weapons/Magazines/PmagUnwindowed/Magazine_556x45_PMAG_30rnd_Base.et" {
-   components {
-    ActionsManagerComponent "{F092E6B0537754FD}" {
-     Enabled 0
-    }
-   }
-   coords -2.157 1.399 0.246
-   angleX 3.129
-   angleY -157.208
-   angleZ -87.634
-  }
-  GenericEntity : "{A540E8600876C2A2}Prefabs/Weapons/Magazines/Pmag/Magazine_556x45_PmagWindowed_Coy_30rnd_M855A1_last5tracer.et" {
-   components {
-    ActionsManagerComponent "{F092E6B0537754FD}" {
-     Enabled 0
-    }
-    MagazineAnimationComponent "{6065396A57709429}" {
-     Enabled 0
-    }
-   }
-   coords -1.997 1.393 0.564
-   angleX 7.785
-   angleY -67.99
-   angleZ -88.345
-  }
-  GenericEntity : "{A598035257A5D0BC}Prefabs/Weapons/MachineGuns/M249/MG_M249_Handguard_RISTop_base.et" {
-   components {
-    ActionsManagerComponent "{60949BE6767387BE}" {
-     Enabled 0
-    }
-   }
-   coords -1.427 1.948 -2.745
-   angleX 2.297
-   angleY -178.903
-  }
-  $grp GameEntity : "{A76E82E2A746C3D3}Prefabs/Structures/Infrastructure/Lamps/LampStreet_E_01/LightPrefabs/LampStreet_E_01_glass.et" {
-   {
-    coords -1.03 2.314 3.092
-    angleY -91.421
-   }
-   {
-    coords -1.104 2.31 2.016
-    angleY -91.421
-   }
-   {
-    coords -1.103 2.308 1.044
-    angleY -91.421
-   }
-   {
-    coords -1.084 2.308 0.185
-    angleY -91.421
-   }
-   {
-    coords -1.045 2.322 -0.662
-    angleY -91.421
-   }
-   {
-    coords -1.017 2.326 -1.564
-    angleY -91.421
-   }
-   {
-    coords -1.016 2.319 -2.436
-    angleY -91.421
-   }
-   {
-    coords -1.027 2.317 -3.318
-    angleY -91.421
-   }
-   {
-    coords -1.048 2.324 -4.708
-    angleY -91.421
-   }
-   {
-    coords -1.082 2.315 4.742
-    angleY -96.204
-   }
-   {
-    coords -1.029 2.315 -4.005
-    angleY -91.421
-   }
-   {
-    coords -1.022 2.318 -5.491
-    angleY -178.471
-   }
-   {
-    coords -1.075 2.32 3.92
-    angleY 179
-   }
-  }
-  GenericEntity : "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et" {
-   components {
-    ActionsManagerComponent "{508AB5952B584B2E}" {
-     Enabled 0
-    }
-   }
-   coords -1.661 1.392 -5.247
-   angleX 1.806
-   angleY 49.403
-  }
-  $grp GenericEntity : "{A9D4A158FE6950D7}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/Dst/EquipmentBoxStack_01_V3_dst_02_USSR.et" {
-   {
-    coords -1.551 -0.334 2.003
-    angleY -94.52
-   }
-   {
-    coords -1.591 -0.315 2.374
-    angleY -94.52
-   }
-   {
-    coords -1.878 -0.41 2.838
-    angleY 178.96
-   }
-  }
-  Projectile : "{AC26AB660097633D}Prefabs/Weapons/Ammo/Ammo_556x45_Ball_M855.et" {
-   coords -2.083 1.392 0.484
-   angleY -84.965
-  }
-  GenericEntity : "{AE578EEA4244D41F}Prefabs/Items/Equipment/Kits/MedicalKit_01/MedicalKit_01_US.et" {
-   components {
-    ActionsManagerComponent "{508AB5952B584B2E}" {
-     Enabled 0
-    }
-   }
-   coords -1.526 1.392 -5.347
-   angleY -94.693
-  }
-  $grp GenericEntity : "{AFD43C42CFAF65E3}Prefabs/Props/Military/AmmoBoxes/AmmoBox_556x45_840rnd.et" {
-   {
-    components {
-     ActionsManagerComponent "{5476B36C403D4CC0}" {
-      Enabled 0
-     }
-    }
-    coords -1.652 1.392 0.57
-    angleY -90.944
-   }
-   {
-    components {
-     ActionsManagerComponent "{5476B36C403D4CC0}" {
-      Enabled 0
-     }
-    }
-    coords -1.673 1.385 0.222
-    angleY -91.871
-   }
-  }
-  GameEntity : "{B0534A120633D08D}Prefabs/Items/Equipment/Nightvision/1PN138/NVG_1PN138.et" {
-   components {
-    ActionsManagerComponent "{5DB09136B1C99451}" {
-     Enabled 0
-    }
-   }
-   coords -2.372 1.394 4.781
-   angleY -67.5
-  }
-  GameEntity : "{B355913289C6C38D}Prefabs/Items/Equipment/Accessories/L4G24_EmptyNVGMount/L4G24_EmptyMount_Base.et" {
-   components {
-    ActionsManagerComponent "{5DB09136B1C99451}" {
-     Enabled 0
-    }
-   }
-   coords -2.52 1.412 4.731
-   angleX 68.657
-   angleY -94.212
-  }
-  GenericEntity : "{B4B85095119382ED}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Helmets_US_NoAffiliation.et" {
-   coords -1.616 -0.076 4.253
-   angleX 10.761
-   angleY -144.509
-   angleZ 9.97
-  }
-  GenericEntity : "{B4ED47D7BB5448CA}Prefabs/Weapons/Rifles/M4A1/base_parts/RHS_M4_BARREL_14_5_HB.et" {
-   coords -1.79 1.32 1.331
-   angleY -67.5
-  }
-  GameEntity : "{B8BE3D139591CA3D}Prefabs/Weapons/Attachments/Optics/exps/Optic_EXPS3-2_tan.et" {
-   components {
-    ActionsManagerComponent "{5284E0EFF569AD07}" {
-     Enabled 0
-    }
-   }
-   coords -1.785 1.4 -4.766
-   angleY -67.5
-  }
-  TracerProjectile : "{B9AB11A51D795EC5}Prefabs/Weapons/Ammo/Ammo_762x39_Tracer_57T231P.et" {
-   coords -2.153 1.397 -0.431
-   angleY -103.414
-  }
-  GenericEntity : "{B9C41AAC90570E50}Prefabs/Weapons/Attachments/Muzzle/KAC_NT4_QDSS/KAC_NT4_QDSS.et" {
-   components {
-    ActionsManagerComponent "{5284E0EFF569AD07}" {
-     Enabled 0
-    }
-   }
-   coords -1.989 1.406 -4.961
-   angleY -7.52
-  }
-  GenericEntity : "{C84DF17F96616C76}Prefabs/Props/Military/Manuals/Manual_US_01.et" {
-   coords -2.492 1.395 5.336
-   angleY -159.252
-  }
-  GenericEntity : "{CA94242C4ECEBA67}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/GunAttachments_US_NoAffiliation.et" {
-   coords -1.981 1.404 -4.538
-   angleY -91.439
-   angleZ 6.773
-  }
-  GenericEntity : "{CE84E390AD194DCA}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Vests_US_NoAffiliation.et" {
-   coords -1.549 1.98 4.038
-   angleX -86.438
-   angleY -64.275
-   angleZ -27.565
-  }
-  GenericEntity : "{D6747678B78C45EF}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Rifles_US_NoAffiliation.et" {
-   components {
-    SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
-     m_eSupportedArsenalItemTypes RIFLE
-     m_eSupportedArsenalItemModes 14
-     m_eEditableAttributeGroups WEAPONS
-    }
-   }
-   coords -1.495 1.877 1.5
-   angleX 0.376
-   angleY 179.316
-  }
-  GenericEntity : "{D69684663E89D6EA}Prefabs/Items/Equipment/Radios/Radio_ANPRC152A_OLD.et" {
-   components {
-    ActionsManagerComponent "{508AB5952B584B2E}" {
-     Enabled 0
-    }
-   }
-   coords -2.647 1.413 4.975
-   angleX 84.36
-   angleY 95.8
-   angleZ -72.512
-  }
-  Projectile : "{DFA2A30FEAA24E7C}Prefabs/Weapons/Ammo/Ammo_545x39_Ball_7U1.et" {
-   coords -2.199 1.392 0.396
-   angleY -67.5
-  }
-  GenericEntity : "{E2D47DD5E8557199}Prefabs/Weapons/Rifles/M4A1/base_parts/RHS_M4A1_RasUpperErgoAfg.et" {
-   coords -1.764 1.419 1.068
-   angleY -67.5
-   angleZ 93.032
-  }
-  $grp GenericEntity : "{E521AEA6D14589B1}Prefabs/Props/Military/AmmoBoxes/AmmoBox_545x39_2160rnd.et" {
-   {
-    components {
-     ActionsManagerComponent "{5476B36C403D4CC0}" {
-      Enabled 0
-     }
-    }
-    coords -1.933 0.389 -0.509
-    angleY -94.355
-   }
-   {
-    components {
-     ActionsManagerComponent "{5476B36C403D4CC0}" {
-      Enabled 0
-     }
-    }
-    coords -1.912 0.389 -1.564
-    angleY -94.355
-   }
-   {
-    components {
-     ActionsManagerComponent "{5476B36C403D4CC0}" {
-      Enabled 0
-     }
-    }
-    coords -1.894 0.389 -2.649
-    angleY -90.949
-   }
-  }
-  GameEntity : "{EAC140671B326F58}Prefabs/Items/Equipment/Patches/Patch_US_Flag.et" {
-   components {
-    ActionsManagerComponent "{5DB09136B1C99451}" {
-     Enabled 0
-    }
-   }
-   coords -2.704 1.396 4.713
-   angleX 88.794
-   angleY 112.5
-   angleZ -180
-  }
-  GenericEntity : "{EB04ECAAA4DDD14B}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/AmmoPistol_US_NoAffiliation.et" {
-   components {
-    ActionsManagerComponent "{56F2C6D1431ADB12}" {
-     additionalActions {
-      SCR_OpenStorageAction "{58EE8EA3E900BE40}" {
-       UIInfo UIInfo "{58EE8EA3E5E7D64D}" {
-        Name "Ammo 9x19"
+     Slot7 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{7D4234647DD5B84D}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Pants_US_NoAffiliation.et"
        }
       }
+      coords -8.255 0.337 5.114
+      angleX -88.511
+      angleY 151.82
+      angleZ -3.904
      }
-    }
-   }
-   coords -2.193 1.394 1.7
-   angleY -67.5
-  }
-  GenericEntity : "{EBD2768377E131BE}Prefabs/Weapons/Attachments/Muzzle/SUREFIRE/SF_WARDEN_TAN.et" {
-   components {
-    ActionsManagerComponent "{5284E0EFF569AD07}" {
-     Enabled 0
-    }
-   }
-   coords -2.065 1.408 -4.646
-   angleY -143.026
-  }
-  $grp GenericEntity : "{EC9E0F22B90013F3}Prefabs/Weapons/Magazines/Magazine_762x51_M40_5rnd_M80.et" {
-   {
-    components {
-     ActionsManagerComponent "{F092E6B0537754FD}" {
-      Enabled 0
-     }
-    }
-    coords -1.929 1.396 -0.433
-    angleY -67.5
-   }
-   {
-    components {
-     ActionsManagerComponent "{F092E6B0537754FD}" {
-      Enabled 0
-     }
-    }
-    coords -1.941 1.395 -0.473
-    angleY -67.5
-   }
-  }
-  GenericEntity : "{F20D1122BC5CD9F2}Prefabs/Weapons/Magazines/glock_magazine/Magazine_9x19_Glock_17rnd.et" {
-   components {
-    ActionsManagerComponent "{F092E6B0537754FD}" {
-     Enabled 0
-    }
-   }
-   coords -2.14 1.396 1.784
-   angleY -67.5
-   angleZ 8.578
-  }
-  GenericEntity : "{F30B5EEADDEFCD43}Prefabs/Weapons/Attachments/Optics/reap_ir/snipe_ir.et" {
-   components {
-    ActionsManagerComponent "{60D93712672E648A}" {
-     Enabled 0
-    }
-   }
-   coords -1.478 1.393 -4.468
-   angleX -0.195
-   angleY -2.919
-  }
-  GenericEntity : "{F34FC18258C5AD27}Prefabs/Props/Civilian/TablePhotoFrame_01/TablePhotoFrame_01_horizontal.et" {
-   coords -1.971 1.451 4.77
-   angleY -148.77
-  }
-  GenericEntity : "{F38DF38C292303EA}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Medical_US_NoAffiliation.et" {
-   coords -1.559 1.386 -5.876
-   angleY -67.5
-   angleZ 1.186
-  }
-  GenericEntity : "{F4D9B1A0EFFF13FB}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Rocket_US_NoAffiliation.et" {
-   components {
-    ActionsManagerComponent "{56F2C6D1431ADB12}" {
-     additionalActions {
-      SCR_OpenStorageAction "{58EE8EA3E900BE40}" {
-       UIInfo UIInfo "{58EE8EA3E5E7D64D}" {
-        Name "Rocket Launchers"
+     Slot8 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{529EE66FF5CC20B2}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Shirts_US_NoAffiliation.et"
        }
       }
+      coords -8.261 1.098 5.109
+      angleX -88.275
+      angleY -35.449
+      angleZ -177.446
+     }
+     Slot1 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{F8A949E95B6FDCE4}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Boots_US_NoAffiliation.et"
+       }
+      }
+      coords -8.871 -0.051 4.341
+      angleX -1.597
+      angleY 101.265
+      angleZ 3.368
+     }
+     Slot3 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{99DE5AB4C17BB161}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Backpack_US_NoAffiliation.et"
+       }
+      }
+      coords -9.487 0.649 4.105
+      angleX -20.005
+      angleY 141.908
+      angleZ -8.193
+     }
+     Slot5 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{CE84E390AD194DCA}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Vests_US_NoAffiliation.et"
+       }
+      }
+      coords -9.012 1.058 4.821
+      angleX -87.738
+      angleY 97.485
+      angleZ 54.657
+     }
+     Slot6 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{203E1A4BC6BC2BAB}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/EquipmentGeneral_US_NoAffiliation.et"
+       }
+      }
+      coords -7.339 0.706 5.253
+      angleX -2.607
+      angleY -148.431
+      angleZ -2.664
+     }
+     Slot9 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{07ACAA0FE4F5C6CC}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Handwear_US_NoAffiliation.et"
+       }
+      }
+      coords -9.257 0.563 3.744
+      angleX -3.596
+      angleY 150.673
+      angleZ -3.383
+     }
+     Slot10 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{CA94242C4ECEBA67}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/GunAttachments_US_NoAffiliation.et"
+       }
+      }
+      coords -9.969 0.601 3.34
+      angleX 0.827
+      angleY 109.991
+      angleZ 2.95
+     }
+     Slot11 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{F6253608229C5D2C}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Pistol_US_NoAffiliation.et"
+       }
+      }
+      coords -10.259 0.86 4.038
+      angleX 0.335
+      angleY -120.595
+      angleZ 4.636
+     }
+     Slot12 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{D6747678B78C45EF}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Rifles_US_NoAffiliation.et"
+       }
+      }
+      coords -10.293 1.288 4.009
+      angleX 0.335
+      angleY -120.595
+      angleZ 4.636
+     }
+     Slot13 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{EB04ECAAA4DDD14B}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/AmmoPistol_US_NoAffiliation.et"
+       }
+      }
+      coords -9.686 0.604 3.532
+      angleX -3.515
+      angleY 155.857
+      angleZ 92.489
+     }
+     Slot14 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{F74DB24DB29CEDB7}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Ammo556_US_NoAffiliation.et"
+       }
+      }
+      coords -10.091 0.572 3.751
+      angleX 2.498
+      angleY 147.898
+      angleZ -0.553
+     }
+     Slot15 {
+      components {
+       SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        m_sObjectToSpawn "{F38DF38C292303EA}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Medical_US_NoAffiliation.et"
+       }
+      }
+      coords -6.826 0.572 5.722
+      angleX 3.726
+      angleY -113.678
+      angleZ -3.239
      }
     }
    }
-   coords -1.256 1.235 -7.278
-   angleX -0.669
-   angleY 7.494
-   angleZ 83.096
-  }
-  GenericEntity : "{F6253608229C5D2C}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Pistol_US_NoAffiliation.et" {
-   coords -1.476 1.65 1.453
-   angleY 178.335
-  }
-  GenericEntity : "{F74DB24DB29CEDB7}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Ammo556_US_NoAffiliation.et" {
-   coords -2.13 1.392 0.801
-   angleY -91.93
-  }
-  GenericEntity : "{F8A949E95B6FDCE4}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/Boots_US_NoAffiliation.et" {
-   coords -1.912 0.726 2.549
-   angleY -78.258
-  }
-  GenericEntity : "{FAE8B9F7CEA49696}Prefabs/Items/Equipment/Binoculars/Rangefinder_Vector21_lc.et" {
-   components {
-    ActionsManagerComponent "{508AB5952B584B2E}" {
-     Enabled 0
-    }
-   }
-   coords -2.963 1.435 5.201
-   angleY -2.206
-  }
-  GenericEntity : "{FF9040719A465873}Prefabs/Weapons/Rifles/M27IAR/Rifle_M38SDMR_camo.et" {
-   components {
-    RHS_SGC_RadialMenuComponent "{5D5EE4D5D9FDF6FE}" {
-     Enabled 0
-    }
-    ActionsManagerComponent "{A29AE67FF4D82B0F}" {
-     Enabled 0
-    }
-    WeaponGamepadEffectsManagerComponent "{61A2E5C3F4458F86}" {
-     Enabled 0
-    }
-   }
-   coords -1.443 2.06 -0.984
-   angleY 179.151
   }
  }
+}
+GenericEntity : "{DB403F1A9E7B0B4F}Prefabs/Props/Industrial/CargoContainers/CargoContainer_01/CargoContainer_01_40ft_red.et" {
+ coords 1343.742 39 2247.622
+ angleY 57.648
+}
+GenericEntity : "{F34FC18258C5AD27}Prefabs/Props/Civilian/TablePhotoFrame_01/TablePhotoFrame_01_horizontal.et" {
+ coords 1348.861 40.003 2248.907
+ angleY 168.722
 }

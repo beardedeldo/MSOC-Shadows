@@ -6,7 +6,7 @@ MetaFileClass {
    MaterialAssigns {
     MaterialAssignClass "{6289656452AFC02F}" {
      SourceMaterial "DefaultGeneratedMaterial"
-     AssignedMaterial "{28FEE23EE94B34A9}MSOC_Patches/Import/C5_patch.emat"
+     AssignedMaterial "{6E3AF8C03AC6CA41}MSOC_Patches/Import/BDT.emat"
     }
    }
    MeshParams {

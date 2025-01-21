@@ -14,6 +14,7 @@ GenericEntity {
    m_iMaxSpawnPointsPerGroup 4
    m_eRespawnBudgetType NONE
    m_fSuppliesValue 0
+   m_iMaxRespawns 500
    m_bAllowAllGroupsToSpawn 1
    m_bAllowCustomLoadouts 1
    m_bQueryCharacters 1
@@ -22,6 +23,15 @@ GenericEntity {
    m_bIgnoreEnemyCharacters 1
    m_bUnlockActionsForEnemyFactions 1
    m_bUnlockActionsForAllGroups 1
+  }
+  ActionsManagerComponent "{508AB5952B584B2E}" {
+   additionalActions {
+    SCR_DeployableInventoryItemEquipClothAction "{646B40A6F103A4E5}" {
+     ParentContextList {
+      "default"
+     }
+    }
+   }
   }
  }
 }

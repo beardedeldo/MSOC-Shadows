@@ -1,0 +1,4 @@
+MatPBRBasic : "{2F28785AB50BB578}MSOC_Patches/Import/Delta_team.emat" {
+ BCRMap "{6A51FDD6AB8A33A0}MSOC_Patches/Import/Eagles_BCR.edds"
+ NMOMap "{5289464472FD613E}MSOC_Patches/Import/Eagles_NMO.edds"
+}

@@ -1,0 +1,8 @@
+GenericEntity : "{99F250B2D720BA90}Prefabs/Props/Military/Compositions/BuildingService_base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SCR_CampaignBuildingProviderComponent "{5EBCED04D0321687}" {
+   m_fBuildingRadius 250
+  }
+ }
+}

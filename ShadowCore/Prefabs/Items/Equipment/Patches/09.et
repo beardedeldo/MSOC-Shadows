@@ -4,7 +4,7 @@ GameEntity : "{B41CBDEDF7B897D7}Prefabs/Items/Equipment/Patches/Patch_Base.et" {
   InventoryItemComponent "{5DB09136B1C985CE}" {
    Attributes SCR_ItemAttributeCollection "{5DB09136B1C985C1}" {
     ItemDisplayName SCR_ItemHintUIInfo "{5DB09136B1C985EB}" {
-     Name "LYX"
+     Name "09"
     }
    }
   }
@@ -13,14 +13,11 @@ GameEntity : "{B41CBDEDF7B897D7}Prefabs/Items/Equipment/Patches/Patch_Base.et" {
   }
   BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
    WornMaterialsOverride {
-    "{8F897A5640333209}MSOC_Patches/Import/LYX.emat"
+    "{8C412DB5E116D72B}MSOC_Patches/Import/09.emat"
    }
    ItemMaterialsOverride {
-    "{8F897A5640333209}MSOC_Patches/Import/LYX.emat"
+    "{8C412DB5E116D72B}MSOC_Patches/Import/09.emat"
    }
   }
  }
- coords 0 0 0
- angleX 20.256
- angleY -32.5
 }

@@ -1,0 +1,35 @@
+SCR_WelcomeScreenComponent {
+ m_BaseLayout SCR_WelcomeScreenThreeHorizontalColumns "{5D7290AC92D25160}" {
+  m_LeftColumn SCR_WelcomeScreenIntroductionContent "{5D7290ABF7423AA2}" {
+   m_aIntroduction {
+    SCR_WelcomeScreenIntroduction "{5D7290ABCBFE3176}" {
+     m_sContentImage "{A263E5167E59EA1E}images/MSOC.edds"
+     m_sContentTitleText "Who we are? "
+     m_sContentDescriptionText "Marines Special Operations Company (MSOC) Shadows! Our mission: Quality over Quantity for operations and members! Our vision: To create immersive, story-driven tactical military operations that emphasize strategy, realism, and teamwork."
+    }
+   }
+  }
+  m_MiddleColumn SCR_WelcomeScreenIntroductionContent "{5D7290ABF8B7756B}" {
+   m_aIntroduction {
+    SCR_WelcomeScreenIntroduction "{5D729EC0A67A9D46}" {
+     m_sContentImage "{46FB2FB2C2125A3C}UI/Textures/Flags/US-flag-base-3it.edds"
+     m_sContentTitleText "Enlisted & Non-Enlisted Status"
+     m_sContentDescriptionText "Requirements to stay Enlisted for Campaigns: "\
+     "¾ Operations per month (70%) "\
+     "This includes once a month unit wide training session "\
+     "Non-Enlisted members still have access to our custom 24/7 mode and can join off day game days. "\
+     ""
+    }
+   }
+  }
+  m_RightColumn SCR_WelcomeScreenIntroductionContent "{5D7290ABFF9DBADC}" {
+   m_aIntroduction {
+    SCR_WelcomeScreenIntroduction "{5D729EC0BC408CC1}" {
+     m_sContentImage "{CB5BDC196491572E}UI/Textures/MainMenu/news-placeholder_UI.edds"
+     m_sContentTitleText "Want to help? "
+     m_sContentDescriptionText "Reach out to one of our Joint of Staff team members in Discord @Joint Staff role. We are always looking for help. "
+    }
+   }
+  }
+ }
+}

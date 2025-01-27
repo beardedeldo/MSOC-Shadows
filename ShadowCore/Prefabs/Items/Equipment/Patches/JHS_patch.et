@@ -10,6 +10,12 @@ GameEntity : "{B41CBDEDF7B897D7}Prefabs/Items/Equipment/Patches/Patch_Base.et" {
   }
   MeshObject "{5DB09136B1C985B5}" {
    Object "{C945212812FF7DEA}MSOC_Patches/Patch_mesh_original - Copy.xob"
+   Materials {
+    MaterialAssignClass "{6470EE8BB7A5708C}" {
+     SourceMaterial "DefaultGeneratedMaterial"
+     AssignedMaterial "{B80F7C1CC1725FC2}MSOC_Patches/Import/JHS.emat"
+    }
+   }
   }
   BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
    WornMaterialsOverride {

@@ -1,0 +1,4 @@
+MatPBRBasic {
+ BCRMap "{AB98B4027BC791A6}MSOC_Patches/Import/Circle/shadows_BCR.edds"
+ NMOMap "{93400F90A2B0C338}MSOC_Patches/Import/Circle/shadows_NMO.edds"
+}

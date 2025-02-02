@@ -1,0 +1,23 @@
+GameEntity : "{B41CBDEDF7B897D7}Prefabs/Items/Equipment/Patches/Patch_Base.et" {
+ ID "5DB09136945FC6DB"
+ components {
+  InventoryItemComponent "{5DB09136B1C985CE}" {
+   Attributes SCR_ItemAttributeCollection "{5DB09136B1C985C1}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{5DB09136B1C985EB}" {
+     Name "MSOC Blue"
+    }
+   }
+  }
+  MeshObject "{5DB09136B1C985B5}" {
+   Object "{EEFC33445FF863EE}MSOC_Patches/msoc_patch_rhs.xob"
+  }
+  BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
+   WornMaterialsOverride {
+    "{BB9E665DFE96648A}MSOC_Patches/Import/Custom/msoc_blue.emat"
+   }
+   ItemMaterialsOverride {
+    "{BB9E665DFE96648A}MSOC_Patches/Import/Custom/msoc_blue.emat"
+   }
+  }
+ }
+}

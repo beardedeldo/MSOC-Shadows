@@ -1,0 +1,23 @@
+GameEntity : "{B41CBDEDF7B897D7}Prefabs/Items/Equipment/Patches/Patch_Base.et" {
+ ID "5DB09136945FC6DB"
+ components {
+  InventoryItemComponent "{5DB09136B1C985CE}" {
+   Attributes SCR_ItemAttributeCollection "{5DB09136B1C985C1}" {
+    ItemDisplayName SCR_ItemHintUIInfo "{5DB09136B1C985EB}" {
+     Name "Eagles Circle"
+    }
+   }
+  }
+  MeshObject "{5DB09136B1C985B5}" {
+   Object "{923D3C720544F5E5}MSOC_Patches/circle_patch_rhs.xob"
+  }
+  BaseLoadoutClothComponent "{5DB09136B1C9859A}" {
+   WornMaterialsOverride {
+    "{B37B777D13C44FE0}MSOC_Patches/Import/Circle/eagles_circ.emat"
+   }
+   ItemMaterialsOverride {
+    "{B37B777D13C44FE0}MSOC_Patches/Import/Circle/eagles_circ.emat"
+   }
+  }
+ }
+}

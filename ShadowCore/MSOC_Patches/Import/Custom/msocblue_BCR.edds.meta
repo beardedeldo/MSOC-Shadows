@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{0A51F575E5F37EDA}MSOC_Patches/Import/shadows_BCR.edds"
+ Name "{ABB8B04290F8E5CF}MSOC_Patches/Import/Custom/msocblue_BCR.edds"
  Configurations {
   PNGResourceClass PC : "{EAB5DE3219F9CBA8}Configs/System/ResourceTypes/PC/TextureColorMap.conf" {
   }

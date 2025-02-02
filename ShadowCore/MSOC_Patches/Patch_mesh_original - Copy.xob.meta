@@ -6,7 +6,7 @@ MetaFileClass {
    MaterialAssigns {
     MaterialAssignClass "{6289656452AFC02F}" {
      SourceMaterial "DefaultGeneratedMaterial"
-     AssignedMaterial "{78496A2DECCBBF5F}MSOC_Patches/Import/08.emat"
+     AssignedMaterial "{E7FAE32D6A13D7FB}MSOC_Patches/Import/sarc.emat"
     }
    }
    MeshParams {
